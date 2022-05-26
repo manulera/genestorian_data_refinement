@@ -997,7 +997,8 @@ request	PMID	Ref	NBRPID	strain_name	genotype	phenotype	source	terms	LMO	stock	co
 			FY7952	MY81	h- leu1 nda4		Yanagida, Mitsuhiro	B-1		IB-1 BK		
 			FY7953	MY82	h? leu1 cut3 nda1		Yanagida, Mitsuhiro	B-1		IB-1 BK		
 			FY7954	MY83	h? cut14 nda1		Yanagida, Mitsuhiro	B-1		IB-1 BK		
-			FY7955	MY84	h? leu1 cut14 nda1		Yanagida, Mitsuhiro	B-1		IB-1 BK					FY7956	MY85	h? leu1 cut3 nda4		Yanagida, Mitsuhiro	B-1		IB-1 BK		
+			FY7955	MY84	h? leu1 cut14 nda1		Yanagida, Mitsuhiro	B-1		IB-1 BK		
+			FY7956	MY85	h? leu1 cut3 nda4		Yanagida, Mitsuhiro	B-1		IB-1 BK		
 			FY7958	MY87	h? cut14 nda4		Yanagida, Mitsuhiro	B-1		IB-1 BK		
 			FY7959	MY88	h? leu1 cut14 nda4		Yanagida, Mitsuhiro	B-1		IB-1 BK		
 			FY7960	MY89	h- leu1 cdc21		Yanagida, Mitsuhiro	B-1		IB-1 BK		
@@ -1995,7 +1996,8 @@ request	PMID	Ref	NBRPID	strain_name	genotype	phenotype	source	terms	LMO	stock	co
 			FY10093	MY2193	h- dis2-11 leu1 ura4		Yanagida, Mitsuhiro	B-1		IC-10 BK		
 			FY10095	MY2195	h- nda3-KM311 leu1 ura4		Yanagida, Mitsuhiro	B-1		IC-10 BK		
 			FY10096	MY2196/YM520	h- dis1-288 Spcdc23-HA[LEU2] int		Yanagida, Mitsuhiro	B-1	P1	IC-10 BK		
-			FY10097	MY2197/YM521	h+ Spcdc23-HA[LEU2]		Yanagida, Mitsuhiro	B-1	P1	IC-10 BK					FY10098	MY2198/YM522	h+ Spcdc23-HA[LEU2] ura4		Yanagida, Mitsuhiro	B-1	P1	IC-10 BK		
+			FY10097	MY2197/YM521	h+ Spcdc23-HA[LEU2]		Yanagida, Mitsuhiro	B-1	P1	IC-10 BK		
+			FY10098	MY2198/YM522	h+ Spcdc23-HA[LEU2] ura4		Yanagida, Mitsuhiro	B-1	P1	IC-10 BK		
 			FY10099	MY2199/YM523	h- Spcdc23-HA[LEU2] ura4		Yanagida, Mitsuhiro	B-1	P1	IC-10 BK		
 			FY10100	MY2200	h+ cut20-HA[LEU2] int ura4		Yanagida, Mitsuhiro	B-1	P1	IC-10		
 			FY10101	MY2201/YM524	h? cut20-HA[LEU2] cdc10		Yanagida, Mitsuhiro	B-1	P1	IC-11 BK		
@@ -2993,7 +2995,8 @@ request	PMID	Ref	NBRPID	strain_name	genotype	phenotype	source	terms	LMO	stock	co
 	21775631		FY12318	YN90	h90 spo13::ura4+ spo15-GFP<<LEU2 leu1-32	spo	Shimoda, Chikashi	A	P1	IE-9		
 			FY12319	YN91	h90 spo3 leu1 spo13-GFP>	spo	Shimoda, Chikashi	A	P1	IE-9		
 			FY12324	YN96	h- spo13::ura4+ ura4 ade6-M210 leu1 <<GFP-psy1		Shimoda, Chikashi	A	P1	IE-9		
-			FY12325	YN97	h- spo13::ura4+ ura4 ade6-M210 leu1 <<GFP-psy1		Shimoda, Chikashi	A	P1	IE-9					FY12326	YN98	h-/h- pat1-114/pat1-114 ade6-M210/ade6-M216 leu1/leu1 <<spo13-HA		Shimoda, Chikashi	A	P1	IE-9		
+			FY12325	YN97	h- spo13::ura4+ ura4 ade6-M210 leu1 <<GFP-psy1		Shimoda, Chikashi	A	P1	IE-9		
+			FY12326	YN98	h-/h- pat1-114/pat1-114 ade6-M210/ade6-M216 leu1/leu1 <<spo13-HA		Shimoda, Chikashi	A	P1	IE-9		
 			FY12327	YM99	h90 mes1 ura4	spo	Shimoda, Chikashi	A		IE-9		
 			FY12328	YN100	h90 mes1 leu1	spo	Shimoda, Chikashi	A		IE-9		
 			FY12329	YN101	h90 mes1 ade6-M210 leu1	spo	Shimoda, Chikashi	A		IE-9		
@@ -3991,7 +3994,8 @@ request	PMID	Ref	NBRPID	strain_name	genotype	phenotype	source	terms	LMO	stock	co
 	16541025		FY13780	PZ694	h- Padh1-rec8+-GFP<<kanr rad21::ura4+ leu1 ade6-M210		Watanabe, Yoshinori	B-1	P1	IF11 BK		
 			FY13781	PZ695	h- Padh1-rec8+-GFP<<kanr rad21::ura4+ Pnmt1-sgo1+<<kanr leu1 ade6-M216		Watanabe, Yoshinori	B-1	P1	IF11 BK		
 	17932486		FY13782	PZ809	h- cen2-GFP leu1 ade6		Watanabe, Yoshinori	B-1	P1	IF11 BK		
-	1871662617932486		FY13783	PZ856	h+ sgo1::kanr leu1 ade6-M216		Watanabe, Yoshinori	B-1	P1	IF11 BK			2929836019965387		FY13784	PZ865	h90 sgo2::ura4+ leu1 ade6-M210 ura4-D18		Watanabe, Yoshinori	B-1	P1	IF11 BK		
+	1871662617932486		FY13783	PZ856	h+ sgo1::kanr leu1 ade6-M216		Watanabe, Yoshinori	B-1	P1	IF11 BK		
+	2929836019965387		FY13784	PZ865	h90 sgo2::ura4+ leu1 ade6-M210 ura4-D18		Watanabe, Yoshinori	B-1	P1	IF11 BK		
 	17932486		FY13785	PZ876	h+ sgo2::kanr leu1 ade6-M216		Watanabe, Yoshinori	B-1	P1	IF11 BK		
 			FY13786	PZ887	h+/h- sgo1::ura4+/sgo1::ura4+ rec8+-GFP<<kanr/rec8+-GFP<<kanr mei4::ura4+/mei4::ura4+ ade6-M210/ade6		Watanabe, Yoshinori	B-1	P1	IF11 BK		
 	19965387		FY13787	PZ901	h90 sgo2+-GFP<<kanr leu1 ade6-M2		Watanabe, Yoshinori	B-1	P1	IF11 BK		
@@ -4989,7 +4993,8 @@ request	PMID	Ref	NBRPID	strain_name	genotype	phenotype	source	terms	LMO	stock	co
 			FY15067	H12/E05	AY160-14D. (h90 ade6-216 leu1-32 lys1-131 ura4-D18 mad2::mad2-GFP-HA-Kanr). (SPBC20F10.06)		Hiraoka, Yashushi	B-1	P1	IG-12		
 			FY15068	H12/F05	AY160-14D. (h90 ade6-216 leu1-32 lys1-131 ura4-D18 lsm5::lsm5-GFP-HA-Kanr). (SPBC20F10.09)		Hiraoka, Yashushi	B-1	P1	IG-12		
 			FY15069	H12/B06	AY160-14D. (h90 ade6-216 leu1-32 lys1-131 ura4-D18 rpr2::rpr2-GFP-HA-Kanr). (SPBC1105.16c)		Hiraoka, Yashushi	B-1	P1	IG-12		
-			FY15070	H12/E06	AY160-14D. (h90 ade6-216 leu1-32 lys1-131 ura4-D18 spt4::spt4-GFP-HA-Kanr). (SPBC21C3.16c)		Hiraoka, Yashushi	B-1	P1	IG-12					FY15071	H12/F06	AY160-14D. (h90 ade6-216 leu1-32 lys1-131 ura4-D18 sat1::sat1-GFP-HA-Kanr). (SPBC23E6.08)		Hiraoka, Yashushi	B-1	P1	IG-12		
+			FY15070	H12/E06	AY160-14D. (h90 ade6-216 leu1-32 lys1-131 ura4-D18 spt4::spt4-GFP-HA-Kanr). (SPBC21C3.16c)		Hiraoka, Yashushi	B-1	P1	IG-12		
+			FY15071	H12/F06	AY160-14D. (h90 ade6-216 leu1-32 lys1-131 ura4-D18 sat1::sat1-GFP-HA-Kanr). (SPBC23E6.08)		Hiraoka, Yashushi	B-1	P1	IG-12		
 			FY15072	H12/C07	AY160-14D. (h90 ade6-216 leu1-32 lys1-131 ura4-D18 sec9::sec9-GFP-HA-Kanr). (SPBC26H8.02c)		Hiraoka, Yashushi	B-1	P1	IG-12		
 			FY15073	H12/G07	AY160-14D. (h90 ade6-216 leu1-32 lys1-131 ura4-D18 fkbp39::fkbp39-GFP-HA-Kanr). (SPBC1347.02)		Hiraoka, Yashushi	B-1	P1	IG-12		
 			FY15074	H12/A08	AY160-14D. (h90 ade6-216 leu1-32 lys1-131 ura4-D18 gas4::gas4-GFP-HA-Kanr). (SPBC342.03)		Hiraoka, Yashushi	B-1	P1	IG-12		
@@ -5987,7 +5992,8 @@ request	PMID	Ref	NBRPID	strain_name	genotype	phenotype	source	terms	LMO	stock	co
 			FY16238	HA21-44C	h90 leu1		Shimoda, Chikashi	A		IH-12		
 			FY16239	HA40-3D	h90 mes1::LEU2 leu1		Shimoda, Chikashi	A	P1	IH-12		
 			FY16240	KJ6291	h90 ade6-M216 Δste9homolog::ura4+ ura4-D18 leu1		Shimoda, Chikashi	A	P1	IH-12		
-			FY16241	MO1	h- 3HA:6His:wee1 leu1-32 ura4-D18		Shimoda, Chikashi	A	P1	IH-12					FY16242	#496	h+ cig1::ura4+ ura4-D18		Shimoda, Chikashi	A	P1	IH-12		
+			FY16241	MO1	h- 3HA:6His:wee1 leu1-32 ura4-D18		Shimoda, Chikashi	A	P1	IH-12		
+			FY16242	#496	h+ cig1::ura4+ ura4-D18		Shimoda, Chikashi	A	P1	IH-12		
 			FY16243	HA60-1D	h90 ade6-M216 ura4-D18 leu1 fzr1::ura4+		Shimoda, Chikashi	A	P1	IH-12		
 			FY16250	933	h90 ste9::ura4DS Rfzr1::ura4+ ade6-M210 ura4-D18 leu1		Shimoda, Chikashi	A	P1	IH-12		
 			FY16251	TN34	h90 spo4::ura4+ ura4-D18		Shimoda, Chikashi	A	P1	IH-12		
@@ -6985,7 +6991,8 @@ request	PMID	Ref	NBRPID	strain_name	genotype	phenotype	source	terms	LMO	stock	co
 			FY18420	JK1390	h- swi6::LEU2 leu1-32 ura4-D18 T2R1-4137::ura4+		Kanoh, Junko	B-1	P1	IJ10		
 			FY18421	JK1391	h- swi6::LEU2 leu1-32 ura4-D18 T2R1-7921::ura4+		Kanoh, Junko	B-1	P1	IJ10		
 			FY18422	JK1393	h- swi6::LEU2 leu1-32 ura4-D18 T2R1-30292::ura4+		Kanoh, Junko	B-1	P1	IJ10		
-			FY18423	JK1398	h+ taz1::LEU2 ade6-M210 arg3-D4 leu1-32 ura4-D18 Ch.16. (ade6+-arg3+-ura4+-telomeric repeat)		Kanoh, Junko	B-1	P1	IJ10					FY18424	JK1465	h- leu1-32 ura4-D18 rdp1::KanMX6		Kanoh, Junko	B-1	P1	IJ10		
+			FY18423	JK1398	h+ taz1::LEU2 ade6-M210 arg3-D4 leu1-32 ura4-D18 Ch.16. (ade6+-arg3+-ura4+-telomeric repeat)		Kanoh, Junko	B-1	P1	IJ10		
+			FY18424	JK1465	h- leu1-32 ura4-D18 rdp1::KanMX6		Kanoh, Junko	B-1	P1	IJ10		
 			FY18425	JK1490	h- leu1-32 ura4-D18 chp1::kanr		Kanoh, Junko	B-1	P1	IJ10		
 			FY18426	JK1498	h90 leu1-32 ura4-D18 trt1::LEU2 taz1::kanr -> ade6::TEL-TAS-ura4+. (Type B)		Kanoh, Junko	B-1	P1	IJ10		
 			FY18427	JK1501	h90 leu1-32 ura4-D18 trt1::LEU2 rap1::kanr -> ade6::TEL-TAS-ura4+. (Type B)		Kanoh, Junko	B-1	P1	IJ10		
@@ -7983,7 +7990,8 @@ request	PMID	Ref	NBRPID	strain_name	genotype	phenotype	source	terms	LMO	stock	co
 			FY20152	MY6213	h- rad21R179EFLAG3-kanR+		Yanagida, Mitsuhiro	B-1	P1	IL3		
 			FY20153	MY6214	h- rad21R231EFLAG3-kanR+		Yanagida, Mitsuhiro	B-1	P1	IL3		
 			FY20154	MY6215	h- leu1 cut2HA-LEU2+		Yanagida, Mitsuhiro	B-1	P1	IL3		
-			FY20155	MY6216	h- pds5FLAG3-kanR+		Yanagida, Mitsuhiro	B-1	P1	IL3					FY20156	MY6217	h- mis4FLAG3-kanR+		Yanagida, Mitsuhiro	B-1	P1	IL3		
+			FY20155	MY6216	h- pds5FLAG3-kanR+		Yanagida, Mitsuhiro	B-1	P1	IL3		
+			FY20156	MY6217	h- mis4FLAG3-kanR+		Yanagida, Mitsuhiro	B-1	P1	IL3		
 			FY20157	MY6218	h- eso1FLAG3-kanR+		Yanagida, Mitsuhiro	B-1	P1	IL3		
 			FY20158	MY6219	h- leu1 mis4GFP-LEU2+		Yanagida, Mitsuhiro	B-1	P1	IL3		
 			FY20159	MY6220	h- pds5GFP-kanR+		Yanagida, Mitsuhiro	B-1	P1	IL3		
@@ -8981,7 +8989,8 @@ request	PMID	Ref	NBRPID	strain_name	genotype	phenotype	source	terms	LMO	stock	co
 			FY21590	MYM16	h90 leu1-32 ade6-M210 ura4-D18 cyr1::ura4 moc1:GFP<<kanMX6		Kawamukai, Makoto	B-1	P1	1M5		
 			FY21591	MYM19	h90 leu1-32 ade6-M216 ura4-D18 pka1::ura4 moc1:GFP<<kanMX6		Kawamukai, Makoto	B-1	P1	1M5		
 			FY21592	MY6010	h90 leu1-32 ade6-M210 ura4-D18 zds1::ura4		Kawamukai, Makoto	B-1	P1	1M5		
-			FY21593	MY6013	h90 leu1-32 ade6-M210 ura4-D18 zds1:GFPS65A>LEU2		Kawamukai, Makoto	B-1	P1	1M5			23089178		FY21594	SKP561-15	h- asf1+-13myc-kanMX6 leu1-32 ura4-D18		Kawamukai, Makoto	B-1	P1	1M5		
+			FY21593	MY6013	h90 leu1-32 ade6-M210 ura4-D18 zds1:GFPS65A>LEU2		Kawamukai, Makoto	B-1	P1	1M5		
+	23089178		FY21594	SKP561-15	h- asf1+-13myc-kanMX6 leu1-32 ura4-D18		Kawamukai, Makoto	B-1	P1	1M5		
 			FY21595	SKP593-30	h- asf1-30-13myc-kanMX6 leu1-32 ura4-D18		Kawamukai, Makoto	B-1	P1	1M5		
 			FY21596	UMP3	h- asf1+-GFP-hphMX6 leu1 ura4		Kawamukai, Makoto	B-1	P1	1M5		
 			FY21601	UMP4	h- asf1-30-GFP-hphMX6 leu1 ura4		Kawamukai, Makoto	B-1	P1	1M6		
@@ -9979,7 +9988,8 @@ request	PMID	Ref	NBRPID	strain_name	genotype	phenotype	source	terms	LMO	stock	co
 			FY22940	TS144/SS804	h90 mfm1::LEU2 mfm2::ura4+ mfm3::ura4+ leu1-32 ura4-D18 ade6-M210<<ade6+:mfm1-M38E		Nakamura, Taro	A	P1	1N7		
 			FY22941	TS145/SS805	h90 mfm1::LEU2 mfm2::ura4+ mfm3::ura4+ leu1-32 ura4-D18 ade6-M210<<ade6+:mfm1-M38F		Nakamura, Taro	A	P1	1N7		
 			FY22942	TS146/SS806	h90 mfm1::LEU2 mfm2::ura4+ mfm3::ura4+ leu1-32 ura4-D18 ade6-M210<<ade6+:mfm1-M38G		Nakamura, Taro	A	P1	1N7		
-			FY22943	TS147/SS807	h90 mfm1::LEU2 mfm2::ura4+ mfm3::ura4+ leu1-32 ura4-D18 ade6-M210<<ade6+:mfm1-M38H		Nakamura, Taro	A	P1	1N7					FY22944	TS148/SS808	h90 mfm1::LEU2 mfm2::ura4+ mfm3::ura4+ leu1-32 ura4-D18 ade6-M210<<ade6+:mfm1-M38I		Nakamura, Taro	A	P1	1N7		
+			FY22943	TS147/SS807	h90 mfm1::LEU2 mfm2::ura4+ mfm3::ura4+ leu1-32 ura4-D18 ade6-M210<<ade6+:mfm1-M38H		Nakamura, Taro	A	P1	1N7		
+			FY22944	TS148/SS808	h90 mfm1::LEU2 mfm2::ura4+ mfm3::ura4+ leu1-32 ura4-D18 ade6-M210<<ade6+:mfm1-M38I		Nakamura, Taro	A	P1	1N7		
 			FY22945	TS149/SS809	h90 mfm1::LEU2 mfm2::ura4+ mfm3::ura4+ leu1-32 ura4-D18 ade6-M210<<ade6+:mfm1-M38K		Nakamura, Taro	A	P1	1N7		
 			FY22946	TS150/SS810	h90 mfm1::LEU2 mfm2::ura4+ mfm3::ura4+ leu1-32 ura4-D18 ade6-M210<<ade6+:mfm1-M38L		Nakamura, Taro	A	P1	1N7		
 			FY22947	TS151/SS811	h90 mfm1::LEU2 mfm2::ura4+ mfm3::ura4+ leu1-32 ura4-D18 ade6-M210<<ade6+:mfm1-M38N		Nakamura, Taro	A	P1	1N7		
@@ -10977,7 +10987,8 @@ request	PMID	Ref	NBRPID	strain_name	genotype	phenotype	source	terms	LMO	stock	co
 			FY24528	PG005	h+ leu1 cnt1+<< kanr -lacO his7+mei4Δ::ura4-DS/E FY534<<RS FY527<<RS Z::natr-Padh31-tetR-tdTomato dh1L<<tetO-ura4+ sad1+-CFP-LEU2 natr-psm3(K105QK106Q) lys1Δ::Pspo5-R-Tspo5-hygr		Watanabe, Yoshinori	B-1	P1			
 			FY24529	PG032	h- cnt2<<tetO-ura4+ ark1-GFP-FLAG-His<<kanR C<<Padh13-CFP-atb2+<<hygR Z<<Padh31-tetR-tdTomato<<natR Δrec12::natR kanR<<Prad21-slp1+		Watanabe, Yoshinori	B-1	P1			
 			FY24530	PG039	h- cnt2<<tetO-ura4+ ark1-GFP-FLAG-His<<kanR Δlys1::hygR<<Padh81-cnp3C-9myc-CFP-TEV Z<<Padh31-tetR-tdTomato<<natR rec8-tev Δrec12::natR kanR<<Prad21-slp1 kanR<<Prad21-cut23+		Watanabe, Yoshinori	B-1	P1			
-			FY24531	PG040	h+ cnt2<<tetO-ura4+ ark1-GFP-FLAG-His<<kanR C<<Padh13-CFP-atb2+<<hygR Z<<Padh31-tetR-tdTomato<<natR rec8-tev Δrec12::natR kanR<<Prad21-slp1+		Watanabe, Yoshinori	B-1	P1						FY24532	PG041	h+ cnt2<<tetO-ura4+ ark1-GFP-FLAG-His<<kanR Δlys1::hygR<<Padh81-cnp3C-9myc-CFP-TEV Z<<Padh31-tetR-tdTomato<<natR Δrec12::natR kanR<<Prad21-slp1+ kanR<<Prad21-cut23+		Watanabe, Yoshinori	B-1	P1			
+			FY24531	PG040	h+ cnt2<<tetO-ura4+ ark1-GFP-FLAG-His<<kanR C<<Padh13-CFP-atb2+<<hygR Z<<Padh31-tetR-tdTomato<<natR rec8-tev Δrec12::natR kanR<<Prad21-slp1+		Watanabe, Yoshinori	B-1	P1			
+			FY24532	PG041	h+ cnt2<<tetO-ura4+ ark1-GFP-FLAG-His<<kanR Δlys1::hygR<<Padh81-cnp3C-9myc-CFP-TEV Z<<Padh31-tetR-tdTomato<<natR Δrec12::natR kanR<<Prad21-slp1+ kanR<<Prad21-cut23+		Watanabe, Yoshinori	B-1	P1			
 			FY24533	PG044	h+ leu1 ura4-DS/E cnt1+<< kanr -lacO his7+mei4Δ::ura4-DS/E FY534<<RS FY527<<RS Z::natr-Padh31-tetR-tdTomato dh1L<<tetO-ura4+ sad1+-CFP-LEU2 moa1Δ::ura4-D/SE clr6-1 lys1Δ::Pspo5-R-Tspo5-hygr		Watanabe, Yoshinori	B-1	P1			
 			FY24534	PG047	h- leu1. (ura4-D18) mei4Δ::ura4+ moa1Δ::ura4+ clr6-1 lys1Δ:: Pspo5-R-Tspo5-hygr Z::Pspo5-R-Tspo5-natr	ts	Watanabe, Yoshinori	B-1	P1			
 			FY24535	PG052	h+ cnt1+<< kanr -lacO his7+mei4Δ::ura4-DS/E FY534<<RS FY527<<RS Z::natr-Padh31-tetR-tdTomato dh1L<<tetO-ura4+ sad1+-CFP-LEU2 eso1-H17 clr6-1 moa1Δ::ura4-D/SE lys1Δ::Pspo5-R-Tspo5-hygr		Watanabe, Yoshinori	B-1	P1			
@@ -11975,7 +11986,8 @@ request	PMID	Ref	NBRPID	strain_name	genotype	phenotype	source	terms	LMO	stock	co
 			FY25790	KI139	h90 spo15-GFP:Kanr leu1<<mCherry-psy1 ade6-M210		Nakamura, Taro	A	P1	Imada, Kazuki		
 			FY25791	KI145	h90 spo15-GFP:Kanr ade6-M210 leu1-32		Nakamura, Taro	A	P1	Imada, Kazuki		
 			FY25792	KI146	h90 spo15-GFP:Kanr ade6-M210 ura4-D18		Nakamura, Taro	A	P1	Imada, Kazuki		
-			FY25793	KI147	h90 spo15-GFP:Kanr leu1-32		Nakamura, Taro	A	P1	Imada, Kazuki					FY25794	KI157	h90 leu1<<GFP-syb1 ade6<<mCherry-psy1 ura4-D18		Nakamura, Taro	A	P1	Imada, Kazuki		
+			FY25793	KI147	h90 spo15-GFP:Kanr leu1-32		Nakamura, Taro	A	P1	Imada, Kazuki		
+			FY25794	KI157	h90 leu1<<GFP-syb1 ade6<<mCherry-psy1 ura4-D18		Nakamura, Taro	A	P1	Imada, Kazuki		
 			FY25795	KI158	h90 syb1::ura4+ leu1<<GFP-syb1 ade6<<mCherry-psy1 ura4-D18		Nakamura, Taro	A	P1	Imada, Kazuki		
 			FY25797	KI163	h90 spo15-GFP<<LEU2 ade6-M210 leu1-32 ura4-D18		Nakamura, Taro	A	P1	Imada, Kazuki		
 			FY25798	KI164	h90 spo7-GFP<<ura4+ ura4-D18 leu1-32 ade6-M210		Nakamura, Taro	A	P1	Imada, Kazuki		
@@ -12973,7 +12985,8 @@ request	PMID	Ref	NBRPID	strain_name	genotype	phenotype	source	terms	LMO	stock	co
 			FY31550	PB81	h+ leu1Δrec12::LEU2 Δmoa1::kanr pNATZA13-mCherry-atb2 pHBCS5del-cnp3C-CFP-3Pk-moa1-T101A		Watanabe, Yoshinori	B-1	P1			
 			FY31551	PB84	h- cen2-GFP leu1 Δmoa1::kanr Δrec12::LEU2 pHBCS5del-cnp3C-CFP		Watanabe, Yoshinori	B-1	P1			
 			FY31553	PB90	h+ leu1Δrec12::LEU2 Δmoa1::kanr pNATZA13-mCherry-atb2 pHBCS5del-cnp3C-CFP-SPO13		Watanabe, Yoshinori	B-1	P1			
-			FY31554	PB129	h- cen2-GFP leu1 Δmoa1::kanr Δrec12::LEU2 pHBCS5del-cnp3C-CFP-SPO13-5A		Watanabe, Yoshinori	B-1	P1						FY31555	PB131	h+ leu1Δrec12::LEU2 Δmoa1::kanr pNATZA13-mCherry-atb2 pHBCS5del-cnp3C-CFP-SPO13-5A		Watanabe, Yoshinori	B-1	P1			
+			FY31554	PB129	h- cen2-GFP leu1 Δmoa1::kanr Δrec12::LEU2 pHBCS5del-cnp3C-CFP-SPO13-5A		Watanabe, Yoshinori	B-1	P1			
+			FY31555	PB131	h+ leu1Δrec12::LEU2 Δmoa1::kanr pNATZA13-mCherry-atb2 pHBCS5del-cnp3C-CFP-SPO13-5A		Watanabe, Yoshinori	B-1	P1			
 			FY31556	PB141	h- cnt1-GFP leu1 (ura4-DS/E ade6-M210) FY534::RS FY527::RS dh1-tomato Δsgo2::ura4 kanr-Puhp1-3HA-hhp1Δhhp2::nat Δmei4::ura4-DSE Δlys1::HB-Pspo5-R-Tspo5 Δmoa1::bsd		Watanabe, Yoshinori	B-1	P1			
 			FY31557	PB143	h+ kanr-Puhp1-3HA-hhp1Δhhp2::nat Δmei4::ura4 leu1 ade6-M210 Δlys1::HB-Pspo5-R-Tspo5 Δmoa1::bsd		Watanabe, Yoshinori	B-1	P1			
 			FY31558	PB145	h90 ade6-M216 leu1 rec11-GFP-rec10-bsd rec25-mCherry-nat		Watanabe, Yoshinori	B-1	P1			
@@ -13971,7 +13984,8 @@ request	PMID	Ref	NBRPID	strain_name	genotype	phenotype	source	terms	LMO	stock	co
 			FY32563	JB764	h+ leu1-32 pJR1-3XL		Bahler, Jurg	A	P1			
 			FY32564	JB765	h+s leu1-32 pREP1-NTAPzip1 #2		Bahler, Jurg	A	P1			
 			FY32565	JB769	h- Fkh2-13myc:KanR leu1-32 ura4-D18 ade6-M210		Bahler, Jurg	A	P1			
-			FY32566	JB770	h- Fkh2-3HA:KanR leu1-32 ura4-D18		Bahler, Jurg	A	P1						FY32567	JB771	h- mbx1-13myc:KanR leu1-32 ura4-D18 ade6-M210 his7-366		Bahler, Jurg	A	P1			
+			FY32566	JB770	h- Fkh2-3HA:KanR leu1-32 ura4-D18		Bahler, Jurg	A	P1			
+			FY32567	JB771	h- mbx1-13myc:KanR leu1-32 ura4-D18 ade6-M210 his7-366		Bahler, Jurg	A	P1			
 			FY32568	JB772	h+ leu1-32 ade6-M210 ura4-cen1R::ade6 Clr6-cterm HA (g418r)		Bahler, Jurg	A	P1			
 			FY32569	JB773	h- tos4-3HA::KanR		Bahler, Jurg	A	P1			
 			FY32570	JB774	h- yox1-3HA::KanR		Bahler, Jurg	A	P1			
@@ -14969,7 +14983,8 @@ request	PMID	Ref	NBRPID	strain_name	genotype	phenotype	source	terms	LMO	stock	co
 			FY34111	TS402	h− ade6-M210 (ura4-D18) sxa2::ura4+		Seike, Taisuke	B-1	P1			
 			FY34112	TS405	h+S leu1 rgs1::kanMX6		Seike, Taisuke	B-1	P1			
 			FY34113	TS406	h− ade6-M210 (ura4-D18) sxa2::ura4+ [+pTS111]		Seike, Taisuke	B-1	P1			
-			FY34114	TS407	h− ade6-M210 (ura4-D18) sxa2::ura4+ [+pTS284]		Seike, Taisuke	B-1	P1						FY34115	TS544	h90 map2::ura4+ ade6-M216<<ade6+:map2(P1_4repeats) leu1 ura4-D18 sxa2::kanMX6		Seike, Taisuke	B-1	P1			
+			FY34114	TS407	h− ade6-M210 (ura4-D18) sxa2::ura4+ [+pTS284]		Seike, Taisuke	B-1	P1			
+			FY34115	TS544	h90 map2::ura4+ ade6-M216<<ade6+:map2(P1_4repeats) leu1 ura4-D18 sxa2::kanMX6		Seike, Taisuke	B-1	P1			
 			FY34116	TS546	h90 map2::ura4+ ade6-M216<<ade6+:map2(P3_4repeats) leu1 ura4-D18 sxa2::kanMX6		Seike, Taisuke	B-1	P1			
 			FY34117	TS547	h90 map2::ura4+ ade6-M216<<ade6+:map2(P4_4repeats) leu1 ura4-D18 sxa2::kanMX6		Seike, Taisuke	B-1	P1			
 			FY34118	TS549	h90 map2::ura4+ ade6-M216<<ade6+:map2(P6_4repeats) leu1 ura4-D18 sxa2::kanMX6		Seike, Taisuke	B-1	P1			

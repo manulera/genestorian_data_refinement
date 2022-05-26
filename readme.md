@@ -12,6 +12,19 @@ poetry install
 
 If this is the first time you install the dependencies for the project, this will create a new virtual environment inside a folder .venv in the project folder (see `poetry.toml` where it's configured that the virtual environment will be created in the containing folder). This is convenient to set the vscode settings (in the folder `.vscode`).
 
+From now on, if you want to use this environment you can either:
+
+* Call python by doing `poetry run python ...` everytime you run something.
+* Activate the environment by running `python shell`.
+
+### Working with notebooks
+
+You can add the virtual environment that you created to the jupyter kernel by running:
+
+```
+poetry run python -m ipykernel install --user
+```
+
 ## Getting the data
 
 ### Strain lists
@@ -49,4 +62,3 @@ It has 5 columns:
 3. Allele name (if we are lucky we find it in the `genotype` column in `data/strains.tsv`)
 4. Description (some info about the allele sequence). For now we won't use it.
 5. Expression (expression level in the experiment. In general reflects a change in the promoter.). For now we won't use it.
-
