@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "genestorian_data_refinement"
+version = "0.1.0"
+description = "a python application to interpret genotypes from strain lists"
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.27.1"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^4.0.1"
+autopep8 = "^1.6.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
