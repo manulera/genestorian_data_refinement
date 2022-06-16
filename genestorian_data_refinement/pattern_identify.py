@@ -11,26 +11,29 @@ markers = ['kanr','kanmx6','kanmx4','kanmx','hygr','hyg','hphmx','hphr','hph','n
 tags = ['tdtomato','megfp','egfp','gfp','mcherry','cfp','spmneongreen','mneongreen','2xyfp','myfp','yfp']
 
 class Analyse():
-    def __init__(self, in_path, out_path):
-        self.in_path = in_path
-        self.out_path = out_path
+    def __init__(self):
+        pass
  
-    def convert_to_tsv(self):
-        read_file = pd.read_excel(self.in_path)
-        read_file.to_csv(self.out_path, sep = '\t')
+    def convert_to_tsv(self, in_path, out_path):
+        read_file = pd.read_excel(in_path)
+        read_file.to_csv(out_path, sep = '\t')
         return None
-
-    def extract_allele_names(self):
-        allele_names = set([])
-        data = pd.read_csv('trail.tsv', sep='\t')
+    
+    def col_name(self, input_path):
+        data = pd.read_csv(input_path, sep='\t')
         list1 = np.array(data.columns)
         if 'genotype' in list1:
-            usecol = 'genotype'
+            col_name = 'genotype'
         if 'Genotype' in list1:
-            usecol = 'Genotype'
+            col_name = 'Genotype'
         if 'GENOTYPE' in list1:
-            usecol = 'GENOTYPE'
-        data = pd.read_csv('trail.tsv', sep = '\t', usecols= [usecol])
+            col_name = 'GENOTYPE'
+        return col_name
+
+    def extract_allele_names(self, input_path):
+        allele_names = set([])
+        usecol = self.col_name(input_path)
+        data = pd.read_csv(input_path, sep = '\t', usecols= [usecol])
         data[usecol] = data[usecol].astype(str)
         for genotype in data[usecol]:
             allele_names.update([a.lower() for a in  re.split("\s+",genotype)]) 
@@ -191,6 +194,17 @@ def count_most_common_consecutive_N_characters(file, n):
 
     return Counter(all_occurrences)  
 
+def find(text, file):
+    occurences = []
+    with open(file,'rt') as ins:
+        usecol = Analyse().col_name(file)
+        data = pd.read_csv(ins, sep='\t', usecols = [usecol])
+        data[usecol] = data[usecol].astype(str)
+        for genotype in data[usecol]:
+            if text in genotype.lower(): # if the username shall be on column 3 (-> index 2)
+                occurences.append(genotype)
+    
+    return occurences
 
 
 
