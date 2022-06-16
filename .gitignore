@@ -2,3 +2,10 @@
 .DS_Store
 **/dummy*.txt
 **/.ipynb_checkpoints
+
+# Do not include the strain lists from labs
+/Lab_strains/**/*.xlsx
+/Lab_strains/**/*.tsv
+/Lab_strains/**/*.csv
+/Lab_strains/**/*.fp7
+/Lab_strains/**/*.tab
