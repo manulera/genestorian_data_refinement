@@ -1,1 +1,0 @@
-markers = ['kanr','kanmx6','kanmx4','kanmx','hygr','hyg','hphmx','hphr','hph','natmx','natr','nat','kan','natmx6',r'\d*myc',r'\d*flag\d*']
