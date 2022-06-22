@@ -1,0 +1,17 @@
+[promoter]
+
+[promoter.pnmt1]
+name = 'pnmt1'
+ref = 'https://xyz.com'
+synonyms = ['p3nmt1']
+
+[promoter.pnmt81]
+name = 'pnmt81'
+ref = 'https://xyz.com'
+synonyms = ['p3nmt81']
+
+# In special case, where only one lab would need it
+[promoter.pnmt81.conflicting_synonyms]
+dey_lab = ['p81']
+
+# Format before saving!
