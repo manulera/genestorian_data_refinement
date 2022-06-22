@@ -1,10 +1,14 @@
 import pandas as pd
 import re
 import numpy as np
-import json
 from collections import Counter
+from Identifiers.markers import markers
+from Identifiers.tags import tags
 
-
+#TODO: Move these to separate files
+promoters = [r'p?nmt\d*',r'p?adh\d*',r'prep\d*']
+markers = ['kanr','kanmx6','kanmx4','kanmx','hygr','hyg','hphmx','hphr','hph','natmx','natr','nat','kan','natmx6',r'\d*myc',r'\d*flag\d*']
+tags = ['tdtomato','megfp','egfp','gfp','mcherry','cfp','spmneongreen','mneongreen','2xyfp','myfp','yfp']
 
 class Analyse():
     def __init__(self):
@@ -100,23 +104,10 @@ class Analyse():
                 alleles_with_replaced_name[i]=re.sub(identifier, IDENTIFIER, alleles_with_replaced_name[i])
         return alleles_with_replaced_name
 
-    def load_identifiers(self):
-        f = open('identifiers\identifier.json')
-        data = json.load(f)
-        tags = []
-        promoters = []
-        markers = []
-        for identifier in data['tags']:
-            tags.append(identifier)
-        for identifier in data['markers']:
-            markers.append(identifier)
-        for identifier in data['promoters']:
-            promoters.append(identifier)
-        return tags, markers, promoters
-            
-    
+
 
     def replace_allele_names(self):
+        print('def')
         alleles_with_replaced_name = []
         allele_names  = self.extract_allele_names()
 
@@ -161,7 +152,6 @@ class Analyse():
        
             alleles_with_replaced_name.append(genotype_allele)
         
-        tags, markers, promoters = self.load_identifiers()
         #replace markers, tags and promoters
         alleles_with_replaced_name = self.replace_entity(alleles_with_replaced_name,markers, 'MARKER')
         alleles_with_replaced_name = self.replace_entity(alleles_with_replaced_name,tags, 'TAG')
@@ -178,6 +168,7 @@ class Analyse():
 
     def identify_common_pattern(self):
         alleles_with_replaced_name = self.replace_allele_names()
+        print('abc')
         counted = Counter(alleles_with_replaced_name)
         # Sort
         result = counted.most_common()
