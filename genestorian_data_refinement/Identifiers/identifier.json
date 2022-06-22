@@ -1,0 +1,38 @@
+{
+    "promoters": [
+        "p?nmt\\d*",
+        "p?adh\\d*",
+        "prep\\d*"
+    ],
+    "markers": [
+        "kanr",
+        "kanmx6",
+        "kanmx4",
+        "kanmx",
+        "hygr",
+        "hyg",
+        "hphmx",
+        "hphr",
+        "hph",
+        "natmx",
+        "natr",
+        "nat",
+        "kan",
+        "natmx6",
+        "\\d*myc",
+        "\\d*flag\\d*"
+    ],
+    "tags": [
+        "tdtomato",
+        "megfp",
+        "egfp",
+        "gfp",
+        "mcherry",
+        "cfp",
+        "spmneongreen",
+        "mneongreen",
+        "2xyfp",
+        "myfp",
+        "yfp"
+    ]
+}
