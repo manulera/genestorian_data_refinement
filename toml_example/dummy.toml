@@ -1,0 +1,35 @@
+
+# name = cls1-36-GFP:Nat
+# find_elements(name,allele_list)
+# Alleles > markers / tags / promoters / > genes
+# No regex for now
+
+# Order of replacements:
+# 1. cls1-3, cls1-36 ==> cls1-36-GFP:Nat => cls1-36 should match, and not cls1-3
+
+[allele]
+
+[allele."cls1-36"]
+# Allele name
+name = 'cls1-36'
+# Unique identifier of the gene
+ref = 'SPACXXXX'
+
+[tag]
+
+[tag.GFP]
+name = 'GFP'
+ref = 'haskjdh'
+
+[marker]
+
+[marker.NatMx6]
+name = 'NatMx6'
+synonyms = ['nat', 'natmx', 'natmx4', 'natr']
+
+[gene]
+
+[gene."SPACXXXX"]
+name = 'peg1'
+ref = 'SPACXXXX'
+synonyms = ['cls1']
