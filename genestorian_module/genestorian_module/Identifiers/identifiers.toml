@@ -1,0 +1,156 @@
+[promoter]
+
+    [promoter.pnmt1]
+        name = 'pnmt1'
+        ref = 'https://xyz.com'
+        synonyms = ['p3nmt1']
+
+    [promoter.pnmt81]
+        name = 'pnmt81'
+        ref = 'https://xyz.com'
+        synonyms = ['p3nmt81']
+
+    #regex
+    [promoter."p?nmt\\d*"]
+       
+
+    [promoter."p?adh\\d*"]
+
+    [promoter."prep\\d*"]
+
+    # In special case, where only one lab would need it
+    [promoter.pnmt81.conflicting_synonyms]
+    dey_lab = ['p81']
+
+[marker]
+    [marker.kanmx6]
+        name = 'kanmx6'
+        ref = ''
+        synonyms = []
+
+    [marker.kanmx4]
+        name = 'kanmx6'
+        ref = ''
+        synonyms = []
+    
+    [marker.kanmx]
+        name = 'kanmx'
+        ref = ''
+        synonyms = []
+
+    [marker.kanr]
+        name = 'kanr'
+        ref = ''
+        synonyms = []
+    
+    [marker.hygr]
+        name = 'hygr'
+        ref = ''
+        synonyms = []
+
+    [marker.hyg]
+        name = 'hyg'
+        ref = ''
+        synonyms = []
+    
+    [marker.hphmx]
+        name = 'hphmx'
+        ref = ''
+        synonyms = []
+    
+    [marker.hphr]
+        name = 'hphr'
+        ref = ''
+        synonyms = []
+    
+    [marker.hph]
+        name = 'hph'
+        ref = ''
+        synonyms = []
+
+    [marker.natmx6]
+        name = 'natmx6'
+        ref = ''
+        synonyms = []
+
+    [marker.natmx]
+        name = 'natmx'
+        ref = ''
+        synonyms = []
+    
+    [marker.natr]
+        name = 'nat'
+        ref = ''
+        synonyms = []
+
+    [marker.nat]
+        name = 'nat'
+        ref = ''
+        synonyms = []
+    
+    [marker.kan]
+        name = 'kan'
+        ref = ''
+        synonyms = []
+
+    #regex 
+    [marker."\\d*myc"]
+    [marker."\\d*flag\\d*"]
+    
+
+
+[tag]
+    [tag.tdtomato]
+        name = 'tdtomato'
+        ref = ''
+        synonyms = []
+
+    [tag.megfp]
+        name = 'megfp'
+        ref = ''
+        synonyms = []
+    
+    [tag.egfp]
+        name = 'egfp'
+        ref = ''
+        synonyms = []
+
+    [tag.gfp]
+        name = 'gfp'
+        ref = ''
+        synonyms = []
+    
+    [tag.mcherry]
+        name = 'mcherry'
+        ref = ''
+        synonyms = []
+
+    [tag.cfp]
+        name = 'cfp'
+        ref = ''
+        synonyms = []
+    
+    [tag.spmneongreen]
+        name = 'spmneongreen'
+        ref = ''
+        synonyms = []
+
+    [tag.mneongreen]
+        name = 'mneongreen'
+        ref = ''
+        synonyms = []
+    
+    [tag.2xyfp]
+        name = '2xyfp'
+        ref = ''
+        synonyms = []
+
+    [tag.myfp]
+        name = 'myfp'
+        ref = ''
+        synonyms = []
+    
+    [tag.yfp]
+        name = 'yfp'
+        ref = ''
+        synonyms = []
