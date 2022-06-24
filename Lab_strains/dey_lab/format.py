@@ -1,4 +1,5 @@
 # %%
+import json
 import re
 import pandas as pd
 import toml
@@ -73,7 +74,10 @@ with open('../../data/gene_IDs_names.tsv') as ins:
                     gene_dictionary[fields[2]] = fields[0]
 
 # %%
-for genotype in genotype_dict.keys():
+
+
+def is_allele(allele, allele_dict, gene_dictionary):
+    alleles = []
     for allele in genotype_dict[genotype]:
         for name in re.findall(r'[a-z]{3}\d+', allele):
             if name in gene_names:
@@ -85,11 +89,24 @@ for genotype in genotype_dict.keys():
                             allele = allele.replace(
                                 published_allele.lower(), 'ALLELE')
                             allele_found = True
-
                             break
+
                 if not allele_found:
                     allele = allele.replace(name, 'GENE')
-
-            # genotype_dict.setdefault(genotype).append(allele)
+        alleles.append(allele)
+    return alleles
 
 # %%
+
+
+allele_dictonary = {}
+genotype_dictonary = {}
+for genotype in genotype_dict.keys():
+
+    allele_r = is_allele(genotype, allele_dict, gene_dictionary)
+    genotype_dictonary.update({genotype: allele_r})
+
+
+# %%
+with open('format.json', 'w') as fp:
+    json.dump(genotype_dictonary, fp, indent=3)
