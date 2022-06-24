@@ -24,7 +24,7 @@ synonyms = [ "kdm5",]
 [gene."SPAC1002.06c"]
 ref = "SPAC1002.06c"
 name = "bqt2"
-synonyms = [ "mug18,rec23",]
+synonyms = [ "mug18", "rec23",]
 
 [gene."SPAC1002.07c"]
 ref = "SPAC1002.07c"
@@ -120,7 +120,7 @@ name = "etd1"
 [gene."SPAC1006.09"]
 ref = "SPAC1006.09"
 name = "win1"
-synonyms = [ "SPAC1250.06c,SPAPJ730.01",]
+synonyms = [ "SPAC1250.06c", "SPAPJ730.01",]
 
 [gene."SPAC1039.01"]
 ref = "SPAC1039.01"
@@ -154,7 +154,7 @@ name = "isp5"
 [gene."SPAC1039.10"]
 ref = "SPAC1039.10"
 name = "mmf2"
-synonyms = [ "hpm1,SPAC922.01",]
+synonyms = [ "hpm1", "SPAC922.01",]
 
 [gene."SPAC1039.11c"]
 ref = "SPAC1039.11c"
@@ -199,12 +199,12 @@ name = "arp9"
 [gene."SPAC1071.07c"]
 ref = "SPAC1071.07c"
 name = "rps1502"
-synonyms = [ "rps15-2,rps15",]
+synonyms = [ "rps15-2", "rps15",]
 
 [gene."SPAC1071.08"]
 ref = "SPAC1071.08"
 name = "rpp203"
-synonyms = [ "rpp2-3,rla6,rpa2",]
+synonyms = [ "rpp2-3", "rla6", "rpa2",]
 
 [gene."SPAC1071.09c"]
 ref = "SPAC1071.09c"
@@ -285,7 +285,7 @@ name = "mug94"
 [gene."SPAC10F6.08c"]
 ref = "SPAC10F6.08c"
 name = "nht1"
-synonyms = [ "hap1,nhp10,nht10",]
+synonyms = [ "hap1", "nhp10", "nht10",]
 
 [gene."SPAC10F6.09c"]
 ref = "SPAC10F6.09c"
@@ -341,7 +341,7 @@ name = "cdc42"
 [gene."SPAC110.04c"]
 ref = "SPAC110.04c"
 name = "pss1"
-synonyms = [ "ssp1,SPAP14E8.01c",]
+synonyms = [ "ssp1", "SPAP14E8.01c",]
 
 [gene."SPAC110.06"]
 ref = "SPAC110.06"
@@ -454,7 +454,7 @@ ref = "SPAC11D3.20"
 [gene."SPAC11E3.01c"]
 ref = "SPAC11E3.01c"
 name = "swr1"
-synonyms = [ "SPAC2H10.03c,mod22",]
+synonyms = [ "SPAC2H10.03c", "mod22",]
 
 [gene."SPAC11E3.02c"]
 ref = "SPAC11E3.02c"
@@ -468,7 +468,7 @@ synonyms = [ "pcs1",]
 [gene."SPAC11E3.04c"]
 ref = "SPAC11E3.04c"
 name = "ubc13"
-synonyms = [ "spu13,sst5",]
+synonyms = [ "spu13", "sst5",]
 
 [gene."SPAC11E3.05"]
 ref = "SPAC11E3.05"
@@ -566,7 +566,7 @@ synonyms = [ "SPAC22F8.01",]
 [gene."SPAC1250.01"]
 ref = "SPAC1250.01"
 name = "snf21"
-synonyms = [ "SPAC29A4.21,brg1",]
+synonyms = [ "SPAC29A4.21", "brg1",]
 
 [gene."SPAC1250.02"]
 ref = "SPAC1250.02"
@@ -583,7 +583,7 @@ name = "atl1"
 [gene."SPAC1250.05"]
 ref = "SPAC1250.05"
 name = "rpl3002"
-synonyms = [ "rpl30-2,rpl30",]
+synonyms = [ "rpl30-2", "rpl30",]
 
 [gene."SPAC1250.07"]
 ref = "SPAC1250.07"
@@ -617,7 +617,7 @@ name = "tah18"
 [gene."SPAC12B10.01c"]
 ref = "SPAC12B10.01c"
 name = ""
-synonyms = [ "SPAC31F12.02c,SPAC637.15c",]
+synonyms = [ "SPAC31F12.02c", "SPAC637.15c",]
 
 [gene."SPAC12B10.02c"]
 ref = "SPAC12B10.02c"
@@ -745,7 +745,7 @@ synonyms = [ "cin2",]
 [gene."SPAC12G12.15"]
 ref = "SPAC12G12.15"
 name = "sif3"
-synonyms = [ "mrx102,mrx10",]
+synonyms = [ "mrx102", "mrx10",]
 
 [gene."SPAC12G12.16c"]
 ref = "SPAC12G12.16c"
@@ -759,7 +759,7 @@ name = "nce101"
 [gene."SPAC1327.01c"]
 ref = "SPAC1327.01c"
 name = ""
-synonyms = [ "SPAC1783.09c,SPAC18G6.16c",]
+synonyms = [ "SPAC1783.09c", "SPAC18G6.16c",]
 
 [gene."SPAC139.01c"]
 ref = "SPAC139.01c"
@@ -784,7 +784,7 @@ ref = "SPAC139.05"
 [gene."SPAC139.06"]
 ref = "SPAC139.06"
 name = "hat1"
-synonyms = [ "SPAC23C4.01,kat1",]
+synonyms = [ "SPAC23C4.01", "kat1",]
 
 [gene."SPAC1399.01c"]
 ref = "SPAC1399.01c"
@@ -819,7 +819,7 @@ name = "erg11"
 [gene."SPAC13A11.03"]
 ref = "SPAC13A11.03"
 name = "mcp7"
-synonyms = [ "mug32,mnd1",]
+synonyms = [ "mug32", "mnd1",]
 
 [gene."SPAC13A11.04c"]
 ref = "SPAC13A11.04c"
@@ -828,7 +828,7 @@ name = "ubp8"
 [gene."SPAC13A11.05"]
 ref = "SPAC13A11.05"
 name = "ysp2"
-synonyms = [ "yspII,ppp18",]
+synonyms = [ "yspII", "ppp18",]
 
 [gene."SPAC13A11.06"]
 ref = "SPAC13A11.06"
@@ -905,7 +905,7 @@ name = "gld1"
 [gene."SPAC13F5.04c"]
 ref = "SPAC13F5.04c"
 name = "vta1"
-synonyms = [ "vts1,new6,SPAC13F5.08",]
+synonyms = [ "vts1", "new6", "SPAC13F5.08",]
 
 [gene."SPAC13F5.05"]
 ref = "SPAC13F5.05"
@@ -927,7 +927,7 @@ synonyms = [ "SPAC5H10.14c",]
 [gene."SPAC13G6.02c"]
 ref = "SPAC13G6.02c"
 name = "rps101"
-synonyms = [ "rps1-1,rps3a-1",]
+synonyms = [ "rps1-1", "rps3a-1",]
 
 [gene."SPAC13G6.03"]
 ref = "SPAC13G6.03"
@@ -948,7 +948,7 @@ name = "gcv2"
 [gene."SPAC13G6.07c"]
 ref = "SPAC13G6.07c"
 name = "rps601"
-synonyms = [ "rps6-1,p27,rps6",]
+synonyms = [ "rps6-1", "p27", "rps6",]
 
 [gene."SPAC13G6.08"]
 ref = "SPAC13G6.08"
@@ -980,7 +980,7 @@ synonyms = [ "SPAC24B11.02",]
 [gene."SPAC13G6.14"]
 ref = "SPAC13G6.14"
 name = "aps1"
-synonyms = [ "SPAC24B11.03,stw1",]
+synonyms = [ "SPAC24B11.03", "stw1",]
 
 [gene."SPAC13G6.15c"]
 ref = "SPAC13G6.15c"
@@ -1028,7 +1028,7 @@ ref = "SPAC13G7.09c"
 [gene."SPAC13G7.10"]
 ref = "SPAC13G7.10"
 name = "teb1"
-synonyms = [ "mug152,tay1,spX",]
+synonyms = [ "mug152", "tay1", "spX",]
 
 [gene."SPAC13G7.11"]
 ref = "SPAC13G7.11"
@@ -1072,12 +1072,12 @@ name = "cct5"
 [gene."SPAC1420.03"]
 ref = "SPAC1420.03"
 name = "rpn501"
-synonyms = [ "rpn5-a,rpn5",]
+synonyms = [ "rpn5-a", "rpn5",]
 
 [gene."SPAC1420.04c"]
 ref = "SPAC1420.04c"
 name = "cox1101"
-synonyms = [ "cox11,SPAPB17E12.01c",]
+synonyms = [ "cox11", "SPAPB17E12.01c",]
 
 [gene."SPAC144.01"]
 ref = "SPAC144.01"
@@ -1089,7 +1089,7 @@ name = "iec1"
 [gene."SPAC144.03"]
 ref = "SPAC144.03"
 name = "ade2"
-synonyms = [ "min10,min3",]
+synonyms = [ "min10", "min3",]
 
 [gene."SPAC144.04c"]
 ref = "SPAC144.04c"
@@ -1122,7 +1122,7 @@ synonyms = [ "mug59",]
 [gene."SPAC144.11"]
 ref = "SPAC144.11"
 name = "rps1102"
-synonyms = [ "rps11-2,rps11",]
+synonyms = [ "rps11-2", "rps11",]
 
 [gene."SPAC144.12"]
 ref = "SPAC144.12"
@@ -1155,7 +1155,7 @@ name = "vrg4"
 [gene."SPAC144.19"]
 ref = "SPAC144.19"
 name = "prl46"
-synonyms = [ "SPNCRNA.46,ORF18274",]
+synonyms = [ "SPNCRNA.46", "ORF18274",]
 
 [gene."SPAC1486.01"]
 ref = "SPAC1486.01"
@@ -1177,7 +1177,7 @@ name = "alm1"
 [gene."SPAC1486.05"]
 ref = "SPAC1486.05"
 name = "nup189"
-synonyms = [ "nup98,nup96,nup189N,nup189C",]
+synonyms = [ "nup98", "nup96", "nup189N", "nup189C",]
 
 [gene."SPAC1486.06"]
 ref = "SPAC1486.06"
@@ -1199,7 +1199,7 @@ name = "nob1"
 [gene."SPAC1486.10"]
 ref = "SPAC1486.10"
 name = "thi1"
-synonyms = [ "ntf1,SPAC6G10.01",]
+synonyms = [ "ntf1", "SPAC6G10.01",]
 
 [gene."SPAC1486.11"]
 ref = "SPAC1486.11"
@@ -1226,7 +1226,7 @@ ref = "SPAC14C4.04"
 [gene."SPAC14C4.05c"]
 ref = "SPAC14C4.05c"
 name = "man1"
-synonyms = [ "heh2,mug61",]
+synonyms = [ "heh2", "mug61",]
 
 [gene."SPAC14C4.06c"]
 ref = "SPAC14C4.06c"
@@ -1266,7 +1266,7 @@ name = "atp1"
 [gene."SPAC14C4.15c"]
 ref = "SPAC14C4.15c"
 name = "dpp1"
-synonyms = [ "SPAPJ760.01c,ppp21",]
+synonyms = [ "SPAPJ760.01c", "ppp21",]
 
 [gene."SPAC14C4.16"]
 ref = "SPAC14C4.16"
@@ -1310,7 +1310,7 @@ name = "cgr1"
 [gene."SPAC1556.06"]
 ref = "SPAC1556.06"
 name = "meu1"
-synonyms = [ "meu1-1,SPAC1556.06a,meu1-2,SPAC1556.06b,SPAC1556.06.1",]
+synonyms = [ "meu1-1", "SPAC1556.06a", "meu1-2", "SPAC1556.06b", "SPAC1556.06.1",]
 
 [gene."SPAC1556.07"]
 ref = "SPAC1556.07"
@@ -1352,7 +1352,7 @@ name = "knd1"
 [gene."SPAC1565.08"]
 ref = "SPAC1565.08"
 name = "cdc48"
-synonyms = [ "SPAC6F12.01,dsc6",]
+synonyms = [ "SPAC6F12.01", "dsc6",]
 
 [gene."SPAC15A10.01"]
 ref = "SPAC15A10.01"
@@ -1414,7 +1414,7 @@ name = "sgo2"
 [gene."SPAC15A10.16"]
 ref = "SPAC15A10.16"
 name = "bud6"
-synonyms = [ "aip3,fat1,SPAC15E1.01",]
+synonyms = [ "aip3", "fat1", "SPAC15E1.01",]
 
 [gene."SPAC15A10.17"]
 ref = "SPAC15A10.17"
@@ -1471,7 +1471,7 @@ name = "seh1"
 [gene."SPAC15F9.03c"]
 ref = "SPAC15F9.03c"
 name = "nxt2"
-synonyms = [ "ntf2,nft2,SPAC1B9.01c",]
+synonyms = [ "ntf2", "nft2", "SPAC1B9.01c",]
 
 [gene."SPAC16.01"]
 ref = "SPAC16.01"
@@ -1496,7 +1496,7 @@ name = "sfp1"
 [gene."SPAC1610.01"]
 ref = "SPAC1610.01"
 name = "saf5"
-synonyms = [ "SPAC17A5.17,icln,lot5",]
+synonyms = [ "SPAC17A5.17", "icln", "lot5",]
 
 [gene."SPAC1610.02c"]
 ref = "SPAC1610.02c"
@@ -1518,7 +1518,7 @@ name = "por1"
 [gene."SPAC1639.01c"]
 ref = "SPAC1639.01c"
 name = "elo1"
-synonyms = [ "SPAC806.09c,elo2",]
+synonyms = [ "SPAC806.09c", "elo2",]
 
 [gene."SPAC1639.02c"]
 ref = "SPAC1639.02c"
@@ -1569,7 +1569,7 @@ name = "pga1"
 [gene."SPAC1687.01"]
 ref = "SPAC1687.01"
 name = "rpc19"
-synonyms = [ "rpa17,SPAPYUL23.01",]
+synonyms = [ "rpa17", "SPAPYUL23.01",]
 
 [gene."SPAC1687.02"]
 ref = "SPAC1687.02"
@@ -1687,7 +1687,7 @@ name = "nse2"
 [gene."SPAC16A10.07c"]
 ref = "SPAC16A10.07c"
 name = "taz1"
-synonyms = [ "myb1,myb,lot3",]
+synonyms = [ "myb1", "myb", "lot3",]
 
 [gene."SPAC16A10.08c"]
 ref = "SPAC16A10.08c"
@@ -1723,7 +1723,7 @@ name = "upf1"
 [gene."SPAC16C9.07"]
 ref = "SPAC16C9.07"
 name = "pom2"
-synonyms = [ "ppk5,SPAC2G11.01,mug189",]
+synonyms = [ "ppk5", "SPAC2G11.01", "mug189",]
 
 [gene."SPAC16E8.01"]
 ref = "SPAC16E8.01"
@@ -1802,7 +1802,7 @@ ref = "SPAC16E8.18"
 [gene."SPAC16E8.18c"]
 ref = "SPAC16E8.18c"
 name = "tam5"
-synonyms = [ "SPNG664,SPNGAF2",]
+synonyms = [ "SPNG664", "SPNGAF2",]
 
 [gene."SPAC1705.02"]
 ref = "SPAC1705.02"
@@ -1933,7 +1933,7 @@ ref = "SPAC1786.04"
 [gene."SPAC17A2.01"]
 ref = "SPAC17A2.01"
 name = "bsu1"
-synonyms = [ "sod1,car1,SPAC1B1.05",]
+synonyms = [ "sod1", "car1", "SPAC1B1.05",]
 
 [gene."SPAC17A2.02c"]
 ref = "SPAC17A2.02c"
@@ -1996,7 +1996,7 @@ name = "dbr1"
 [gene."SPAC17A5.03"]
 ref = "SPAC17A5.03"
 name = "rpl301"
-synonyms = [ "rpl3-1,rpl3",]
+synonyms = [ "rpl3-1", "rpl3",]
 
 [gene."SPAC17A5.04c"]
 ref = "SPAC17A5.04c"
@@ -2018,7 +2018,7 @@ name = "ulp2"
 [gene."SPAC17A5.08"]
 ref = "SPAC17A5.08"
 name = "erp2"
-synonyms = [ "erp3,erp4",]
+synonyms = [ "erp3", "erp4",]
 
 [gene."SPAC17A5.09c"]
 ref = "SPAC17A5.09c"
@@ -2065,7 +2065,7 @@ ref = "SPAC17A5.19"
 [gene."SPAC17C9.01c"]
 ref = "SPAC17C9.01c"
 name = "nuc2"
-synonyms = [ "apc3,SPAC1851.01",]
+synonyms = [ "apc3", "SPAC1851.01",]
 
 [gene."SPAC17C9.02c"]
 ref = "SPAC17C9.02c"
@@ -2078,7 +2078,7 @@ name = "tif471"
 [gene."SPAC17C9.05c"]
 ref = "SPAC17C9.05c"
 name = "pmc3"
-synonyms = [ "prk1,med27",]
+synonyms = [ "prk1", "med27",]
 
 [gene."SPAC17C9.06"]
 ref = "SPAC17C9.06"
@@ -2091,7 +2091,7 @@ name = "alg8"
 [gene."SPAC17C9.08"]
 ref = "SPAC17C9.08"
 name = "pnu1"
-synonyms = [ "nuc1,end1",]
+synonyms = [ "nuc1", "end1",]
 
 [gene."SPAC17C9.09c"]
 ref = "SPAC17C9.09c"
@@ -2133,7 +2133,7 @@ synonyms = [ "SPAC1834.12",]
 [gene."SPAC17D4.02"]
 ref = "SPAC17D4.02"
 name = "cdc45"
-synonyms = [ "sna41,goa1",]
+synonyms = [ "sna41", "goa1",]
 
 [gene."SPAC17D4.03c"]
 ref = "SPAC17D4.03c"
@@ -2142,7 +2142,7 @@ name = "cis4"
 [gene."SPAC17D4.04"]
 ref = "SPAC17D4.04"
 name = "trm401"
-synonyms = [ "SPAC458.01,trm4,trm4a",]
+synonyms = [ "SPAC458.01", "trm4", "trm4a",]
 
 [gene."SPAC17G6.02c"]
 ref = "SPAC17G6.02c"
@@ -2162,7 +2162,7 @@ name = "bro1"
 [gene."SPAC17G6.06"]
 ref = "SPAC17G6.06"
 name = "rps2401"
-synonyms = [ "rps24-1,rps24",]
+synonyms = [ "rps24-1", "rps24",]
 
 [gene."SPAC17G6.07c"]
 ref = "SPAC17G6.07c"
@@ -2421,7 +2421,7 @@ ref = "SPAC1805.16c"
 [gene."SPAC1805.17"]
 ref = "SPAC1805.17"
 name = "crm1"
-synonyms = [ "caf2,SPAC1B2.01,bar1,mts10,caf7",]
+synonyms = [ "caf2", "SPAC1B2.01", "bar1", "mts10", "caf7",]
 
 [gene."SPAC1805.18"]
 ref = "SPAC1805.18"
@@ -2492,7 +2492,7 @@ name = "ckb1"
 [gene."SPAC1851.04c"]
 ref = "SPAC1851.04c"
 name = "ric1"
-synonyms = [ "SPAC27D7.01c,sat4,vas3",]
+synonyms = [ "SPAC27D7.01c", "sat4", "vas3",]
 
 [gene."SPAC186.01"]
 ref = "SPAC186.01"
@@ -2546,7 +2546,7 @@ name = "lcp5"
 [gene."SPAC18B11.07c"]
 ref = "SPAC18B11.07c"
 name = "rhp6"
-synonyms = [ "ubc2,sng1,rad6",]
+synonyms = [ "ubc2", "sng1", "rad6",]
 
 [gene."SPAC18B11.08c"]
 ref = "SPAC18B11.08c"
@@ -2666,7 +2666,7 @@ synonyms = [ "ure1",]
 [gene."SPAC1952.12c"]
 ref = "SPAC1952.12c"
 name = "csn71"
-synonyms = [ "csn7a,csn7",]
+synonyms = [ "csn7a", "csn7",]
 
 [gene."SPAC1952.13"]
 ref = "SPAC1952.13"
@@ -2694,7 +2694,7 @@ synonyms = [ "SPAC890.01c",]
 [gene."SPAC19A8.01c"]
 ref = "SPAC19A8.01c"
 name = "sec73"
-synonyms = [ "sec7c,SPAC23H3.01",]
+synonyms = [ "sec7c", "SPAC23H3.01",]
 
 [gene."SPAC19A8.02"]
 ref = "SPAC19A8.02"
@@ -2811,12 +2811,12 @@ name = "bud20"
 [gene."SPAC19B12.12c"]
 ref = "SPAC19B12.12c"
 name = "yip11"
-synonyms = [ "yip1,yip1-a",]
+synonyms = [ "yip1", "yip1-a",]
 
 [gene."SPAC19B12.13"]
 ref = "SPAC19B12.13"
 name = "cox1102"
-synonyms = [ "cox11,cox11-b,SPAPB8E5.01",]
+synonyms = [ "cox11", "cox11-b", "SPAPB8E5.01",]
 
 [gene."SPAC19D5.01"]
 ref = "SPAC19D5.01"
@@ -2875,7 +2875,7 @@ synonyms = [ "SPAC57A10.01",]
 [gene."SPAC19G12.01c"]
 ref = "SPAC19G12.01c"
 name = "cut20"
-synonyms = [ "lid1,apc4,SPAPJ698.04c",]
+synonyms = [ "lid1", "apc4", "SPAPJ698.04c",]
 
 [gene."SPAC19G12.02c"]
 ref = "SPAC19G12.02c"
@@ -2937,12 +2937,12 @@ name = "tpp1"
 [gene."SPAC19G12.16c"]
 ref = "SPAC19G12.16c"
 name = "adg2"
-synonyms = [ "SPAC23A1.01c,mug46",]
+synonyms = [ "SPAC23A1.01c", "mug46",]
 
 [gene."SPAC19G12.17"]
 ref = "SPAC19G12.17"
 name = "erh1"
-synonyms = [ "new10,iss6",]
+synonyms = [ "new10", "iss6",]
 
 [gene."SPAC1A6.01c"]
 ref = "SPAC1A6.01c"
@@ -3023,7 +3023,7 @@ name = "cox6"
 [gene."SPAC1B2.05"]
 ref = "SPAC1B2.05"
 name = "mcm5"
-synonyms = [ "nda4,SPAC3F10.01",]
+synonyms = [ "nda4", "SPAC3F10.01",]
 
 [gene."SPAC1B2.06"]
 ref = "SPAC1B2.06"
@@ -3160,12 +3160,12 @@ synonyms = [ "kic1",]
 [gene."SPAC1D4.12"]
 ref = "SPAC1D4.12"
 name = "rad15"
-synonyms = [ "rhp3,rad5",]
+synonyms = [ "rhp3", "rad5",]
 
 [gene."SPAC1D4.13"]
 ref = "SPAC1D4.13"
 name = "byr1"
-synonyms = [ "ste1,ste3",]
+synonyms = [ "ste1", "ste3",]
 
 [gene."SPAC1D4.14"]
 ref = "SPAC1D4.14"
@@ -3175,7 +3175,7 @@ synonyms = [ "SPAC22F3.14c",]
 [gene."SPAC1F12.02c"]
 ref = "SPAC1F12.02c"
 name = "tma19"
-synonyms = [ "p23fy,tpt1",]
+synonyms = [ "p23fy", "tpt1",]
 
 [gene."SPAC1F12.04c"]
 ref = "SPAC1F12.04c"
@@ -3332,12 +3332,12 @@ ref = "SPAC1F7.11c"
 [gene."SPAC1F7.12"]
 ref = "SPAC1F7.12"
 name = "yak3"
-synonyms = [ "yakC,SPAC21E11.01",]
+synonyms = [ "yakC", "SPAC21E11.01",]
 
 [gene."SPAC1F7.13c"]
 ref = "SPAC1F7.13c"
 name = "rpl801"
-synonyms = [ "rpl8-1,rpl18,rpk5a,rpl2-1,SPAC21E11.02c,rpk5",]
+synonyms = [ "rpl8-1", "rpl18", "rpk5a", "rpl2-1", "SPAC21E11.02c", "rpk5",]
 
 [gene."SPAC1F7.14c"]
 ref = "SPAC1F7.14c"
@@ -3361,7 +3361,7 @@ ref = "SPAC1F8.04c"
 [gene."SPAC1F8.05"]
 ref = "SPAC1F8.05"
 name = "isp3"
-synonyms = [ "meu4,p23,23K",]
+synonyms = [ "meu4", "p23", "23K",]
 
 [gene."SPAC1F8.06"]
 ref = "SPAC1F8.06"
@@ -3637,7 +3637,7 @@ synonyms = [ "tam1",]
 [gene."SPAC227.01c"]
 ref = "SPAC227.01c"
 name = "erd1"
-synonyms = [ "SPAPB21F2.04c,gmn2,sgm2",]
+synonyms = [ "SPAPB21F2.04c", "gmn2", "sgm2",]
 
 [gene."SPAC227.02c"]
 ref = "SPAC227.02c"
@@ -3717,7 +3717,7 @@ ref = "SPAC227.19c"
 [gene."SPAC22A12.01c"]
 ref = "SPAC22A12.01c"
 name = "pso2"
-synonyms = [ "snm1,SPAC56F8.17c",]
+synonyms = [ "snm1", "SPAC56F8.17c",]
 
 [gene."SPAC22A12.02c"]
 ref = "SPAC22A12.02c"
@@ -3730,7 +3730,7 @@ name = "csn4"
 [gene."SPAC22A12.04c"]
 ref = "SPAC22A12.04c"
 name = "rps2201"
-synonyms = [ "rps22-1,rps15a-1",]
+synonyms = [ "rps22-1", "rps15a-1",]
 
 [gene."SPAC22A12.05"]
 ref = "SPAC22A12.05"
@@ -3796,7 +3796,7 @@ ref = "SPAC22E12.02"
 [gene."SPAC22E12.03c"]
 ref = "SPAC22E12.03c"
 name = "sdj1"
-synonyms = [ "spDJ-1,hsp3106",]
+synonyms = [ "spDJ-1", "hsp3106",]
 
 [gene."SPAC22E12.04"]
 ref = "SPAC22E12.04"
@@ -3864,7 +3864,7 @@ name = "atf31"
 [gene."SPAC22F3.03c"]
 ref = "SPAC22F3.03c"
 name = "rdh54"
-synonyms = [ "tid1,mug34",]
+synonyms = [ "tid1", "mug34",]
 
 [gene."SPAC22F3.04"]
 ref = "SPAC22F3.04"
@@ -3890,12 +3890,12 @@ name = "rok1"
 [gene."SPAC22F3.09c"]
 ref = "SPAC22F3.09c"
 name = "res2"
-synonyms = [ "mcs1,pct1",]
+synonyms = [ "mcs1", "pct1",]
 
 [gene."SPAC22F3.10c"]
 ref = "SPAC22F3.10c"
 name = "gcs1"
-synonyms = [ "apd1,gsh1",]
+synonyms = [ "apd1", "gsh1",]
 
 [gene."SPAC22F3.11c"]
 ref = "SPAC22F3.11c"
@@ -3962,7 +3962,7 @@ name = "shf1"
 [gene."SPAC22G7.01c"]
 ref = "SPAC22G7.01c"
 name = "fra1"
-synonyms = [ "SPAPJ696.03c,ppp51",]
+synonyms = [ "SPAPJ696.03c", "ppp51",]
 
 [gene."SPAC22G7.02"]
 ref = "SPAC22G7.02"
@@ -4069,7 +4069,7 @@ ref = "SPAC22H12.03"
 [gene."SPAC22H12.04c"]
 ref = "SPAC22H12.04c"
 name = "rps102"
-synonyms = [ "rps1-2,rps3a-2",]
+synonyms = [ "rps1-2", "rps3a-2",]
 
 [gene."SPAC22H12.05c"]
 ref = "SPAC22H12.05c"
@@ -4104,7 +4104,7 @@ name = "rnf170"
 [gene."SPAC23A1.08c"]
 ref = "SPAC23A1.08c"
 name = "rpl3401"
-synonyms = [ "rpl34,rpl34-1",]
+synonyms = [ "rpl34", "rpl34-1",]
 
 [gene."SPAC23A1.09"]
 ref = "SPAC23A1.09"
@@ -4114,7 +4114,7 @@ synonyms = [ "Y14",]
 [gene."SPAC23A1.10"]
 ref = "SPAC23A1.10"
 name = "tef102"
-synonyms = [ "ef1a-b,efa1,EF-1aC",]
+synonyms = [ "ef1a-b", "efa1", "EF-1aC",]
 
 [gene."SPAC23A1.11"]
 ref = "SPAC23A1.11"
@@ -4288,12 +4288,12 @@ name = "atg15"
 [gene."SPAC23C4.17"]
 ref = "SPAC23C4.17"
 name = "trm402"
-synonyms = [ "trm4,trm4b",]
+synonyms = [ "trm4", "trm4b",]
 
 [gene."SPAC23C4.18c"]
 ref = "SPAC23C4.18c"
 name = "rad4"
-synonyms = [ "cut5,dre3,dpb11",]
+synonyms = [ "cut5", "dre3", "dpb11",]
 
 [gene."SPAC23C4.19"]
 ref = "SPAC23C4.19"
@@ -4369,7 +4369,7 @@ synonyms = [ "gaf2",]
 [gene."SPAC23E2.02"]
 ref = "SPAC23E2.02"
 name = "lsd2"
-synonyms = [ "swm2,saf140",]
+synonyms = [ "swm2", "saf140",]
 
 [gene."SPAC23E2.03c"]
 ref = "SPAC23E2.03c"
@@ -4546,7 +4546,7 @@ name = "not11"
 [gene."SPAC23H4.17c"]
 ref = "SPAC23H4.17c"
 name = "srb10"
-synonyms = [ "prk1,cdk8",]
+synonyms = [ "prk1", "cdk8",]
 
 [gene."SPAC23H4.18c"]
 ref = "SPAC23H4.18c"
@@ -4562,7 +4562,7 @@ ref = "SPAC24B11.05"
 [gene."SPAC24B11.06c"]
 ref = "SPAC24B11.06c"
 name = "sty1"
-synonyms = [ "spc1,phh1",]
+synonyms = [ "spc1", "phh1",]
 
 [gene."SPAC24B11.07c"]
 ref = "SPAC24B11.07c"
@@ -4619,7 +4619,7 @@ name = "aco1"
 [gene."SPAC24C9.07c"]
 ref = "SPAC24C9.07c"
 name = "bgs2"
-synonyms = [ "meu21,pgs2",]
+synonyms = [ "meu21", "pgs2",]
 
 [gene."SPAC24C9.08"]
 ref = "SPAC24C9.08"
@@ -4652,7 +4652,7 @@ synonyms = [ "mug141",]
 [gene."SPAC24C9.15c"]
 ref = "SPAC24C9.15c"
 name = "spn5"
-synonyms = [ "mde9,meu28",]
+synonyms = [ "mde9", "meu28",]
 
 [gene."SPAC24C9.16c"]
 ref = "SPAC24C9.16c"
@@ -4689,7 +4689,7 @@ synonyms = [ "mug175",]
 [gene."SPAC24H6.07"]
 ref = "SPAC24H6.07"
 name = "rps901"
-synonyms = [ "rps9-1,rps9a",]
+synonyms = [ "rps9-1", "rps9a",]
 
 [gene."SPAC24H6.08"]
 ref = "SPAC24H6.08"
@@ -4876,7 +4876,7 @@ name = "sqt1"
 [gene."SPAC25H1.09"]
 ref = "SPAC25H1.09"
 name = "mde5"
-synonyms = [ "meu30,SPAC4A8.01",]
+synonyms = [ "meu30", "SPAC4A8.01",]
 
 [gene."SPAC25H1.10c"]
 ref = "SPAC25H1.10c"
@@ -4899,7 +4899,7 @@ name = "rmi1"
 [gene."SPAC26A3.04"]
 ref = "SPAC26A3.04"
 name = "rpl2002"
-synonyms = [ "rpl20,rpl20-2",]
+synonyms = [ "rpl20", "rpl20-2",]
 
 [gene."SPAC26A3.05"]
 ref = "SPAC26A3.05"
@@ -4912,7 +4912,7 @@ name = "bud23"
 [gene."SPAC26A3.07c"]
 ref = "SPAC26A3.07c"
 name = "rpl1101"
-synonyms = [ "rpl11-1,rpl11",]
+synonyms = [ "rpl11-1", "rpl11",]
 
 [gene."SPAC26A3.08"]
 ref = "SPAC26A3.08"
@@ -4952,7 +4952,7 @@ name = "nsp1"
 [gene."SPAC26A3.16"]
 ref = "SPAC26A3.16"
 name = "dsk2"
-synonyms = [ "dph1,ucp5",]
+synonyms = [ "dph1", "ucp5",]
 
 [gene."SPAC26A3.17c"]
 ref = "SPAC26A3.17c"
@@ -5101,7 +5101,7 @@ ref = "SPAC27D7.11c"
 [gene."SPAC27D7.12c"]
 ref = "SPAC27D7.12c"
 name = "but1"
-synonyms = [ "SPAC27D7.12,mug107,prx",]
+synonyms = [ "SPAC27D7.12", "mug107", "prx",]
 
 [gene."SPAC27D7.13c"]
 ref = "SPAC27D7.13c"
@@ -5111,7 +5111,7 @@ synonyms = [ "SPAC637.01c",]
 [gene."SPAC27D7.14c"]
 ref = "SPAC27D7.14c"
 name = "tpr1"
-synonyms = [ "SPAC637.02c,ctr9",]
+synonyms = [ "SPAC637.02c", "ctr9",]
 
 [gene."SPAC27E2.01"]
 ref = "SPAC27E2.01"
@@ -5195,7 +5195,7 @@ name = "pdt1"
 [gene."SPAC27F1.09c"]
 ref = "SPAC27F1.09c"
 name = "prp10"
-synonyms = [ "sap155,SF3b155",]
+synonyms = [ "sap155", "SF3b155",]
 
 [gene."SPAC27F1.10"]
 ref = "SPAC27F1.10"
@@ -5259,7 +5259,7 @@ name = "srs1"
 [gene."SPAC29A4.16"]
 ref = "SPAC29A4.16"
 name = "hal4"
-synonyms = [ "sat4,ppk10",]
+synonyms = [ "sat4", "ppk10",]
 
 [gene."SPAC29A4.17c"]
 ref = "SPAC29A4.17c"
@@ -5341,7 +5341,7 @@ ref = "SPAC29B12.14c"
 [gene."SPAC29E6.01"]
 ref = "SPAC29E6.01"
 name = "pof11"
-synonyms = [ "SPAC30.05,mug156",]
+synonyms = [ "SPAC30.05", "mug156",]
 
 [gene."SPAC29E6.02"]
 ref = "SPAC29E6.02"
@@ -5361,7 +5361,7 @@ synonyms = [ "SPAC30.08",]
 [gene."SPAC29E6.05c"]
 ref = "SPAC29E6.05c"
 name = "mxr1"
-synonyms = [ "MsrA,SPAC30.09c",]
+synonyms = [ "MsrA", "SPAC30.09c",]
 
 [gene."SPAC29E6.06c"]
 ref = "SPAC29E6.06c"
@@ -5376,7 +5376,7 @@ synonyms = [ "SPAC30.11",]
 [gene."SPAC29E6.08"]
 ref = "SPAC29E6.08"
 name = "tbp1"
-synonyms = [ "tdf1,tbp,SPAC30.12",]
+synonyms = [ "tdf1", "tbp", "SPAC30.12",]
 
 [gene."SPAC29E6.09"]
 ref = "SPAC29E6.09"
@@ -5444,7 +5444,7 @@ name = "ubx2"
 [gene."SPAC2C4.16c"]
 ref = "SPAC2C4.16c"
 name = "rps801"
-synonyms = [ "rps8-1,rps8",]
+synonyms = [ "rps8-1", "rps8",]
 
 [gene."SPAC2C4.17c"]
 ref = "SPAC2C4.17c"
@@ -5453,7 +5453,7 @@ name = "msy2"
 [gene."SPAC2E12.02"]
 ref = "SPAC2E12.02"
 name = "hsf1"
-synonyms = [ "hstf,hsf",]
+synonyms = [ "hstf", "hsf",]
 
 [gene."SPAC2E12.03c"]
 ref = "SPAC2E12.03c"
@@ -5683,7 +5683,7 @@ name = "prh1"
 [gene."SPAC2G11.12"]
 ref = "SPAC2G11.12"
 name = "rqh1"
-synonyms = [ "hus2,rad12,rec9",]
+synonyms = [ "hus2", "rad12", "rec9",]
 
 [gene."SPAC2G11.13"]
 ref = "SPAC2G11.13"
@@ -5692,12 +5692,12 @@ name = "atg22"
 [gene."SPAC2G11.14"]
 ref = "SPAC2G11.14"
 name = "taf1"
-synonyms = [ "taf111,taf130,kat4",]
+synonyms = [ "taf111", "taf130", "kat4",]
 
 [gene."SPAC2G11.15c"]
 ref = "SPAC2G11.15c"
 name = "tgs1"
-synonyms = [ "SPAC521.01c,tgs2",]
+synonyms = [ "SPAC521.01c", "tgs2",]
 
 [gene."SPAC2H10.01"]
 ref = "SPAC2H10.01"
@@ -5721,7 +5721,7 @@ name = "kti12"
 [gene."SPAC30.03c"]
 ref = "SPAC30.03c"
 name = "tsn1"
-synonyms = [ "tsn,mug90",]
+synonyms = [ "tsn", "mug90",]
 
 [gene."SPAC30.04c"]
 ref = "SPAC30.04c"
@@ -5786,7 +5786,7 @@ name = "nth1"
 [gene."SPAC30D11.08c"]
 ref = "SPAC30D11.08c"
 name = "phf2"
-synonyms = [ "swp2,saf60",]
+synonyms = [ "swp2", "saf60",]
 
 [gene."SPAC30D11.09"]
 ref = "SPAC30D11.09"
@@ -5795,7 +5795,7 @@ name = "cwf19"
 [gene."SPAC30D11.10"]
 ref = "SPAC30D11.10"
 name = "rad52"
-synonyms = [ "rad22A,rad22",]
+synonyms = [ "rad22A", "rad22",]
 
 [gene."SPAC30D11.11"]
 ref = "SPAC30D11.11"
@@ -5804,7 +5804,7 @@ name = "izh3"
 [gene."SPAC30D11.12"]
 ref = "SPAC30D11.12"
 name = "rpl3802"
-synonyms = [ "rpl38-2,rps38",]
+synonyms = [ "rpl38-2", "rps38",]
 
 [gene."SPAC30D11.13"]
 ref = "SPAC30D11.13"
@@ -5879,12 +5879,12 @@ name = "gef2"
 [gene."SPAC31F12.01"]
 ref = "SPAC31F12.01"
 name = "zds1"
-synonyms = [ "SPAC637.14,mug88",]
+synonyms = [ "SPAC637.14", "mug88",]
 
 [gene."SPAC31G5.01"]
 ref = "SPAC31G5.01"
 name = "sap49"
-synonyms = [ "SF3b49,SPAPB1A11.05",]
+synonyms = [ "SF3b49", "SPAPB1A11.05",]
 
 [gene."SPAC31G5.02"]
 ref = "SPAC31G5.02"
@@ -5914,7 +5914,7 @@ name = "dni1"
 [gene."SPAC31G5.08"]
 ref = "SPAC31G5.08"
 name = "hem4"
-synonyms = [ "ups1,ups",]
+synonyms = [ "ups1", "ups",]
 
 [gene."SPAC31G5.09c"]
 ref = "SPAC31G5.09c"
@@ -5936,7 +5936,7 @@ synonyms = [ "n150",]
 [gene."SPAC31G5.13"]
 ref = "SPAC31G5.13"
 name = "rpn11"
-synonyms = [ "pad1,sks1,bfr2,mts5",]
+synonyms = [ "pad1", "sks1", "bfr2", "mts5",]
 
 [gene."SPAC31G5.14"]
 ref = "SPAC31G5.14"
@@ -6051,7 +6051,7 @@ name = "phx1"
 [gene."SPAC32A11.04c"]
 ref = "SPAC32A11.04c"
 name = "tif212"
-synonyms = [ "tif22,SPAC6B12.17c",]
+synonyms = [ "tif22", "SPAC6B12.17c",]
 
 [gene."SPAC343.01c"]
 ref = "SPAC343.01c"
@@ -6168,7 +6168,7 @@ synonyms = [ "nde2",]
 [gene."SPAC3A11.08"]
 ref = "SPAC3A11.08"
 name = "cul4"
-synonyms = [ "pcu4,Cul-4",]
+synonyms = [ "pcu4", "Cul-4",]
 
 [gene."SPAC3A11.09"]
 ref = "SPAC3A11.09"
@@ -6185,17 +6185,17 @@ ref = "SPAC3A11.11c"
 [gene."SPAC3A11.12c"]
 ref = "SPAC3A11.12c"
 name = "rpt5"
-synonyms = [ "pam2,tbp1",]
+synonyms = [ "pam2", "tbp1",]
 
 [gene."SPAC3A11.13"]
 ref = "SPAC3A11.13"
 name = "pfd6"
-synonyms = [ "SPAC3H5.02,yke2,gim1",]
+synonyms = [ "SPAC3H5.02", "yke2", "gim1",]
 
 [gene."SPAC3A11.14c"]
 ref = "SPAC3A11.14c"
 name = "pkl1"
-synonyms = [ "klp1,SPAC3H5.03c",]
+synonyms = [ "klp1", "SPAC3H5.03c",]
 
 [gene."SPAC3A12.02"]
 ref = "SPAC3A12.02"
@@ -6230,12 +6230,12 @@ name = "ure4"
 [gene."SPAC3A12.10"]
 ref = "SPAC3A12.10"
 name = "rpl2001"
-synonyms = [ "rpl20-1,rpl20,yl17b,rpl18a-2",]
+synonyms = [ "rpl20-1", "rpl20", "yl17b", "rpl18a-2",]
 
 [gene."SPAC3A12.11c"]
 ref = "SPAC3A12.11c"
 name = "cwf2"
-synonyms = [ "prp3,cwc2",]
+synonyms = [ "prp3", "cwc2",]
 
 [gene."SPAC3A12.12"]
 ref = "SPAC3A12.12"
@@ -6329,7 +6329,7 @@ ref = "SPAC3C7.13c"
 [gene."SPAC3C7.14c"]
 ref = "SPAC3C7.14c"
 name = "obr1"
-synonyms = [ "apt1,uhp1,p25",]
+synonyms = [ "apt1", "uhp1", "p25",]
 
 [gene."SPAC3F10.02c"]
 ref = "SPAC3F10.02c"
@@ -6396,7 +6396,7 @@ name = "ltv1"
 [gene."SPAC3F10.18c"]
 ref = "SPAC3F10.18c"
 name = "rpl4102"
-synonyms = [ "rpl41-2,rpl41,SPAC8F11.01c",]
+synonyms = [ "rpl41-2", "rpl41", "SPAC8F11.01c",]
 
 [gene."SPAC3F10.19"]
 ref = "SPAC3F10.19"
@@ -6409,7 +6409,7 @@ name = "hrp3"
 [gene."SPAC3G6.02"]
 ref = "SPAC3G6.02"
 name = "rpn15"
-synonyms = [ "dss1,sem1",]
+synonyms = [ "dss1", "sem1",]
 
 [gene."SPAC3G6.03c"]
 ref = "SPAC3G6.03c"
@@ -6478,7 +6478,7 @@ name = "frs2"
 [gene."SPAC3G9.07c"]
 ref = "SPAC3G9.07c"
 name = "hos2"
-synonyms = [ "hda1,phd1",]
+synonyms = [ "hda1", "phd1",]
 
 [gene."SPAC3G9.08"]
 ref = "SPAC3G9.08"
@@ -6526,7 +6526,7 @@ name = "new8"
 [gene."SPAC3H1.01c"]
 ref = "SPAC3H1.01c"
 name = "orc3"
-synonyms = [ "orp3,SPAP14E8.06c",]
+synonyms = [ "orp3", "SPAP14E8.06c",]
 
 [gene."SPAC3H1.02c"]
 ref = "SPAC3H1.02c"
@@ -6582,7 +6582,7 @@ name = "ppk13"
 [gene."SPAC3H1.14"]
 ref = "SPAC3H1.14"
 name = "gid4"
-synonyms = [ "SPAC9G1.01,gid401",]
+synonyms = [ "SPAC9G1.01", "gid401",]
 
 [gene."SPAC3H5.04"]
 ref = "SPAC3H5.04"
@@ -6591,17 +6591,17 @@ name = "aar2"
 [gene."SPAC3H5.05c"]
 ref = "SPAC3H5.05c"
 name = "rps1401"
-synonyms = [ "rps14-1,rps14",]
+synonyms = [ "rps14-1", "rps14",]
 
 [gene."SPAC3H5.06c"]
 ref = "SPAC3H5.06c"
 name = "pol1"
-synonyms = [ "swi7,polA",]
+synonyms = [ "swi7", "polA",]
 
 [gene."SPAC3H5.07"]
 ref = "SPAC3H5.07"
 name = "rpl702"
-synonyms = [ "rpl7-2,rpl7,rpl7b",]
+synonyms = [ "rpl7-2", "rpl7", "rpl7b",]
 
 [gene."SPAC3H5.08c"]
 ref = "SPAC3H5.08c"
@@ -6614,7 +6614,7 @@ name = "hob2"
 [gene."SPAC3H5.10"]
 ref = "SPAC3H5.10"
 name = "rpl3202"
-synonyms = [ "rpl32-2,rpl32",]
+synonyms = [ "rpl32-2", "rpl32",]
 
 [gene."SPAC3H5.11"]
 ref = "SPAC3H5.11"
@@ -6622,7 +6622,7 @@ ref = "SPAC3H5.11"
 [gene."SPAC3H5.12c"]
 ref = "SPAC3H5.12c"
 name = "rpl501"
-synonyms = [ "rpl5-1,rpl5",]
+synonyms = [ "rpl5-1", "rpl5",]
 
 [gene."SPAC3H5.13"]
 ref = "SPAC3H5.13"
@@ -6685,7 +6685,7 @@ synonyms = [ "vps34",]
 [gene."SPAC458.06"]
 ref = "SPAC458.06"
 name = "atg1803"
-synonyms = [ "atg18c,atg18",]
+synonyms = [ "atg18c", "atg18",]
 
 [gene."SPAC458.07"]
 ref = "SPAC458.07"
@@ -6719,7 +6719,7 @@ name = "lcb4"
 [gene."SPAC4A8.08c"]
 ref = "SPAC4A8.08c"
 name = "vrs2"
-synonyms = [ "vas2,ValRS2",]
+synonyms = [ "vas2", "ValRS2",]
 
 [gene."SPAC4A8.09c"]
 ref = "SPAC4A8.09c"
@@ -6752,7 +6752,7 @@ name = "cdc3"
 [gene."SPAC4A8.16c"]
 ref = "SPAC4A8.16c"
 name = "tif303"
-synonyms = [ "tif33,SPAC823.01c",]
+synonyms = [ "tif33", "SPAC823.01c",]
 
 [gene."SPAC4C5.01"]
 ref = "SPAC4C5.01"
@@ -6761,7 +6761,7 @@ name = "pud1"
 [gene."SPAC4C5.02c"]
 ref = "SPAC4C5.02c"
 name = "ryh1"
-synonyms = [ "hos1,sat7",]
+synonyms = [ "hos1", "sat7",]
 
 [gene."SPAC4C5.03"]
 ref = "SPAC4C5.03"
@@ -6774,7 +6774,7 @@ synonyms = [ "uba4",]
 [gene."SPAC4D7.01c"]
 ref = "SPAC4D7.01c"
 name = "sec71"
-synonyms = [ "sec7a,SPAP8A3.15c",]
+synonyms = [ "sec7a", "SPAP8A3.15c",]
 
 [gene."SPAC4D7.02c"]
 ref = "SPAC4D7.02c"
@@ -6792,7 +6792,7 @@ name = "rer2"
 [gene."SPAC4D7.05"]
 ref = "SPAC4D7.05"
 name = "sum1"
-synonyms = [ "tif34,tif309",]
+synonyms = [ "tif34", "tif309",]
 
 [gene."SPAC4D7.06c"]
 ref = "SPAC4D7.06c"
@@ -6805,7 +6805,7 @@ name = "csi2"
 [gene."SPAC4D7.08c"]
 ref = "SPAC4D7.08c"
 name = "ade4"
-synonyms = [ "min13,aza1",]
+synonyms = [ "min13", "aza1",]
 
 [gene."SPAC4D7.09"]
 ref = "SPAC4D7.09"
@@ -6840,7 +6840,7 @@ synonyms = [ "new12",]
 [gene."SPAC4F10.02"]
 ref = "SPAC4F10.02"
 name = "ape4"
-synonyms = [ "ppp20,aap1",]
+synonyms = [ "ppp20", "aap1",]
 
 [gene."SPAC4F10.03c"]
 ref = "SPAC4F10.03c"
@@ -6862,7 +6862,7 @@ name = "bud22"
 [gene."SPAC4F10.07c"]
 ref = "SPAC4F10.07c"
 name = "atg13"
-synonyms = [ "apg13,mug78",]
+synonyms = [ "apg13", "mug78",]
 
 [gene."SPAC4F10.08"]
 ref = "SPAC4F10.08"
@@ -6892,7 +6892,7 @@ name = "mpd2"
 [gene."SPAC4F10.14c"]
 ref = "SPAC4F10.14c"
 name = "btf3"
-synonyms = [ "egd1,btt1,nac2",]
+synonyms = [ "egd1", "btt1", "nac2",]
 
 [gene."SPAC4F10.15c"]
 ref = "SPAC4F10.15c"
@@ -6925,12 +6925,12 @@ synonyms = [ "tam2",]
 [gene."SPAC4F8.01"]
 ref = "SPAC4F8.01"
 name = "did4"
-synonyms = [ "SPAC644.03c,vps2",]
+synonyms = [ "SPAC644.03c", "vps2",]
 
 [gene."SPAC4F8.02c"]
 ref = "SPAC4F8.02c"
 name = "mrpl40"
-synonyms = [ "SPAC644.02,mrp40",]
+synonyms = [ "SPAC644.02", "mrp40",]
 
 [gene."SPAC4F8.03"]
 ref = "SPAC4F8.03"
@@ -7164,7 +7164,7 @@ ref = "SPAC4H3.17"
 [gene."SPAC513.01c"]
 ref = "SPAC513.01c"
 name = "eft201"
-synonyms = [ "eft2-1,eft2,SPAPYUK71.04c",]
+synonyms = [ "eft2-1", "eft2", "SPAPYUK71.04c",]
 
 [gene."SPAC513.02"]
 ref = "SPAC513.02"
@@ -7254,7 +7254,7 @@ ref = "SPAC56F8.07"
 [gene."SPAC56F8.08"]
 ref = "SPAC56F8.08"
 name = "mud1"
-synonyms = [ "ucp1,ddi1",]
+synonyms = [ "ucp1", "ddi1",]
 
 [gene."SPAC56F8.09"]
 ref = "SPAC56F8.09"
@@ -7337,7 +7337,7 @@ name = "sgf11"
 [gene."SPAC57A7.04c"]
 ref = "SPAC57A7.04c"
 name = "pabp"
-synonyms = [ "pab1,pab11",]
+synonyms = [ "pab1", "pab11",]
 
 [gene."SPAC57A7.05"]
 ref = "SPAC57A7.05"
@@ -7379,7 +7379,7 @@ ref = "SPAC57A7.15c"
 [gene."SPAC589.02c"]
 ref = "SPAC589.02c"
 name = "med13"
-synonyms = [ "spTrap240,srb9",]
+synonyms = [ "spTrap240", "srb9",]
 
 [gene."SPAC589.03c"]
 ref = "SPAC589.03c"
@@ -7400,7 +7400,7 @@ name = "snd302"
 [gene."SPAC589.07c"]
 ref = "SPAC589.07c"
 name = "atg1801"
-synonyms = [ "atg18a,atg18",]
+synonyms = [ "atg18a", "atg18",]
 
 [gene."SPAC589.08c"]
 ref = "SPAC589.08c"
@@ -7427,7 +7427,7 @@ synonyms = [ "SPAC688.01",]
 [gene."SPAC5D6.01"]
 ref = "SPAC5D6.01"
 name = "rps2202"
-synonyms = [ "rps22-2,rps15a-2",]
+synonyms = [ "rps22-2", "rps15a-2",]
 
 [gene."SPAC5D6.02c"]
 ref = "SPAC5D6.02c"
@@ -7439,7 +7439,7 @@ ref = "SPAC5D6.04"
 [gene."SPAC5D6.05"]
 ref = "SPAC5D6.05"
 name = "med18"
-synonyms = [ "pmc6,sep11",]
+synonyms = [ "pmc6", "sep11",]
 
 [gene."SPAC5D6.06c"]
 ref = "SPAC5D6.06c"
@@ -7469,7 +7469,7 @@ synonyms = [ "ppr12",]
 [gene."SPAC5D6.13"]
 ref = "SPAC5D6.13"
 name = "gpp74"
-synonyms = [ "vps74,SPAPJ735.02c",]
+synonyms = [ "vps74", "SPAPJ735.02c",]
 
 [gene."SPAC5H10.01"]
 ref = "SPAC5H10.01"
@@ -7650,7 +7650,7 @@ synonyms = [ "pus1",]
 [gene."SPAC637.11"]
 ref = "SPAC637.11"
 name = "rpm2"
-synonyms = [ "pah1,suv3",]
+synonyms = [ "pah1", "suv3",]
 
 [gene."SPAC637.12c"]
 ref = "SPAC637.12c"
@@ -7703,12 +7703,12 @@ ref = "SPAC644.13c"
 [gene."SPAC644.14c"]
 ref = "SPAC644.14c"
 name = "rad51"
-synonyms = [ "rhp51,loh4",]
+synonyms = [ "rhp51", "loh4",]
 
 [gene."SPAC644.15"]
 ref = "SPAC644.15"
 name = "rpp101"
-synonyms = [ "rpa1,rpp1-1",]
+synonyms = [ "rpa1", "rpp1-1",]
 
 [gene."SPAC644.16"]
 ref = "SPAC644.16"
@@ -7742,7 +7742,7 @@ name = "paf1"
 [gene."SPAC664.04c"]
 ref = "SPAC664.04c"
 name = "rps1602"
-synonyms = [ "rps16-2,rps16",]
+synonyms = [ "rps16-2", "rps16",]
 
 [gene."SPAC664.05"]
 ref = "SPAC664.05"
@@ -7862,7 +7862,7 @@ ref = "SPAC694.04c"
 [gene."SPAC694.05c"]
 ref = "SPAC694.05c"
 name = "rps2502"
-synonyms = [ "rps25-2,rps25",]
+synonyms = [ "rps25-2", "rps25",]
 
 [gene."SPAC694.06c"]
 ref = "SPAC694.06c"
@@ -7979,7 +7979,7 @@ name = "rst2"
 [gene."SPAC6F12.03c"]
 ref = "SPAC6F12.03c"
 name = "fsv1"
-synonyms = [ "stx8,syn8",]
+synonyms = [ "stx8", "syn8",]
 
 [gene."SPAC6F12.04"]
 ref = "SPAC6F12.04"
@@ -8004,7 +8004,7 @@ name = "exo84"
 [gene."SPAC6F12.09"]
 ref = "SPAC6F12.09"
 name = "rdp1"
-synonyms = [ "rdr1,csp7",]
+synonyms = [ "rdr1", "csp7",]
 
 [gene."SPAC6F12.10c"]
 ref = "SPAC6F12.10c"
@@ -8032,7 +8032,7 @@ synonyms = [ "apc8",]
 [gene."SPAC6F12.15c"]
 ref = "SPAC6F12.15c"
 name = "cut9"
-synonyms = [ "dre1,apc6",]
+synonyms = [ "dre1", "apc6",]
 
 [gene."SPAC6F12.16c"]
 ref = "SPAC6F12.16c"
@@ -8101,12 +8101,12 @@ name = "ypt5"
 [gene."SPAC6F6.16c"]
 ref = "SPAC6F6.16c"
 name = "tpz1"
-synonyms = [ "SPAC6F6.18c,mug169",]
+synonyms = [ "SPAC6F6.18c", "mug169",]
 
 [gene."SPAC6F6.17"]
 ref = "SPAC6F6.17"
 name = "rif1"
-synonyms = [ "tap1,tap11,SPAPJ736.01",]
+synonyms = [ "tap1", "tap11", "SPAPJ736.01",]
 
 [gene."SPAC6F6.19"]
 ref = "SPAC6F6.19"
@@ -8190,7 +8190,7 @@ name = "ubp6"
 [gene."SPAC6G9.09c"]
 ref = "SPAC6G9.09c"
 name = "rpl2401"
-synonyms = [ "rpl24-01,rpl24",]
+synonyms = [ "rpl24-01", "rpl24",]
 
 [gene."SPAC6G9.10c"]
 ref = "SPAC6G9.10c"
@@ -8207,7 +8207,7 @@ name = "cfr1"
 [gene."SPAC6G9.13c"]
 ref = "SPAC6G9.13c"
 name = "bqt1"
-synonyms = [ "mug23,rec26",]
+synonyms = [ "mug23", "rec26",]
 
 [gene."SPAC6G9.14"]
 ref = "SPAC6G9.14"
@@ -8270,7 +8270,7 @@ name = "ahk1"
 [gene."SPAC7D4.04"]
 ref = "SPAC7D4.04"
 name = "atg11"
-synonyms = [ "taf1,cvt9",]
+synonyms = [ "taf1", "cvt9",]
 
 [gene."SPAC7D4.05"]
 ref = "SPAC7D4.05"
@@ -8319,7 +8319,7 @@ ref = "SPAC806.02c"
 [gene."SPAC806.03c"]
 ref = "SPAC806.03c"
 name = "rps2601"
-synonyms = [ "rps26-1,rps26",]
+synonyms = [ "rps26-1", "rps26",]
 
 [gene."SPAC806.04c"]
 ref = "SPAC806.04c"
@@ -8353,7 +8353,7 @@ name = "cid13"
 [gene."SPAC821.05"]
 ref = "SPAC821.05"
 name = "tif308"
-synonyms = [ "eif8,tif38",]
+synonyms = [ "eif8", "tif38",]
 
 [gene."SPAC821.06"]
 ref = "SPAC821.06"
@@ -8444,7 +8444,7 @@ name = "ppa1"
 [gene."SPAC823.16c"]
 ref = "SPAC823.16c"
 name = "atg1802"
-synonyms = [ "mug179,atg18b,atg18",]
+synonyms = [ "mug179", "atg18b", "atg18",]
 
 [gene."SPAC823.17"]
 ref = "SPAC823.17"
@@ -8545,7 +8545,7 @@ name = "pxr1"
 [gene."SPAC890.06"]
 ref = "SPAC890.06"
 name = "nup155"
-synonyms = [ "nup157,nup170",]
+synonyms = [ "nup157", "nup170",]
 
 [gene."SPAC890.07c"]
 ref = "SPAC890.07c"
@@ -8625,7 +8625,7 @@ synonyms = [ "SPAC959.01",]
 [gene."SPAC8E11.02c"]
 ref = "SPAC8E11.02c"
 name = "rad24"
-synonyms = [ "sam4,anr5",]
+synonyms = [ "sam4", "anr5",]
 
 [gene."SPAC8E11.03c"]
 ref = "SPAC8E11.03c"
@@ -8767,7 +8767,7 @@ name = "rlc1"
 [gene."SPAC926.04c"]
 ref = "SPAC926.04c"
 name = "hsp90"
-synonyms = [ "swo1,git10",]
+synonyms = [ "swo1", "git10",]
 
 [gene."SPAC926.05c"]
 ref = "SPAC926.05c"
@@ -8814,12 +8814,12 @@ ref = "SPAC959.06c"
 [gene."SPAC959.07"]
 ref = "SPAC959.07"
 name = "rps403"
-synonyms = [ "rps4-3,rps4",]
+synonyms = [ "rps4-3", "rps4",]
 
 [gene."SPAC959.08"]
 ref = "SPAC959.08"
 name = "rpl2102"
-synonyms = [ "rpl21-2,rpl21",]
+synonyms = [ "rpl21-2", "rpl21",]
 
 [gene."SPAC959.09c"]
 ref = "SPAC959.09c"
@@ -8959,17 +8959,17 @@ ref = "SPAC9E9.17c"
 [gene."SPAC9G1.02"]
 ref = "SPAC9G1.02"
 name = "wis4"
-synonyms = [ "wak1,wik1",]
+synonyms = [ "wak1", "wik1",]
 
 [gene."SPAC9G1.03c"]
 ref = "SPAC9G1.03c"
 name = "rpl3001"
-synonyms = [ "rpl30-1,rpl30",]
+synonyms = [ "rpl30-1", "rpl30",]
 
 [gene."SPAC9G1.04"]
 ref = "SPAC9G1.04"
 name = "oxa101"
-synonyms = [ "oxa1,oxa1-1,oxa1sp1",]
+synonyms = [ "oxa1", "oxa1-1", "oxa1sp1",]
 
 [gene."SPAC9G1.05"]
 ref = "SPAC9G1.05"
@@ -9021,12 +9021,12 @@ synonyms = [ "CaMK-I",]
 [gene."SPACUNK4.06c"]
 ref = "SPACUNK4.06c"
 name = "rpb7"
-synonyms = [ "SPAPYUK71.02,csp3",]
+synonyms = [ "SPAPYUK71.02", "csp3",]
 
 [gene."SPACUNK4.07c"]
 ref = "SPACUNK4.07c"
 name = "cta4"
-synonyms = [ "sev4,SPAPYUK71.01",]
+synonyms = [ "sev4", "SPAPYUK71.01",]
 
 [gene."SPACUNK4.08"]
 ref = "SPACUNK4.08"
@@ -9047,7 +9047,7 @@ name = "mpp6"
 [gene."SPACUNK4.12c"]
 ref = "SPACUNK4.12c"
 name = "iph1"
-synonyms = [ "mug138,irp1,ppp34",]
+synonyms = [ "mug138", "irp1", "ppp34",]
 
 [gene."SPACUNK4.13c"]
 ref = "SPACUNK4.13c"
@@ -9186,7 +9186,7 @@ name = "lys1"
 [gene."SPAP7G5.05"]
 ref = "SPAP7G5.05"
 name = "rpl1002"
-synonyms = [ "rpl10-2,rpl10",]
+synonyms = [ "rpl10-2", "rpl10",]
 
 [gene."SPAP7G5.06"]
 ref = "SPAP7G5.06"
@@ -9265,7 +9265,7 @@ ref = "SPAPB15E9.06"
 [gene."SPAPB17E12.02"]
 ref = "SPAPB17E12.02"
 name = "yip12"
-synonyms = [ "yip1,yip1-b",]
+synonyms = [ "yip1", "yip1-b",]
 
 [gene."SPAPB17E12.03"]
 ref = "SPAPB17E12.03"
@@ -9405,7 +9405,7 @@ name = "mca1"
 [gene."SPAPB1A11.06"]
 ref = "SPAPB1A11.06"
 name = ""
-synonyms = [ "prl31,SPNCRNA.31",]
+synonyms = [ "prl31", "SPNCRNA.31",]
 
 [gene."SPAPB1E7.01c"]
 ref = "SPAPB1E7.01c"
@@ -9413,7 +9413,7 @@ ref = "SPAPB1E7.01c"
 [gene."SPAPB1E7.02c"]
 ref = "SPAPB1E7.02c"
 name = "mcl1"
-synonyms = [ "slr3,cos1",]
+synonyms = [ "slr3", "cos1",]
 
 [gene."SPAPB1E7.03"]
 ref = "SPAPB1E7.03"
@@ -9430,12 +9430,12 @@ name = "gde1"
 [gene."SPAPB1E7.06c"]
 ref = "SPAPB1E7.06c"
 name = "eme1"
-synonyms = [ "mms4,slx2",]
+synonyms = [ "mms4", "slx2",]
 
 [gene."SPAPB1E7.07"]
 ref = "SPAPB1E7.07"
 name = "glt1"
-synonyms = [ "gog1,glu4",]
+synonyms = [ "gog1", "glu4",]
 
 [gene."SPAPB1E7.08c"]
 ref = "SPAPB1E7.08c"
@@ -9456,7 +9456,7 @@ name = "mpa1"
 [gene."SPAPB1E7.12"]
 ref = "SPAPB1E7.12"
 name = "rps602"
-synonyms = [ "rps6-2,rps6,p27",]
+synonyms = [ "rps6-2", "rps6", "p27",]
 
 [gene."SPAPB1E7.14"]
 ref = "SPAPB1E7.14"
@@ -9539,7 +9539,7 @@ ref = "SPAPB2C8.01"
 [gene."SPAPB8E5.02c"]
 ref = "SPAPB8E5.02c"
 name = "rpn502"
-synonyms = [ "rpn5,rpn5-b",]
+synonyms = [ "rpn5", "rpn5-b",]
 
 [gene."SPAPB8E5.03"]
 ref = "SPAPB8E5.03"
@@ -9556,7 +9556,7 @@ name = "mfm1"
 [gene."SPAPB8E5.06c"]
 ref = "SPAPB8E5.06c"
 name = "rpl302"
-synonyms = [ "rpl3-2,rpl3-b",]
+synonyms = [ "rpl3-2", "rpl3-b",]
 
 [gene."SPAPB8E5.07c"]
 ref = "SPAPB8E5.07c"
@@ -9597,12 +9597,12 @@ name = "lsb4"
 [gene."SPAPJ698.02c"]
 ref = "SPAPJ698.02c"
 name = "rps002"
-synonyms = [ "rpsa-2,rps0-2,rps0",]
+synonyms = [ "rpsa-2", "rps0-2", "rps0",]
 
 [gene."SPAPJ698.03c"]
 ref = "SPAPJ698.03c"
 name = "prp12"
-synonyms = [ "sap130,SF3b130",]
+synonyms = [ "sap130", "SF3b130",]
 
 [gene."SPAPJ760.02c"]
 ref = "SPAPJ760.02c"
@@ -9630,7 +9630,7 @@ ref = "SPAPYUG7.05"
 [gene."SPAPYUG7.06"]
 ref = "SPAPYUG7.06"
 name = "sdu1"
-synonyms = [ "mug67,hag1",]
+synonyms = [ "mug67", "hag1",]
 
 [gene."SPAPYUK71.03c"]
 ref = "SPAPYUK71.03c"
@@ -9774,7 +9774,7 @@ ref = "SPATRNASER.02"
 [gene."SPATRNASER.03"]
 ref = "SPATRNASER.03"
 name = "sup3"
-synonyms = [ "sup3-e,sup3-i,sup3-5",]
+synonyms = [ "sup3-e", "sup3-i", "sup3-5",]
 
 [gene."SPATRNASER.04"]
 ref = "SPATRNASER.04"
@@ -9815,7 +9815,7 @@ ref = "SPATRNAVAL.04"
 [gene."SPBC106.01"]
 ref = "SPBC106.01"
 name = "mph1"
-synonyms = [ "SPBC1271.16c,SPBC243.01,mps1",]
+synonyms = [ "SPBC1271.16c", "SPBC243.01", "mps1",]
 
 [gene."SPBC106.02c"]
 ref = "SPBC106.02c"
@@ -9852,7 +9852,7 @@ synonyms = [ "apc1",]
 [gene."SPBC106.10"]
 ref = "SPBC106.10"
 name = "pka1"
-synonyms = [ "tpk,git6,sam1,sam5,sam6,sam7",]
+synonyms = [ "tpk", "git6", "sam1", "sam5", "sam6", "sam7",]
 
 [gene."SPBC106.11c"]
 ref = "SPBC106.11c"
@@ -10042,7 +10042,7 @@ name = "asn1"
 [gene."SPBC119.11c"]
 ref = "SPBC119.11c"
 name = "pac1"
-synonyms = [ "hcs,rnt1,snm1",]
+synonyms = [ "hcs", "rnt1", "snm1",]
 
 [gene."SPBC119.12"]
 ref = "SPBC119.12"
@@ -10067,7 +10067,7 @@ ref = "SPBC119.16c"
 [gene."SPBC119.17"]
 ref = "SPBC119.17"
 name = "cym1"
-synonyms = [ "SPBC577.01,ppp37",]
+synonyms = [ "SPBC577.01", "ppp37",]
 
 [gene."SPBC119.18"]
 ref = "SPBC119.18"
@@ -10123,7 +10123,7 @@ synonyms = [ "SPBC660.01c",]
 [gene."SPBC1198.12"]
 ref = "SPBC1198.12"
 name = "mfr1"
-synonyms = [ "SPBC660.02,fzr1",]
+synonyms = [ "SPBC660.02", "fzr1",]
 
 [gene."SPBC1198.13c"]
 ref = "SPBC1198.13c"
@@ -10190,7 +10190,7 @@ name = "imp2"
 [gene."SPBC11C11.03"]
 ref = "SPBC11C11.03"
 name = "ndc80"
-synonyms = [ "ndc10,tid3",]
+synonyms = [ "ndc10", "tid3",]
 
 [gene."SPBC11C11.04c"]
 ref = "SPBC11C11.04c"
@@ -10207,7 +10207,7 @@ ref = "SPBC11C11.06c"
 [gene."SPBC11C11.07"]
 ref = "SPBC11C11.07"
 name = "rpl1801"
-synonyms = [ "rpl18-1,rpl18",]
+synonyms = [ "rpl18-1", "rpl18",]
 
 [gene."SPBC11C11.08"]
 ref = "SPBC11C11.08"
@@ -10216,7 +10216,7 @@ name = "srp1"
 [gene."SPBC11C11.09c"]
 ref = "SPBC11C11.09c"
 name = "rpl502"
-synonyms = [ "rpl5-2,rpl5b",]
+synonyms = [ "rpl5-2", "rpl5b",]
 
 [gene."SPBC11C11.10"]
 ref = "SPBC11C11.10"
@@ -10264,7 +10264,7 @@ name = "shy1"
 [gene."SPBC1215.02c"]
 ref = "SPBC1215.02c"
 name = "naa25"
-synonyms = [ "arm1,mdm20",]
+synonyms = [ "arm1", "mdm20",]
 
 [gene."SPBC1271.01c"]
 ref = "SPBC1271.01c"
@@ -10327,7 +10327,7 @@ name = "mti2"
 [gene."SPBC1289.01c"]
 ref = "SPBC1289.01c"
 name = "chr4"
-synonyms = [ "cfh3,SPBC1539.11c",]
+synonyms = [ "cfh3", "SPBC1539.11c",]
 
 [gene."SPBC1289.02c"]
 ref = "SPBC1289.02c"
@@ -10393,7 +10393,7 @@ synonyms = [ "SPBC8E4.07c",]
 [gene."SPBC1289.16c"]
 ref = "SPBC1289.16c"
 name = "cao2"
-synonyms = [ "SPBC8E4.06,spao2",]
+synonyms = [ "SPBC8E4.06", "spao2",]
 
 [gene."SPBC1289.17"]
 ref = "SPBC1289.17"
@@ -10475,7 +10475,7 @@ name = "cct1"
 [gene."SPBC12D12.04c"]
 ref = "SPBC12D12.04c"
 name = "pck2"
-synonyms = [ "sts6,pkc1,mok3",]
+synonyms = [ "sts6", "pkc1", "mok3",]
 
 [gene."SPBC12D12.05c"]
 ref = "SPBC12D12.05c"
@@ -10491,7 +10491,7 @@ name = "trx2"
 [gene."SPBC12D12.08c"]
 ref = "SPBC12D12.08c"
 name = "ned8"
-synonyms = [ "nedd8,ubl1,SPBC24C6.01c",]
+synonyms = [ "nedd8", "ubl1", "SPBC24C6.01c",]
 
 [gene."SPBC12D12.09"]
 ref = "SPBC12D12.09"
@@ -10505,7 +10505,7 @@ synonyms = [ "SPBC409.22c",]
 [gene."SPBC1306.02"]
 ref = "SPBC1306.02"
 name = "trm734"
-synonyms = [ "SPBC4.08,rtt10",]
+synonyms = [ "SPBC4.08", "rtt10",]
 
 [gene."SPBC1347.01c"]
 ref = "SPBC1347.01c"
@@ -10677,7 +10677,7 @@ synonyms = [ "SPBC30D10.20",]
 [gene."SPBC13E7.11"]
 ref = "SPBC13E7.11"
 name = "rbd1"
-synonyms = [ "SPBC30D10.19c,rh1,ppp72",]
+synonyms = [ "SPBC30D10.19c", "rh1", "ppp72",]
 
 [gene."SPBC13G1.01c"]
 ref = "SPBC13G1.01c"
@@ -10743,7 +10743,7 @@ ref = "SPBC13G1.15c"
 [gene."SPBC13G1.16"]
 ref = "SPBC13G1.16"
 name = "smp2"
-synonyms = [ "SPNCRNA.543,SPNGAF69",]
+synonyms = [ "SPNCRNA.543", "SPNGAF69",]
 
 [gene."SPBC146.01"]
 ref = "SPBC146.01"
@@ -10773,7 +10773,7 @@ name = "fan1"
 [gene."SPBC146.07"]
 ref = "SPBC146.07"
 name = "prp2"
-synonyms = [ "mis11,uaf1,ods1",]
+synonyms = [ "mis11", "uaf1", "ods1",]
 
 [gene."SPBC146.08c"]
 ref = "SPBC146.08c"
@@ -10782,7 +10782,7 @@ name = "tif1102"
 [gene."SPBC146.09c"]
 ref = "SPBC146.09c"
 name = "lsd1"
-synonyms = [ "swm1,saf110",]
+synonyms = [ "swm1", "saf110",]
 
 [gene."SPBC146.10"]
 ref = "SPBC146.10"
@@ -11011,7 +11011,7 @@ name = "slm9"
 [gene."SPBC15D4.04"]
 ref = "SPBC15D4.04"
 name = "gpt2"
-synonyms = [ "gpt,alg7",]
+synonyms = [ "gpt", "alg7",]
 
 [gene."SPBC15D4.05"]
 ref = "SPBC15D4.05"
@@ -11060,7 +11060,7 @@ name = "pho2"
 [gene."SPBC1604.01"]
 ref = "SPBC1604.01"
 name = "egt1"
-synonyms = [ "SPBC1677.01c,mug158",]
+synonyms = [ "SPBC1677.01c", "mug158",]
 
 [gene."SPBC1604.02c"]
 ref = "SPBC1604.02c"
@@ -11113,7 +11113,7 @@ name = "mrpl32"
 [gene."SPBC1604.14c"]
 ref = "SPBC1604.14c"
 name = "shk1"
-synonyms = [ "pak1,orb2",]
+synonyms = [ "pak1", "orb2",]
 
 [gene."SPBC1604.15"]
 ref = "SPBC1604.15"
@@ -11142,7 +11142,7 @@ synonyms = [ "klp4",]
 [gene."SPBC1604.21c"]
 ref = "SPBC1604.21c"
 name = "ptr3"
-synonyms = [ "uba1,SPBC211.09",]
+synonyms = [ "uba1", "SPBC211.09",]
 
 [gene."SPBC1604.25"]
 ref = "SPBC1604.25"
@@ -11272,7 +11272,7 @@ name = "vid27"
 [gene."SPBC1685.15c"]
 ref = "SPBC1685.15c"
 name = "klp6"
-synonyms = [ "sot2,SPBC649.01c",]
+synonyms = [ "sot2", "SPBC649.01c",]
 
 [gene."SPBC1685.16"]
 ref = "SPBC1685.16"
@@ -11547,7 +11547,7 @@ ref = "SPBC16E9.20"
 [gene."SPBC16G5.01"]
 ref = "SPBC16G5.01"
 name = "rpn12"
-synonyms = [ "mts3,SPBC342.07",]
+synonyms = [ "mts3", "SPBC342.07",]
 
 [gene."SPBC16G5.02c"]
 ref = "SPBC16G5.02c"
@@ -11587,7 +11587,7 @@ name = "rrp42"
 [gene."SPBC16G5.11c"]
 ref = "SPBC16G5.11c"
 name = "bag101"
-synonyms = [ "bag1-a,bag1",]
+synonyms = [ "bag1-a", "bag1",]
 
 [gene."SPBC16G5.12c"]
 ref = "SPBC16G5.12c"
@@ -11761,7 +11761,7 @@ synonyms = [ "SPBC1734.17",]
 [gene."SPBC1709.02c"]
 ref = "SPBC1709.02c"
 name = "vrs1"
-synonyms = [ "vas1,SPBC1734.18c,ValRS1",]
+synonyms = [ "vas1", "SPBC1734.18c", "ValRS1",]
 
 [gene."SPBC1709.03"]
 ref = "SPBC1709.03"
@@ -11839,12 +11839,12 @@ name = "pop8"
 [gene."SPBC1711.01c"]
 ref = "SPBC1711.01c"
 name = "mat3-Mi"
-synonyms = [ "matMi,mat3-Mm-silenced,mat3-Mm",]
+synonyms = [ "matMi", "mat3-Mm-silenced", "mat3-Mm",]
 
 [gene."SPBC1711.02"]
 ref = "SPBC1711.02"
 name = "mat3-Mc"
-synonyms = [ "matMc,mat3Mc,mat3-Mc-silenced",]
+synonyms = [ "matMc", "mat3Mc", "mat3-Mc-silenced",]
 
 [gene."SPBC1711.03"]
 ref = "SPBC1711.03"
@@ -11862,7 +11862,7 @@ name = "srp40"
 [gene."SPBC1711.06"]
 ref = "SPBC1711.06"
 name = "rpl401"
-synonyms = [ "rpl4-1,rpl4",]
+synonyms = [ "rpl4-1", "rpl4",]
 
 [gene."SPBC1711.07"]
 ref = "SPBC1711.07"
@@ -11905,7 +11905,7 @@ name = "pwp1"
 [gene."SPBC1711.17"]
 ref = "SPBC1711.17"
 name = "prp16"
-synonyms = [ "SPBC17G9.01,prp14",]
+synonyms = [ "SPBC17G9.01", "prp14",]
 
 [gene."SPBC1711.18"]
 ref = "SPBC1711.18"
@@ -11915,7 +11915,7 @@ synonyms = [ "mrpl36",]
 [gene."SPBC1718.01"]
 ref = "SPBC1718.01"
 name = "pop1"
-synonyms = [ "ste16,SPBC2G2.18",]
+synonyms = [ "ste16", "SPBC2G2.18",]
 
 [gene."SPBC1718.02"]
 ref = "SPBC1718.02"
@@ -12084,7 +12084,7 @@ synonyms = [ "SPBP26C9.01c",]
 [gene."SPBC1778.01c"]
 ref = "SPBC1778.01c"
 name = "zuo1"
-synonyms = [ "mpp11,SPBC30D10.01",]
+synonyms = [ "mpp11", "SPBC30D10.01",]
 
 [gene."SPBC1778.02"]
 ref = "SPBC1778.02"
@@ -12112,7 +12112,7 @@ ref = "SPBC1778.07"
 [gene."SPBC1778.08c"]
 ref = "SPBC1778.08c"
 name = "arc3"
-synonyms = [ "arc21,arc18",]
+synonyms = [ "arc21", "arc18",]
 
 [gene."SPBC1778.09"]
 ref = "SPBC1778.09"
@@ -12120,7 +12120,7 @@ ref = "SPBC1778.09"
 [gene."SPBC1778.10c"]
 ref = "SPBC1778.10c"
 name = "pdk1"
-synonyms = [ "SPBC4C3.11,ppk21",]
+synonyms = [ "SPBC4C3.11", "ppk21",]
 
 [gene."SPBC17A3.01c"]
 ref = "SPBC17A3.01c"
@@ -12137,7 +12137,7 @@ ref = "SPBC17A3.03c"
 [gene."SPBC17A3.04c"]
 ref = "SPBC17A3.04c"
 name = "rar1"
-synonyms = [ "mrs1,mes1",]
+synonyms = [ "mrs1", "mes1",]
 
 [gene."SPBC17A3.05c"]
 ref = "SPBC17A3.05c"
@@ -12235,7 +12235,7 @@ synonyms = [ "SPBC557.01",]
 [gene."SPBC17F3.02"]
 ref = "SPBC17F3.02"
 name = "nak1"
-synonyms = [ "orb3,mor4",]
+synonyms = [ "orb3", "mor4",]
 
 [gene."SPBC17G9.02c"]
 ref = "SPBC17G9.02c"
@@ -12301,7 +12301,7 @@ name = "mot1"
 [gene."SPBC1861.01c"]
 ref = "SPBC1861.01c"
 name = "cnp3"
-synonyms = [ "SPBC56F2.13,mif2",]
+synonyms = [ "SPBC56F2.13", "mif2",]
 
 [gene."SPBC1861.02"]
 ref = "SPBC1861.02"
@@ -12338,7 +12338,7 @@ name = "ppk22"
 [gene."SPBC18A7.01"]
 ref = "SPBC18A7.01"
 name = "xpa1"
-synonyms = [ "SPBC4F6.19c,ppp52",]
+synonyms = [ "SPBC4F6.19c", "ppp52",]
 
 [gene."SPBC18A7.02c"]
 ref = "SPBC18A7.02c"
@@ -12360,7 +12360,7 @@ name = "sim4"
 [gene."SPBC18E5.04"]
 ref = "SPBC18E5.04"
 name = "rpl1001"
-synonyms = [ "rpl10-1,rpl10",]
+synonyms = [ "rpl10-1", "rpl10",]
 
 [gene."SPBC18E5.05c"]
 ref = "SPBC18E5.05c"
@@ -12448,7 +12448,7 @@ name = "ppr2"
 [gene."SPBC18H10.12c"]
 ref = "SPBC18H10.12c"
 name = "rpl701"
-synonyms = [ "rpl7,rpl7-1",]
+synonyms = [ "rpl7", "rpl7-1",]
 
 [gene."SPBC18H10.13"]
 ref = "SPBC18H10.13"
@@ -12483,12 +12483,12 @@ name = "vps38"
 [gene."SPBC18H10.20c"]
 ref = "SPBC18H10.20c"
 name = "any1"
-synonyms = [ "arn1,art1,can1",]
+synonyms = [ "arn1", "art1", "can1",]
 
 [gene."SPBC1921.01c"]
 ref = "SPBC1921.01c"
 name = "rpl35A02"
-synonyms = [ "rpl37-1,rpl37",]
+synonyms = [ "rpl37-1", "rpl37",]
 
 [gene."SPBC1921.02"]
 ref = "SPBC1921.02"
@@ -12654,7 +12654,7 @@ synonyms = [ "SPBC25D12.01c",]
 [gene."SPBC19F8.01c"]
 ref = "SPBC19F8.01c"
 name = "spn7"
-synonyms = [ "SPBC21.08c,mde8,SPBC21.08",]
+synonyms = [ "SPBC21.08c", "mde8", "SPBC21.08",]
 
 [gene."SPBC19F8.02"]
 ref = "SPBC19F8.02"
@@ -12678,17 +12678,17 @@ name = "meu22"
 [gene."SPBC19F8.07"]
 ref = "SPBC19F8.07"
 name = "mcs6"
-synonyms = [ "crk1,mop1,cdk7",]
+synonyms = [ "crk1", "mop1", "cdk7",]
 
 [gene."SPBC19F8.08"]
 ref = "SPBC19F8.08"
 name = "rps401"
-synonyms = [ "rps4-1,rps4,SPBC25H2.17c",]
+synonyms = [ "rps4-1", "rps4", "SPBC25H2.17c",]
 
 [gene."SPBC19G7.01c"]
 ref = "SPBC19G7.01c"
 name = "msh2"
-synonyms = [ "swi8,mut3,SPBC24C6.12c",]
+synonyms = [ "swi8", "mut3", "SPBC24C6.12c",]
 
 [gene."SPBC19G7.02"]
 ref = "SPBC19G7.02"
@@ -12697,7 +12697,7 @@ name = "abz2"
 [gene."SPBC19G7.03c"]
 ref = "SPBC19G7.03c"
 name = "rps3002"
-synonyms = [ "rps30-2,rps30",]
+synonyms = [ "rps30-2", "rps30",]
 
 [gene."SPBC19G7.04"]
 ref = "SPBC19G7.04"
@@ -12705,7 +12705,7 @@ ref = "SPBC19G7.04"
 [gene."SPBC19G7.05c"]
 ref = "SPBC19G7.05c"
 name = "bgs1"
-synonyms = [ "cps1,drc1,swl1",]
+synonyms = [ "cps1", "drc1", "swl1",]
 
 [gene."SPBC19G7.06"]
 ref = "SPBC19G7.06"
@@ -12801,7 +12801,7 @@ name = "pus7"
 [gene."SPBC1A4.10c"]
 ref = "SPBC1A4.10c"
 name = "med14"
-synonyms = [ "pmc1,SPBP23A10.01c",]
+synonyms = [ "pmc1", "SPBP23A10.01c",]
 
 [gene."SPBC1A4.11c"]
 ref = "SPBC1A4.11c"
@@ -12819,7 +12819,7 @@ synonyms = [ "SPBC1D7.02",]
 [gene."SPBC1D7.03"]
 ref = "SPBC1D7.03"
 name = "clg1"
-synonyms = [ "mug80,SPBC1D7.03c",]
+synonyms = [ "mug80", "SPBC1D7.03c",]
 
 [gene."SPBC1D7.04"]
 ref = "SPBC1D7.04"
@@ -12829,7 +12829,7 @@ synonyms = [ "SPBC1D7.04c",]
 [gene."SPBC1D7.05"]
 ref = "SPBC1D7.05"
 name = "byr2"
-synonyms = [ "ste8,SPBC2F12.01",]
+synonyms = [ "ste8", "SPBC2F12.01",]
 
 [gene."SPBC1E8.02"]
 ref = "SPBC1E8.02"
@@ -12910,7 +12910,7 @@ name = "ral2"
 [gene."SPBC21.06c"]
 ref = "SPBC21.06c"
 name = "cdc7"
-synonyms = [ "pld1,its10",]
+synonyms = [ "pld1", "its10",]
 
 [gene."SPBC21.07c"]
 ref = "SPBC21.07c"
@@ -12959,7 +12959,7 @@ synonyms = [ "SPBC3B9.20",]
 [gene."SPBC215.02"]
 ref = "SPBC215.02"
 name = "pfd5"
-synonyms = [ "bob1,gim5",]
+synonyms = [ "bob1", "gim5",]
 
 [gene."SPBC215.03c"]
 ref = "SPBC215.03c"
@@ -12998,7 +12998,7 @@ ref = "SPBC215.11c"
 [gene."SPBC215.12"]
 ref = "SPBC215.12"
 name = "cwf10"
-synonyms = [ "spef2,snu114,csp4",]
+synonyms = [ "spef2", "snu114", "csp4",]
 
 [gene."SPBC215.13"]
 ref = "SPBC215.13"
@@ -13021,7 +13021,7 @@ synonyms = [ "SPBC713.13c",]
 [gene."SPBC216.02"]
 ref = "SPBC216.02"
 name = "num1"
-synonyms = [ "mcp5,mug21",]
+synonyms = [ "mcp5", "mug21",]
 
 [gene."SPBC216.03"]
 ref = "SPBC216.03"
@@ -13058,7 +13058,7 @@ name = "nrf1"
 [gene."SPBC21B10.05c"]
 ref = "SPBC21B10.05c"
 name = "pop3"
-synonyms = [ "wat1,lst8",]
+synonyms = [ "wat1", "lst8",]
 
 [gene."SPBC21B10.06c"]
 ref = "SPBC21B10.06c"
@@ -13102,7 +13102,7 @@ ref = "SPBC21B10.15"
 [gene."SPBC21C3.01c"]
 ref = "SPBC21C3.01c"
 name = "vps1301"
-synonyms = [ "vps13a,SPBC31F10.18c",]
+synonyms = [ "vps13a", "SPBC31F10.18c",]
 
 [gene."SPBC21C3.02c"]
 ref = "SPBC21C3.02c"
@@ -13299,7 +13299,7 @@ name = "rga7"
 [gene."SPBC23G7.09"]
 ref = "SPBC23G7.09"
 name = "mat1-Mc"
-synonyms = [ "matMc,mat1Mc",]
+synonyms = [ "matMc", "mat1Mc",]
 
 [gene."SPBC23G7.10c"]
 ref = "SPBC23G7.10c"
@@ -13322,7 +13322,7 @@ ref = "SPBC23G7.14"
 [gene."SPBC23G7.15c"]
 ref = "SPBC23G7.15c"
 name = "rpp202"
-synonyms = [ "rpp2-2,rpa4",]
+synonyms = [ "rpp2-2", "rpa4",]
 
 [gene."SPBC23G7.16"]
 ref = "SPBC23G7.16"
@@ -13331,7 +13331,7 @@ name = "ctr6"
 [gene."SPBC23G7.17c"]
 ref = "SPBC23G7.17c"
 name = "mat1-Mi"
-synonyms = [ "mat1-Mm,matMi,matMm",]
+synonyms = [ "mat1-Mm", "matMi", "matMm",]
 
 [gene."SPBC244.01c"]
 ref = "SPBC244.01c"
@@ -13367,7 +13367,7 @@ name = "cdc14"
 [gene."SPBC24C6.08c"]
 ref = "SPBC24C6.08c"
 name = "bhd1"
-synonyms = [ "bhd,lst7",]
+synonyms = [ "bhd", "lst7",]
 
 [gene."SPBC24C6.09c"]
 ref = "SPBC24C6.09c"
@@ -13548,7 +13548,7 @@ name = "grx4"
 [gene."SPBC26H8.07c"]
 ref = "SPBC26H8.07c"
 name = "nda3"
-synonyms = [ "ben1,alp12",]
+synonyms = [ "ben1", "alp12",]
 
 [gene."SPBC26H8.08c"]
 ref = "SPBC26H8.08c"
@@ -13619,7 +13619,7 @@ synonyms = [ "SPBC30B4.09c",]
 [gene."SPBC27B12.02"]
 ref = "SPBC27B12.02"
 name = "mis19"
-synonyms = [ "eic1,SPBC30B4.10,kis1",]
+synonyms = [ "eic1", "SPBC30B4.10", "kis1",]
 
 [gene."SPBC27B12.03c"]
 ref = "SPBC27B12.03c"
@@ -13720,7 +13720,7 @@ name = "mdm12"
 [gene."SPBC28F2.07"]
 ref = "SPBC28F2.07"
 name = "sfr1"
-synonyms = [ "dds20,mug13",]
+synonyms = [ "dds20", "mug13",]
 
 [gene."SPBC28F2.08c"]
 ref = "SPBC28F2.08c"
@@ -13733,7 +13733,7 @@ name = "toa1"
 [gene."SPBC28F2.10c"]
 ref = "SPBC28F2.10c"
 name = "ngg1"
-synonyms = [ "kap1,ada3",]
+synonyms = [ "kap1", "ada3",]
 
 [gene."SPBC28F2.11"]
 ref = "SPBC28F2.11"
@@ -13751,12 +13751,12 @@ synonyms = [ "SPBC365.17",]
 [gene."SPBC29A10.02"]
 ref = "SPBC29A10.02"
 name = "spo5"
-synonyms = [ "mrb1,mug12,SPBC365.18",]
+synonyms = [ "mrb1", "mug12", "SPBC365.18",]
 
 [gene."SPBC29A10.03c"]
 ref = "SPBC29A10.03c"
 name = "pcf1"
-synonyms = [ "rlf2,SPBC365.19c",]
+synonyms = [ "rlf2", "SPBC365.19c",]
 
 [gene."SPBC29A10.04"]
 ref = "SPBC29A10.04"
@@ -13808,7 +13808,7 @@ name = "rec8"
 [gene."SPBC29A10.15"]
 ref = "SPBC29A10.15"
 name = "orc1"
-synonyms = [ "orp1,cdc30,rid1",]
+synonyms = [ "orp1", "cdc30", "rid1",]
 
 [gene."SPBC29A10.16c"]
 ref = "SPBC29A10.16c"
@@ -13867,7 +13867,7 @@ name = "ort1"
 [gene."SPBC29A3.12"]
 ref = "SPBC29A3.12"
 name = "rps902"
-synonyms = [ "rps9-2,rps9b",]
+synonyms = [ "rps9-2", "rps9b",]
 
 [gene."SPBC29A3.13"]
 ref = "SPBC29A3.13"
@@ -13899,7 +13899,7 @@ ref = "SPBC29A3.21"
 [gene."SPBC29B5.01"]
 ref = "SPBC29B5.01"
 name = "atf1"
-synonyms = [ "mts1,sss1,gad7",]
+synonyms = [ "mts1", "sss1", "gad7",]
 
 [gene."SPBC29B5.02c"]
 ref = "SPBC29B5.02c"
@@ -13997,12 +13997,12 @@ name = "snr1"
 [gene."SPBC2D10.10c"]
 ref = "SPBC2D10.10c"
 name = "fib1"
-synonyms = [ "fib,nop1",]
+synonyms = [ "fib", "nop1",]
 
 [gene."SPBC2D10.11c"]
 ref = "SPBC2D10.11c"
 name = "nap2"
-synonyms = [ "nap1.2,nap12",]
+synonyms = [ "nap1.2", "nap12",]
 
 [gene."SPBC2D10.12"]
 ref = "SPBC2D10.12"
@@ -14053,7 +14053,7 @@ name = "ebs1"
 [gene."SPBC2F12.04"]
 ref = "SPBC2F12.04"
 name = "rpl1701"
-synonyms = [ "rpl17,rpl17-1",]
+synonyms = [ "rpl17", "rpl17-1",]
 
 [gene."SPBC2F12.05c"]
 ref = "SPBC2F12.05c"
@@ -14062,7 +14062,7 @@ name = "osh2"
 [gene."SPBC2F12.07c"]
 ref = "SPBC2F12.07c"
 name = "rpl802"
-synonyms = [ "rpl8-2,rpk37,rpk5b",]
+synonyms = [ "rpl8-2", "rpk37", "rpk5b",]
 
 [gene."SPBC2F12.08c"]
 ref = "SPBC2F12.08c"
@@ -14307,7 +14307,7 @@ name = "smi1"
 [gene."SPBC30D10.18c"]
 ref = "SPBC30D10.18c"
 name = "rpl102"
-synonyms = [ "rpl1-2,rpl10a-2",]
+synonyms = [ "rpl1-2", "rpl10a-2",]
 
 [gene."SPBC30D10.21"]
 ref = "SPBC30D10.21"
@@ -14322,7 +14322,7 @@ synonyms = [ "pvg4",]
 [gene."SPBC31A8.01c"]
 ref = "SPBC31A8.01c"
 name = "rtn1"
-synonyms = [ "cwl1,SPBC651.13c",]
+synonyms = [ "cwl1", "SPBC651.13c",]
 
 [gene."SPBC31A8.02"]
 ref = "SPBC31A8.02"
@@ -14332,7 +14332,7 @@ synonyms = [ "SPBC3D6.01",]
 [gene."SPBC31E1.01c"]
 ref = "SPBC31E1.01c"
 name = "atg2"
-synonyms = [ "mug36,SPBC660.18c",]
+synonyms = [ "mug36", "SPBC660.18c",]
 
 [gene."SPBC31E1.02c"]
 ref = "SPBC31E1.02c"
@@ -14422,7 +14422,7 @@ name = "atp15"
 [gene."SPBC31F10.16"]
 ref = "SPBC31F10.16"
 name = "bch1"
-synonyms = [ "ttc17,cfp1,bch2",]
+synonyms = [ "ttc17", "cfp1", "bch2",]
 
 [gene."SPBC31F10.17c"]
 ref = "SPBC31F10.17c"
@@ -14430,7 +14430,7 @@ ref = "SPBC31F10.17c"
 [gene."SPBC32C12.02"]
 ref = "SPBC32C12.02"
 name = "ste11"
-synonyms = [ "aff1,stex",]
+synonyms = [ "aff1", "stex",]
 
 [gene."SPBC32C12.03c"]
 ref = "SPBC32C12.03c"
@@ -14558,7 +14558,7 @@ ref = "SPBC32H8.15"
 [gene."SPBC336.01"]
 ref = "SPBC336.01"
 name = "fbh1"
-synonyms = [ "fdh1,fdh",]
+synonyms = [ "fdh1", "fdh",]
 
 [gene."SPBC336.02"]
 ref = "SPBC336.02"
@@ -14571,7 +14571,7 @@ name = "efc25"
 [gene."SPBC336.04"]
 ref = "SPBC336.04"
 name = "cdc6"
-synonyms = [ "pol3,pold,mis10",]
+synonyms = [ "pol3", "pold", "mis10",]
 
 [gene."SPBC336.05c"]
 ref = "SPBC336.05c"
@@ -14698,7 +14698,7 @@ name = "gas4"
 [gene."SPBC342.04"]
 ref = "SPBC342.04"
 name = "rpn1301"
-synonyms = [ "rpn13,rpn13a",]
+synonyms = [ "rpn13", "rpn13a",]
 
 [gene."SPBC342.05"]
 ref = "SPBC342.05"
@@ -14851,7 +14851,7 @@ name = "cox10"
 [gene."SPBC365.03c"]
 ref = "SPBC365.03c"
 name = "rpl2101"
-synonyms = [ "rpl21,rpl21-1",]
+synonyms = [ "rpl21", "rpl21-1",]
 
 [gene."SPBC365.04c"]
 ref = "SPBC365.04c"
@@ -14863,7 +14863,7 @@ name = "slu7"
 [gene."SPBC365.06"]
 ref = "SPBC365.06"
 name = "pmt3"
-synonyms = [ "ubl2,smt3",]
+synonyms = [ "ubl2", "smt3",]
 
 [gene."SPBC365.07c"]
 ref = "SPBC365.07c"
@@ -14942,7 +14942,7 @@ name = "ccp1"
 [gene."SPBC36B7.09"]
 ref = "SPBC36B7.09"
 name = "gcn2"
-synonyms = [ "ppk28,SPBP18G5.01",]
+synonyms = [ "ppk28", "SPBP18G5.01",]
 
 [gene."SPBC3B8.01c"]
 ref = "SPBC3B8.01c"
@@ -15023,7 +15023,7 @@ synonyms = [ "rpa21",]
 [gene."SPBC3B9.08c"]
 ref = "SPBC3B9.08c"
 name = "mnh1"
-synonyms = [ "magoh,mago",]
+synonyms = [ "magoh", "mago",]
 
 [gene."SPBC3B9.09"]
 ref = "SPBC3B9.09"
@@ -15044,7 +15044,7 @@ name = "trs23"
 [gene."SPBC3B9.13c"]
 ref = "SPBC3B9.13c"
 name = "rpp102"
-synonyms = [ "rpa103,rpp1-2,rpa3",]
+synonyms = [ "rpa103", "rpp1-2", "rpa3",]
 
 [gene."SPBC3B9.14c"]
 ref = "SPBC3B9.14c"
@@ -15086,7 +15086,7 @@ name = "but2"
 [gene."SPBC3D6.03c"]
 ref = "SPBC3D6.03c"
 name = "trz2"
-synonyms = [ "sptrz2,3'-tRNase",]
+synonyms = [ "sptrz2", "3'-tRNase",]
 
 [gene."SPBC3D6.04c"]
 ref = "SPBC3D6.04c"
@@ -15140,7 +15140,7 @@ ref = "SPBC3D6.16"
 [gene."SPBC3E7.01"]
 ref = "SPBC3E7.01"
 name = "fab1"
-synonyms = [ "ste12,SPBC6B1.11c",]
+synonyms = [ "ste12", "SPBC6B1.11c",]
 
 [gene."SPBC3E7.02c"]
 ref = "SPBC3E7.02c"
@@ -15192,7 +15192,7 @@ synonyms = [ "SPBC4F6.01",]
 [gene."SPBC3E7.15c"]
 ref = "SPBC3E7.15c"
 name = "lac1"
-synonyms = [ "SPBC4F6.02c,mug83",]
+synonyms = [ "SPBC4F6.02c", "mug83",]
 
 [gene."SPBC3E7.16c"]
 ref = "SPBC3E7.16c"
@@ -15212,7 +15212,7 @@ name = "erg26"
 [gene."SPBC3F6.03"]
 ref = "SPBC3F6.03"
 name = "trr1"
-synonyms = [ "caf4,trxR",]
+synonyms = [ "caf4", "trxR",]
 
 [gene."SPBC3F6.04c"]
 ref = "SPBC3F6.04c"
@@ -15225,7 +15225,7 @@ name = "rga1"
 [gene."SPBC3H7.01"]
 ref = "SPBC3H7.01"
 name = "spo14"
-synonyms = [ "stl1,SPBP16F5.01c",]
+synonyms = [ "stl1", "SPBP16F5.01c",]
 
 [gene."SPBC3H7.02"]
 ref = "SPBC3H7.02"
@@ -15301,7 +15301,7 @@ name = "sfb3"
 [gene."SPBC4.04c"]
 ref = "SPBC4.04c"
 name = "mcm2"
-synonyms = [ "cdc19,nda1",]
+synonyms = [ "cdc19", "nda1",]
 
 [gene."SPBC4.05"]
 ref = "SPBC4.05"
@@ -15318,7 +15318,7 @@ synonyms = [ "mts2",]
 [gene."SPBC405.01"]
 ref = "SPBC405.01"
 name = "ade1"
-synonyms = [ "min4,SPBC4C3.02c",]
+synonyms = [ "min4", "SPBC4C3.02c",]
 
 [gene."SPBC405.02c"]
 ref = "SPBC405.02c"
@@ -15343,7 +15343,7 @@ name = "xdj1"
 [gene."SPBC405.07"]
 ref = "SPBC405.07"
 name = "rpl3602"
-synonyms = [ "rpl36-2,rpl36",]
+synonyms = [ "rpl36-2", "rpl36",]
 
 [gene."SPBC409.03"]
 ref = "SPBC409.03"
@@ -15356,7 +15356,7 @@ name = "mis12"
 [gene."SPBC409.05"]
 ref = "SPBC409.05"
 name = "skp1"
-synonyms = [ "psh1,sph1",]
+synonyms = [ "psh1", "sph1",]
 
 [gene."SPBC409.06"]
 ref = "SPBC409.06"
@@ -15365,7 +15365,7 @@ name = "uch2"
 [gene."SPBC409.07c"]
 ref = "SPBC409.07c"
 name = "wis1"
-synonyms = [ "spc2,smf2,sty2",]
+synonyms = [ "spc2", "smf2", "sty2",]
 
 [gene."SPBC409.08"]
 ref = "SPBC409.08"
@@ -15373,7 +15373,7 @@ ref = "SPBC409.08"
 [gene."SPBC409.09c"]
 ref = "SPBC409.09c"
 name = "mis13"
-synonyms = [ "dsn1,cnl1",]
+synonyms = [ "dsn1", "cnl1",]
 
 [gene."SPBC409.10"]
 ref = "SPBC409.10"
@@ -15555,7 +15555,7 @@ name = "vps25"
 [gene."SPBC4B4.07c"]
 ref = "SPBC4B4.07c"
 name = "usp102"
-synonyms = [ "mud1,U1A",]
+synonyms = [ "mud1", "U1A",]
 
 [gene."SPBC4B4.08"]
 ref = "SPBC4B4.08"
@@ -15564,7 +15564,7 @@ name = "ght2"
 [gene."SPBC4B4.09"]
 ref = "SPBC4B4.09"
 name = "usp105"
-synonyms = [ "prp39,csp5",]
+synonyms = [ "prp39", "csp5",]
 
 [gene."SPBC4B4.10c"]
 ref = "SPBC4B4.10c"
@@ -15589,7 +15589,7 @@ name = "dss4"
 [gene."SPBC4C3.05c"]
 ref = "SPBC4C3.05c"
 name = "nuc1"
-synonyms = [ "rpa1,rpa190",]
+synonyms = [ "rpa1", "rpa190",]
 
 [gene."SPBC4C3.06"]
 ref = "SPBC4C3.06"
@@ -15622,7 +15622,7 @@ name = "sep1"
 [gene."SPBC4F6.04"]
 ref = "SPBC4F6.04"
 name = "rpl2502"
-synonyms = [ "rpl25b,rpl23a-2",]
+synonyms = [ "rpl25b", "rpl23a-2",]
 
 [gene."SPBC4F6.05c"]
 ref = "SPBC4F6.05c"
@@ -15767,7 +15767,7 @@ name = "dbp8"
 [gene."SPBC543.07"]
 ref = "SPBC543.07"
 name = "pek1"
-synonyms = [ "skh1,mkk1",]
+synonyms = [ "skh1", "mkk1",]
 
 [gene."SPBC543.08"]
 ref = "SPBC543.08"
@@ -15776,7 +15776,7 @@ name = "fit1"
 [gene."SPBC543.09"]
 ref = "SPBC543.09"
 name = "yta12"
-synonyms = [ "m-AAA,ppp76",]
+synonyms = [ "m-AAA", "ppp76",]
 
 [gene."SPBC543.10"]
 ref = "SPBC543.10"
@@ -15788,7 +15788,7 @@ ref = "SPBC557.02c"
 [gene."SPBC557.03c"]
 ref = "SPBC557.03c"
 name = "pim1"
-synonyms = [ "dcd1,ptr2",]
+synonyms = [ "dcd1", "ptr2",]
 
 [gene."SPBC557.04"]
 ref = "SPBC557.04"
@@ -15927,7 +15927,7 @@ name = "brc1"
 [gene."SPBC582.06c"]
 ref = "SPBC582.06c"
 name = "mcp6"
-synonyms = [ "hrs1,mug3",]
+synonyms = [ "hrs1", "mug3",]
 
 [gene."SPBC582.07c"]
 ref = "SPBC582.07c"
@@ -15996,7 +15996,7 @@ name = "oss1"
 [gene."SPBC646.09c"]
 ref = "SPBC646.09c"
 name = "int6"
-synonyms = [ "yin6,tif305",]
+synonyms = [ "yin6", "tif305",]
 
 [gene."SPBC646.10c"]
 ref = "SPBC646.10c"
@@ -16009,12 +16009,12 @@ name = "cct6"
 [gene."SPBC646.12c"]
 ref = "SPBC646.12c"
 name = "gap1"
-synonyms = [ "src1,sar1",]
+synonyms = [ "src1", "sar1",]
 
 [gene."SPBC646.13"]
 ref = "SPBC646.13"
 name = "sds23"
-synonyms = [ "psp1,moc1",]
+synonyms = [ "psp1", "moc1",]
 
 [gene."SPBC646.14c"]
 ref = "SPBC646.14c"
@@ -16031,12 +16031,12 @@ name = "scl1"
 [gene."SPBC646.17c"]
 ref = "SPBC646.17c"
 name = "dic1"
-synonyms = [ "SPBC855.01c,SPBP35G2.01c,mug44",]
+synonyms = [ "SPBC855.01c", "SPBP35G2.01c", "mug44",]
 
 [gene."SPBC649.02"]
 ref = "SPBC649.02"
 name = "rps1902"
-synonyms = [ "rps19-2,rps19",]
+synonyms = [ "rps19-2", "rps19",]
 
 [gene."SPBC649.03"]
 ref = "SPBC649.03"
@@ -16138,7 +16138,7 @@ name = "egt2"
 [gene."SPBC660.13c"]
 ref = "SPBC660.13c"
 name = "ssb1"
-synonyms = [ "rpa1,rad11,rpa70",]
+synonyms = [ "rpa1", "rad11", "rpa70",]
 
 [gene."SPBC660.14"]
 ref = "SPBC660.14"
@@ -16173,7 +16173,7 @@ name = "gpi15"
 [gene."SPBC685.06"]
 ref = "SPBC685.06"
 name = "rps001"
-synonyms = [ "rps0-1,rpsa-1,rps0",]
+synonyms = [ "rps0-1", "rpsa-1", "rps0",]
 
 [gene."SPBC685.07c"]
 ref = "SPBC685.07c"
@@ -16255,7 +16255,7 @@ name = "sus1"
 [gene."SPBC713.02c"]
 ref = "SPBC713.02c"
 name = "ubp15"
-synonyms = [ "ubpD,ubp21",]
+synonyms = [ "ubpD", "ubp21",]
 
 [gene."SPBC713.03"]
 ref = "SPBC713.03"
@@ -16359,7 +16359,7 @@ synonyms = [ "mug118",]
 [gene."SPBC725.13c"]
 ref = "SPBC725.13c"
 name = "psf2"
-synonyms = [ "dre13,bsh3",]
+synonyms = [ "dre13", "bsh3",]
 
 [gene."SPBC725.14"]
 ref = "SPBC725.14"
@@ -16385,7 +16385,7 @@ name = "rpl29"
 [gene."SPBC776.02c"]
 ref = "SPBC776.02c"
 name = "dis2"
-synonyms = [ "sds1,bws1",]
+synonyms = [ "sds1", "bws1",]
 
 [gene."SPBC776.03"]
 ref = "SPBC776.03"
@@ -16468,12 +16468,12 @@ name = "clr3"
 [gene."SPBC800.04c"]
 ref = "SPBC800.04c"
 name = "rpl4301"
-synonyms = [ "rpl43-1,rpl43,rpl37a-1",]
+synonyms = [ "rpl43-1", "rpl43", "rpl37a-1",]
 
 [gene."SPBC800.05c"]
 ref = "SPBC800.05c"
 name = "atb2"
-synonyms = [ "tub1,alp2,ban5",]
+synonyms = [ "tub1", "alp2", "ban5",]
 
 [gene."SPBC800.06"]
 ref = "SPBC800.06"
@@ -16515,7 +16515,7 @@ name = "ucp8"
 [gene."SPBC83.02c"]
 ref = "SPBC83.02c"
 name = "rpl4302"
-synonyms = [ "rpl43-2,rpl43,rpl37a-2",]
+synonyms = [ "rpl43-2", "rpl43", "rpl37a-2",]
 
 [gene."SPBC83.03c"]
 ref = "SPBC83.03c"
@@ -16595,7 +16595,7 @@ name = "dcn1"
 [gene."SPBC839.04"]
 ref = "SPBC839.04"
 name = "rpl803"
-synonyms = [ "rpl8-3,rpk5-b,rpkD4",]
+synonyms = [ "rpl8-3", "rpk5-b", "rpkD4",]
 
 [gene."SPBC839.05c"]
 ref = "SPBC839.05c"
@@ -16643,7 +16643,7 @@ synonyms = [ "see1",]
 [gene."SPBC839.15c"]
 ref = "SPBC839.15c"
 name = "tef103"
-synonyms = [ "ef1a-c,efa13,EF-1aC",]
+synonyms = [ "ef1a-c", "efa13", "EF-1aC",]
 
 [gene."SPBC839.16"]
 ref = "SPBC839.16"
@@ -16752,7 +16752,7 @@ name = "vps68"
 [gene."SPBC8D2.03c"]
 ref = "SPBC8D2.03c"
 name = "hhf2"
-synonyms = [ "ams3,h4.2",]
+synonyms = [ "ams3", "h4.2",]
 
 [gene."SPBC8D2.04"]
 ref = "SPBC8D2.04"
@@ -17087,7 +17087,7 @@ synonyms = [ "cwf1",]
 [gene."SPBP22H7.08"]
 ref = "SPBP22H7.08"
 name = "rps1002"
-synonyms = [ "rps10-2,rps10B",]
+synonyms = [ "rps10-2", "rps10B",]
 
 [gene."SPBP22H7.09c"]
 ref = "SPBP22H7.09c"
@@ -17239,7 +17239,7 @@ name = "fub2"
 [gene."SPBP4H10.03"]
 ref = "SPBP4H10.03"
 name = "oxa102"
-synonyms = [ "oxa1,oxa1-2,oxa1sp2",]
+synonyms = [ "oxa1", "oxa1-2", "oxa1sp2",]
 
 [gene."SPBP4H10.04"]
 ref = "SPBP4H10.04"
@@ -17268,7 +17268,7 @@ name = "rsv1"
 [gene."SPBP4H10.10"]
 ref = "SPBP4H10.10"
 name = "rbd3"
-synonyms = [ "rh2,ppp73",]
+synonyms = [ "rh2", "ppp73",]
 
 [gene."SPBP4H10.11c"]
 ref = "SPBP4H10.11c"
@@ -17322,7 +17322,7 @@ name = "rng9"
 [gene."SPBP8B7.03c"]
 ref = "SPBP8B7.03c"
 name = "rpl402"
-synonyms = [ "rpl4-2,rpl4",]
+synonyms = [ "rpl4-2", "rpl4",]
 
 [gene."SPBP8B7.04"]
 ref = "SPBP8B7.04"
@@ -17335,7 +17335,7 @@ name = "nce103"
 [gene."SPBP8B7.06"]
 ref = "SPBP8B7.06"
 name = "rpp201"
-synonyms = [ "rpp2,rpp2-1,rpa2",]
+synonyms = [ "rpp2", "rpp2-1", "rpa2",]
 
 [gene."SPBP8B7.07c"]
 ref = "SPBP8B7.07c"
@@ -17461,7 +17461,7 @@ ref = "SPBPB10D8.07c"
 [gene."SPBPB21E7.01c"]
 ref = "SPBPB21E7.01c"
 name = "eno102"
-synonyms = [ "eno1,SPBPB8B6.07c",]
+synonyms = [ "eno1", "SPBPB8B6.07c",]
 
 [gene."SPBPB21E7.02c"]
 ref = "SPBPB21E7.02c"
@@ -17913,7 +17913,7 @@ name = "rrp5"
 [gene."SPCC1183.08c"]
 ref = "SPCC1183.08c"
 name = "rpl101"
-synonyms = [ "rpl1-1,rpl10a-1",]
+synonyms = [ "rpl1-1", "rpl10a-1",]
 
 [gene."SPCC1183.09c"]
 ref = "SPCC1183.09c"
@@ -17996,7 +17996,7 @@ synonyms = [ "mug76",]
 [gene."SPCC1223.05c"]
 ref = "SPCC1223.05c"
 name = "rpl3702"
-synonyms = [ "rpl37-2,rpl37",]
+synonyms = [ "rpl37-2", "rpl37",]
 
 [gene."SPCC1223.06"]
 ref = "SPCC1223.06"
@@ -18119,7 +18119,7 @@ ref = "SPCC1235.18"
 [gene."SPCC1259.01c"]
 ref = "SPCC1259.01c"
 name = "rps1802"
-synonyms = [ "rps18-2,SPCC825.06c",]
+synonyms = [ "rps18-2", "SPCC825.06c",]
 
 [gene."SPCC1259.02c"]
 ref = "SPCC1259.02c"
@@ -18178,7 +18178,7 @@ name = "meu27"
 [gene."SPCC1259.15c"]
 ref = "SPCC1259.15c"
 name = "ubc11"
-synonyms = [ "ubcdp,ubcp4",]
+synonyms = [ "ubcdp", "ubcp4",]
 
 [gene."SPCC1259.16"]
 ref = "SPCC1259.16"
@@ -18245,7 +18245,7 @@ name = "sec65"
 [gene."SPCC1281.01"]
 ref = "SPCC1281.01"
 name = "ags1"
-synonyms = [ "mok1,SPCC338.01c,SPCC17A7.01,tps16",]
+synonyms = [ "mok1", "SPCC338.01c", "SPCC17A7.01", "tps16",]
 
 [gene."SPCC1281.02c"]
 ref = "SPCC1281.02c"
@@ -18300,7 +18300,7 @@ synonyms = [ "SPCC338.19",]
 [gene."SPCC1322.01"]
 ref = "SPCC1322.01"
 name = "rpm1"
-synonyms = [ "SPCC23B6.06,par1",]
+synonyms = [ "SPCC23B6.06", "par1",]
 
 [gene."SPCC1322.02"]
 ref = "SPCC1322.02"
@@ -18361,7 +18361,7 @@ name = "vtc4"
 [gene."SPCC1322.15"]
 ref = "SPCC1322.15"
 name = "rpl3402"
-synonyms = [ "rpl34,rpl34-2",]
+synonyms = [ "rpl34", "rpl34-2",]
 
 [gene."SPCC1322.16"]
 ref = "SPCC1322.16"
@@ -18457,7 +18457,7 @@ ref = "SPCC1442.04c"
 [gene."SPCC1442.05c"]
 ref = "SPCC1442.05c"
 name = "mic26"
-synonyms = [ "mic27,mic23",]
+synonyms = [ "mic27", "mic23",]
 
 [gene."SPCC1442.06"]
 ref = "SPCC1442.06"
@@ -18927,17 +18927,17 @@ ref = "SPCC16A11.15c"
 [gene."SPCC16A11.16c"]
 ref = "SPCC16A11.16c"
 name = "rpn1302"
-synonyms = [ "rpn13,rpn13b",]
+synonyms = [ "rpn13", "rpn13b",]
 
 [gene."SPCC16A11.17"]
 ref = "SPCC16A11.17"
 name = "mcm4"
-synonyms = [ "rid2,cdc21,SPCC24B10.01",]
+synonyms = [ "rid2", "cdc21", "SPCC24B10.01",]
 
 [gene."SPCC16C4.01"]
 ref = "SPCC16C4.01"
 name = "sif2"
-synonyms = [ "SPCC5E4.09,mrx101,mrx10",]
+synonyms = [ "SPCC5E4.09", "mrx101", "mrx10",]
 
 [gene."SPCC16C4.02c"]
 ref = "SPCC16C4.02c"
@@ -18968,7 +18968,7 @@ name = "skb15"
 [gene."SPCC16C4.09"]
 ref = "SPCC16C4.09"
 name = "sts5"
-synonyms = [ "orb4,mok2",]
+synonyms = [ "orb4", "mok2",]
 
 [gene."SPCC16C4.10"]
 ref = "SPCC16C4.10"
@@ -18987,7 +18987,7 @@ synonyms = [ "nat3",]
 [gene."SPCC16C4.13c"]
 ref = "SPCC16C4.13c"
 name = "rpl1201"
-synonyms = [ "rpl12-1,rpl12.1",]
+synonyms = [ "rpl12-1", "rpl12.1",]
 
 [gene."SPCC16C4.14c"]
 ref = "SPCC16C4.14c"
@@ -19054,7 +19054,7 @@ name = "met1"
 [gene."SPCC1739.07"]
 ref = "SPCC1739.07"
 name = "cti1"
-synonyms = [ "lrp1,rrp47",]
+synonyms = [ "lrp1", "rrp47",]
 
 [gene."SPCC1739.08c"]
 ref = "SPCC1739.08c"
@@ -19074,12 +19074,12 @@ name = "cdc11"
 [gene."SPCC1739.12"]
 ref = "SPCC1739.12"
 name = "ppe1"
-synonyms = [ "esp1,ppx1,eck2",]
+synonyms = [ "esp1", "ppx1", "eck2",]
 
 [gene."SPCC1739.13"]
 ref = "SPCC1739.13"
 name = "ssa2"
-synonyms = [ "csp6,hsp70",]
+synonyms = [ "csp6", "hsp70",]
 
 [gene."SPCC1739.14"]
 ref = "SPCC1739.14"
@@ -19092,12 +19092,12 @@ name = "wtf21"
 [gene."SPCC1742.01"]
 ref = "SPCC1742.01"
 name = "gsf2"
-synonyms = [ "SPCC1795.13,SPCPB16A4.07c,pfl1",]
+synonyms = [ "SPCC1795.13", "SPCPB16A4.07c", "pfl1",]
 
 [gene."SPCC1753.01c"]
 ref = "SPCC1753.01c"
 name = "ssb2"
-synonyms = [ "SPCC584.06c,rpa2",]
+synonyms = [ "SPCC584.06c", "rpa2",]
 
 [gene."SPCC1753.02c"]
 ref = "SPCC1753.02c"
@@ -19161,7 +19161,7 @@ name = "svp26"
 [gene."SPCC1795.11"]
 ref = "SPCC1795.11"
 name = "sum3"
-synonyms = [ "ded1,slh3,moc2",]
+synonyms = [ "ded1", "slh3", "moc2",]
 
 [gene."SPCC1795.12c"]
 ref = "SPCC1795.12c"
@@ -19289,7 +19289,7 @@ synonyms = [ "SPCC790.04c",]
 [gene."SPCC1840.02c"]
 ref = "SPCC1840.02c"
 name = "bgs4"
-synonyms = [ "orb11,cwg1,pbr1,sph1",]
+synonyms = [ "orb11", "cwg1", "pbr1", "sph1",]
 
 [gene."SPCC1840.03"]
 ref = "SPCC1840.03"
@@ -19373,7 +19373,7 @@ synonyms = [ "SPCC584.07c",]
 [gene."SPCC188.11"]
 ref = "SPCC188.11"
 name = "prp45"
-synonyms = [ "cwf13,snw1,SPCC584.08",]
+synonyms = [ "cwf13", "snw1", "SPCC584.08",]
 
 [gene."SPCC188.12"]
 ref = "SPCC188.12"
@@ -19399,7 +19399,7 @@ synonyms = [ "SPCC757.01",]
 [gene."SPCC18B5.01c"]
 ref = "SPCC18B5.01c"
 name = "bfr1"
-synonyms = [ "hba2,SPCPJ732.04c",]
+synonyms = [ "hba2", "SPCPJ732.04c",]
 
 [gene."SPCC18B5.02c"]
 ref = "SPCC18B5.02c"
@@ -19508,7 +19508,7 @@ name = "inv1"
 [gene."SPCC1919.01"]
 ref = "SPCC1919.01"
 name = "ckk2"
-synonyms = [ "ppk34,SPCC830.12",]
+synonyms = [ "ppk34", "SPCC830.12",]
 
 [gene."SPCC1919.02"]
 ref = "SPCC1919.02"
@@ -19566,7 +19566,7 @@ synonyms = [ "spB''",]
 [gene."SPCC1919.15"]
 ref = "SPCC1919.15"
 name = "brl1"
-synonyms = [ "SPCC790.01,rfp2",]
+synonyms = [ "SPCC790.01", "rfp2",]
 
 [gene."SPCC23B6.01c"]
 ref = "SPCC23B6.01c"
@@ -19615,7 +19615,7 @@ name = "ada2"
 [gene."SPCC24B10.09"]
 ref = "SPCC24B10.09"
 name = "rps1702"
-synonyms = [ "rps17-2,rps17",]
+synonyms = [ "rps17-2", "rps17",]
 
 [gene."SPCC24B10.10c"]
 ref = "SPCC24B10.10c"
@@ -19638,7 +19638,7 @@ synonyms = [ "skb2",]
 [gene."SPCC24B10.14c"]
 ref = "SPCC24B10.14c"
 name = "xlf1"
-synonyms = [ "nej1,mug104",]
+synonyms = [ "nej1", "mug104",]
 
 [gene."SPCC24B10.15"]
 ref = "SPCC24B10.15"
@@ -19723,7 +19723,7 @@ name = "trs130"
 [gene."SPCC285.15c"]
 ref = "SPCC285.15c"
 name = "rps2802"
-synonyms = [ "rps28-2,rps28",]
+synonyms = [ "rps28-2", "rps28",]
 
 [gene."SPCC285.16c"]
 ref = "SPCC285.16c"
@@ -19827,7 +19827,7 @@ synonyms = [ "tho1",]
 [gene."SPCC31H12.04c"]
 ref = "SPCC31H12.04c"
 name = "rpl1202"
-synonyms = [ "rpl12-2,rpl12",]
+synonyms = [ "rpl12-2", "rpl12",]
 
 [gene."SPCC31H12.05c"]
 ref = "SPCC31H12.05c"
@@ -19840,12 +19840,12 @@ name = "mug111"
 [gene."SPCC31H12.07"]
 ref = "SPCC31H12.07"
 name = "sec231"
-synonyms = [ "sec23a,SPCC5E4.01",]
+synonyms = [ "sec23a", "SPCC5E4.01",]
 
 [gene."SPCC31H12.08c"]
 ref = "SPCC31H12.08c"
 name = "ccr4"
-synonyms = [ "not6,SPCC5E4.02c",]
+synonyms = [ "not6", "SPCC5E4.02c",]
 
 [gene."SPCC320.03"]
 ref = "SPCC320.03"
@@ -19888,7 +19888,7 @@ synonyms = [ "SPCC330.17c",]
 [gene."SPCC320.13c"]
 ref = "SPCC320.13c"
 name = "ark1"
-synonyms = [ "aim1,SPCC330.16",]
+synonyms = [ "aim1", "SPCC330.16",]
 
 [gene."SPCC320.14"]
 ref = "SPCC320.14"
@@ -19898,12 +19898,12 @@ synonyms = [ "SPCC330.15c",]
 [gene."SPCC330.01c"]
 ref = "SPCC330.01c"
 name = "rhp16"
-synonyms = [ "SPCC613.13c,rad16",]
+synonyms = [ "SPCC613.13c", "rad16",]
 
 [gene."SPCC330.02"]
 ref = "SPCC330.02"
 name = "rhp7"
-synonyms = [ "rad7,SPCC613.14",]
+synonyms = [ "rad7", "SPCC613.14",]
 
 [gene."SPCC330.03c"]
 ref = "SPCC330.03c"
@@ -19991,7 +19991,7 @@ name = "naa15"
 [gene."SPCC338.08"]
 ref = "SPCC338.08"
 name = "ctp1"
-synonyms = [ "nip1,slr9,mug38",]
+synonyms = [ "nip1", "slr9", "mug38",]
 
 [gene."SPCC338.10c"]
 ref = "SPCC338.10c"
@@ -20000,7 +20000,7 @@ name = "cox5"
 [gene."SPCC338.11c"]
 ref = "SPCC338.11c"
 name = "efm2"
-synonyms = [ "rrg1,uvi22",]
+synonyms = [ "rrg1", "uvi22",]
 
 [gene."SPCC338.12"]
 ref = "SPCC338.12"
@@ -20040,7 +20040,7 @@ name = "bis1"
 [gene."SPCC364.03"]
 ref = "SPCC364.03"
 name = "rpl1702"
-synonyms = [ "rpl17-2,rpl17",]
+synonyms = [ "rpl17-2", "rpl17",]
 
 [gene."SPCC364.04c"]
 ref = "SPCC364.04c"
@@ -20063,7 +20063,7 @@ synonyms = [ "SPCC4G3.01",]
 [gene."SPCC417.02"]
 ref = "SPCC417.02"
 name = "dad5"
-synonyms = [ "hsk3,hos3",]
+synonyms = [ "hsk3", "hos3",]
 
 [gene."SPCC417.03"]
 ref = "SPCC417.03"
@@ -20075,12 +20075,12 @@ name = "cfh2"
 [gene."SPCC417.06c"]
 ref = "SPCC417.06c"
 name = "mug27"
-synonyms = [ "ppk35,slk1",]
+synonyms = [ "ppk35", "slk1",]
 
 [gene."SPCC417.07c"]
 ref = "SPCC417.07c"
 name = "mto1"
-synonyms = [ "mbo1,mod20",]
+synonyms = [ "mbo1", "mod20",]
 
 [gene."SPCC417.08"]
 ref = "SPCC417.08"
@@ -20234,7 +20234,7 @@ name = "mrpl4"
 [gene."SPCC4G3.07c"]
 ref = "SPCC4G3.07c"
 name = "phf1"
-synonyms = [ "swp1,saf50",]
+synonyms = [ "swp1", "saf50",]
 
 [gene."SPCC4G3.08"]
 ref = "SPCC4G3.08"
@@ -20291,7 +20291,7 @@ ref = "SPCC4G3.20"
 [gene."SPCC548.02c"]
 ref = "SPCC548.02c"
 name = "wtf3"
-synonyms = [ "meu9,SPCC548.02",]
+synonyms = [ "meu9", "SPCC548.02",]
 
 [gene."SPCC548.03c"]
 ref = "SPCC548.03c"
@@ -20366,7 +20366,7 @@ name = "arp6"
 [gene."SPCC550.13"]
 ref = "SPCC550.13"
 name = "dfp1"
-synonyms = [ "rad35,him1,dbf4",]
+synonyms = [ "rad35", "him1", "dbf4",]
 
 [gene."SPCC550.14"]
 ref = "SPCC550.14"
@@ -20405,7 +20405,7 @@ name = "swp1"
 [gene."SPCC553.07c"]
 ref = "SPCC553.07c"
 name = "kpa1"
-synonyms = [ "mug40,pol(kappa),pol-kappa,dinb",]
+synonyms = [ "mug40", "pol(kappa)", "pol-kappa", "dinb",]
 
 [gene."SPCC553.08c"]
 ref = "SPCC553.08c"
@@ -20543,7 +20543,7 @@ ref = "SPCC584.03c"
 [gene."SPCC584.04"]
 ref = "SPCC584.04"
 name = "sup35"
-synonyms = [ "erf3,sup9",]
+synonyms = [ "erf3", "sup9",]
 
 [gene."SPCC584.05"]
 ref = "SPCC584.05"
@@ -20621,7 +20621,7 @@ synonyms = [ "rad18",]
 [gene."SPCC5E4.07"]
 ref = "SPCC5E4.07"
 name = "rpl2802"
-synonyms = [ "rpl28-2,rpl28",]
+synonyms = [ "rpl28-2", "rpl28",]
 
 [gene."SPCC5E4.10c"]
 ref = "SPCC5E4.10c"
@@ -20690,7 +20690,7 @@ name = "meu23"
 [gene."SPCC613.12c"]
 ref = "SPCC613.12c"
 name = "raf1"
-synonyms = [ "dos1,cmc1,clr8",]
+synonyms = [ "dos1", "cmc1", "clr8",]
 
 [gene."SPCC622.01c"]
 ref = "SPCC622.01c"
@@ -20786,7 +20786,7 @@ name = "thg1"
 [gene."SPCC63.08c"]
 ref = "SPCC63.08c"
 name = "atg1"
-synonyms = [ "ppk36,cvt10",]
+synonyms = [ "ppk36", "cvt10",]
 
 [gene."SPCC63.10c"]
 ref = "SPCC63.10c"
@@ -20827,7 +20827,7 @@ synonyms = [ "rng5",]
 [gene."SPCC645.06c"]
 ref = "SPCC645.06c"
 name = "rgf3"
-synonyms = [ "lad1,ehs2",]
+synonyms = [ "lad1", "ehs2",]
 
 [gene."SPCC645.07"]
 ref = "SPCC645.07"
@@ -20906,7 +20906,7 @@ name = "saf1"
 [gene."SPCC663.12"]
 ref = "SPCC663.12"
 name = "cid12"
-synonyms = [ "csp8,csp10",]
+synonyms = [ "csp8", "csp10",]
 
 [gene."SPCC663.13c"]
 ref = "SPCC663.13c"
@@ -20945,7 +20945,7 @@ name = "nnk1"
 [gene."SPCC70.06"]
 ref = "SPCC70.06"
 name = "sac32"
-synonyms = [ "SPNCRNA.521,sac3",]
+synonyms = [ "SPNCRNA.521", "sac3",]
 
 [gene."SPCC70.07c"]
 ref = "SPCC70.07c"
@@ -21226,7 +21226,7 @@ name = "efr3"
 [gene."SPCC794.09c"]
 ref = "SPCC794.09c"
 name = "tef101"
-synonyms = [ "ef1a-a,efa11,EF-1aA",]
+synonyms = [ "ef1a-a", "efa11", "EF-1aA",]
 
 [gene."SPCC794.10"]
 ref = "SPCC794.10"
@@ -21342,7 +21342,7 @@ synonyms = [ "SPCP31B10.09",]
 [gene."SPCC962.02c"]
 ref = "SPCC962.02c"
 name = "bir1"
-synonyms = [ "cut17,pbh1,SPCP31B10.10c",]
+synonyms = [ "cut17", "pbh1", "SPCP31B10.10c",]
 
 [gene."SPCC962.03c"]
 ref = "SPCC962.03c"
@@ -21351,7 +21351,7 @@ name = "cut15"
 [gene."SPCC962.04"]
 ref = "SPCC962.04"
 name = "rps1201"
-synonyms = [ "rps12-1,rps12",]
+synonyms = [ "rps12-1", "rps12",]
 
 [gene."SPCC962.05"]
 ref = "SPCC962.05"
@@ -21360,7 +21360,7 @@ name = "ast1"
 [gene."SPCC962.06c"]
 ref = "SPCC962.06c"
 name = "bpb1"
-synonyms = [ "sf1,ods3",]
+synonyms = [ "sf1", "ods3",]
 
 [gene."SPCC965.03"]
 ref = "SPCC965.03"
@@ -21411,7 +21411,7 @@ ref = "SPCC965.14c"
 [gene."SPCC970.01"]
 ref = "SPCC970.01"
 name = "rad16"
-synonyms = [ "rad10,rad20,swi9",]
+synonyms = [ "rad10", "rad20", "swi9",]
 
 [gene."SPCC970.02"]
 ref = "SPCC970.02"
@@ -21437,7 +21437,7 @@ name = "erv29"
 [gene."SPCC970.07c"]
 ref = "SPCC970.07c"
 name = "raf2"
-synonyms = [ "dos2,cmc2,clr7",]
+synonyms = [ "dos2", "cmc2", "clr7",]
 
 [gene."SPCC970.08"]
 ref = "SPCC970.08"
@@ -21528,7 +21528,7 @@ ref = "SPCP31B10.02"
 [gene."SPCP31B10.03c"]
 ref = "SPCP31B10.03c"
 name = "med31"
-synonyms = [ "soh1,sep10",]
+synonyms = [ "soh1", "sep10",]
 
 [gene."SPCP31B10.04"]
 ref = "SPCP31B10.04"
@@ -21550,7 +21550,7 @@ name = "eft202"
 [gene."SPCP31B10.08c"]
 ref = "SPCP31B10.08c"
 name = "rpl35A01"
-synonyms = [ "rpl35a,rpl33",]
+synonyms = [ "rpl35a", "rpl33",]
 
 [gene."SPCPB16A4.02c"]
 ref = "SPCPB16A4.02c"
@@ -21758,7 +21758,7 @@ name = "cox3"
 [gene."SPMIT.05"]
 ref = "SPMIT.05"
 name = "cob1"
-synonyms = [ "cob,cytb",]
+synonyms = [ "cob", "cytb",]
 
 [gene."SPMIT.06"]
 ref = "SPMIT.06"
@@ -21770,7 +21770,7 @@ name = "atp6"
 [gene."SPMIT.08"]
 ref = "SPMIT.08"
 name = "var1"
-synonyms = [ "rps3,urfa",]
+synonyms = [ "rps3", "urfa",]
 
 [gene."SPMIT.09"]
 ref = "SPMIT.09"
@@ -21866,12 +21866,12 @@ ref = "SPMITTRNAVAL.01"
 [gene."SPMTR.01"]
 ref = "SPMTR.01"
 name = "mat2-Pc"
-synonyms = [ "mat-Pc,matPc,mat2Pc",]
+synonyms = [ "mat-Pc", "matPc", "mat2Pc",]
 
 [gene."SPMTR.02"]
 ref = "SPMTR.02"
 name = "mat2-Pi"
-synonyms = [ "mat-Pi,matPi,mat-Pm,mat2-Pm,matPm,mei1",]
+synonyms = [ "mat-Pi", "matPi", "mat-Pm", "mat2-Pm", "matPm", "mei1",]
 
 [gene."SPNCRNA.01"]
 ref = "SPNCRNA.01"
@@ -21896,7 +21896,7 @@ synonyms = [ "prl04",]
 [gene."SPNCRNA.05"]
 ref = "SPNCRNA.05"
 name = "prl5"
-synonyms = [ "mug121-antisense-1,prl05",]
+synonyms = [ "mug121-antisense-1", "prl05",]
 
 [gene."SPNCRNA.06"]
 ref = "SPNCRNA.06"
@@ -21906,7 +21906,7 @@ synonyms = [ "prl06",]
 [gene."SPNCRNA.07"]
 ref = "SPNCRNA.07"
 name = "meu3"
-synonyms = [ "prl07,prl7,SPNCRNA.1098",]
+synonyms = [ "prl07", "prl7", "SPNCRNA.1098",]
 
 [gene."SPNCRNA.08"]
 ref = "SPNCRNA.08"
@@ -22042,7 +22042,7 @@ name = "mug126-antisense-1"
 [gene."SPNCRNA.103"]
 ref = "SPNCRNA.103"
 name = "sme2"
-synonyms = [ "SPNCRNA.1341,nam4,meiRNA-L,sme2-L",]
+synonyms = [ "SPNCRNA.1341", "nam4", "meiRNA-L", "sme2-L",]
 
 [gene."SPNCRNA.1030"]
 ref = "SPNCRNA.1030"
@@ -22732,7 +22732,7 @@ ref = "SPNCRNA.1207"
 [gene."SPNCRNA.1208"]
 ref = "SPNCRNA.1208"
 name = "SPCC162.01c-antisense-1"
-synonyms = [ "SPNG2AF60,SPNCRNA.582",]
+synonyms = [ "SPNG2AF60", "SPNCRNA.582",]
 
 [gene."SPNCRNA.1209"]
 ref = "SPNCRNA.1209"
@@ -22811,7 +22811,7 @@ name = "ste6-antisense-1"
 [gene."SPNCRNA.1228"]
 ref = "SPNCRNA.1228"
 name = ""
-synonyms = [ "SPNCRNA.502,SPNG2497",]
+synonyms = [ "SPNCRNA.502", "SPNG2497",]
 
 [gene."SPNCRNA.1229"]
 ref = "SPNCRNA.1229"
@@ -22837,7 +22837,7 @@ name = "spp27-antisense-1"
 [gene."SPNCRNA.1234"]
 ref = "SPNCRNA.1234"
 name = "prl10"
-synonyms = [ "SPNCRNA.10,nmt1-antisense-1",]
+synonyms = [ "SPNCRNA.10", "nmt1-antisense-1",]
 
 [gene."SPNCRNA.1235"]
 ref = "SPNCRNA.1235"
@@ -23007,7 +23007,7 @@ name = "opt3-antisense-1"
 [gene."SPNCRNA.128"]
 ref = "SPNCRNA.128"
 name = "rrk1"
-synonyms = [ "K1-RNA,K2-RNA",]
+synonyms = [ "K1-RNA", "K2-RNA",]
 
 [gene."SPNCRNA.1280"]
 ref = "SPNCRNA.1280"
@@ -23450,7 +23450,7 @@ name = "SPBC646.03-antisense-1"
 [gene."SPNCRNA.1399"]
 ref = "SPNCRNA.1399"
 name = ""
-synonyms = [ "SPNCRNA.334,SPNG1313",]
+synonyms = [ "SPNCRNA.334", "SPNG1313",]
 
 [gene."SPNCRNA.14"]
 ref = "SPNCRNA.14"
@@ -23754,7 +23754,7 @@ name = "spo14-antisense-1"
 [gene."SPNCRNA.1474"]
 ref = "SPNCRNA.1474"
 name = ""
-synonyms = [ "SPNCRNA.379,SPNG1528",]
+synonyms = [ "SPNCRNA.379", "SPNG1528",]
 
 [gene."SPNCRNA.1475"]
 ref = "SPNCRNA.1475"
@@ -24666,7 +24666,7 @@ synonyms = [ "prl2",]
 [gene."SPNCRNA.1708"]
 ref = "SPNCRNA.1708"
 name = "prl103"
-synonyms = [ "prl3,SPNCRNA.5498",]
+synonyms = [ "prl3", "SPNCRNA.5498",]
 
 [gene."SPNCRNA.1709"]
 ref = "SPNCRNA.1709"
@@ -25281,7 +25281,7 @@ ref = "SPNCRNA.2139"
 [gene."SPNCRNA.214"]
 ref = "SPNCRNA.214"
 name = "ter1"
-synonyms = [ "SPNG585,SPNCRNA.884",]
+synonyms = [ "SPNG585", "SPNCRNA.884",]
 
 [gene."SPNCRNA.2140"]
 ref = "SPNCRNA.2140"
@@ -26134,7 +26134,7 @@ ref = "SPNCRNA.2389"
 [gene."SPNCRNA.239"]
 ref = "SPNCRNA.239"
 name = ""
-synonyms = [ "SPNG774,SPNCRNA.951",]
+synonyms = [ "SPNG774", "SPNCRNA.951",]
 
 [gene."SPNCRNA.2390"]
 ref = "SPNCRNA.2390"
@@ -27798,7 +27798,7 @@ ref = "SPNCRNA.2869"
 [gene."SPNCRNA.287"]
 ref = "SPNCRNA.287"
 name = ""
-synonyms = [ "SPNCRNA.1300,SPNG1093",]
+synonyms = [ "SPNCRNA.1300", "SPNG1093",]
 
 [gene."SPNCRNA.2870"]
 ref = "SPNCRNA.2870"
@@ -27898,7 +27898,7 @@ ref = "SPNCRNA.2899"
 [gene."SPNCRNA.29"]
 ref = "SPNCRNA.29"
 name = "meu19"
-synonyms = [ "prl29,SPNCRNA.1295",]
+synonyms = [ "prl29", "SPNCRNA.1295",]
 
 [gene."SPNCRNA.290"]
 ref = "SPNCRNA.290"
@@ -28379,7 +28379,7 @@ ref = "SPNCRNA.3039"
 [gene."SPNCRNA.304"]
 ref = "SPNCRNA.304"
 name = ""
-synonyms = [ "SPNCRNA.1347,SPNG1193",]
+synonyms = [ "SPNCRNA.1347", "SPNG1193",]
 
 [gene."SPNCRNA.3040"]
 ref = "SPNCRNA.3040"
@@ -28787,7 +28787,7 @@ ref = "SPNCRNA.3159"
 [gene."SPNCRNA.316"]
 ref = "SPNCRNA.316"
 name = ""
-synonyms = [ "SPNCRNA.1372,SPNG1243",]
+synonyms = [ "SPNCRNA.1372", "SPNG1243",]
 
 [gene."SPNCRNA.3160"]
 ref = "SPNCRNA.3160"
@@ -31219,7 +31219,7 @@ ref = "SPNCRNA.3879"
 [gene."SPNCRNA.388"]
 ref = "SPNCRNA.388"
 name = ""
-synonyms = [ "SPNCRNA.1486,SPNG1578",]
+synonyms = [ "SPNCRNA.1486", "SPNG1578",]
 
 [gene."SPNCRNA.3880"]
 ref = "SPNCRNA.3880"
@@ -32925,7 +32925,7 @@ ref = "SPNCRNA.4379"
 [gene."SPNCRNA.438"]
 ref = "SPNCRNA.438"
 name = ""
-synonyms = [ "SPNG1958-59,SPNCRNA.1679",]
+synonyms = [ "SPNG1958-59", "SPNCRNA.1679",]
 
 [gene."SPNCRNA.4380"]
 ref = "SPNCRNA.4380"
@@ -36065,7 +36065,7 @@ ref = "SPNCRNA.5299"
 [gene."SPNCRNA.53"]
 ref = "SPNCRNA.53"
 name = "prl53"
-synonyms = [ "prl63,prl49,SPNCRNA.63",]
+synonyms = [ "prl63", "prl49", "SPNCRNA.63",]
 
 [gene."SPNCRNA.530"]
 ref = "SPNCRNA.530"
@@ -36402,7 +36402,7 @@ name = "prl54"
 [gene."SPNCRNA.540"]
 ref = "SPNCRNA.540"
 name = ""
-synonyms = [ "SPNGAF22,SPNCRNA.1541",]
+synonyms = [ "SPNGAF22", "SPNCRNA.1541",]
 
 [gene."SPNCRNA.5400"]
 ref = "SPNCRNA.5400"
@@ -37920,7 +37920,7 @@ ref = "SPNCRNA.5839"
 [gene."SPNCRNA.584"]
 ref = "SPNCRNA.584"
 name = "lncRNA584"
-synonyms = [ "SPNG2AF58,SPNCRNA.1274,SPCC1919.05-antisense-2",]
+synonyms = [ "SPNG2AF58", "SPNCRNA.1274", "SPCC1919.05-antisense-2",]
 
 [gene."SPNCRNA.5840"]
 ref = "SPNCRNA.5840"
@@ -38116,7 +38116,7 @@ ref = "SPNCRNA.5899"
 [gene."SPNCRNA.59"]
 ref = "SPNCRNA.59"
 name = "prl59"
-synonyms = [ "SPNCRNA.817,SPNCRNA.77,SPNCRNA.78",]
+synonyms = [ "SPNCRNA.817", "SPNCRNA.77", "SPNCRNA.78",]
 
 [gene."SPNCRNA.5900"]
 ref = "SPNCRNA.5900"
@@ -38553,7 +38553,7 @@ ref = "SPNCRNA.6039"
 [gene."SPNCRNA.604"]
 ref = "SPNCRNA.604"
 name = ""
-synonyms = [ "SPNG25,SPNCRNA.139",]
+synonyms = [ "SPNG25", "SPNCRNA.139",]
 
 [gene."SPNCRNA.6040"]
 ref = "SPNCRNA.6040"
@@ -39374,7 +39374,7 @@ ref = "SPNCRNA.6279"
 [gene."SPNCRNA.628"]
 ref = "SPNCRNA.628"
 name = ""
-synonyms = [ "SPNG51,SPNCRNA.145",]
+synonyms = [ "SPNG51", "SPNCRNA.145",]
 
 [gene."SPNCRNA.6280"]
 ref = "SPNCRNA.6280"
@@ -44613,7 +44613,7 @@ ref = "SPNCRNA.819"
 [gene."SPNCRNA.82"]
 ref = "SPNCRNA.82"
 name = "mrp1"
-synonyms = [ "mrp-1,SPNCRNA.727",]
+synonyms = [ "mrp-1", "SPNCRNA.727",]
 
 [gene."SPNCRNA.820"]
 ref = "SPNCRNA.820"
@@ -44629,7 +44629,7 @@ name = "seh1-antisense-1"
 [gene."SPNCRNA.823"]
 ref = "SPNCRNA.823"
 name = ""
-synonyms = [ "SPNG436,SPNCRNA.193",]
+synonyms = [ "SPNG436", "SPNCRNA.193",]
 
 [gene."SPNCRNA.824"]
 ref = "SPNCRNA.824"
@@ -44928,7 +44928,7 @@ ref = "SPNCRNA.900"
 [gene."SPNCRNA.9001"]
 ref = "SPNCRNA.9001"
 name = "prt2"
-synonyms = [ "SPBC8E4.02c,spncrna.9001",]
+synonyms = [ "SPBC8E4.02c", "spncrna.9001",]
 
 [gene."SPNCRNA.901"]
 ref = "SPNCRNA.901"
@@ -44955,7 +44955,7 @@ ref = "SPNCRNA.906"
 [gene."SPNCRNA.907"]
 ref = "SPNCRNA.907"
 name = ""
-synonyms = [ "SPNCRNA.221,SPNG645",]
+synonyms = [ "SPNCRNA.221", "SPNG645",]
 
 [gene."SPNCRNA.908"]
 ref = "SPNCRNA.908"
@@ -45034,7 +45034,7 @@ name = "ain1-antisense-1"
 [gene."SPNCRNA.928"]
 ref = "SPNCRNA.928"
 name = "meu16"
-synonyms = [ "mde6-antisense-1,prl18,SPNCRNA.18",]
+synonyms = [ "mde6-antisense-1", "prl18", "SPNCRNA.18",]
 
 [gene."SPNCRNA.929"]
 ref = "SPNCRNA.929"
@@ -45471,7 +45471,7 @@ synonyms = [ "SPRRNA.08",]
 [gene."SPRRNA.53"]
 ref = "SPRRNA.53"
 name = ""
-synonyms = [ "SPRRNA.56,new26",]
+synonyms = [ "SPRRNA.56", "new26",]
 
 [gene."SPRRNA.54"]
 ref = "SPRRNA.54"
@@ -45566,7 +45566,7 @@ name = "snoR69"
 [gene."SPSNORNA.20"]
 ref = "SPSNORNA.20"
 name = "snR30"
-synonyms = [ "snoU17,SPNCRNA.906",]
+synonyms = [ "snoU17", "SPNCRNA.906",]
 
 [gene."SPSNORNA.21"]
 ref = "SPSNORNA.21"
@@ -45583,7 +45583,7 @@ name = "snoZ15"
 [gene."SPSNORNA.24"]
 ref = "SPSNORNA.24"
 name = "snoR39b"
-synonyms = [ "snoR39,snR39",]
+synonyms = [ "snoR39", "snR39",]
 
 [gene."SPSNORNA.25"]
 ref = "SPSNORNA.25"
@@ -45613,7 +45613,7 @@ name = "snr62"
 [gene."SPSNORNA.31"]
 ref = "SPSNORNA.31"
 name = "snoR39a"
-synonyms = [ "snoR39,snR39",]
+synonyms = [ "snoR39", "snR39",]
 
 [gene."SPSNORNA.32"]
 ref = "SPSNORNA.32"
@@ -45722,7 +45722,7 @@ synonyms = [ "U2",]
 [gene."SPSNRNA.03"]
 ref = "SPSNRNA.03"
 name = "snu3"
-synonyms = [ "U3,U3snRNA,snu3A",]
+synonyms = [ "U3", "U3snRNA", "snu3A",]
 
 [gene."SPSNRNA.04"]
 ref = "SPSNRNA.04"
@@ -45736,7 +45736,7 @@ name = "snu5"
 [gene."SPSNRNA.06"]
 ref = "SPSNRNA.06"
 name = "snu6"
-synonyms = [ "U6snRNA,U6",]
+synonyms = [ "U6snRNA", "U6",]
 
 [gene."SPSNRNA.07"]
 ref = "SPSNRNA.07"
