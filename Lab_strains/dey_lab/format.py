@@ -18,7 +18,6 @@ for genotype in data.Genotype:
     genotype_dict.update({genotype: [a.lower()
                          for a in re.split("\s+", genotype)]})
 
-print(len(genotype_dict))
 # print(allele_names)
 
 # %%
