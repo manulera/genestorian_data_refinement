@@ -17,7 +17,11 @@ From now on, if you want to use this environment you can either:
 * Call python by doing `poetry run python ...` everytime you run something.
 * Activate the environment by running `python shell`.
 
-### Working with notebooks
+### Adding new dependencies
+
+To add new dependencies, run `poetry install library_name`.
+
+### Working with notebooks and ipython scripts
 
 You can add the virtual environment that you created to the jupyter kernel by running:
 

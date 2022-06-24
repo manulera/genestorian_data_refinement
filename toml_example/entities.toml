@@ -1,0 +1,34 @@
+[promoter]
+
+[promoter.pnmt1]
+name = 'pnmt1'
+ref = 'https://xyz.com'
+synonyms = ['p3nmt1']
+
+[promoter.pnmt81]
+name = 'pnmt81'
+ref = 'https://xyz.com'
+synonyms = ['p3nmt81']
+
+# In special case, where only one lab would need it
+[promoter.pnmt81.conflicting_synonyms]
+dey_lab = ['p81']
+
+# Format before saving!
+[gene]
+
+# Example for line in file: SPAC15F9.03c	nxt2	ntf2,nft2,SPAC1B9.01c
+
+# Note the quotes here, to prevent that 03c is interpreted as a sub-class
+[gene."SPAC15F9.03c"]
+name = 'nxt2' # main name if it exists, otherwise systematic id
+ref = 'SPAC15F9.03c' # systemaic id
+synonyms = ['nxt2', 'ntf2', 'nft2', 'SPAC1B9.01c'] 
+
+[allele]
+
+# Example for lines:
+# SPAC110.03	cdc42	cdc42-1625	unknown	Not assayed
+# SPAC110.03	cdc42	cdc42-3	unknown	Not assayed
+
+[allele.]

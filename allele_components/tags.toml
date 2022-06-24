@@ -1,0 +1,66 @@
+
+[tag.tdTomato]
+name = 'tdTomato'
+ref = 'https://www.fpbase.org/protein/tdtomato/'
+
+[tag.GFP]
+name = 'GFP'
+ref = 'https://www.fpbase.org/protein/avgfp/'
+
+[tag.meGFP]
+name = 'meGFP'
+ref = 'https://www.fpbase.org/protein/megfp/'
+
+[tag.eGFP]
+name = 'eGFP'
+ref = 'https://www.fpbase.org/protein/egfp/'
+
+[tag.mCherry]
+name = 'mCherry'
+ref = 'link'
+synonyms = ['mCh']
+
+[tag.mNeonGreen]
+name = 'mNeonGreen'
+ref = 'https://www.fpbase.org/protein/mNeonGreen/'
+synonyms = ['mng']
+
+[tag.CFP]
+name = 'CFP'
+ref = 'https://www.fpbase.org/protein/cfp/'
+synonyms = ['gfpY66W']
+
+[tag.3xGFP]
+name = '3xGFP'
+ref = 'https://www.fpbase.org/protein/gfp/'
+
+[tag.mMaple3]
+name = 'mMaple3'
+ref = 'https://www.fpbase.org/protein/mmaple3/'
+
+[tag."mEos3.2"]
+name = 'mEos3.2'
+ref = 'https://www.fpbase.org/protein/meos32/'
+
+[tag.sfGFP]
+name = 'sfGFP'
+ref = 'https://www.fpbase.org/protein/superfolder-gfp/'
+synonyms = ['superfolderGFP', 'superfolder-GFP']
+
+[tag.Venus]
+name = 'Venus'
+ref = 'https://www.fpbase.org/protein/venus/'
+synonyms = ['SEYFP-F46L']
+
+[tag.mVenus]
+name = 'mVenus'
+ref = 'https://www.fpbase.org/protein/mvenus/'
+
+[tag.iRFP713]
+name = 'iRFP713'
+ref = 'https://www.fpbase.org/protein/irfp713/'
+synonyms = ['iRFP']
+
+[tag.mTagBFP2]
+name = 'mTagBFP2'
+ref = 'https://www.fpbase.org/protein/mtagbfp2/'
