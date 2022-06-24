@@ -38,40 +38,23 @@ for key in allele_dict:
     allele_dict[key].sort(key=len, reverse=True)
 
 # %%
-systematic_ids = set()
-gene_names = set()
-other = set()
-gene_dictionary = dict()
 
 
-def add_gene_name(gene_name):
-    if re.match(r'[a-z]{3}\d+', gene_name) is not None:
-        gene_names.add(gene_name)
-    elif re.match(r'SP.+\.\d+c?', gene_name) is not None:
-        systematic_ids.add(gene_name)
-    else:
-        other.add(gene_name)
+f = toml.load('../../data/gene_IDs.toml')
+gene_dictionary = {}
+systematic_id = f['gene'].keys()
+for id in systematic_id:
+    if 'name' in f['gene'][id].keys():
+        names = f['gene'][id]['name']
+        gene_dictionary.update({names: id})
+    if 'synonyms' in f['gene'][id].keys():
+        synonym = f['gene'][id]['synonyms']
+        for sy in synonym:
+            gene = re.match(r'[a-z]{3}\d+', sy)
+            systematic_id = re.match(r'SP.+\.\d+c?', sy)
+            gene_dictionary[gene] = id
+            gene_dictionary[gene] = systematic_id
 
-
-with open('../../data/gene_IDs_names.tsv') as ins:
-    # First line does not count
-    ins.readline()
-    for line in ins:
-        fields = line.strip().split('\t')
-        add_gene_name(fields[0])
-        gene_dictionary[fields[0]] = fields[0]
-        if len(fields) > 1:
-            add_gene_name(fields[1])
-            gene_dictionary[fields[1]] = fields[0]
-            if len(fields) > 2:
-                if ',' in fields[2]:
-                    [add_gene_name(f) for f in fields[2].split(',')]
-                    for f in fields[2].split(','):
-                        add_gene_name(f)
-                        gene_dictionary[f] = fields[0]
-                else:
-                    add_gene_name(fields[2])
-                    gene_dictionary[fields[2]] = fields[0]
 
 # %%
 
@@ -80,7 +63,7 @@ def is_allele(allele, allele_dict, gene_dictionary):
     alleles = []
     for allele in genotype_dict[genotype]:
         for name in re.findall(r'[a-z]{3}\d+', allele):
-            if name in gene_names:
+            if name in gene_dictionary.keys():
                 systematic_id = gene_dictionary[name]
                 allele_found = False
                 if systematic_id in allele_dict:
@@ -110,3 +93,5 @@ for genotype in genotype_dict.keys():
 # %%
 with open('format.json', 'w') as fp:
     json.dump(genotype_dictonary, fp, indent=3)
+
+# %%
