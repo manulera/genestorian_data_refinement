@@ -1,0 +1,21 @@
+
+# I will have to double-check the prep81, but I am pretty sure
+[promoter.pnmt1]
+name = 'pnmt1'
+synonyms = ['p3nmt1', 'prep1']
+
+[promoter.pnmt41]
+name = 'pnmt41'
+synonyms = ['p3nmt41', 'prep41']
+
+[promoter.pnmt81]
+name = 'pnmt81'
+synonyms = ['p3nmt81', 'prep81']
+
+[promoter.padh1]
+comment = 'Promoter of S. cerevisiae ADH1. Often used for constituively active expression.'
+name = 'padh1'
+
+[promoter.gene_promoter]
+comment = 'A promoter that comes from a gene of the same species'
+semantic_patterns = ['pGENE']

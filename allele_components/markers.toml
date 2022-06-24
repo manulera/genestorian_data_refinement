@@ -1,0 +1,14 @@
+[marker.KanMx6]
+name = 'KanMx6'
+synonyms = ['kan', 'kanr', 'kanmx', 'kanmx4']
+
+[marker.hphMx6]
+name = 'NatMx6'
+synonyms = ['nat', 'natr', 'natmx', 'natmx4']
+
+[marker.HphMx6]
+name = 'HphMx6'
+synonyms = ['hph', 'hphr', 'hphmx', 'hphmx4', 'hyg', 'hygR']
+
+[marker.BsdMx]
+name = 'BsdMx'

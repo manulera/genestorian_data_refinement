@@ -1,0 +1,22 @@
+# These are experimental for now
+
+[other.gene_deletion]
+name = 'gene_deletion'
+semantic_patterns = ['GENE-(?=MARKER)', 'GENE[dδ]']
+
+[other.protein_truncation]
+name = 'protein_truncation'
+semantic_patterns = ['GENE[dδ]\d*', 'GENEdelta\d*']
+
+[other.aminoacid_substitution]
+name = 'aminoacid_substitution'
+semantic_patterns = ['GENE([^a-z\d]*[a-z]\d*[a-z][^a-z\d]*)+']
+
+# This one should check that there are a number of characters after
+[other.ectopic_expression]
+name = 'ectopic_expression'
+semantic_patterns = ['GENE+-']
+
+[other.transcription_terminator]
+name = 'transcription_terminator'
+semantic_patterns = ['terminator.*', 'term*']
