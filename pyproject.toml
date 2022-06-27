@@ -1,21 +1,22 @@
 [tool.poetry]
+authors = ["Your Name <you@example.com>"]
+description = "a python application to interpret genotypes from strain lists"
 name = "genestorian_data_refinement"
 version = "0.1.0"
-description = "a python application to interpret genotypes from strain lists"
-authors = ["Your Name <you@example.com>"]
 
 [tool.poetry.dependencies]
+genestorian_module = {path = "genestorian_module", develop = true}
+openpyxl = "^3.0.10"
+pandas = "^1.4.2"
 python = "^3.9"
 requests = "^2.27.1"
-pandas = "^1.4.2"
-openpyxl = "^3.0.10"
 
 [tool.poetry.dev-dependencies]
-flake8 = "^4.0.1"
 autopep8 = "^1.6.0"
+flake8 = "^4.0.1"
 ipykernel = "^6.13.0"
 jupyter = "^1.0.0"
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
