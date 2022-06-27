@@ -46,9 +46,7 @@ def other_dict(toml_file, replace_word):
     feature = replace_word.lower()
     other_feature_dict = {}
     f = toml.load(toml_file)
-
     feature_list_toml = f[feature].keys()
-
     other_feature_dict.update({feature: [feature_list_toml]})
     return other_feature_dict
 
@@ -71,7 +69,6 @@ def is_gene(gene_dict, genotype, replace_word):
             if name.lower() in gene_dict.keys():
                 allele = allele.replace(name, replace_word)
                 genes.append(allele)
-    print(genes)
     return genes
 
 
@@ -80,6 +77,7 @@ def is_other(genotype, other_feature_dict, replace_word):
     feature = replace_word.lower()
     for alleles in genotype:
         for keys in other_feature_dict.keys():
+            print(keys)
             if keys in alleles:
                 alleles = alleles.replace(keys, replace_word)
         genotype.append(alleles)
@@ -91,7 +89,7 @@ def replace_allele_features(toml_file, genotype, replace_word):
     if feature_to_replace == 'gene':
         gene_DICTIONARY = gene_dict(toml_file)
         replaced_word = is_gene(gene_DICTIONARY, genotype, replace_word)
-    if feature_to_replace == 'allele':
+    elif feature_to_replace == 'allele':
         alleledict = allele_dict(toml_file)
         replaced_word = is_allele(alleledict, genotype, replace_word)
     else:
@@ -108,10 +106,16 @@ print(genotype_a)
 
 
 # %%
+
+
 genotype_g = replace_allele_features(
     '../../data/gene_IDs.toml', genotype_a, 'GENE')
 print(genotype_g)
 
 # %%
+genotype_g = replace_allele_features(
+    '../../genestorian_module/genestorian_module/Identifiers/identifiers.toml', genotype_g, 'MARKER')
+
 # %%
+print(genotype_g)
 # %%
