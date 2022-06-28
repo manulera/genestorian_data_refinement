@@ -28,7 +28,6 @@ synonyms = [ "mug18", "rec23",]
 
 [gene."SPAC1002.07c"]
 ref = "SPAC1002.07c"
-name = ""
 synonyms = [ "ats1",]
 
 [gene."SPAC1002.08c"]
@@ -322,7 +321,6 @@ synonyms = [ "mug134",]
 
 [gene."SPAC10F6.17c"]
 ref = "SPAC10F6.17c"
-name = ""
 synonyms = [ "SPAC56E4.01c",]
 
 [gene."SPAC110.01"]
@@ -345,7 +343,6 @@ synonyms = [ "ssp1", "SPAP14E8.01c",]
 
 [gene."SPAC110.06"]
 ref = "SPAC110.06"
-name = ""
 synonyms = [ "SPAC110.05",]
 
 [gene."SPAC1142.01"]
@@ -388,7 +385,6 @@ synonyms = [ "SPAC8C9.01",]
 
 [gene."SPAC1142.09"]
 ref = "SPAC1142.09"
-name = ""
 synonyms = [ "SPAC8C9.02",]
 
 [gene."SPAC11D3.01c"]
@@ -591,7 +587,6 @@ name = "sfc7"
 
 [gene."SPAC1296.01c"]
 ref = "SPAC1296.01c"
-name = ""
 synonyms = [ "SPAC22F3.01",]
 
 [gene."SPAC1296.02"]
@@ -616,7 +611,6 @@ name = "tah18"
 
 [gene."SPAC12B10.01c"]
 ref = "SPAC12B10.01c"
-name = ""
 synonyms = [ "SPAC31F12.02c", "SPAC637.15c",]
 
 [gene."SPAC12B10.02c"]
@@ -749,7 +743,6 @@ synonyms = [ "mrx102", "mrx10",]
 
 [gene."SPAC12G12.16c"]
 ref = "SPAC12G12.16c"
-name = ""
 synonyms = [ "SPAC18B11.01c",]
 
 [gene."SPAC12G12.17"]
@@ -758,7 +751,6 @@ name = "nce101"
 
 [gene."SPAC1327.01c"]
 ref = "SPAC1327.01c"
-name = ""
 synonyms = [ "SPAC1783.09c", "SPAC18G6.16c",]
 
 [gene."SPAC139.01c"]
@@ -974,7 +966,6 @@ synonyms = [ "SPAC24B11.01c",]
 
 [gene."SPAC13G6.13"]
 ref = "SPAC13G6.13"
-name = ""
 synonyms = [ "SPAC24B11.02",]
 
 [gene."SPAC13G6.14"]
@@ -1062,7 +1053,6 @@ name = "ctr1"
 
 [gene."SPAC1420.01c"]
 ref = "SPAC1420.01c"
-name = ""
 synonyms = [ "SPAC56E4.08c",]
 
 [gene."SPAC1420.02c"]
@@ -1651,7 +1641,6 @@ name = "mis6"
 
 [gene."SPAC1687.21"]
 ref = "SPAC1687.21"
-name = ""
 synonyms = [ "SPAC222.01",]
 
 [gene."SPAC1687.22c"]
@@ -1696,7 +1685,6 @@ synonyms = [ "SPAC589.01c",]
 
 [gene."SPAC16C9.01c"]
 ref = "SPAC16C9.01c"
-name = ""
 synonyms = [ "SPAC4G8.14c",]
 
 [gene."SPAC16C9.02c"]
@@ -1745,7 +1733,6 @@ name = "aro7"
 
 [gene."SPAC16E8.05c"]
 ref = "SPAC16E8.05c"
-name = ""
 synonyms = [ "mde1",]
 
 [gene."SPAC16E8.06c"]
@@ -2478,7 +2465,6 @@ name = "sec18"
 
 [gene."SPAC1834.13"]
 ref = "SPAC1834.13"
-name = ""
 synonyms = [ "SPAC1834.12",]
 
 [gene."SPAC1851.02"]
@@ -2561,7 +2547,6 @@ name = "tup11"
 
 [gene."SPAC18B11.11"]
 ref = "SPAC18B11.11"
-name = ""
 synonyms = [ "SPAC1F5.01",]
 
 [gene."SPAC18G6.01c"]
@@ -2763,7 +2748,6 @@ name = "prl65"
 
 [gene."SPAC19B12.01"]
 ref = "SPAC19B12.01"
-name = ""
 synonyms = [ "SPAC4F10.21",]
 
 [gene."SPAC19B12.02c"]
@@ -2946,7 +2930,6 @@ synonyms = [ "new10", "iss6",]
 
 [gene."SPAC1A6.01c"]
 ref = "SPAC1A6.01c"
-name = ""
 synonyms = [ "SPAC23C4.20c",]
 
 [gene."SPAC1A6.02"]
@@ -3111,7 +3094,6 @@ name = "sck1"
 
 [gene."SPAC1B9.03c"]
 ref = "SPAC1B9.03c"
-name = ""
 synonyms = [ "SPAC6B12.01",]
 
 [gene."SPAC1D4.01"]
@@ -3201,7 +3183,6 @@ name = "gpi17"
 
 [gene."SPAC1F12.10c"]
 ref = "SPAC1F12.10c"
-name = ""
 synonyms = [ "SPAC1F12.10",]
 
 [gene."SPAC1F3.01"]
@@ -3535,7 +3516,6 @@ name = "tlh1"
 
 [gene."SPAC212.12"]
 ref = "SPAC212.12"
-name = ""
 synonyms = [ "SPNG7",]
 
 [gene."SPAC21E11.03c"]
@@ -4594,7 +4574,6 @@ synonyms = [ "SPAC806.01",]
 
 [gene."SPAC24B11.14"]
 ref = "SPAC24B11.14"
-name = ""
 synonyms = [ "SPAC806.10",]
 
 [gene."SPAC24C9.02c"]
@@ -4722,7 +4701,6 @@ name = "atg14"
 
 [gene."SPAC25A8.03c"]
 ref = "SPAC25A8.03c"
-name = ""
 synonyms = [ "SPAC3C7.15c",]
 
 [gene."SPAC25B8.01"]
@@ -4804,7 +4782,6 @@ name = "smp1"
 
 [gene."SPAC25G10.01"]
 ref = "SPAC25G10.01"
-name = ""
 synonyms = [ "SPAC2C4.18",]
 
 [gene."SPAC25G10.02"]
@@ -4942,7 +4919,6 @@ name = "Tf2-4"
 
 [gene."SPAC26A3.14c"]
 ref = "SPAC26A3.14c"
-name = ""
 synonyms = [ "SPAC23A6.14c",]
 
 [gene."SPAC26A3.15c"]
@@ -5092,7 +5068,6 @@ name = "mtl16"
 
 [gene."SPAC27D7.09c"]
 ref = "SPAC27D7.09c"
-name = ""
 synonyms = [ "SPAC27D7.10c",]
 
 [gene."SPAC27D7.11c"]
@@ -5365,12 +5340,10 @@ synonyms = [ "MsrA", "SPAC30.09c",]
 
 [gene."SPAC29E6.06c"]
 ref = "SPAC29E6.06c"
-name = ""
 synonyms = [ "SPAC30.10c",]
 
 [gene."SPAC29E6.07"]
 ref = "SPAC29E6.07"
-name = ""
 synonyms = [ "SPAC30.11",]
 
 [gene."SPAC29E6.08"]
@@ -5380,7 +5353,6 @@ synonyms = [ "tdf1", "tbp", "SPAC30.12",]
 
 [gene."SPAC29E6.09"]
 ref = "SPAC29E6.09"
-name = ""
 synonyms = [ "SPAC30.13",]
 
 [gene."SPAC29E6.10c"]
@@ -7537,7 +7509,6 @@ synonyms = [ "mts1",]
 
 [gene."SPAC607.06c"]
 ref = "SPAC607.06c"
-name = ""
 synonyms = [ "ppp57",]
 
 [gene."SPAC607.07c"]
@@ -7791,7 +7762,6 @@ name = "mdv1"
 
 [gene."SPAC683.02c"]
 ref = "SPAC683.02c"
-name = ""
 synonyms = [ "SPAC694.01c",]
 
 [gene."SPAC683.03"]
@@ -9404,7 +9374,6 @@ name = "mca1"
 
 [gene."SPAPB1A11.06"]
 ref = "SPAPB1A11.06"
-name = ""
 synonyms = [ "prl31", "SPNCRNA.31",]
 
 [gene."SPAPB1E7.01c"]
@@ -9765,7 +9734,6 @@ ref = "SPATRNAPRO.03"
 
 [gene."SPATRNASER.01"]
 ref = "SPATRNASER.01"
-name = ""
 synonyms = [ "sup12",]
 
 [gene."SPATRNASER.02"]
@@ -9900,7 +9868,6 @@ synonyms = [ "SPBC582.02",]
 
 [gene."SPBC1105.01"]
 ref = "SPBC1105.01"
-name = ""
 synonyms = [ "SPBPB7E8.03",]
 
 [gene."SPBC1105.02c"]
@@ -9992,7 +9959,6 @@ name = "afg1"
 
 [gene."SPBC115.03"]
 ref = "SPBC115.03"
-name = ""
 synonyms = [ "SPBC839.18c",]
 
 [gene."SPBC119.01"]
@@ -10180,7 +10146,6 @@ name = "pht1"
 
 [gene."SPBC11C11.01"]
 ref = "SPBC11C11.01"
-name = ""
 synonyms = [ "SPBC17D1.08",]
 
 [gene."SPBC11C11.02"]
@@ -10382,7 +10347,6 @@ name = "gmh6"
 
 [gene."SPBC1289.14"]
 ref = "SPBC1289.14"
-name = ""
 synonyms = [ "SPBC8E4.10c",]
 
 [gene."SPBC1289.15"]
@@ -10402,7 +10366,6 @@ synonyms = [ "SPBC8E4.11c",]
 
 [gene."SPBC12C2.01c"]
 ref = "SPBC12C2.01c"
-name = ""
 synonyms = [ "SPBC17F3.03c",]
 
 [gene."SPBC12C2.02c"]
@@ -10599,12 +10562,10 @@ ref = "SPBC1348.10c"
 
 [gene."SPBC1348.11"]
 ref = "SPBC1348.11"
-name = ""
 synonyms = [ "SPAC1348.11",]
 
 [gene."SPBC1348.12"]
 ref = "SPBC1348.12"
-name = ""
 synonyms = [ "SPAC1348.12",]
 
 [gene."SPBC1348.14c"]
@@ -10878,7 +10839,6 @@ name = "tam10"
 
 [gene."SPBC14F5.01"]
 ref = "SPBC14F5.01"
-name = ""
 synonyms = [ "SPBC1861.10",]
 
 [gene."SPBC14F5.02"]
@@ -10992,7 +10952,6 @@ name = "dhx29"
 
 [gene."SPBC15C4.06c"]
 ref = "SPBC15C4.06c"
-name = ""
 synonyms = [ "SPBC21H7.01c",]
 
 [gene."SPBC15D4.01c"]
@@ -11155,7 +11114,6 @@ name = "stb3"
 
 [gene."SPBC1652.02"]
 ref = "SPBC1652.02"
-name = ""
 synonyms = [ "SPBC16A3.20c",]
 
 [gene."SPBC1677.02"]
@@ -11358,7 +11316,6 @@ name = "eaf7"
 
 [gene."SPBC16C6.01c"]
 ref = "SPBC16C6.01c"
-name = ""
 synonyms = [ "SPBC543.11c",]
 
 [gene."SPBC16C6.02c"]
@@ -11662,7 +11619,6 @@ synonyms = [ "rmt5",]
 
 [gene."SPBC16H5.12c"]
 ref = "SPBC16H5.12c"
-name = ""
 synonyms = [ "SPNGAF91",]
 
 [gene."SPBC16H5.13"]
@@ -11671,7 +11627,6 @@ name = "wdr7"
 
 [gene."SPBC16H5.14c"]
 ref = "SPBC16H5.14c"
-name = ""
 synonyms = [ "SPBC21H7.08",]
 
 [gene."SPBC16H5.15"]
@@ -12345,7 +12300,6 @@ ref = "SPBC18A7.02c"
 
 [gene."SPBC18E5.01"]
 ref = "SPBC18E5.01"
-name = ""
 synonyms = [ "SPBC29A3.19",]
 
 [gene."SPBC18E5.02c"]
@@ -12753,7 +12707,6 @@ synonyms = [ "SPBC36B7.01",]
 
 [gene."SPBC19G7.18c"]
 ref = "SPBC19G7.18c"
-name = ""
 synonyms = [ "SPBC19G7.11c",]
 
 [gene."SPBC19G7.19"]
@@ -12953,7 +12906,6 @@ name = "mtr3"
 
 [gene."SPBC215.01"]
 ref = "SPBC215.01"
-name = ""
 synonyms = [ "SPBC3B9.20",]
 
 [gene."SPBC215.02"]
@@ -13675,7 +13627,6 @@ synonyms = [ "SPBC9B6.12c",]
 
 [gene."SPBC28E12.02"]
 ref = "SPBC28E12.02"
-name = ""
 synonyms = [ "SPBC9B6.13",]
 
 [gene."SPBC28E12.03"]
@@ -14239,7 +14190,6 @@ name = "eri1"
 
 [gene."SPBC30B4.09"]
 ref = "SPBC30B4.09"
-name = ""
 synonyms = [ "smp3",]
 
 [gene."SPBC30D10.02"]
@@ -14326,7 +14276,6 @@ synonyms = [ "cwl1", "SPBC651.13c",]
 
 [gene."SPBC31A8.02"]
 ref = "SPBC31A8.02"
-name = ""
 synonyms = [ "SPBC3D6.01",]
 
 [gene."SPBC31E1.01c"]
@@ -14497,7 +14446,6 @@ synonyms = [ "new17",]
 
 [gene."SPBC32H8.01c"]
 ref = "SPBC32H8.01c"
-name = ""
 synonyms = [ "SPBP22H7.10c",]
 
 [gene."SPBC32H8.02c"]
@@ -14769,7 +14717,6 @@ name = "fap1"
 
 [gene."SPBC359.01"]
 ref = "SPBC359.01"
-name = ""
 synonyms = [ "SPBPB10D8.08",]
 
 [gene."SPBC359.02"]
@@ -15322,7 +15269,6 @@ synonyms = [ "min4", "SPBC4C3.02c",]
 
 [gene."SPBC405.02c"]
 ref = "SPBC405.02c"
-name = ""
 synonyms = [ "SPBC4C3.01",]
 
 [gene."SPBC405.03c"]
@@ -15737,7 +15683,6 @@ name = "dsk1"
 
 [gene."SPBC530.15c"]
 ref = "SPBC530.15c"
-name = ""
 synonyms = [ "SPBC661.01",]
 
 [gene."SPBC530.16"]
@@ -16276,7 +16221,6 @@ synonyms = [ "lig3",]
 
 [gene."SPBC713.07c"]
 ref = "SPBC713.07c"
-name = ""
 synonyms = [ "ppn1",]
 
 [gene."SPBC713.08"]
@@ -16301,7 +16245,6 @@ name = "erg1"
 
 [gene."SPBC713.14c"]
 ref = "SPBC713.14c"
-name = ""
 synonyms = [ "SPBC713.13",]
 
 [gene."SPBC725.01"]
@@ -16968,7 +16911,6 @@ ref = "SPBC9B6.11c"
 
 [gene."SPBCPT2R1.01c"]
 ref = "SPBCPT2R1.01c"
-name = ""
 synonyms = [ "SPBPB2B2.20c",]
 
 [gene."SPBCPT2R1.02"]
@@ -17057,7 +16999,6 @@ synonyms = [ "SPBP4H10.01",]
 
 [gene."SPBP19A11.07c"]
 ref = "SPBP19A11.07c"
-name = ""
 synonyms = [ "SPBP4H10.02c",]
 
 [gene."SPBP22H7.02c"]
@@ -17465,7 +17406,6 @@ synonyms = [ "eno1", "SPBPB8B6.07c",]
 
 [gene."SPBPB21E7.02c"]
 ref = "SPBPB21E7.02c"
-name = ""
 synonyms = [ "SPAPB21E7.02c",]
 
 [gene."SPBPB21E7.04c"]
@@ -17477,7 +17417,6 @@ ref = "SPBPB21E7.05"
 
 [gene."SPBPB21E7.06"]
 ref = "SPBPB21E7.06"
-name = ""
 synonyms = [ "SPAPB21E7.06",]
 
 [gene."SPBPB21E7.07"]
@@ -17487,12 +17426,10 @@ synonyms = [ "SPAPB21E7.07",]
 
 [gene."SPBPB21E7.08"]
 ref = "SPBPB21E7.08"
-name = ""
 synonyms = [ "SPAPB21E7.08",]
 
 [gene."SPBPB21E7.09"]
 ref = "SPBPB21E7.09"
-name = ""
 synonyms = [ "SPAPB21E7.09",]
 
 [gene."SPBPB21E7.10"]
@@ -17864,7 +17801,6 @@ synonyms = [ "SPCC14G10.06",]
 
 [gene."SPCC1020.13c"]
 ref = "SPCC1020.13c"
-name = ""
 synonyms = [ "SPCC14G10.05",]
 
 [gene."SPCC1020.14"]
@@ -17971,12 +17907,10 @@ name = "rik1"
 
 [gene."SPCC11E10.09c"]
 ref = "SPCC11E10.09c"
-name = ""
 synonyms = [ "SPCC188.01c",]
 
 [gene."SPCC1223.01"]
 ref = "SPCC1223.01"
-name = ""
 synonyms = [ "SPCC285.18",]
 
 [gene."SPCC1223.02"]
@@ -18042,7 +17976,6 @@ name = "spc19"
 
 [gene."SPCC1235.01"]
 ref = "SPCC1235.01"
-name = ""
 synonyms = [ "SPCC320.02c",]
 
 [gene."SPCC1235.02"]
@@ -18185,7 +18118,6 @@ ref = "SPCC1259.16"
 
 [gene."SPCC126.01c"]
 ref = "SPCC126.01c"
-name = ""
 synonyms = [ "SPCC576.18c",]
 
 [gene."SPCC126.02c"]
@@ -18294,7 +18226,6 @@ name = "gdh2"
 
 [gene."SPCC132.05c"]
 ref = "SPCC132.05c"
-name = ""
 synonyms = [ "SPCC338.19",]
 
 [gene."SPCC1322.01"]
@@ -18413,7 +18344,6 @@ ref = "SPCC1393.12"
 
 [gene."SPCC1393.13"]
 ref = "SPCC1393.13"
-name = ""
 synonyms = [ "prl64",]
 
 [gene."SPCC1393.14"]
@@ -18515,7 +18445,6 @@ name = "mrp49"
 
 [gene."SPCC1450.01c"]
 ref = "SPCC1450.01c"
-name = ""
 synonyms = [ "SPCC191.12c",]
 
 [gene."SPCC1450.02"]
@@ -18582,7 +18511,6 @@ name = "ptl1"
 
 [gene."SPCC1494.01"]
 ref = "SPCC1494.01"
-name = ""
 synonyms = [ "SPCC965.15",]
 
 [gene."SPCC1494.02c"]
@@ -18645,7 +18573,6 @@ name = "eap1"
 
 [gene."SPCC1529.01"]
 ref = "SPCC1529.01"
-name = ""
 synonyms = [ "SPCC794.14",]
 
 [gene."SPCC162.01c"]
@@ -19028,7 +18955,6 @@ name = "dpb3"
 
 [gene."SPCC1739.01"]
 ref = "SPCC1739.01"
-name = ""
 synonyms = [ "SPCC1906.05",]
 
 [gene."SPCC1739.02c"]
@@ -19273,7 +19199,6 @@ ref = "SPCC1827.06c"
 
 [gene."SPCC1827.07c"]
 ref = "SPCC1827.07c"
-name = ""
 synonyms = [ "SPCP1E11.01c",]
 
 [gene."SPCC1827.08c"]
@@ -19367,7 +19292,6 @@ name = "pfl4"
 
 [gene."SPCC188.10c"]
 ref = "SPCC188.10c"
-name = ""
 synonyms = [ "SPCC584.07c",]
 
 [gene."SPCC188.11"]
@@ -19466,7 +19390,6 @@ name = "wtf20"
 
 [gene."SPCC191.01"]
 ref = "SPCC191.01"
-name = ""
 synonyms = [ "SPCC417.13",]
 
 [gene."SPCC191.02c"]
@@ -19760,7 +19683,6 @@ ref = "SPCC297.05"
 
 [gene."SPCC297.06c"]
 ref = "SPCC297.06c"
-name = ""
 synonyms = [ "SPCC737.01c",]
 
 [gene."SPCC2H8.02"]
@@ -20426,7 +20348,6 @@ name = "toa2"
 
 [gene."SPCC553.12c"]
 ref = "SPCC553.12c"
-name = ""
 synonyms = [ "SPCC794.13",]
 
 [gene."SPCC569.01c"]
@@ -20457,7 +20378,6 @@ synonyms = [ "SPCC24E4.01",]
 
 [gene."SPCC569.09"]
 ref = "SPCC569.09"
-name = ""
 synonyms = [ "SPNG2623",]
 
 [gene."SPCC576.01c"]
@@ -20646,7 +20566,6 @@ ref = "SPCC61.05"
 
 [gene."SPCC613.01"]
 ref = "SPCC613.01"
-name = ""
 synonyms = [ "SPCC757.14",]
 
 [gene."SPCC613.02"]
@@ -21094,7 +21013,6 @@ ref = "SPCC757.04"
 
 [gene."SPCC757.05c"]
 ref = "SPCC757.05c"
-name = ""
 synonyms = [ "ppp78",]
 
 [gene."SPCC757.06"]
@@ -22646,7 +22564,6 @@ ref = "SPNCRNA.1186"
 
 [gene."SPNCRNA.1187"]
 ref = "SPNCRNA.1187"
-name = ""
 synonyms = [ "SPNCRNA.489",]
 
 [gene."SPNCRNA.1188"]
@@ -22810,7 +22727,6 @@ name = "ste6-antisense-1"
 
 [gene."SPNCRNA.1228"]
 ref = "SPNCRNA.1228"
-name = ""
 synonyms = [ "SPNCRNA.502", "SPNG2497",]
 
 [gene."SPNCRNA.1229"]
@@ -22858,7 +22774,6 @@ ref = "SPNCRNA.1239"
 
 [gene."SPNCRNA.124"]
 ref = "SPNCRNA.124"
-name = ""
 synonyms = [ "SPNG671",]
 
 [gene."SPNCRNA.1240"]
@@ -23299,7 +23214,6 @@ ref = "SPNCRNA.1359"
 
 [gene."SPNCRNA.136"]
 ref = "SPNCRNA.136"
-name = ""
 synonyms = [ "SPNG12",]
 
 [gene."SPNCRNA.1360"]
@@ -23340,7 +23254,6 @@ ref = "SPNCRNA.1369"
 
 [gene."SPNCRNA.137"]
 ref = "SPNCRNA.137"
-name = ""
 synonyms = [ "SPNG19",]
 
 [gene."SPNCRNA.1370"]
@@ -23378,7 +23291,6 @@ ref = "SPNCRNA.1379"
 
 [gene."SPNCRNA.138"]
 ref = "SPNCRNA.138"
-name = ""
 synonyms = [ "SPNG23",]
 
 [gene."SPNCRNA.1381"]
@@ -23449,7 +23361,6 @@ name = "SPBC646.03-antisense-1"
 
 [gene."SPNCRNA.1399"]
 ref = "SPNCRNA.1399"
-name = ""
 synonyms = [ "SPNCRNA.334", "SPNG1313",]
 
 [gene."SPNCRNA.14"]
@@ -23496,7 +23407,6 @@ ref = "SPNCRNA.1409"
 
 [gene."SPNCRNA.141"]
 ref = "SPNCRNA.141"
-name = ""
 synonyms = [ "SPNG40",]
 
 [gene."SPNCRNA.1410"]
@@ -23540,7 +23450,6 @@ name = "SPBC409.16c-antisense-1"
 
 [gene."SPNCRNA.142"]
 ref = "SPNCRNA.142"
-name = ""
 synonyms = [ "SPNG45",]
 
 [gene."SPNCRNA.1420"]
@@ -23579,7 +23488,6 @@ name = "SPBC30B4.06c-antisense-1"
 
 [gene."SPNCRNA.143"]
 ref = "SPNCRNA.143"
-name = ""
 synonyms = [ "SPNG46",]
 
 [gene."SPNCRNA.1430"]
@@ -23618,7 +23526,6 @@ name = "lin1-antisense-1"
 
 [gene."SPNCRNA.144"]
 ref = "SPNCRNA.144"
-name = ""
 synonyms = [ "SPNG48",]
 
 [gene."SPNCRNA.1440"]
@@ -23733,7 +23640,6 @@ name = "SPBC28E12.02-antisense-1"
 
 [gene."SPNCRNA.147"]
 ref = "SPNCRNA.147"
-name = ""
 synonyms = [ "SPNG30",]
 
 [gene."SPNCRNA.1470"]
@@ -23753,7 +23659,6 @@ name = "spo14-antisense-1"
 
 [gene."SPNCRNA.1474"]
 ref = "SPNCRNA.1474"
-name = ""
 synonyms = [ "SPNCRNA.379", "SPNG1528",]
 
 [gene."SPNCRNA.1475"]
@@ -23776,7 +23681,6 @@ ref = "SPNCRNA.1479"
 
 [gene."SPNCRNA.148"]
 ref = "SPNCRNA.148"
-name = ""
 synonyms = [ "SPNG60",]
 
 [gene."SPNCRNA.1480"]
@@ -23993,7 +23897,6 @@ name = "prp1-antisense-1"
 
 [gene."SPNCRNA.154"]
 ref = "SPNCRNA.154"
-name = ""
 synonyms = [ "SPNG103",]
 
 [gene."SPNCRNA.1540"]
@@ -24034,7 +23937,6 @@ ref = "SPNCRNA.1549"
 
 [gene."SPNCRNA.155"]
 ref = "SPNCRNA.155"
-name = ""
 synonyms = [ "SPNG105",]
 
 [gene."SPNCRNA.1550"]
@@ -24072,7 +23974,6 @@ ref = "SPNCRNA.1559"
 
 [gene."SPNCRNA.156"]
 ref = "SPNCRNA.156"
-name = ""
 synonyms = [ "SPNG106",]
 
 [gene."SPNCRNA.1560"]
@@ -24149,7 +24050,6 @@ name = "swi3-antisense-1"
 
 [gene."SPNCRNA.158"]
 ref = "SPNCRNA.158"
-name = ""
 synonyms = [ "SPNG118-19",]
 
 [gene."SPNCRNA.1580"]
@@ -24236,7 +24136,6 @@ name = "prl16"
 
 [gene."SPNCRNA.160"]
 ref = "SPNCRNA.160"
-name = ""
 synonyms = [ "SPNG153",]
 
 [gene."SPNCRNA.1600"]
@@ -24348,7 +24247,6 @@ name = "SPBP8B7.18c-antisense-1"
 
 [gene."SPNCRNA.163"]
 ref = "SPNCRNA.163"
-name = ""
 synonyms = [ "SPNG167",]
 
 [gene."SPNCRNA.1630"]
@@ -24392,7 +24290,6 @@ name = "hip3-antisense-1"
 
 [gene."SPNCRNA.164"]
 ref = "SPNCRNA.164"
-name = ""
 synonyms = [ "SPNG168",]
 
 [gene."SPNCRNA.1640"]
@@ -24469,7 +24366,6 @@ name = "arg4-antisense-1"
 
 [gene."SPNCRNA.166"]
 ref = "SPNCRNA.166"
-name = ""
 synonyms = [ "SPNG177",]
 
 [gene."SPNCRNA.1660"]
@@ -24546,7 +24442,6 @@ ref = "SPNCRNA.1679"
 
 [gene."SPNCRNA.168"]
 ref = "SPNCRNA.168"
-name = ""
 synonyms = [ "SPNG205",]
 
 [gene."SPNCRNA.1680"]
@@ -24587,7 +24482,6 @@ ref = "SPNCRNA.1689"
 
 [gene."SPNCRNA.169"]
 ref = "SPNCRNA.169"
-name = ""
 synonyms = [ "SPNG224",]
 
 [gene."SPNCRNA.1690"]
@@ -24673,7 +24567,6 @@ ref = "SPNCRNA.1709"
 
 [gene."SPNCRNA.171"]
 ref = "SPNCRNA.171"
-name = ""
 synonyms = [ "SPNG254",]
 
 [gene."SPNCRNA.1710"]
@@ -24692,27 +24585,22 @@ synonyms = [ "prt",]
 
 [gene."SPNCRNA.173"]
 ref = "SPNCRNA.173"
-name = ""
 synonyms = [ "SPNG271",]
 
 [gene."SPNCRNA.174"]
 ref = "SPNCRNA.174"
-name = ""
 synonyms = [ "SPNG273",]
 
 [gene."SPNCRNA.175"]
 ref = "SPNCRNA.175"
-name = ""
 synonyms = [ "SPNG282",]
 
 [gene."SPNCRNA.177"]
 ref = "SPNCRNA.177"
-name = ""
 synonyms = [ "SPNG303",]
 
 [gene."SPNCRNA.178"]
 ref = "SPNCRNA.178"
-name = ""
 synonyms = [ "SPNG328-329",]
 
 [gene."SPNCRNA.18"]
@@ -24720,42 +24608,34 @@ ref = "SPNCRNA.18"
 
 [gene."SPNCRNA.181"]
 ref = "SPNCRNA.181"
-name = ""
 synonyms = [ "SPNG336",]
 
 [gene."SPNCRNA.182"]
 ref = "SPNCRNA.182"
-name = ""
 synonyms = [ "SPNG345",]
 
 [gene."SPNCRNA.184"]
 ref = "SPNCRNA.184"
-name = ""
 synonyms = [ "SPNG371",]
 
 [gene."SPNCRNA.185"]
 ref = "SPNCRNA.185"
-name = ""
 synonyms = [ "SPNG373",]
 
 [gene."SPNCRNA.186"]
 ref = "SPNCRNA.186"
-name = ""
 synonyms = [ "SPNG375-76",]
 
 [gene."SPNCRNA.187"]
 ref = "SPNCRNA.187"
-name = ""
 synonyms = [ "SPNG394",]
 
 [gene."SPNCRNA.188"]
 ref = "SPNCRNA.188"
-name = ""
 synonyms = [ "SPNG408",]
 
 [gene."SPNCRNA.189"]
 ref = "SPNCRNA.189"
-name = ""
 synonyms = [ "SPNG413",]
 
 [gene."SPNCRNA.19"]
@@ -24764,12 +24644,10 @@ name = "prl19"
 
 [gene."SPNCRNA.190"]
 ref = "SPNCRNA.190"
-name = ""
 synonyms = [ "SPNG418",]
 
 [gene."SPNCRNA.192"]
 ref = "SPNCRNA.192"
-name = ""
 synonyms = [ "SPNG431",]
 
 [gene."SPNCRNA.193"]
@@ -24777,27 +24655,22 @@ ref = "SPNCRNA.193"
 
 [gene."SPNCRNA.194"]
 ref = "SPNCRNA.194"
-name = ""
 synonyms = [ "SPNG442",]
 
 [gene."SPNCRNA.195"]
 ref = "SPNCRNA.195"
-name = ""
 synonyms = [ "SPNG446",]
 
 [gene."SPNCRNA.197"]
 ref = "SPNCRNA.197"
-name = ""
 synonyms = [ "SPNG459",]
 
 [gene."SPNCRNA.198"]
 ref = "SPNCRNA.198"
-name = ""
 synonyms = [ "SPNG491",]
 
 [gene."SPNCRNA.199"]
 ref = "SPNCRNA.199"
-name = ""
 synonyms = [ "SPNG474",]
 
 [gene."SPNCRNA.20"]
@@ -24806,7 +24679,6 @@ name = "prl20"
 
 [gene."SPNCRNA.200"]
 ref = "SPNCRNA.200"
-name = ""
 synonyms = [ "SPNG482",]
 
 [gene."SPNCRNA.2000"]
@@ -24841,7 +24713,6 @@ ref = "SPNCRNA.2009"
 
 [gene."SPNCRNA.201"]
 ref = "SPNCRNA.201"
-name = ""
 synonyms = [ "SPNG484",]
 
 [gene."SPNCRNA.2010"]
@@ -24876,7 +24747,6 @@ ref = "SPNCRNA.2019"
 
 [gene."SPNCRNA.202"]
 ref = "SPNCRNA.202"
-name = ""
 synonyms = [ "SPNG489-90",]
 
 [gene."SPNCRNA.2020"]
@@ -24941,7 +24811,6 @@ ref = "SPNCRNA.2039"
 
 [gene."SPNCRNA.204"]
 ref = "SPNCRNA.204"
-name = ""
 synonyms = [ "SPNG502",]
 
 [gene."SPNCRNA.2040"]
@@ -24976,7 +24845,6 @@ ref = "SPNCRNA.2049"
 
 [gene."SPNCRNA.205"]
 ref = "SPNCRNA.205"
-name = ""
 synonyms = [ "SPNG503",]
 
 [gene."SPNCRNA.2050"]
@@ -25071,7 +24939,6 @@ ref = "SPNCRNA.2079"
 
 [gene."SPNCRNA.208"]
 ref = "SPNCRNA.208"
-name = ""
 synonyms = [ "SPNG524",]
 
 [gene."SPNCRNA.2080"]
@@ -25106,7 +24973,6 @@ ref = "SPNCRNA.2089"
 
 [gene."SPNCRNA.209"]
 ref = "SPNCRNA.209"
-name = ""
 synonyms = [ "SPNG543",]
 
 [gene."SPNCRNA.2090"]
@@ -25145,7 +25011,6 @@ name = "prl21"
 
 [gene."SPNCRNA.210"]
 ref = "SPNCRNA.210"
-name = ""
 synonyms = [ "SPNG549",]
 
 [gene."SPNCRNA.2100"]
@@ -25210,7 +25075,6 @@ ref = "SPNCRNA.2119"
 
 [gene."SPNCRNA.212"]
 ref = "SPNCRNA.212"
-name = ""
 synonyms = [ "SPNG580-82",]
 
 [gene."SPNCRNA.2120"]
@@ -25245,7 +25109,6 @@ ref = "SPNCRNA.2129"
 
 [gene."SPNCRNA.213"]
 ref = "SPNCRNA.213"
-name = ""
 synonyms = [ "SPNG583",]
 
 [gene."SPNCRNA.2130"]
@@ -25315,7 +25178,6 @@ ref = "SPNCRNA.2149"
 
 [gene."SPNCRNA.215"]
 ref = "SPNCRNA.215"
-name = ""
 synonyms = [ "SPNG586",]
 
 [gene."SPNCRNA.2150"]
@@ -25350,7 +25212,6 @@ ref = "SPNCRNA.2159"
 
 [gene."SPNCRNA.216"]
 ref = "SPNCRNA.216"
-name = ""
 synonyms = [ "SPNG589",]
 
 [gene."SPNCRNA.2160"]
@@ -25385,7 +25246,6 @@ ref = "SPNCRNA.2169"
 
 [gene."SPNCRNA.217"]
 ref = "SPNCRNA.217"
-name = ""
 synonyms = [ "SPNG593",]
 
 [gene."SPNCRNA.2170"]
@@ -25420,7 +25280,6 @@ ref = "SPNCRNA.2179"
 
 [gene."SPNCRNA.218"]
 ref = "SPNCRNA.218"
-name = ""
 synonyms = [ "SPNG596",]
 
 [gene."SPNCRNA.2180"]
@@ -25455,7 +25314,6 @@ ref = "SPNCRNA.2189"
 
 [gene."SPNCRNA.219"]
 ref = "SPNCRNA.219"
-name = ""
 synonyms = [ "SPNG598",]
 
 [gene."SPNCRNA.2190"]
@@ -25494,7 +25352,6 @@ name = "prl22"
 
 [gene."SPNCRNA.220"]
 ref = "SPNCRNA.220"
-name = ""
 synonyms = [ "SPNG169",]
 
 [gene."SPNCRNA.2200"]
@@ -25559,7 +25416,6 @@ ref = "SPNCRNA.2219"
 
 [gene."SPNCRNA.222"]
 ref = "SPNCRNA.222"
-name = ""
 synonyms = [ "SPNG659",]
 
 [gene."SPNCRNA.2220"]
@@ -25684,7 +25540,6 @@ ref = "SPNCRNA.2259"
 
 [gene."SPNCRNA.226"]
 ref = "SPNCRNA.226"
-name = ""
 synonyms = [ "SPNG688",]
 
 [gene."SPNCRNA.2260"]
@@ -25719,7 +25574,6 @@ ref = "SPNCRNA.2269"
 
 [gene."SPNCRNA.227"]
 ref = "SPNCRNA.227"
-name = ""
 synonyms = [ "SPNG689",]
 
 [gene."SPNCRNA.2270"]
@@ -25754,7 +25608,6 @@ ref = "SPNCRNA.2279"
 
 [gene."SPNCRNA.228"]
 ref = "SPNCRNA.228"
-name = ""
 synonyms = [ "SPNG693",]
 
 [gene."SPNCRNA.2280"]
@@ -25789,7 +25642,6 @@ ref = "SPNCRNA.2289"
 
 [gene."SPNCRNA.229"]
 ref = "SPNCRNA.229"
-name = ""
 synonyms = [ "SPNG701",]
 
 [gene."SPNCRNA.2290"]
@@ -25863,7 +25715,6 @@ ref = "SPNCRNA.2309"
 
 [gene."SPNCRNA.231"]
 ref = "SPNCRNA.231"
-name = ""
 synonyms = [ "SPNG722",]
 
 [gene."SPNCRNA.2310"]
@@ -25898,7 +25749,6 @@ ref = "SPNCRNA.2319"
 
 [gene."SPNCRNA.232"]
 ref = "SPNCRNA.232"
-name = ""
 synonyms = [ "SPNG725",]
 
 [gene."SPNCRNA.2320"]
@@ -25933,7 +25783,6 @@ ref = "SPNCRNA.2329"
 
 [gene."SPNCRNA.233"]
 ref = "SPNCRNA.233"
-name = ""
 synonyms = [ "SPNG728",]
 
 [gene."SPNCRNA.2330"]
@@ -25968,7 +25817,6 @@ ref = "SPNCRNA.2339"
 
 [gene."SPNCRNA.234"]
 ref = "SPNCRNA.234"
-name = ""
 synonyms = [ "SPNG746",]
 
 [gene."SPNCRNA.2340"]
@@ -26033,7 +25881,6 @@ ref = "SPNCRNA.2359"
 
 [gene."SPNCRNA.236"]
 ref = "SPNCRNA.236"
-name = ""
 synonyms = [ "SPNG760",]
 
 [gene."SPNCRNA.2360"]
@@ -26068,7 +25915,6 @@ ref = "SPNCRNA.2369"
 
 [gene."SPNCRNA.237"]
 ref = "SPNCRNA.237"
-name = ""
 synonyms = [ "SPNG762",]
 
 [gene."SPNCRNA.2370"]
@@ -26133,7 +25979,6 @@ ref = "SPNCRNA.2389"
 
 [gene."SPNCRNA.239"]
 ref = "SPNCRNA.239"
-name = ""
 synonyms = [ "SPNG774", "SPNCRNA.951",]
 
 [gene."SPNCRNA.2390"]
@@ -26172,7 +26017,6 @@ name = "prl24"
 
 [gene."SPNCRNA.240"]
 ref = "SPNCRNA.240"
-name = ""
 synonyms = [ "SPNG776",]
 
 [gene."SPNCRNA.2400"]
@@ -26237,7 +26081,6 @@ ref = "SPNCRNA.2419"
 
 [gene."SPNCRNA.242"]
 ref = "SPNCRNA.242"
-name = ""
 synonyms = [ "SPNG807",]
 
 [gene."SPNCRNA.2420"]
@@ -26272,7 +26115,6 @@ ref = "SPNCRNA.2429"
 
 [gene."SPNCRNA.243"]
 ref = "SPNCRNA.243"
-name = ""
 synonyms = [ "SPNG821",]
 
 [gene."SPNCRNA.2430"]
@@ -26307,7 +26149,6 @@ ref = "SPNCRNA.2439"
 
 [gene."SPNCRNA.244"]
 ref = "SPNCRNA.244"
-name = ""
 synonyms = [ "SPNG841",]
 
 [gene."SPNCRNA.2440"]
@@ -26372,7 +26213,6 @@ ref = "SPNCRNA.2459"
 
 [gene."SPNCRNA.246"]
 ref = "SPNCRNA.246"
-name = ""
 synonyms = [ "SPNG844",]
 
 [gene."SPNCRNA.2460"]
@@ -26407,7 +26247,6 @@ ref = "SPNCRNA.2469"
 
 [gene."SPNCRNA.247"]
 ref = "SPNCRNA.247"
-name = ""
 synonyms = [ "SPNG847",]
 
 [gene."SPNCRNA.2470"]
@@ -26442,7 +26281,6 @@ ref = "SPNCRNA.2479"
 
 [gene."SPNCRNA.248"]
 ref = "SPNCRNA.248"
-name = ""
 synonyms = [ "SPNG869",]
 
 [gene."SPNCRNA.2480"]
@@ -26477,7 +26315,6 @@ ref = "SPNCRNA.2489"
 
 [gene."SPNCRNA.249"]
 ref = "SPNCRNA.249"
-name = ""
 synonyms = [ "SPNG873",]
 
 [gene."SPNCRNA.2490"]
@@ -26610,7 +26447,6 @@ ref = "SPNCRNA.2529"
 
 [gene."SPNCRNA.253"]
 ref = "SPNCRNA.253"
-name = ""
 synonyms = [ "SPNG905",]
 
 [gene."SPNCRNA.2530"]
@@ -26645,7 +26481,6 @@ ref = "SPNCRNA.2539"
 
 [gene."SPNCRNA.254"]
 ref = "SPNCRNA.254"
-name = ""
 synonyms = [ "SPNG919",]
 
 [gene."SPNCRNA.2540"]
@@ -26680,7 +26515,6 @@ ref = "SPNCRNA.2549"
 
 [gene."SPNCRNA.255"]
 ref = "SPNCRNA.255"
-name = ""
 synonyms = [ "SPNG920",]
 
 [gene."SPNCRNA.2550"]
@@ -26715,7 +26549,6 @@ ref = "SPNCRNA.2559"
 
 [gene."SPNCRNA.256"]
 ref = "SPNCRNA.256"
-name = ""
 synonyms = [ "SPNG937",]
 
 [gene."SPNCRNA.2560"]
@@ -26750,7 +26583,6 @@ ref = "SPNCRNA.2569"
 
 [gene."SPNCRNA.257"]
 ref = "SPNCRNA.257"
-name = ""
 synonyms = [ "SPNG944",]
 
 [gene."SPNCRNA.2570"]
@@ -26785,7 +26617,6 @@ ref = "SPNCRNA.2579"
 
 [gene."SPNCRNA.258"]
 ref = "SPNCRNA.258"
-name = ""
 synonyms = [ "SPNG950",]
 
 [gene."SPNCRNA.2580"]
@@ -26854,7 +26685,6 @@ name = "prl26"
 
 [gene."SPNCRNA.260"]
 ref = "SPNCRNA.260"
-name = ""
 synonyms = [ "SPNG987",]
 
 [gene."SPNCRNA.2600"]
@@ -26889,7 +26719,6 @@ ref = "SPNCRNA.2609"
 
 [gene."SPNCRNA.261"]
 ref = "SPNCRNA.261"
-name = ""
 synonyms = [ "SPNG996",]
 
 [gene."SPNCRNA.2610"]
@@ -26954,7 +26783,6 @@ ref = "SPNCRNA.2629"
 
 [gene."SPNCRNA.263"]
 ref = "SPNCRNA.263"
-name = ""
 synonyms = [ "SPNG1019",]
 
 [gene."SPNCRNA.2630"]
@@ -26989,7 +26817,6 @@ ref = "SPNCRNA.2639"
 
 [gene."SPNCRNA.264"]
 ref = "SPNCRNA.264"
-name = ""
 synonyms = [ "SPNG1028",]
 
 [gene."SPNCRNA.2640"]
@@ -27024,7 +26851,6 @@ ref = "SPNCRNA.2649"
 
 [gene."SPNCRNA.265"]
 ref = "SPNCRNA.265"
-name = ""
 synonyms = [ "SPNG1030",]
 
 [gene."SPNCRNA.2650"]
@@ -27059,7 +26885,6 @@ ref = "SPNCRNA.2659"
 
 [gene."SPNCRNA.266"]
 ref = "SPNCRNA.266"
-name = ""
 synonyms = [ "SPNG1033",]
 
 [gene."SPNCRNA.2660"]
@@ -27094,7 +26919,6 @@ ref = "SPNCRNA.2669"
 
 [gene."SPNCRNA.267"]
 ref = "SPNCRNA.267"
-name = ""
 synonyms = [ "SPNG1034",]
 
 [gene."SPNCRNA.2670"]
@@ -27129,7 +26953,6 @@ ref = "SPNCRNA.2679"
 
 [gene."SPNCRNA.268"]
 ref = "SPNCRNA.268"
-name = ""
 synonyms = [ "SPNG1035",]
 
 [gene."SPNCRNA.2680"]
@@ -27164,7 +26987,6 @@ ref = "SPNCRNA.2689"
 
 [gene."SPNCRNA.269"]
 ref = "SPNCRNA.269"
-name = ""
 synonyms = [ "SPNG1039",]
 
 [gene."SPNCRNA.2690"]
@@ -27203,7 +27025,6 @@ name = "prl27"
 
 [gene."SPNCRNA.270"]
 ref = "SPNCRNA.270"
-name = ""
 synonyms = [ "SPNG1041",]
 
 [gene."SPNCRNA.2700"]
@@ -27238,7 +27059,6 @@ ref = "SPNCRNA.2709"
 
 [gene."SPNCRNA.271"]
 ref = "SPNCRNA.271"
-name = ""
 synonyms = [ "SPNG1044",]
 
 [gene."SPNCRNA.2710"]
@@ -27273,7 +27093,6 @@ ref = "SPNCRNA.2719"
 
 [gene."SPNCRNA.272"]
 ref = "SPNCRNA.272"
-name = ""
 synonyms = [ "SPNG1045",]
 
 [gene."SPNCRNA.2720"]
@@ -27308,7 +27127,6 @@ ref = "SPNCRNA.2729"
 
 [gene."SPNCRNA.273"]
 ref = "SPNCRNA.273"
-name = ""
 synonyms = [ "SPNG1046",]
 
 [gene."SPNCRNA.2730"]
@@ -27343,7 +27161,6 @@ ref = "SPNCRNA.2739"
 
 [gene."SPNCRNA.274"]
 ref = "SPNCRNA.274"
-name = ""
 synonyms = [ "SPNG1047",]
 
 [gene."SPNCRNA.2740"]
@@ -27378,7 +27195,6 @@ ref = "SPNCRNA.2749"
 
 [gene."SPNCRNA.275"]
 ref = "SPNCRNA.275"
-name = ""
 synonyms = [ "SPNG1049",]
 
 [gene."SPNCRNA.2750"]
@@ -27413,7 +27229,6 @@ ref = "SPNCRNA.2759"
 
 [gene."SPNCRNA.276"]
 ref = "SPNCRNA.276"
-name = ""
 synonyms = [ "SPNG1050",]
 
 [gene."SPNCRNA.2760"]
@@ -27448,7 +27263,6 @@ ref = "SPNCRNA.2769"
 
 [gene."SPNCRNA.277"]
 ref = "SPNCRNA.277"
-name = ""
 synonyms = [ "SPNG1054",]
 
 [gene."SPNCRNA.2770"]
@@ -27483,7 +27297,6 @@ ref = "SPNCRNA.2779"
 
 [gene."SPNCRNA.278"]
 ref = "SPNCRNA.278"
-name = ""
 synonyms = [ "SPNG1057",]
 
 [gene."SPNCRNA.2780"]
@@ -27518,7 +27331,6 @@ ref = "SPNCRNA.2789"
 
 [gene."SPNCRNA.279"]
 ref = "SPNCRNA.279"
-name = ""
 synonyms = [ "SPNG1066",]
 
 [gene."SPNCRNA.2790"]
@@ -27557,7 +27369,6 @@ name = "prl28"
 
 [gene."SPNCRNA.280"]
 ref = "SPNCRNA.280"
-name = ""
 synonyms = [ "SPNG1068",]
 
 [gene."SPNCRNA.2800"]
@@ -27592,7 +27403,6 @@ ref = "SPNCRNA.2809"
 
 [gene."SPNCRNA.281"]
 ref = "SPNCRNA.281"
-name = ""
 synonyms = [ "SPNG1069",]
 
 [gene."SPNCRNA.2810"]
@@ -27627,7 +27437,6 @@ ref = "SPNCRNA.2819"
 
 [gene."SPNCRNA.282"]
 ref = "SPNCRNA.282"
-name = ""
 synonyms = [ "SPNG1070",]
 
 [gene."SPNCRNA.2820"]
@@ -27662,7 +27471,6 @@ ref = "SPNCRNA.2829"
 
 [gene."SPNCRNA.283"]
 ref = "SPNCRNA.283"
-name = ""
 synonyms = [ "SPNG1072",]
 
 [gene."SPNCRNA.2830"]
@@ -27697,7 +27505,6 @@ ref = "SPNCRNA.2839"
 
 [gene."SPNCRNA.284"]
 ref = "SPNCRNA.284"
-name = ""
 synonyms = [ "SPNG1073",]
 
 [gene."SPNCRNA.2840"]
@@ -27762,7 +27569,6 @@ ref = "SPNCRNA.2859"
 
 [gene."SPNCRNA.286"]
 ref = "SPNCRNA.286"
-name = ""
 synonyms = [ "SPNG450",]
 
 [gene."SPNCRNA.2860"]
@@ -27797,7 +27603,6 @@ ref = "SPNCRNA.2869"
 
 [gene."SPNCRNA.287"]
 ref = "SPNCRNA.287"
-name = ""
 synonyms = [ "SPNCRNA.1300", "SPNG1093",]
 
 [gene."SPNCRNA.2870"]
@@ -27862,7 +27667,6 @@ ref = "SPNCRNA.2889"
 
 [gene."SPNCRNA.289"]
 ref = "SPNCRNA.289"
-name = ""
 synonyms = [ "SPNG1100",]
 
 [gene."SPNCRNA.2890"]
@@ -27902,7 +27706,6 @@ synonyms = [ "prl29", "SPNCRNA.1295",]
 
 [gene."SPNCRNA.290"]
 ref = "SPNCRNA.290"
-name = ""
 synonyms = [ "SPNG1114",]
 
 [gene."SPNCRNA.2900"]
@@ -27970,7 +27773,6 @@ ref = "SPNCRNA.2919"
 
 [gene."SPNCRNA.292"]
 ref = "SPNCRNA.292"
-name = ""
 synonyms = [ "SPNG1122",]
 
 [gene."SPNCRNA.2920"]
@@ -28038,7 +27840,6 @@ ref = "SPNCRNA.2939"
 
 [gene."SPNCRNA.294"]
 ref = "SPNCRNA.294"
-name = ""
 synonyms = [ "SPNG1126",]
 
 [gene."SPNCRNA.2940"]
@@ -28103,7 +27904,6 @@ ref = "SPNCRNA.2959"
 
 [gene."SPNCRNA.296"]
 ref = "SPNCRNA.296"
-name = ""
 synonyms = [ "SPNG1135",]
 
 [gene."SPNCRNA.2960"]
@@ -28138,7 +27938,6 @@ ref = "SPNCRNA.2969"
 
 [gene."SPNCRNA.297"]
 ref = "SPNCRNA.297"
-name = ""
 synonyms = [ "SPNG1136",]
 
 [gene."SPNCRNA.2970"]
@@ -28173,7 +27972,6 @@ ref = "SPNCRNA.2979"
 
 [gene."SPNCRNA.298"]
 ref = "SPNCRNA.298"
-name = ""
 synonyms = [ "SPNG1143",]
 
 [gene."SPNCRNA.2980"]
@@ -28208,7 +28006,6 @@ ref = "SPNCRNA.2989"
 
 [gene."SPNCRNA.299"]
 ref = "SPNCRNA.299"
-name = ""
 synonyms = [ "SPNG1162",]
 
 [gene."SPNCRNA.2990"]
@@ -28243,12 +28040,10 @@ ref = "SPNCRNA.2999"
 
 [gene."SPNCRNA.30"]
 ref = "SPNCRNA.30"
-name = ""
 synonyms = [ "SPNGAF530",]
 
 [gene."SPNCRNA.300"]
 ref = "SPNCRNA.300"
-name = ""
 synonyms = [ "SPNG1164",]
 
 [gene."SPNCRNA.3000"]
@@ -28283,7 +28078,6 @@ ref = "SPNCRNA.3009"
 
 [gene."SPNCRNA.301"]
 ref = "SPNCRNA.301"
-name = ""
 synonyms = [ "SPNG1179",]
 
 [gene."SPNCRNA.3010"]
@@ -28378,7 +28172,6 @@ ref = "SPNCRNA.3039"
 
 [gene."SPNCRNA.304"]
 ref = "SPNCRNA.304"
-name = ""
 synonyms = [ "SPNCRNA.1347", "SPNG1193",]
 
 [gene."SPNCRNA.3040"]
@@ -28413,7 +28206,6 @@ ref = "SPNCRNA.3049"
 
 [gene."SPNCRNA.305"]
 ref = "SPNCRNA.305"
-name = ""
 synonyms = [ "SPNG1197",]
 
 [gene."SPNCRNA.3050"]
@@ -28448,7 +28240,6 @@ ref = "SPNCRNA.3059"
 
 [gene."SPNCRNA.306"]
 ref = "SPNCRNA.306"
-name = ""
 synonyms = [ "SPNG798-99",]
 
 [gene."SPNCRNA.3060"]
@@ -28483,7 +28274,6 @@ ref = "SPNCRNA.3069"
 
 [gene."SPNCRNA.307"]
 ref = "SPNCRNA.307"
-name = ""
 synonyms = [ "SPNG1211",]
 
 [gene."SPNCRNA.3070"]
@@ -28581,7 +28371,6 @@ ref = "SPNCRNA.31"
 
 [gene."SPNCRNA.310"]
 ref = "SPNCRNA.310"
-name = ""
 synonyms = [ "SPNG1077",]
 
 [gene."SPNCRNA.3100"]
@@ -28616,7 +28405,6 @@ ref = "SPNCRNA.3109"
 
 [gene."SPNCRNA.311"]
 ref = "SPNCRNA.311"
-name = ""
 synonyms = [ "SPNG861",]
 
 [gene."SPNCRNA.3110"]
@@ -28651,7 +28439,6 @@ ref = "SPNCRNA.3119"
 
 [gene."SPNCRNA.312"]
 ref = "SPNCRNA.312"
-name = ""
 synonyms = [ "SPNG1231-32",]
 
 [gene."SPNCRNA.3120"]
@@ -28686,7 +28473,6 @@ ref = "SPNCRNA.3129"
 
 [gene."SPNCRNA.313"]
 ref = "SPNCRNA.313"
-name = ""
 synonyms = [ "SPNG1233",]
 
 [gene."SPNCRNA.3130"]
@@ -28751,7 +28537,6 @@ ref = "SPNCRNA.3149"
 
 [gene."SPNCRNA.315"]
 ref = "SPNCRNA.315"
-name = ""
 synonyms = [ "SPNG1237-42",]
 
 [gene."SPNCRNA.3150"]
@@ -28786,7 +28571,6 @@ ref = "SPNCRNA.3159"
 
 [gene."SPNCRNA.316"]
 ref = "SPNCRNA.316"
-name = ""
 synonyms = [ "SPNCRNA.1372", "SPNG1243",]
 
 [gene."SPNCRNA.3160"]
@@ -28821,7 +28605,6 @@ ref = "SPNCRNA.3169"
 
 [gene."SPNCRNA.317"]
 ref = "SPNCRNA.317"
-name = ""
 synonyms = [ "SPNG1246",]
 
 [gene."SPNCRNA.3170"]
@@ -28856,7 +28639,6 @@ ref = "SPNCRNA.3179"
 
 [gene."SPNCRNA.318"]
 ref = "SPNCRNA.318"
-name = ""
 synonyms = [ "SPNG1248",]
 
 [gene."SPNCRNA.3180"]
@@ -28891,7 +28673,6 @@ ref = "SPNCRNA.3189"
 
 [gene."SPNCRNA.319"]
 ref = "SPNCRNA.319"
-name = ""
 synonyms = [ "SPNG1249",]
 
 [gene."SPNCRNA.3190"]
@@ -28960,7 +28741,6 @@ ref = "SPNCRNA.3209"
 
 [gene."SPNCRNA.321"]
 ref = "SPNCRNA.321"
-name = ""
 synonyms = [ "SPNG1260",]
 
 [gene."SPNCRNA.3210"]
@@ -29028,7 +28808,6 @@ ref = "SPNCRNA.3229"
 
 [gene."SPNCRNA.323"]
 ref = "SPNCRNA.323"
-name = ""
 synonyms = [ "SPNG1264",]
 
 [gene."SPNCRNA.3230"]
@@ -29063,7 +28842,6 @@ ref = "SPNCRNA.3239"
 
 [gene."SPNCRNA.324"]
 ref = "SPNCRNA.324"
-name = ""
 synonyms = [ "SPNG1268",]
 
 [gene."SPNCRNA.3240"]
@@ -29098,7 +28876,6 @@ ref = "SPNCRNA.3249"
 
 [gene."SPNCRNA.325"]
 ref = "SPNCRNA.325"
-name = ""
 synonyms = [ "SPNG1269",]
 
 [gene."SPNCRNA.3250"]
@@ -29133,7 +28910,6 @@ ref = "SPNCRNA.3259"
 
 [gene."SPNCRNA.326"]
 ref = "SPNCRNA.326"
-name = ""
 synonyms = [ "SPNG480",]
 
 [gene."SPNCRNA.3260"]
@@ -29168,7 +28944,6 @@ ref = "SPNCRNA.3269"
 
 [gene."SPNCRNA.327"]
 ref = "SPNCRNA.327"
-name = ""
 synonyms = [ "SPNG1273",]
 
 [gene."SPNCRNA.3270"]
@@ -29203,7 +28978,6 @@ ref = "SPNCRNA.3279"
 
 [gene."SPNCRNA.328"]
 ref = "SPNCRNA.328"
-name = ""
 synonyms = [ "SPNG1280",]
 
 [gene."SPNCRNA.3280"]
@@ -29238,7 +29012,6 @@ ref = "SPNCRNA.3289"
 
 [gene."SPNCRNA.329"]
 ref = "SPNCRNA.329"
-name = ""
 synonyms = [ "SPNG1289",]
 
 [gene."SPNCRNA.3290"]
@@ -29337,7 +29110,6 @@ ref = "SPNCRNA.3319"
 
 [gene."SPNCRNA.332"]
 ref = "SPNCRNA.332"
-name = ""
 synonyms = [ "SPNG1304",]
 
 [gene."SPNCRNA.3320"]
@@ -29372,7 +29144,6 @@ ref = "SPNCRNA.3329"
 
 [gene."SPNCRNA.333"]
 ref = "SPNCRNA.333"
-name = ""
 synonyms = [ "SPNG733",]
 
 [gene."SPNCRNA.3330"]
@@ -29437,7 +29208,6 @@ ref = "SPNCRNA.3349"
 
 [gene."SPNCRNA.335"]
 ref = "SPNCRNA.335"
-name = ""
 synonyms = [ "SPNG1314",]
 
 [gene."SPNCRNA.3350"]
@@ -29502,7 +29272,6 @@ ref = "SPNCRNA.3369"
 
 [gene."SPNCRNA.337"]
 ref = "SPNCRNA.337"
-name = ""
 synonyms = [ "SPNG1328",]
 
 [gene."SPNCRNA.3370"]
@@ -29537,7 +29306,6 @@ ref = "SPNCRNA.3379"
 
 [gene."SPNCRNA.338"]
 ref = "SPNCRNA.338"
-name = ""
 synonyms = [ "SPNG1332",]
 
 [gene."SPNCRNA.3380"]
@@ -29637,7 +29405,6 @@ ref = "SPNCRNA.3409"
 
 [gene."SPNCRNA.341"]
 ref = "SPNCRNA.341"
-name = ""
 synonyms = [ "SPNG795",]
 
 [gene."SPNCRNA.3410"]
@@ -29792,7 +29559,6 @@ ref = "SPNCRNA.3459"
 
 [gene."SPNCRNA.346"]
 ref = "SPNCRNA.346"
-name = ""
 synonyms = [ "SPNG1380",]
 
 [gene."SPNCRNA.3460"]
@@ -29857,7 +29623,6 @@ ref = "SPNCRNA.3479"
 
 [gene."SPNCRNA.348"]
 ref = "SPNCRNA.348"
-name = ""
 synonyms = [ "SPNG1394",]
 
 [gene."SPNCRNA.3480"]
@@ -29956,7 +29721,6 @@ ref = "SPNCRNA.3509"
 
 [gene."SPNCRNA.351"]
 ref = "SPNCRNA.351"
-name = ""
 synonyms = [ "SPNG1403",]
 
 [gene."SPNCRNA.3510"]
@@ -29991,7 +29755,6 @@ ref = "SPNCRNA.3519"
 
 [gene."SPNCRNA.352"]
 ref = "SPNCRNA.352"
-name = ""
 synonyms = [ "SPNG1404",]
 
 [gene."SPNCRNA.3520"]
@@ -30176,7 +29939,6 @@ ref = "SPNCRNA.3579"
 
 [gene."SPNCRNA.358"]
 ref = "SPNCRNA.358"
-name = ""
 synonyms = [ "SPNG1418",]
 
 [gene."SPNCRNA.3580"]
@@ -30211,7 +29973,6 @@ ref = "SPNCRNA.3589"
 
 [gene."SPNCRNA.359"]
 ref = "SPNCRNA.359"
-name = ""
 synonyms = [ "SPNG1422",]
 
 [gene."SPNCRNA.3590"]
@@ -30250,7 +30011,6 @@ name = "prl36"
 
 [gene."SPNCRNA.360"]
 ref = "SPNCRNA.360"
-name = ""
 synonyms = [ "SPNG1425",]
 
 [gene."SPNCRNA.3600"]
@@ -30320,7 +30080,6 @@ ref = "SPNCRNA.3619"
 
 [gene."SPNCRNA.362"]
 ref = "SPNCRNA.362"
-name = ""
 synonyms = [ "SPNG1430",]
 
 [gene."SPNCRNA.3620"]
@@ -30355,7 +30114,6 @@ ref = "SPNCRNA.3629"
 
 [gene."SPNCRNA.363"]
 ref = "SPNCRNA.363"
-name = ""
 synonyms = [ "SPNG1431",]
 
 [gene."SPNCRNA.3630"]
@@ -30390,7 +30148,6 @@ ref = "SPNCRNA.3639"
 
 [gene."SPNCRNA.364"]
 ref = "SPNCRNA.364"
-name = ""
 synonyms = [ "SPNG1432",]
 
 [gene."SPNCRNA.3640"]
@@ -30425,7 +30182,6 @@ ref = "SPNCRNA.3649"
 
 [gene."SPNCRNA.365"]
 ref = "SPNCRNA.365"
-name = ""
 synonyms = [ "SPNG1433",]
 
 [gene."SPNCRNA.3650"]
@@ -30460,7 +30216,6 @@ ref = "SPNCRNA.3659"
 
 [gene."SPNCRNA.366"]
 ref = "SPNCRNA.366"
-name = ""
 synonyms = [ "SPNG1438",]
 
 [gene."SPNCRNA.3660"]
@@ -30495,7 +30250,6 @@ ref = "SPNCRNA.3669"
 
 [gene."SPNCRNA.367"]
 ref = "SPNCRNA.367"
-name = ""
 synonyms = [ "SPNG1440",]
 
 [gene."SPNCRNA.3670"]
@@ -30530,7 +30284,6 @@ ref = "SPNCRNA.3679"
 
 [gene."SPNCRNA.368"]
 ref = "SPNCRNA.368"
-name = ""
 synonyms = [ "SPNG1441",]
 
 [gene."SPNCRNA.3680"]
@@ -30565,7 +30318,6 @@ ref = "SPNCRNA.3689"
 
 [gene."SPNCRNA.369"]
 ref = "SPNCRNA.369"
-name = ""
 synonyms = [ "SPNG1442",]
 
 [gene."SPNCRNA.3690"]
@@ -30604,7 +30356,6 @@ name = "prl37"
 
 [gene."SPNCRNA.370"]
 ref = "SPNCRNA.370"
-name = ""
 synonyms = [ "SPNG1451",]
 
 [gene."SPNCRNA.3700"]
@@ -30639,7 +30390,6 @@ ref = "SPNCRNA.3709"
 
 [gene."SPNCRNA.371"]
 ref = "SPNCRNA.371"
-name = ""
 synonyms = [ "SPNG1464",]
 
 [gene."SPNCRNA.3710"]
@@ -30674,7 +30424,6 @@ ref = "SPNCRNA.3719"
 
 [gene."SPNCRNA.372"]
 ref = "SPNCRNA.372"
-name = ""
 synonyms = [ "SPNG1466",]
 
 [gene."SPNCRNA.3720"]
@@ -30709,7 +30458,6 @@ ref = "SPNCRNA.3729"
 
 [gene."SPNCRNA.373"]
 ref = "SPNCRNA.373"
-name = ""
 synonyms = [ "SPNG1467",]
 
 [gene."SPNCRNA.3730"]
@@ -30744,7 +30492,6 @@ ref = "SPNCRNA.3739"
 
 [gene."SPNCRNA.374"]
 ref = "SPNCRNA.374"
-name = ""
 synonyms = [ "SPNG1473",]
 
 [gene."SPNCRNA.3740"]
@@ -30809,7 +30556,6 @@ ref = "SPNCRNA.3759"
 
 [gene."SPNCRNA.376"]
 ref = "SPNCRNA.376"
-name = ""
 synonyms = [ "SPNG1494",]
 
 [gene."SPNCRNA.3760"]
@@ -30844,7 +30590,6 @@ ref = "SPNCRNA.3769"
 
 [gene."SPNCRNA.377"]
 ref = "SPNCRNA.377"
-name = ""
 synonyms = [ "SPNG1513",]
 
 [gene."SPNCRNA.3770"]
@@ -30943,7 +30688,6 @@ name = "prl38"
 
 [gene."SPNCRNA.380"]
 ref = "SPNCRNA.380"
-name = ""
 synonyms = [ "SPNG1530",]
 
 [gene."SPNCRNA.3800"]
@@ -31008,7 +30752,6 @@ ref = "SPNCRNA.3819"
 
 [gene."SPNCRNA.382"]
 ref = "SPNCRNA.382"
-name = ""
 synonyms = [ "SPNG1546-47",]
 
 [gene."SPNCRNA.3820"]
@@ -31043,7 +30786,6 @@ ref = "SPNCRNA.3829"
 
 [gene."SPNCRNA.383"]
 ref = "SPNCRNA.383"
-name = ""
 synonyms = [ "SPNG1549",]
 
 [gene."SPNCRNA.3830"]
@@ -31078,7 +30820,6 @@ ref = "SPNCRNA.3839"
 
 [gene."SPNCRNA.384"]
 ref = "SPNCRNA.384"
-name = ""
 synonyms = [ "SPNG1551",]
 
 [gene."SPNCRNA.3840"]
@@ -31113,7 +30854,6 @@ ref = "SPNCRNA.3849"
 
 [gene."SPNCRNA.385"]
 ref = "SPNCRNA.385"
-name = ""
 synonyms = [ "SPNG1552",]
 
 [gene."SPNCRNA.3850"]
@@ -31148,7 +30888,6 @@ ref = "SPNCRNA.3859"
 
 [gene."SPNCRNA.386"]
 ref = "SPNCRNA.386"
-name = ""
 synonyms = [ "SPNG1559",]
 
 [gene."SPNCRNA.3860"]
@@ -31183,7 +30922,6 @@ ref = "SPNCRNA.3869"
 
 [gene."SPNCRNA.387"]
 ref = "SPNCRNA.387"
-name = ""
 synonyms = [ "SPNG1573-75",]
 
 [gene."SPNCRNA.3870"]
@@ -31218,7 +30956,6 @@ ref = "SPNCRNA.3879"
 
 [gene."SPNCRNA.388"]
 ref = "SPNCRNA.388"
-name = ""
 synonyms = [ "SPNCRNA.1486", "SPNG1578",]
 
 [gene."SPNCRNA.3880"]
@@ -31253,7 +30990,6 @@ ref = "SPNCRNA.3889"
 
 [gene."SPNCRNA.389"]
 ref = "SPNCRNA.389"
-name = ""
 synonyms = [ "SPNG1586",]
 
 [gene."SPNCRNA.3890"]
@@ -31292,7 +31028,6 @@ name = "prl39"
 
 [gene."SPNCRNA.390"]
 ref = "SPNCRNA.390"
-name = ""
 synonyms = [ "SPNG1588",]
 
 [gene."SPNCRNA.3900"]
@@ -31327,7 +31062,6 @@ ref = "SPNCRNA.3909"
 
 [gene."SPNCRNA.391"]
 ref = "SPNCRNA.391"
-name = ""
 synonyms = [ "SPNG1589",]
 
 [gene."SPNCRNA.3910"]
@@ -31362,7 +31096,6 @@ ref = "SPNCRNA.3919"
 
 [gene."SPNCRNA.392"]
 ref = "SPNCRNA.392"
-name = ""
 synonyms = [ "SPNG1591",]
 
 [gene."SPNCRNA.3920"]
@@ -31397,7 +31130,6 @@ ref = "SPNCRNA.3929"
 
 [gene."SPNCRNA.393"]
 ref = "SPNCRNA.393"
-name = ""
 synonyms = [ "SPNG1598",]
 
 [gene."SPNCRNA.3930"]
@@ -31432,7 +31164,6 @@ ref = "SPNCRNA.3939"
 
 [gene."SPNCRNA.394"]
 ref = "SPNCRNA.394"
-name = ""
 synonyms = [ "SPNG1599",]
 
 [gene."SPNCRNA.3940"]
@@ -31497,7 +31228,6 @@ ref = "SPNCRNA.3959"
 
 [gene."SPNCRNA.396"]
 ref = "SPNCRNA.396"
-name = ""
 synonyms = [ "SPNG734",]
 
 [gene."SPNCRNA.3960"]
@@ -31532,7 +31262,6 @@ ref = "SPNCRNA.3969"
 
 [gene."SPNCRNA.397"]
 ref = "SPNCRNA.397"
-name = ""
 synonyms = [ "SPNG1651",]
 
 [gene."SPNCRNA.3970"]
@@ -31567,7 +31296,6 @@ ref = "SPNCRNA.3979"
 
 [gene."SPNCRNA.398"]
 ref = "SPNCRNA.398"
-name = ""
 synonyms = [ "SPNG1655",]
 
 [gene."SPNCRNA.3980"]
@@ -31602,7 +31330,6 @@ ref = "SPNCRNA.3989"
 
 [gene."SPNCRNA.399"]
 ref = "SPNCRNA.399"
-name = ""
 synonyms = [ "SPNG1662",]
 
 [gene."SPNCRNA.3990"]
@@ -31641,7 +31368,6 @@ name = "prl40"
 
 [gene."SPNCRNA.400"]
 ref = "SPNCRNA.400"
-name = ""
 synonyms = [ "SPNG1663",]
 
 [gene."SPNCRNA.4000"]
@@ -31676,7 +31402,6 @@ ref = "SPNCRNA.4009"
 
 [gene."SPNCRNA.401"]
 ref = "SPNCRNA.401"
-name = ""
 synonyms = [ "SPNG1677",]
 
 [gene."SPNCRNA.4010"]
@@ -31711,7 +31436,6 @@ ref = "SPNCRNA.4019"
 
 [gene."SPNCRNA.402"]
 ref = "SPNCRNA.402"
-name = ""
 synonyms = [ "SPNG1678",]
 
 [gene."SPNCRNA.4020"]
@@ -31746,7 +31470,6 @@ ref = "SPNCRNA.4029"
 
 [gene."SPNCRNA.403"]
 ref = "SPNCRNA.403"
-name = ""
 synonyms = [ "SPNG1684",]
 
 [gene."SPNCRNA.4030"]
@@ -31811,7 +31534,6 @@ ref = "SPNCRNA.4049"
 
 [gene."SPNCRNA.405"]
 ref = "SPNCRNA.405"
-name = ""
 synonyms = [ "SPNG1698",]
 
 [gene."SPNCRNA.4050"]
@@ -31846,7 +31568,6 @@ ref = "SPNCRNA.4059"
 
 [gene."SPNCRNA.406"]
 ref = "SPNCRNA.406"
-name = ""
 synonyms = [ "SPNG1702",]
 
 [gene."SPNCRNA.4060"]
@@ -31911,7 +31632,6 @@ ref = "SPNCRNA.4079"
 
 [gene."SPNCRNA.408"]
 ref = "SPNCRNA.408"
-name = ""
 synonyms = [ "SPNG1715",]
 
 [gene."SPNCRNA.4080"]
@@ -31976,7 +31696,6 @@ ref = "SPNCRNA.4099"
 
 [gene."SPNCRNA.410"]
 ref = "SPNCRNA.410"
-name = ""
 synonyms = [ "SPNG1731",]
 
 [gene."SPNCRNA.4100"]
@@ -32011,7 +31730,6 @@ ref = "SPNCRNA.4109"
 
 [gene."SPNCRNA.411"]
 ref = "SPNCRNA.411"
-name = ""
 synonyms = [ "SPNG1738",]
 
 [gene."SPNCRNA.4110"]
@@ -32046,7 +31764,6 @@ ref = "SPNCRNA.4119"
 
 [gene."SPNCRNA.412"]
 ref = "SPNCRNA.412"
-name = ""
 synonyms = [ "SPNG1772",]
 
 [gene."SPNCRNA.4120"]
@@ -32081,7 +31798,6 @@ ref = "SPNCRNA.4129"
 
 [gene."SPNCRNA.413"]
 ref = "SPNCRNA.413"
-name = ""
 synonyms = [ "SPNG1778",]
 
 [gene."SPNCRNA.4130"]
@@ -32116,7 +31832,6 @@ ref = "SPNCRNA.4139"
 
 [gene."SPNCRNA.414"]
 ref = "SPNCRNA.414"
-name = ""
 synonyms = [ "SPNG1779",]
 
 [gene."SPNCRNA.4140"]
@@ -32151,7 +31866,6 @@ ref = "SPNCRNA.4149"
 
 [gene."SPNCRNA.415"]
 ref = "SPNCRNA.415"
-name = ""
 synonyms = [ "SPNG1780",]
 
 [gene."SPNCRNA.4150"]
@@ -32216,7 +31930,6 @@ ref = "SPNCRNA.4169"
 
 [gene."SPNCRNA.417"]
 ref = "SPNCRNA.417"
-name = ""
 synonyms = [ "SPNG1785",]
 
 [gene."SPNCRNA.4170"]
@@ -32281,7 +31994,6 @@ ref = "SPNCRNA.4189"
 
 [gene."SPNCRNA.419"]
 ref = "SPNCRNA.419"
-name = ""
 synonyms = [ "SPNG1800",]
 
 [gene."SPNCRNA.4190"]
@@ -32350,7 +32062,6 @@ ref = "SPNCRNA.4209"
 
 [gene."SPNCRNA.421"]
 ref = "SPNCRNA.421"
-name = ""
 synonyms = [ "SPNG1834",]
 
 [gene."SPNCRNA.4210"]
@@ -32415,7 +32126,6 @@ ref = "SPNCRNA.4229"
 
 [gene."SPNCRNA.423"]
 ref = "SPNCRNA.423"
-name = ""
 synonyms = [ "SPNG1839",]
 
 [gene."SPNCRNA.4230"]
@@ -32450,7 +32160,6 @@ ref = "SPNCRNA.4239"
 
 [gene."SPNCRNA.424"]
 ref = "SPNCRNA.424"
-name = ""
 synonyms = [ "SPNG1847",]
 
 [gene."SPNCRNA.4240"]
@@ -32485,7 +32194,6 @@ ref = "SPNCRNA.4249"
 
 [gene."SPNCRNA.425"]
 ref = "SPNCRNA.425"
-name = ""
 synonyms = [ "SPNG1851",]
 
 [gene."SPNCRNA.4250"]
@@ -32520,7 +32228,6 @@ ref = "SPNCRNA.4259"
 
 [gene."SPNCRNA.426"]
 ref = "SPNCRNA.426"
-name = ""
 synonyms = [ "SPNG1854",]
 
 [gene."SPNCRNA.4260"]
@@ -32555,7 +32262,6 @@ ref = "SPNCRNA.4269"
 
 [gene."SPNCRNA.427"]
 ref = "SPNCRNA.427"
-name = ""
 synonyms = [ "SPNG1861",]
 
 [gene."SPNCRNA.4270"]
@@ -32590,7 +32296,6 @@ ref = "SPNCRNA.4279"
 
 [gene."SPNCRNA.428"]
 ref = "SPNCRNA.428"
-name = ""
 synonyms = [ "SPNG1867",]
 
 [gene."SPNCRNA.4280"]
@@ -32689,7 +32394,6 @@ ref = "SPNCRNA.4309"
 
 [gene."SPNCRNA.431"]
 ref = "SPNCRNA.431"
-name = ""
 synonyms = [ "SPNG1906",]
 
 [gene."SPNCRNA.4310"]
@@ -32724,7 +32428,6 @@ ref = "SPNCRNA.4319"
 
 [gene."SPNCRNA.432"]
 ref = "SPNCRNA.432"
-name = ""
 synonyms = [ "SPNG214",]
 
 [gene."SPNCRNA.4320"]
@@ -32819,7 +32522,6 @@ ref = "SPNCRNA.4349"
 
 [gene."SPNCRNA.435"]
 ref = "SPNCRNA.435"
-name = ""
 synonyms = [ "SPNG1926",]
 
 [gene."SPNCRNA.4350"]
@@ -32854,7 +32556,6 @@ ref = "SPNCRNA.4359"
 
 [gene."SPNCRNA.436"]
 ref = "SPNCRNA.436"
-name = ""
 synonyms = [ "SPNG1927",]
 
 [gene."SPNCRNA.4360"]
@@ -32889,7 +32590,6 @@ ref = "SPNCRNA.4369"
 
 [gene."SPNCRNA.437"]
 ref = "SPNCRNA.437"
-name = ""
 synonyms = [ "SPNG1929",]
 
 [gene."SPNCRNA.4370"]
@@ -32924,7 +32624,6 @@ ref = "SPNCRNA.4379"
 
 [gene."SPNCRNA.438"]
 ref = "SPNCRNA.438"
-name = ""
 synonyms = [ "SPNG1958-59", "SPNCRNA.1679",]
 
 [gene."SPNCRNA.4380"]
@@ -32959,7 +32658,6 @@ ref = "SPNCRNA.4389"
 
 [gene."SPNCRNA.439"]
 ref = "SPNCRNA.439"
-name = ""
 synonyms = [ "SPNG1965",]
 
 [gene."SPNCRNA.4390"]
@@ -32994,7 +32692,6 @@ ref = "SPNCRNA.4399"
 
 [gene."SPNCRNA.440"]
 ref = "SPNCRNA.440"
-name = ""
 synonyms = [ "SPNG1969",]
 
 [gene."SPNCRNA.4400"]
@@ -33029,7 +32726,6 @@ ref = "SPNCRNA.4409"
 
 [gene."SPNCRNA.441"]
 ref = "SPNCRNA.441"
-name = ""
 synonyms = [ "SPNG1981",]
 
 [gene."SPNCRNA.4410"]
@@ -33064,7 +32760,6 @@ ref = "SPNCRNA.4419"
 
 [gene."SPNCRNA.442"]
 ref = "SPNCRNA.442"
-name = ""
 synonyms = [ "SPNG1982",]
 
 [gene."SPNCRNA.4420"]
@@ -33099,7 +32794,6 @@ ref = "SPNCRNA.4429"
 
 [gene."SPNCRNA.443"]
 ref = "SPNCRNA.443"
-name = ""
 synonyms = [ "SPNG1984-85",]
 
 [gene."SPNCRNA.4430"]
@@ -33134,7 +32828,6 @@ ref = "SPNCRNA.4439"
 
 [gene."SPNCRNA.444"]
 ref = "SPNCRNA.444"
-name = ""
 synonyms = [ "SPNG1994",]
 
 [gene."SPNCRNA.4440"]
@@ -33202,7 +32895,6 @@ ref = "SPNCRNA.4459"
 
 [gene."SPNCRNA.446"]
 ref = "SPNCRNA.446"
-name = ""
 synonyms = [ "SPNG1998",]
 
 [gene."SPNCRNA.4460"]
@@ -33267,7 +32959,6 @@ ref = "SPNCRNA.4479"
 
 [gene."SPNCRNA.448"]
 ref = "SPNCRNA.448"
-name = ""
 synonyms = [ "SPNG2003",]
 
 [gene."SPNCRNA.4480"]
@@ -33302,7 +32993,6 @@ ref = "SPNCRNA.4489"
 
 [gene."SPNCRNA.449"]
 ref = "SPNCRNA.449"
-name = ""
 synonyms = [ "SPNG2016",]
 
 [gene."SPNCRNA.4490"]
@@ -33341,7 +33031,6 @@ name = "prl45"
 
 [gene."SPNCRNA.450"]
 ref = "SPNCRNA.450"
-name = ""
 synonyms = [ "SPNG2021",]
 
 [gene."SPNCRNA.4500"]
@@ -33376,7 +33065,6 @@ ref = "SPNCRNA.4509"
 
 [gene."SPNCRNA.451"]
 ref = "SPNCRNA.451"
-name = ""
 synonyms = [ "SPNG2023",]
 
 [gene."SPNCRNA.4510"]
@@ -33411,7 +33099,6 @@ ref = "SPNCRNA.4519"
 
 [gene."SPNCRNA.452"]
 ref = "SPNCRNA.452"
-name = ""
 synonyms = [ "SPNG2025",]
 
 [gene."SPNCRNA.4520"]
@@ -33446,7 +33133,6 @@ ref = "SPNCRNA.4529"
 
 [gene."SPNCRNA.453"]
 ref = "SPNCRNA.453"
-name = ""
 synonyms = [ "SPNG2030",]
 
 [gene."SPNCRNA.4530"]
@@ -33481,7 +33167,6 @@ ref = "SPNCRNA.4539"
 
 [gene."SPNCRNA.454"]
 ref = "SPNCRNA.454"
-name = ""
 synonyms = [ "SPNG2036",]
 
 [gene."SPNCRNA.4540"]
@@ -33516,7 +33201,6 @@ ref = "SPNCRNA.4549"
 
 [gene."SPNCRNA.455"]
 ref = "SPNCRNA.455"
-name = ""
 synonyms = [ "SPNG2041",]
 
 [gene."SPNCRNA.4550"]
@@ -33551,7 +33235,6 @@ ref = "SPNCRNA.4559"
 
 [gene."SPNCRNA.456"]
 ref = "SPNCRNA.456"
-name = ""
 synonyms = [ "SPNG2045",]
 
 [gene."SPNCRNA.4560"]
@@ -33621,7 +33304,6 @@ ref = "SPNCRNA.4579"
 
 [gene."SPNCRNA.458"]
 ref = "SPNCRNA.458"
-name = ""
 synonyms = [ "SPNG2054",]
 
 [gene."SPNCRNA.4580"]
@@ -33689,7 +33371,6 @@ ref = "SPNCRNA.46"
 
 [gene."SPNCRNA.460"]
 ref = "SPNCRNA.460"
-name = ""
 synonyms = [ "SPNG2075",]
 
 [gene."SPNCRNA.4600"]
@@ -33754,7 +33435,6 @@ ref = "SPNCRNA.4619"
 
 [gene."SPNCRNA.462"]
 ref = "SPNCRNA.462"
-name = ""
 synonyms = [ "SPNG2101",]
 
 [gene."SPNCRNA.4620"]
@@ -33789,7 +33469,6 @@ ref = "SPNCRNA.4629"
 
 [gene."SPNCRNA.463"]
 ref = "SPNCRNA.463"
-name = ""
 synonyms = [ "SPNG2105",]
 
 [gene."SPNCRNA.4630"]
@@ -33824,7 +33503,6 @@ ref = "SPNCRNA.4639"
 
 [gene."SPNCRNA.464"]
 ref = "SPNCRNA.464"
-name = ""
 synonyms = [ "SPNG2106",]
 
 [gene."SPNCRNA.4640"]
@@ -33889,7 +33567,6 @@ ref = "SPNCRNA.4659"
 
 [gene."SPNCRNA.466"]
 ref = "SPNCRNA.466"
-name = ""
 synonyms = [ "SPNG2151",]
 
 [gene."SPNCRNA.4660"]
@@ -33924,7 +33601,6 @@ ref = "SPNCRNA.4669"
 
 [gene."SPNCRNA.467"]
 ref = "SPNCRNA.467"
-name = ""
 synonyms = [ "SPNG2152",]
 
 [gene."SPNCRNA.4670"]
@@ -33989,7 +33665,6 @@ ref = "SPNCRNA.4689"
 
 [gene."SPNCRNA.469"]
 ref = "SPNCRNA.469"
-name = ""
 synonyms = [ "SPNG2183",]
 
 [gene."SPNCRNA.4690"]
@@ -34059,7 +33734,6 @@ ref = "SPNCRNA.4709"
 
 [gene."SPNCRNA.471"]
 ref = "SPNCRNA.471"
-name = ""
 synonyms = [ "SPNG2186",]
 
 [gene."SPNCRNA.4710"]
@@ -34094,7 +33768,6 @@ ref = "SPNCRNA.4719"
 
 [gene."SPNCRNA.472"]
 ref = "SPNCRNA.472"
-name = ""
 synonyms = [ "SPNG2192-93",]
 
 [gene."SPNCRNA.4720"]
@@ -34129,7 +33802,6 @@ ref = "SPNCRNA.4729"
 
 [gene."SPNCRNA.473"]
 ref = "SPNCRNA.473"
-name = ""
 synonyms = [ "SPNG2201",]
 
 [gene."SPNCRNA.4730"]
@@ -34194,7 +33866,6 @@ ref = "SPNCRNA.4749"
 
 [gene."SPNCRNA.475"]
 ref = "SPNCRNA.475"
-name = ""
 synonyms = [ "SPNG2248",]
 
 [gene."SPNCRNA.4750"]
@@ -34259,7 +33930,6 @@ ref = "SPNCRNA.4769"
 
 [gene."SPNCRNA.477"]
 ref = "SPNCRNA.477"
-name = ""
 synonyms = [ "SPNG2259-60",]
 
 [gene."SPNCRNA.4770"]
@@ -34294,7 +33964,6 @@ ref = "SPNCRNA.4779"
 
 [gene."SPNCRNA.478"]
 ref = "SPNCRNA.478"
-name = ""
 synonyms = [ "SPNG2263",]
 
 [gene."SPNCRNA.4780"]
@@ -34359,7 +34028,6 @@ ref = "SPNCRNA.4799"
 
 [gene."SPNCRNA.480"]
 ref = "SPNCRNA.480"
-name = ""
 synonyms = [ "SPNG2291",]
 
 [gene."SPNCRNA.4800"]
@@ -34394,7 +34062,6 @@ ref = "SPNCRNA.4809"
 
 [gene."SPNCRNA.481"]
 ref = "SPNCRNA.481"
-name = ""
 synonyms = [ "SPNG2293",]
 
 [gene."SPNCRNA.4810"]
@@ -34429,7 +34096,6 @@ ref = "SPNCRNA.4819"
 
 [gene."SPNCRNA.482"]
 ref = "SPNCRNA.482"
-name = ""
 synonyms = [ "SPNG2323",]
 
 [gene."SPNCRNA.4820"]
@@ -34464,7 +34130,6 @@ ref = "SPNCRNA.4829"
 
 [gene."SPNCRNA.483"]
 ref = "SPNCRNA.483"
-name = ""
 synonyms = [ "SPNG2325",]
 
 [gene."SPNCRNA.4830"]
@@ -34499,7 +34164,6 @@ ref = "SPNCRNA.4839"
 
 [gene."SPNCRNA.484"]
 ref = "SPNCRNA.484"
-name = ""
 synonyms = [ "SPNG2327",]
 
 [gene."SPNCRNA.4840"]
@@ -34534,7 +34198,6 @@ ref = "SPNCRNA.4849"
 
 [gene."SPNCRNA.485"]
 ref = "SPNCRNA.485"
-name = ""
 synonyms = [ "SPNG2330",]
 
 [gene."SPNCRNA.4850"]
@@ -34569,7 +34232,6 @@ ref = "SPNCRNA.4859"
 
 [gene."SPNCRNA.486"]
 ref = "SPNCRNA.486"
-name = ""
 synonyms = [ "SPNG2370",]
 
 [gene."SPNCRNA.4860"]
@@ -34604,7 +34266,6 @@ ref = "SPNCRNA.4869"
 
 [gene."SPNCRNA.487"]
 ref = "SPNCRNA.487"
-name = ""
 synonyms = [ "SPNG2378",]
 
 [gene."SPNCRNA.4870"]
@@ -34639,7 +34300,6 @@ ref = "SPNCRNA.4879"
 
 [gene."SPNCRNA.488"]
 ref = "SPNCRNA.488"
-name = ""
 synonyms = [ "SPNG2399",]
 
 [gene."SPNCRNA.4880"]
@@ -34707,7 +34367,6 @@ ref = "SPNCRNA.4899"
 
 [gene."SPNCRNA.490"]
 ref = "SPNCRNA.490"
-name = ""
 synonyms = [ "SPNG2404",]
 
 [gene."SPNCRNA.4900"]
@@ -34742,7 +34401,6 @@ ref = "SPNCRNA.4909"
 
 [gene."SPNCRNA.491"]
 ref = "SPNCRNA.491"
-name = ""
 synonyms = [ "SPNG2405",]
 
 [gene."SPNCRNA.4910"]
@@ -34807,7 +34465,6 @@ ref = "SPNCRNA.4929"
 
 [gene."SPNCRNA.493"]
 ref = "SPNCRNA.493"
-name = ""
 synonyms = [ "SPNG2419",]
 
 [gene."SPNCRNA.4930"]
@@ -34872,7 +34529,6 @@ ref = "SPNCRNA.4949"
 
 [gene."SPNCRNA.495"]
 ref = "SPNCRNA.495"
-name = ""
 synonyms = [ "SPNG2446",]
 
 [gene."SPNCRNA.4950"]
@@ -35044,7 +34700,6 @@ name = "prl50"
 
 [gene."SPNCRNA.500"]
 ref = "SPNCRNA.500"
-name = ""
 synonyms = [ "SPNG2489",]
 
 [gene."SPNCRNA.5000"]
@@ -35079,7 +34734,6 @@ ref = "SPNCRNA.5009"
 
 [gene."SPNCRNA.501"]
 ref = "SPNCRNA.501"
-name = ""
 synonyms = [ "SPNG2491",]
 
 [gene."SPNCRNA.5010"]
@@ -35147,7 +34801,6 @@ ref = "SPNCRNA.5029"
 
 [gene."SPNCRNA.503"]
 ref = "SPNCRNA.503"
-name = ""
 synonyms = [ "SPNG2499",]
 
 [gene."SPNCRNA.5030"]
@@ -35182,7 +34835,6 @@ ref = "SPNCRNA.5039"
 
 [gene."SPNCRNA.504"]
 ref = "SPNCRNA.504"
-name = ""
 synonyms = [ "SPNG2511",]
 
 [gene."SPNCRNA.5040"]
@@ -35217,7 +34869,6 @@ ref = "SPNCRNA.5049"
 
 [gene."SPNCRNA.505"]
 ref = "SPNCRNA.505"
-name = ""
 synonyms = [ "SPNG2522",]
 
 [gene."SPNCRNA.5050"]
@@ -35252,7 +34903,6 @@ ref = "SPNCRNA.5059"
 
 [gene."SPNCRNA.506"]
 ref = "SPNCRNA.506"
-name = ""
 synonyms = [ "SPNG2525",]
 
 [gene."SPNCRNA.5060"]
@@ -35320,7 +34970,6 @@ ref = "SPNCRNA.5079"
 
 [gene."SPNCRNA.508"]
 ref = "SPNCRNA.508"
-name = ""
 synonyms = [ "SPNG2529",]
 
 [gene."SPNCRNA.5080"]
@@ -35455,7 +35104,6 @@ ref = "SPNCRNA.5119"
 
 [gene."SPNCRNA.512"]
 ref = "SPNCRNA.512"
-name = ""
 synonyms = [ "SPNG2571",]
 
 [gene."SPNCRNA.5120"]
@@ -35490,7 +35138,6 @@ ref = "SPNCRNA.5129"
 
 [gene."SPNCRNA.513"]
 ref = "SPNCRNA.513"
-name = ""
 synonyms = [ "SPNG2585",]
 
 [gene."SPNCRNA.5130"]
@@ -35591,7 +35238,6 @@ ref = "SPNCRNA.5159"
 
 [gene."SPNCRNA.516"]
 ref = "SPNCRNA.516"
-name = ""
 synonyms = [ "SPNG2596-97",]
 
 [gene."SPNCRNA.5160"]
@@ -35626,7 +35272,6 @@ ref = "SPNCRNA.5169"
 
 [gene."SPNCRNA.517"]
 ref = "SPNCRNA.517"
-name = ""
 synonyms = [ "SPNG2600-02",]
 
 [gene."SPNCRNA.5170"]
@@ -35728,7 +35373,6 @@ name = "prl52"
 
 [gene."SPNCRNA.520"]
 ref = "SPNCRNA.520"
-name = ""
 synonyms = [ "SPNG2614",]
 
 [gene."SPNCRNA.5200"]
@@ -35859,7 +35503,6 @@ ref = "SPNCRNA.5239"
 
 [gene."SPNCRNA.524"]
 ref = "SPNCRNA.524"
-name = ""
 synonyms = [ "SPNG705",]
 
 [gene."SPNCRNA.5240"]
@@ -35894,7 +35537,6 @@ ref = "SPNCRNA.5249"
 
 [gene."SPNCRNA.525"]
 ref = "SPNCRNA.525"
-name = ""
 synonyms = [ "SPNG1024-25",]
 
 [gene."SPNCRNA.5250"]
@@ -35929,7 +35571,6 @@ ref = "SPNCRNA.5259"
 
 [gene."SPNCRNA.526"]
 ref = "SPNCRNA.526"
-name = ""
 synonyms = [ "SPNG2248",]
 
 [gene."SPNCRNA.5260"]
@@ -35994,7 +35635,6 @@ ref = "SPNCRNA.5279"
 
 [gene."SPNCRNA.528"]
 ref = "SPNCRNA.528"
-name = ""
 synonyms = [ "SPNGAF43",]
 
 [gene."SPNCRNA.5280"]
@@ -36029,7 +35669,6 @@ ref = "SPNCRNA.5289"
 
 [gene."SPNCRNA.529"]
 ref = "SPNCRNA.529"
-name = ""
 synonyms = [ "SPNGAF26",]
 
 [gene."SPNCRNA.5290"]
@@ -36132,7 +35771,6 @@ ref = "SPNCRNA.5319"
 
 [gene."SPNCRNA.532"]
 ref = "SPNCRNA.532"
-name = ""
 synonyms = [ "SPNGAF25",]
 
 [gene."SPNCRNA.5320"]
@@ -36197,7 +35835,6 @@ ref = "SPNCRNA.5339"
 
 [gene."SPNCRNA.534"]
 ref = "SPNCRNA.534"
-name = ""
 synonyms = [ "SPNGAF44",]
 
 [gene."SPNCRNA.5340"]
@@ -36327,7 +35964,6 @@ ref = "SPNCRNA.5379"
 
 [gene."SPNCRNA.538"]
 ref = "SPNCRNA.538"
-name = ""
 synonyms = [ "SPNGAF83",]
 
 [gene."SPNCRNA.5380"]
@@ -36362,7 +35998,6 @@ ref = "SPNCRNA.5389"
 
 [gene."SPNCRNA.539"]
 ref = "SPNCRNA.539"
-name = ""
 synonyms = [ "SPNGAF77",]
 
 [gene."SPNCRNA.5390"]
@@ -36401,7 +36036,6 @@ name = "prl54"
 
 [gene."SPNCRNA.540"]
 ref = "SPNCRNA.540"
-name = ""
 synonyms = [ "SPNGAF22", "SPNCRNA.1541",]
 
 [gene."SPNCRNA.5400"]
@@ -36564,7 +36198,6 @@ ref = "SPNCRNA.5449"
 
 [gene."SPNCRNA.545"]
 ref = "SPNCRNA.545"
-name = ""
 synonyms = [ "SPNGAF41",]
 
 [gene."SPNCRNA.5450"]
@@ -36689,7 +36322,6 @@ ref = "SPNCRNA.5489"
 
 [gene."SPNCRNA.549"]
 ref = "SPNCRNA.549"
-name = ""
 synonyms = [ "SPNGAF24",]
 
 [gene."SPNCRNA.5490"]
@@ -36721,7 +36353,6 @@ ref = "SPNCRNA.5499"
 
 [gene."SPNCRNA.550"]
 ref = "SPNCRNA.550"
-name = ""
 synonyms = [ "SPNGAF49",]
 
 [gene."SPNCRNA.5500"]
@@ -37427,7 +37058,6 @@ ref = "SPNCRNA.57"
 
 [gene."SPNCRNA.570"]
 ref = "SPNCRNA.570"
-name = ""
 synonyms = [ "SPNG2AF44",]
 
 [gene."SPNCRNA.5700"]
@@ -38552,7 +38182,6 @@ ref = "SPNCRNA.6039"
 
 [gene."SPNCRNA.604"]
 ref = "SPNCRNA.604"
-name = ""
 synonyms = [ "SPNG25", "SPNCRNA.139",]
 
 [gene."SPNCRNA.6040"]
@@ -39373,7 +39002,6 @@ ref = "SPNCRNA.6279"
 
 [gene."SPNCRNA.628"]
 ref = "SPNCRNA.628"
-name = ""
 synonyms = [ "SPNG51", "SPNCRNA.145",]
 
 [gene."SPNCRNA.6280"]
@@ -44628,7 +44256,6 @@ name = "seh1-antisense-1"
 
 [gene."SPNCRNA.823"]
 ref = "SPNCRNA.823"
-name = ""
 synonyms = [ "SPNG436", "SPNCRNA.193",]
 
 [gene."SPNCRNA.824"]
@@ -44954,7 +44581,6 @@ ref = "SPNCRNA.906"
 
 [gene."SPNCRNA.907"]
 ref = "SPNCRNA.907"
-name = ""
 synonyms = [ "SPNCRNA.221", "SPNG645",]
 
 [gene."SPNCRNA.908"]
@@ -45415,62 +45041,50 @@ ref = "SPRRNA.41"
 
 [gene."SPRRNA.42"]
 ref = "SPRRNA.42"
-name = ""
 synonyms = [ "SPRRNA.21",]
 
 [gene."SPRRNA.43"]
 ref = "SPRRNA.43"
-name = ""
 synonyms = [ "SPRRNA.21",]
 
 [gene."SPRRNA.44"]
 ref = "SPRRNA.44"
-name = ""
 synonyms = [ "SPRRNA.23",]
 
 [gene."SPRRNA.45"]
 ref = "SPRRNA.45"
-name = ""
 synonyms = [ "SPRRNA.09",]
 
 [gene."SPRRNA.46"]
 ref = "SPRRNA.46"
-name = ""
 synonyms = [ "SPRRNA.08",]
 
 [gene."SPRRNA.47"]
 ref = "SPRRNA.47"
-name = ""
 synonyms = [ "SPRRNA.21",]
 
 [gene."SPRRNA.48"]
 ref = "SPRRNA.48"
-name = ""
 synonyms = [ "SPRRNA.23",]
 
 [gene."SPRRNA.49"]
 ref = "SPRRNA.49"
-name = ""
 synonyms = [ "SPRRNA.08",]
 
 [gene."SPRRNA.50"]
 ref = "SPRRNA.50"
-name = ""
 synonyms = [ "SPRRNA.21",]
 
 [gene."SPRRNA.51"]
 ref = "SPRRNA.51"
-name = ""
 synonyms = [ "SPRRNA.23",]
 
 [gene."SPRRNA.52"]
 ref = "SPRRNA.52"
-name = ""
 synonyms = [ "SPRRNA.08",]
 
 [gene."SPRRNA.53"]
 ref = "SPRRNA.53"
-name = ""
 synonyms = [ "SPRRNA.56", "new26",]
 
 [gene."SPRRNA.54"]
@@ -45478,7 +45092,6 @@ ref = "SPRRNA.54"
 
 [gene."SPRRNA.55"]
 ref = "SPRRNA.55"
-name = ""
 synonyms = [ "new23",]
 
 [gene."SPSNORNA.01"]
