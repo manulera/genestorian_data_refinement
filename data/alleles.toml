@@ -8234,10 +8234,6 @@ ref = "SPAC31A2.16"
 name = "gef2(957-1101)"
 ref = "SPAC31A2.16"
 
-[allele."\"\""]
-name = "\"\""
-ref = "SPAC31G5.01"
-
 [allele.lys12-]
 name = "lys12-"
 ref = "SPAC31G5.04"

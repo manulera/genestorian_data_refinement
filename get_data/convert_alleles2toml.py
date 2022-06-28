@@ -1,7 +1,6 @@
-# %%
-import toml
 
 # %%
+import toml
 toml_dict = {'allele': dict()}
 
 with open('../data/alleles_pombemine.tsv') as ins:
@@ -12,10 +11,16 @@ with open('../data/alleles_pombemine.tsv') as ins:
         # issue that had an equivalent name
         if 'delta' not in ls[2]:
             systematic_id, main_gene_name, allele_name = ls[:3]
-            toml_dict['allele'][allele_name] = {
-                'name': allele_name,
-                'ref': systematic_id
-            }
+            if allele_name[0].isalnum():
+                toml_dict['allele'][allele_name] = {
+                    'name': allele_name,
+                    'ref': systematic_id
+                }
+            else:
+                print("Allele skiped ", allele_name)
 
 with open('../data/alleles.toml', "w") as toml_file:
     toml.dump(toml_dict, toml_file)
+
+
+# %%
