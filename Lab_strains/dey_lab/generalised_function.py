@@ -21,29 +21,29 @@ def feature_dict(toml_file):
     return feature_dict
 
 
-def replace_allele_features(toml_file, genotype, replace_word):
+def replace_allele_features(toml_file, genotypes, replace_word):
     features = feature_dict(toml_file)
-    alleles = []
+    genotype_features_replaced = []
     matches = []
-    for allele in genotype:
+    for genotype in genotypes:
         for feature in features.keys():
-            if feature.lower() in allele.lower():
+            if feature.lower() in genotype.lower():
                 if feature != '':
                     matches.append(feature)
         for feature in features.values():
-            if feature.lower() in allele.lower() and feature.lower() not in matches:
+            if feature.lower() in genotype.lower() and feature.lower() not in matches:
                 matches.append(feature)
         matches.sort(key=len, reverse=True)
         i = 0
         while i < len(matches):
             a = matches[i]
-            allele = allele.replace(a, replace_word)
+            genotype = genotype.replace(a, replace_word)
             i += 1
-        alleles.append(allele)
+        genotype_features_replaced.append(genotype)
 
-    if len(alleles) == 0:
+    if len(genotype_features_replaced) == 0:
         return genotype
-    return alleles
+    return genotype_features_replaced
 
 
 genotype = ['cls1-36 ase1-GFP:KanMx6', 'SPAC1002.01']
