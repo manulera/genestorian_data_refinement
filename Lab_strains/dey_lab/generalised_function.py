@@ -3,11 +3,11 @@ import toml
 
 
 def feature_dict(toml_file):
-    #a dictionary in which the keys are name, synonyms and toml_keys and values are toml_keys 
+    # a dictionary in which the keys are name, synonyms and toml_keys and values are toml_keys
     synonyms_2toml_key_dict = {}
     feature_type_dict = toml.load(toml_file)
     feature_type_name = list(feature_type_dict.keys())[0]
-    #a dictionary in which the keys are toml keys and value is a dictionary of name, ref, sy
+    # a dictionary in which the keys are toml keys and value is a dictionary of name, ref, sy
     toml_key_2feature = feature_type_dict[feature_type_name]
     for feature_key in toml_key_2feature:
         if 'name' in toml_key_2feature[feature_key]:
@@ -28,8 +28,7 @@ def replace_allele_features(toml_file, genotypes, replace_word):
     for genotype in genotypes:
         for feature in features.keys():
             if feature.lower() in genotype.lower():
-                if feature != '':
-                    matches.append(feature)
+                matches.append(feature)
         matches.sort(key=len, reverse=True)
         for match in matches:
             genotype = genotype.replace(match, replace_word)
