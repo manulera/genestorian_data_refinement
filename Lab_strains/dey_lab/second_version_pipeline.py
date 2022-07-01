@@ -1,47 +1,41 @@
 # %%
+#from genestorian_module import read_strains_tsv
+from genestorian_module.read_strain_tsv import read_strain_tsv
 from genestorian_module.replace_feature import replaced_allele_feature_name
 import pandas as pd
 import re
 import json
 
 
-def strains_list(strain_csv_file):
-    data = pd.read_csv(strain_csv_file, sep='\t')
-    data['Genotype'] = data['Genotype'].astype(str)
-    data['Sample Name'] = data['Sample Name'].astype(str)
+def strains_list(strain_tsv_file):
+    data = read_strain_tsv(strain_tsv_file)
+    strain_list = list()
 
-    genotype_allele_list_dict = {}
-    genotype_mating_type_dict = {}
-    mating_types = ['h90', 'h+', 'h-']
-    for genotype in data['Genotype']:
-        alleles = [a.lower() for a in re.split("\s+", genotype)
-                   if a != 'h90' and a != 'h+' and a != 'h-']
-        genotype_allele_list_dict[genotype] = alleles
-        for mating_type in mating_types:
-            if mating_type in genotype:
-                genotype_mating_type = mating_type
-                genotype_mating_type_dict[genotype] = genotype_mating_type
+    # Iterate over rows
+    for row_index, strain in data.iterrows():
+        alleles = list()
+        mating_type = 'h?'  # use this as empty value
+        for allele in re.split("\s+", strain['Genotype']):
+            # Sometimes people use h? to indicate that mating type is unkwown
+            if allele in ['h90', 'h-', 'h+', 'h?']:
+                mating_type = allele
             else:
-                genotype_mating_type_dict[genotype] = 'NA'
+                alleles.append(allele)
 
-    sample_name_dict = data.set_index("Genotype")["Sample Name"].to_dict()
-
-    genotypes_dict_collection = {}
-    genotype_dict = {}
-    for genotype in data['Genotype']:
-        genotype_dict['ID'] = sample_name_dict[genotype]
-        genotype_dict['Genotype'] = genotype
-        genotype_dict['Mating type'] = genotype_mating_type_dict[genotype]
-        genotype_dict['Alleles'] = genotype_allele_list_dict[genotype]
-        genotypes_dict_collection[genotype] = genotype_dict
-    return list(genotypes_dict_collection.values())
+        strain_list.append({
+            'id': strain['Sample Name'],
+            'genotype': strain['Genotype'],
+            'mating_type': mating_type,
+            'alleles': alleles
+        })
+    return strain_list
 
 
-genotype_list = strains_list('strains.tsv')
+strain_list = strains_list('strains.tsv')
 with open('strains.json', 'w') as fp:
-    json.dump(genotype_list, fp, indent=3)
+    json.dump(strain_list, fp, indent=3)
 
-# %%
+
 # %%
 
 
