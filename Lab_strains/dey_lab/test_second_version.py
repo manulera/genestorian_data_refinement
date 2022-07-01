@@ -9,14 +9,14 @@ class TestSecondVersionPipeline(unittest.TestCase):
                         'The file strains_test.tsv could not be found')
 
     def test_read_strains_tsv(self):
-        # This function tests that you have created a function test_read_strains
+        # This function tests that you have created a function read_strains_tsv
         # in `genestorian_module/genestorian_module/__init__.py` and that it performs the tasks
         # described in the issue
         try:
             from genestorian_module import read_strains_tsv
         except ImportError:
             raise Exception(
-                'You have to create the function test_read_strains in `genestorian_module/genestorian_module/__init__.py`')
+                'You have to create the function read_strains_tsv in `genestorian_module/genestorian_module/__init__.py`')
         data = read_strains_tsv('strains.tsv')
 
         for row_index, row in data.iterrows():
@@ -57,3 +57,7 @@ class TestSecondVersionPipeline(unittest.TestCase):
                          'first return value should be a dictionary')
         self.assertEqual(the_name, 'MARKER',
                          'first return value should be MARKER')
+
+    def test_next(self):
+        # This functions tests
+        pass
