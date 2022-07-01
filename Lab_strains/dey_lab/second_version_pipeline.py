@@ -1,6 +1,6 @@
 # %%
 #from genestorian_module import read_strains_tsv
-from genestorian_module.read_strain_tsv import read_strain_tsv
+from genestorian_module import read_strain_tsv
 from genestorian_module.replace_feature import replaced_allele_feature_name
 import pandas as pd
 import re
@@ -88,7 +88,7 @@ def allele_feature_list(allele_names, allele_toml_File,
     return list(allele_dict.values())
 
 
-data = pd.read_csv('strains.tsv', sep='\t')
+data = read_strain_tsv('strains.tsv')
 allele_names = set([])
 data['Genotype'] = data['Genotype'].astype(str)
 for genotype in data.Genotype:
