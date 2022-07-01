@@ -27,7 +27,7 @@ def replace_allele_features(toml_file, genotypes, replace_word):
     for genotype in genotypes:
         for feature in features.keys():
             if feature.lower() in genotype.lower():
-                matches.append(feature)
+                matches.append(feature.lower())
         matches.sort(key=len, reverse=True)
         for match in matches:
             genotype = genotype.replace(match, replace_word)
@@ -35,7 +35,9 @@ def replace_allele_features(toml_file, genotypes, replace_word):
 
     return genotype_features_replaced
 
-#Similar to replace_allele_features but also returns list of subsituted feature names
+# Similar to replace_allele_features but also returns list of subsituted feature names
+
+
 def replaced_allele_feature_name(toml_file, genotypes, replace_word):
     features = feature_dict(toml_file)
     genotype_with_replaced_names = []
