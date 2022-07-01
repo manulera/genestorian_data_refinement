@@ -58,6 +58,6 @@ class TestSecondVersionPipeline(unittest.TestCase):
         self.assertEqual(the_name, 'MARKER',
                          'first return value should be MARKER')
 
-    def test_feature_dict(self):
+    def test_next(self):
         # This functions tests
         pass
