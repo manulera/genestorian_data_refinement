@@ -1,0 +1,26 @@
+[
+    {
+        "name": "cls1-36",
+        "pattern": "ALLELE",
+        "allele_features": [
+            {
+                "name": "cls1-36",
+                "feature_type": "ALLELE"
+            }
+        ]
+    },
+    {
+        "name": "ase1d:natmx",
+        "pattern": "GENEd:MARKER",
+        "allele_features": [
+            {
+                "name": "ase1",
+                "feature_type": "GENE"
+            },
+            {
+                "name": "natmx",
+                "feature_type": "MARKER"
+            }
+        ]
+    }
+]
