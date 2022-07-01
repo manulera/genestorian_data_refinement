@@ -1,7 +1,7 @@
 import toml
 
 
-def feature_dict(toml_file):
+def build_feature_dict(toml_file):
     # dictionary in which the keys are name,synonyms,toml_keys and values are toml_keys
     synonyms_2toml_key_dict = {}
     feature_type_dict = toml.load(toml_file)
@@ -17,7 +17,7 @@ def feature_dict(toml_file):
             for synonym in synonyms:
                 synonyms_2toml_key_dict[synonym] = feature_key
         synonyms_2toml_key_dict[feature_key] = feature_key
-    return synonyms_2toml_key_dict
+    return synonyms_2toml_key_dict, feature_type_name.upper()
 
 
 def replace_allele_features(toml_file, genotypes, replace_word):
