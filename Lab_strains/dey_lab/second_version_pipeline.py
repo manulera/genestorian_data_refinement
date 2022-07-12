@@ -1,4 +1,5 @@
 # %%
+import toml
 from genestorian_module import read_strains_tsv
 from genestorian_module.replace_feature import build_feature_dict
 import re
@@ -13,7 +14,7 @@ def build_strain_list(strain_tsv_file):
     for row_index, strain in data.iterrows():
         alleles = list()
         mating_type = 'h?'  # use this as empty value
-        for allele in re.split("\s+", strain['Genotype']):
+        for allele in re.split("\s+", strain['genotype']):
             # Sometimes people use h? to indicate that mating type is unkwown
             # TODO : found h0 in the allele list. Ask Manu is it a mating type
             if allele in ['h90', 'h-', 'h+', 'h?']:
@@ -22,8 +23,8 @@ def build_strain_list(strain_tsv_file):
                 alleles.append(allele)
 
         strain_list.append({
-            'id': strain['Sample Name'],
-            'genotype': strain['Genotype'],
+            'id': strain['strain_id'],
+            'genotype': strain['genotype'],
             'mating_type': mating_type,
             'alleles': alleles
         })
@@ -92,6 +93,7 @@ alleles_list = build_allele_feature_list(allele_names, toml_files)
 
 with open('alleles.json', 'w') as fp:
     json.dump(alleles_list, fp, indent=3, ensure_ascii=False)
+
 
 # %%
 

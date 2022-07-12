@@ -21,11 +21,11 @@ class TestSecondVersionPipeline(unittest.TestCase):
         data = read_strains_tsv('strains.tsv')
 
         for row_index, row in data.iterrows():
-            self.assertEqual(type(row['Genotype']), str,
+            self.assertEqual(type(row['genotype']), str,
                              'read_strains_tsv should convert genotypes to strings')
-            self.assertEqual(type(row['Sample Name']), str,
+            self.assertEqual(type(row['strain_id']), str,
                              'read_strains_tsv should convert Sample Name to strings')
-            self.assertEqual(row['Genotype'], row['Genotype'].lower(),
+            self.assertEqual(row['genotype'], row['genotype'].lower(),
                              'read_strains_tsv should make genotypes lowercase')
 
     def test_feature_dict(self):
@@ -95,7 +95,7 @@ class TestSecondVersionPipeline(unittest.TestCase):
         self.assertEqual(strain_item_keys, [
                          'alleles', 'genotype', 'id', 'mating_type'], 'The keys of the dictionary representing the strain should be \'alleles\', \'genotype\', \'id\', \'mating_type\'')
 
-        self.assertEqual(strain_list[0]['id'], 1)
+        self.assertEqual(strain_list[0]['id'], '1')
         self.assertEqual(strain_list[0]['genotype'],
                          'les1-mNeonGreen:Kan cut11-mCherry:ura4+ h+'.lower())
         self.assertEqual(strain_list[0]['mating_type'], 'h+')
