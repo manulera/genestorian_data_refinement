@@ -52,9 +52,9 @@ def build_replaced_feature_dict(feature_dict, allele, replace_word):
     return allele, allele_features_matched
 
 
-def find_feature_cords(allele, feature):
-    cords = [(i.start(), i.end()) for i in re.finditer(feature, allele)]
-    return cords
+def find_feature_coords(allele, feature):
+    coords = [(i.start(), i.end()) for i in re.finditer(feature, allele)]
+    return coords
 
 
 def build_allele_feature_list(allele_names, toml_files):
@@ -76,7 +76,7 @@ def build_allele_feature_list(allele_names, toml_files):
                     replaced_feature_dict = {}
                     replaced_feature_dict['name'] = replaced_allele_feature
                     replaced_feature_dict['feature_type'] = feature_name
-                    replaced_feature_dict['cords'] = find_feature_cords(
+                    replaced_feature_dict['coords'] = find_feature_coords(
                         allele_dict['name'], replaced_allele_feature)
                     allele_dict['allele_features'].append(
                         replaced_feature_dict)
