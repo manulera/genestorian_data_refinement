@@ -1,0 +1,9 @@
+[sequence_feature.nuclear_localization_signal]
+name = 'nuclear_localization_signal'
+ref = 'SO:0001528'
+synonyms = ['nls']
+
+[sequence_feature.nuclear_export_signal]
+name = 'nuclear_export_signal'
+ref = 'SO:0001531'
+synonyms = ['nes']
