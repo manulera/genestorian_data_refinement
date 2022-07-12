@@ -32,7 +32,7 @@ def build_strain_list(strain_tsv_file):
 
 strain_list = build_strain_list('strains.tsv')
 with open('strains.json', 'w') as fp:
-    json.dump(strain_list, fp, indent=3)
+    json.dump(strain_list, fp, indent=3, ensure_ascii=False)
 
 
 # %%
@@ -91,7 +91,7 @@ for allele in strain_list:
 alleles_list = build_allele_feature_list(allele_names, toml_files)
 
 with open('alleles.json', 'w') as fp:
-    json.dump(alleles_list, fp, indent=3)
+    json.dump(alleles_list, fp, indent=3, ensure_ascii=False)
 
 # %%
 def find_common_pattern(alleles_list):
@@ -108,6 +108,6 @@ def find_common_pattern(alleles_list):
 
 occurances_dict = find_common_pattern(alleles_list)
 with open('occurances2.json', 'w') as fp:
-    json.dump(occurances_dict, fp, indent=3)
+    json.dump(occurances_dict, fp, indent=3, ensure_ascii=False)
 
 # %%
