@@ -155,14 +155,14 @@ class TestSecondVersionPipeline(unittest.TestCase):
         self.assertEqual(alleles_list, expected_output)
 
 
-class TestOccurancesDict(unittest.TestCase):
+class TestOccurencesDict(unittest.TestCase):
     def test_alleles_file_are_there(self):
         self.assertTrue(os.path.isfile('./alleles.json'),
                         'The file alleles.json could not be found')
 
     def test_build_common_pattern_dict(self):
         try:
-            from occurances import build_common_pattern_dict
+            from occurences import build_common_pattern_dict
         except ImportError:
             raise Exception('build_common_pattern_dict not imported')
 
@@ -173,7 +173,7 @@ class TestOccurancesDict(unittest.TestCase):
         self.assertEqual(type(list(common_pattern_dict.values())[
                          0]), list, 'values of the dict should be list of allele following same pattern')
         self.assertEqual(type(list(common_pattern_dict.keys())[
-                         0]), str, 'keys of the dict of occurances should be str of pattern ')
+                         0]), str, 'keys of the dict of occurences should be str of pattern ')
 
     def test_find_common_pattern(self):
         try:
@@ -203,7 +203,7 @@ class TestOccurancesDict(unittest.TestCase):
         self.assertEqual(type(list(common_pattern_dict.values())[
                          0]), list, 'values of the dict should be list of allele following same pattern')
         self.assertEqual(type(list(common_pattern_dict.keys())[
-                         0]), str, 'keys of the dict of occurances should be str of pattern ')
+                         0]), str, 'keys of the dict of occurences should be str of pattern ')
         with open('test_occurance.json') as ins:
             expected_output = json.load(ins)
 
