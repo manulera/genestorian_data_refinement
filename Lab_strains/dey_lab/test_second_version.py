@@ -95,7 +95,7 @@ class TestSecondVersionPipeline(unittest.TestCase):
         self.assertEqual(strain_item_keys, [
                          'alleles', 'genotype', 'id', 'mating_type'], 'The keys of the dictionary representing the strain should be \'alleles\', \'genotype\', \'id\', \'mating_type\'')
 
-        self.assertEqual(strain_list[0]['id'], '1')
+        self.assertEqual(strain_list[0]['id'], 1)
         self.assertEqual(strain_list[0]['genotype'],
                          'les1-mNeonGreen:Kan cut11-mCherry:ura4+ h+'.lower())
         self.assertEqual(strain_list[0]['mating_type'], 'h+')
@@ -153,3 +153,58 @@ class TestSecondVersionPipeline(unittest.TestCase):
             expected_output = json.load(ins)
 
         self.assertEqual(alleles_list, expected_output)
+
+
+class TestOccurancesDict(unittest.TestCase):
+    def test_alleles_file_are_there(self):
+        self.assertTrue(os.path.isfile('./alleles.json'),
+                        'The file alleles.json could not be found')
+
+    def test_build_common_pattern_dict(self):
+        try:
+            from occurances import build_common_pattern_dict
+        except ImportError:
+            raise Exception('build_common_pattern_dict not imported')
+
+        common_pattern_dict = build_common_pattern_dict('alleles.json')
+
+        self.assertEqual(type(common_pattern_dict), dict,
+                         'return of build_common_pattern_dict should be a dict')
+        self.assertEqual(type(list(common_pattern_dict.values())[
+                         0]), list, 'values of the dict should be list of allele following same pattern')
+        self.assertEqual(type(list(common_pattern_dict.keys())[
+                         0]), str, 'keys of the dict of occurances should be str of pattern ')
+
+    def test_find_common_pattern(self):
+        try:
+            from second_version_pipeline import find_common_pattern
+        except ImportError:
+            raise Exception('find_common_pattern not imported')
+
+        alleles_list = [{'name': 'ura4-d18:ura4+', 'pattern': 'ALLELE:ALLELE', 'allele_features':
+                         [{'name': 'ura4-d18', 'feature_type': 'ALLELE'},
+                          {'name': 'ura4+', 'feature_type': 'ALLELE'}]},
+                        {'name': 'nuc1-mcherry:kan', 'pattern': 'GENE-TAG:MARKER', 'allele_features':
+                            [{'name': 'nuc1', 'feature_type': 'GENE'},
+                             {'name': 'mcherry', 'feature_type': 'TAG'},
+                             {'name': 'kan', 'feature_type': 'MARKER'}]},
+                        {'name': 'hht1-sfgfp:nat', 'pattern': 'GENE-TAG:MARKER', 'allele_features':
+                            [{'name': 'hht1', 'feature_type': 'GENE'},
+                             {'name': 'sfgfp', 'feature_type': 'TAG'},
+                             {'name': 'nat', 'feature_type': 'MARKER'}]},
+                        {'name': 'nup211-mng:hph', 'pattern': 'GENE-TAG:MARKER', 'allele_features':
+                            [{'name': 'nup211', 'feature_type': 'GENE'},
+                             {'name': 'mng', 'feature_type': 'TAG'},
+                             {'name': 'hph', 'feature_type': 'MARKER'}]}]
+        common_pattern_dict = find_common_pattern(alleles_list)
+
+        self.assertEqual(type(common_pattern_dict), dict,
+                         'return of build_common_pattern_dict should be a dict')
+        self.assertEqual(type(list(common_pattern_dict.values())[
+                         0]), list, 'values of the dict should be list of allele following same pattern')
+        self.assertEqual(type(list(common_pattern_dict.keys())[
+                         0]), str, 'keys of the dict of occurances should be str of pattern ')
+        with open('test_occurance.json') as ins:
+            expected_output = json.load(ins)
+
+        self.assertEqual(common_pattern_dict, expected_output)

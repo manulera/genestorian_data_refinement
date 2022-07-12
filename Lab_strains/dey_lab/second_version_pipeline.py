@@ -1,14 +1,12 @@
 # %%
-#from genestorian_module import read_strains_tsv
-from genestorian_module import read_strain_tsv
-from genestorian_module.replace_feature import replaced_allele_feature_name
-import pandas as pd
+from genestorian_module import read_strains_tsv
+from genestorian_module.replace_feature import build_feature_dict
 import re
 import json
 
 
-def strains_list(strain_tsv_file):
-    data = read_strain_tsv(strain_tsv_file)
+def build_strain_list(strain_tsv_file):
+    data = read_strains_tsv(strain_tsv_file)
     strain_list = list()
 
     # Iterate over rows
@@ -17,6 +15,7 @@ def strains_list(strain_tsv_file):
         mating_type = 'h?'  # use this as empty value
         for allele in re.split("\s+", strain['Genotype']):
             # Sometimes people use h? to indicate that mating type is unkwown
+            # TODO : found h0 in the allele list. Ask Manu is it a mating type
             if allele in ['h90', 'h-', 'h+', 'h?']:
                 mating_type = allele
             else:
@@ -31,75 +30,84 @@ def strains_list(strain_tsv_file):
     return strain_list
 
 
-strain_list = strains_list('strains.tsv')
+strain_list = build_strain_list('strains.tsv')
 with open('strains.json', 'w') as fp:
     json.dump(strain_list, fp, indent=3)
 
 
 # %%
 
+def build_replaced_feature_dict(feature_dict, allele, replace_word):
+    matches = []
+    allele_features_matched = []
+    for feature in feature_dict.keys():
+        if feature.lower() in allele:
+            matches.append(feature.lower())
+    matches.sort(key=len, reverse=True)
+    for match in matches:
+        if match in allele:
+            allele_features_matched.append(match)
+        allele = allele.replace(match, replace_word)
+    return (allele, allele_features_matched)
 
-def feature_name(name_list, feature_type, features_list):
-    for name in name_list:
-        feature_dict = {}
-        feature_dict['name'] = name
-        feature_dict['feature_type'] = feature_type
-        features_list.append(feature_dict)
-    return features_list
 
-
-def allele_feature_list(allele_names, allele_toml_File,
-                        gene_toml_file, tag_toml_file,
-                        marker_toml_file, promoter_toml_file):
-    allele_dict = {}
+def build_allele_feature_list(allele_names, toml_files):
+    output_list = []
     for allele_name in allele_names:
-        allele_pattern_dict = {}
-        # list of replaced allele and allele feature names list
-        allele_name_replaced = replaced_allele_feature_name(
-            allele_toml_File, [allele_name.lower()], 'ALLELE')
-        allele_names = allele_name_replaced[1]
-        features_list = feature_name(allele_names, 'Allele', [])
-        # list of replaced genes and gene feature names list
-        allele_gene_replaced = replaced_allele_feature_name(
-            gene_toml_file, allele_name_replaced[0], 'GENE')
-        gene_names = allele_gene_replaced[1]
-        features_list = feature_name(gene_names, 'Gene', features_list)
-        # list of replaced tags and tag feature names list
-        allele_tag_replaced = replaced_allele_feature_name(
-            tag_toml_file, allele_gene_replaced[0], 'TAG')
-        tag_names = allele_tag_replaced[1]
-        features_list = feature_name(tag_names, 'Tag', features_list)
-        # list of markers replaced and marker feature names list
-        allele_marker_replaced = replaced_allele_feature_name(
-            marker_toml_file, allele_tag_replaced[0], 'MARKER')
-        marker_names = allele_marker_replaced[1]
-        features_list = feature_name(marker_names, 'Marker', features_list)
-        # list of promoters replaced and promoter feature names list
-        allele_promoter_replaced = replaced_allele_feature_name(
-            promoter_toml_file, allele_marker_replaced[0], 'PROMOTER')
-        promoter_names = allele_promoter_replaced[1]
-        features_list = feature_name(promoter_names, 'Promoter', features_list)
-
-        pattern = allele_promoter_replaced[0]
-        allele_pattern_dict['name'] = allele_name
-        allele_pattern_dict['pattern'] = pattern
-        allele_pattern_dict['allele_features'] = features_list
-        allele_dict[allele_name] = allele_pattern_dict
-    return list(allele_dict.values())
+        output_list.append({
+            'name': allele_name,
+            'pattern': allele_name,
+            'allele_features': []
+        })
+    for toml_file in toml_files:
+        feature_dict, feature_name = build_feature_dict(toml_file)
+        for allele_dict in output_list:
+            new_pattern, replaced_allele_features = build_replaced_feature_dict(
+                feature_dict, allele_dict['pattern'], feature_name)
+            allele_dict['pattern'] = new_pattern
+            if len(replaced_allele_features) != 0:
+                for replaced_allele_feature in replaced_allele_features:
+                    replaced_feature_dict = {}
+                    replaced_feature_dict['name'] = replaced_allele_feature
+                    replaced_feature_dict['feature_type'] = feature_name
+                    allele_dict['allele_features'].append(
+                        replaced_feature_dict)
+    return output_list
 
 
-data = read_strain_tsv('strains.tsv')
-allele_names = set([])
-data['Genotype'] = data['Genotype'].astype(str)
-for genotype in data.Genotype:
-    allele_names.update([a.lower()
-                        for a in re.split("\s+", genotype) if a != ''])
+toml_files = [
+    '../../data/alleles.toml',
+    '../../data/gene_IDs.toml',
+    '../../allele_components/tags.toml',
+    '../../allele_components/markers.toml',
+    '../../allele_components/promoters.toml'
+]
 
-alleles_list = allele_feature_list(allele_names, '../../data/alleles.toml',
-                                   '../../data/gene_IDs.toml',
-                                   '../../allele_components/tags.toml',
-                                   '../../allele_components/markers.toml',
-                                   '../../allele_components/promoters.toml')
+strain_list = build_strain_list('strains.tsv')
+allele_names = set({})
+for allele in strain_list:
+    allele_names.update(allele['alleles'])
+
+alleles_list = build_allele_feature_list(allele_names, toml_files)
 
 with open('alleles.json', 'w') as fp:
     json.dump(alleles_list, fp, indent=3)
+
+# %%
+def find_common_pattern(alleles_list):
+    occurances_dict = {}
+    for allele_dict in alleles_list:
+        pattern = allele_dict['pattern']
+        allele_name = allele_dict['name']
+        if pattern in occurances_dict.keys():
+            occurances_dict[pattern].append(allele_name)
+        else:
+            occurances_dict[pattern] = [allele_name]
+    return occurances_dict
+
+
+occurances_dict = find_common_pattern(alleles_list)
+with open('occurances2.json', 'w') as fp:
+    json.dump(occurances_dict, fp, indent=3)
+
+# %%
