@@ -8,6 +8,7 @@ class TestThirdVersion(unittest.TestCase):
         self.assertTrue(os.path.isfile('./alleles.json'),
                         'The file alleles.json could not be found')
 
+    def test_coords_are_correct(self):
         try:
             from second_version_pipeline import build_strain_list
         except ImportError:
@@ -36,8 +37,12 @@ class TestThirdVersion(unittest.TestCase):
 
         for allele in allele_feature_list:
             for allele_feature in allele['allele_features']:
+                feature_start_coords = []
                 for coords in allele_feature['coords']:
                     start_coord = coords[0]
                     end_coord = coords[1]
-                    self.assertTrue(
-                        allele['name'][start_coord:end_coord+1], allele_feature['name'], ' not equal')
+                    self.assertEqual(allele['name'][start_coord:end_coord+1],
+                                     allele_feature['name'], 'coords do not map to correct feature name in allele name')
+                    feature_start_coords.append(start_coord)
+                self.assertEqual(feature_start_coords,
+                                 sorted(feature_start_coords), 'allele coordinates are not sorted according to the first value in coords.')
