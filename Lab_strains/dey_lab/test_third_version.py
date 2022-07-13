@@ -41,7 +41,7 @@ class TestThirdVersion(unittest.TestCase):
                 for coords in allele_feature['coords']:
                     start_coord = coords[0]
                     end_coord = coords[1]
-                    self.assertEqual(allele['name'][start_coord:end_coord+1],
+                    self.assertEqual(allele['name'][start_coord:end_coord],
                                      allele_feature['name'], 'coords do not map to correct feature name in allele name')
                     feature_start_coords.append(start_coord)
                 self.assertEqual(feature_start_coords,

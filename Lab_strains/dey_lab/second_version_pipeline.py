@@ -5,6 +5,7 @@ import re
 import json
 from operator import itemgetter
 
+
 def build_strain_list(strain_tsv_file):
     data = read_strains_tsv(strain_tsv_file)
     strain_list = list()
@@ -52,7 +53,9 @@ def build_replaced_feature_dict(feature_dict, allele, replace_word):
 
 
 def find_feature_coords(allele, feature):
-    coords = [(i.start(), i.end()-1) for i in re.finditer(feature, allele)]
+    if '+' in feature:
+        feature = re.escape(feature)
+    coords = [(i.start(), i.end()) for i in re.finditer(feature, allele)]
     return coords
 
 
@@ -77,11 +80,11 @@ def build_allele_feature_list(allele_names, toml_files):
                     replaced_feature_dict['feature_type'] = feature_name
                     replaced_feature_dict['coords'] = find_feature_coords(
                         allele_dict['name'], replaced_allele_feature)
-                    
+
                     allele_dict['allele_features'].append(
                         replaced_feature_dict)
                     allele_features_sorted = sorted(allele_dict['allele_features'],
-                                     key=itemgetter('coords'), reverse=False)
+                                                    key=itemgetter('coords'), reverse=False)
                     allele_dict['allele_features'] = allele_features_sorted
     return output_list
 
