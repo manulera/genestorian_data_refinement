@@ -53,8 +53,7 @@ def build_replaced_feature_dict(feature_dict, allele, replace_word):
 
 
 def find_feature_coords(allele, feature):
-    if '+' in feature:
-        feature = re.escape(feature)
+    feature = re.escape(feature)
     coords = [(i.start(), i.end()) for i in re.finditer(feature, allele)]
     return coords
 
