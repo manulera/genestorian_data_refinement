@@ -72,13 +72,14 @@ def build_allele_feature_list(allele_names, toml_files):
             new_pattern, replaced_allele_features = build_replaced_feature_dict(
                 feature_dict, allele_dict['pattern'], feature_name)
             allele_dict['pattern'] = new_pattern
-            if len(replaced_allele_features) != 0:
-                for replaced_allele_feature in replaced_allele_features:
+
+            for replaced_allele_feature in replaced_allele_features:
+                # The same feature may appear several times, we create an element in the list for each of them:
+                for coords in find_feature_coords(allele_dict['name'], replaced_allele_feature):
                     replaced_feature_dict = {}
                     replaced_feature_dict['name'] = replaced_allele_feature
                     replaced_feature_dict['feature_type'] = feature_name
-                    replaced_feature_dict['coords'] = find_feature_coords(
-                        allele_dict['name'], replaced_allele_feature)
+                    replaced_feature_dict['coords'] = coords
 
                     allele_dict['allele_features'].append(
                         replaced_feature_dict)
