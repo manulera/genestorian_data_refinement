@@ -147,7 +147,7 @@ class TestSecondVersionPipeline(unittest.TestCase):
         allele_item_keys.sort()
 
         self.assertEqual(allele_item_keys, [
-                         'allele_features', 'name', 'pattern'], 'The keys of the dictionary representing the allele should be \'allele_features\', \'name\', \'pattern\'')
+                         'allele_features', 'name', 'pattern', 'coords'], 'The keys of the dictionary representing the allele should be \'allele_features\', \'name\', \'pattern\'')
 
         with open('alleles_test.json') as ins:
             expected_output = json.load(ins)

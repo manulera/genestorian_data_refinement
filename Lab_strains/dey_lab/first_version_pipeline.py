@@ -26,9 +26,9 @@ print(genotype_m)
 data = pd.read_csv('strains.tsv', sep='\t', na_filter=False)
 
 
-data['Genotype'] = data['Genotype'].astype(str)
+data['genotype'] = data['genotype'].astype(str)
 genotype_list = []
-for genotype in data['Genotype']:
+for genotype in data['genotype']:
     genotype_list.append(genotype.lower())
 
 
