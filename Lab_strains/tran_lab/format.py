@@ -9,3 +9,5 @@ read_file['strain_id'] = read_file['AP/PT '] + read_file['Glycerol number']
 read_file.to_excel('post_processed.xlsx')
 excel_to_tsv('post_processed.xlsx', [
              'strain_id', 'Genotype'], 'strains.tsv')
+
+# %%
