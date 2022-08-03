@@ -68,12 +68,17 @@ def build_nltk_tag(allele_names, toml_files):
         feature_dict, feature_name = build_feature_dict(toml_file)
         for allele_dict in output_list:
 
+            # Manu: You can do this without using the replace string. For example:
+            # ase1-GFP > [['GENE', 'ase1'], '-GFP']
+            # Next time you can iterate over the list elements and take only those
+            # that are not lists, and replace on '-GFP' only.
             new_features = build_replaced_feature_tag(
                 feature_dict, allele_dict['replaced_feature'], feature_name)
             allele_dict['replaced_feature'] = new_features[1]
-            if len(new_features) != 0:
-                for new_feature in new_features[0]:
-                    allele_dict['pattern'].append(new_feature)
+            # Manu: no need to check if list is empty when iterating, if it's empty it won't iterate
+            # if len(new_features) != 0:
+            for new_feature in new_features[0]:
+                allele_dict['pattern'].append(new_feature)
     for allele_dict in output_list:
         separators = identify_separator(allele_dict['name'])
         if len(separators) != 0:
@@ -88,9 +93,19 @@ def build_nltk_tag(allele_names, toml_files):
         allele_dict = allele_dict.pop('replaced_feature')
     return output_list
 
+# Nicer output to get the whole pattern in a single line
+def prettier_json(input_dict):
+    output_str = json.dumps(input_dict, indent=3, ensure_ascii=False)
 
-def main():
-    input_file = sys.argv[1]
+    match = re.search(r'\[(?=\n)(\n|(?![{}]).)+\]',output_str)
+    while match is not None:
+        new_string = re.sub('\n',' ',match.group())
+        new_string = re.sub('\s+',' ',new_string)
+        output_str = output_str[:match.start()] + new_string+ output_str[match.end():]
+        match = re.search(r'\[(?=\n)(\n|(?![{}]).)+\]',output_str)
+    return output_str
+
+def main(input_file):
     strain_list = build_strain_list(input_file)
     allele_names = set({})
     for strain in strain_list:
@@ -104,14 +119,18 @@ def main():
     ]
     alleles_list = build_nltk_tag(allele_names, toml_files)
     output_file_name = 'alleles_nltk.json'
-    output_dir = re.sub('strains.tsv', "", input_file)
-    output_file_dir = os.path.join(output_dir, output_file_name)
+    # Manu: less hacky
+    output_dir = os.path.dirname(input_file)
+    # Manu: it's the path of a file, not a directory
+    output_file_path = os.path.join(output_dir, output_file_name)
 
-    with open(output_file_dir, 'w', encoding="utf-8") as fp:
-        json.dump(alleles_list, fp, indent=3, ensure_ascii=False)
+    with open(output_file_path, 'w', encoding="utf-8") as fp:
+        fp.write(prettier_json(alleles_list))
 
     return None
 
 
 if __name__ == "__main__":
-    main()
+    # MANU: Better to extract args here and pass a meaningful argument to main
+    input_file = sys.argv[1]
+    main(input_file)
