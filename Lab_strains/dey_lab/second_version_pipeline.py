@@ -112,17 +112,17 @@ with open('alleles.json', 'w') as fp:
 
 
 def find_common_pattern(alleles_list):
-    occurences_dict = {}
+    occurrence_dict = {}
     for allele_dict in alleles_list:
         pattern = allele_dict['pattern']
         allele_name = allele_dict['name']
-        if pattern in occurences_dict:
-            occurences_dict[pattern].append(allele_name)
+        if pattern in occurrence_dict:
+            occurrence_dict[pattern].append(allele_name)
         else:
-            occurences_dict[pattern] = [allele_name]
-    return occurences_dict
+            occurrence_dict[pattern] = [allele_name]
+    return occurrence_dict
 
 
-occurences_dict = find_common_pattern(alleles_list)
-with open('occurences2.json', 'w') as fp:
-    json.dump(occurences_dict, fp, indent=3, ensure_ascii=False)
+occurrence_dict = find_common_pattern(alleles_list)
+with open('occurrence2.json', 'w') as fp:
+    json.dump(occurrence_dict, fp, indent=3, ensure_ascii=False)

@@ -18,7 +18,7 @@ def build_common_pattern_dict(in_json_file):
 
 occurences_dict = build_common_pattern_dict('alleles.json')
 
-with open('occurances.json', 'w') as fp:
+with open('occurrence.json', 'w') as fp:
     json.dump(occurences_dict, fp, indent=3)
 
 # %%
