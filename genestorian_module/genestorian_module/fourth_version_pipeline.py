@@ -10,7 +10,7 @@ import os
 def build_replaced_feature_tag(feature_dict, allele, replace_word):
     matches = []
     allele_features_matched = []
-    returns = []
+    matched_feature_replace_word_list = []
     for feature in feature_dict.keys():
         if feature.lower() in allele:
             matches.append(feature.lower())
@@ -20,9 +20,10 @@ def build_replaced_feature_tag(feature_dict, allele, replace_word):
             allele_features_matched.append(match)
             allele = allele.replace(match, replace_word)
     for allele_feature_matched in allele_features_matched:
-        returns.append((allele_feature_matched, replace_word))
+        matched_feature_replace_word_list.append(
+            (allele_feature_matched, replace_word))
 
-    return returns, allele
+    return matched_feature_replace_word_list, allele
 
 
 def identify_other(pattern):
@@ -46,12 +47,14 @@ def identify_separator(allele_name):
 
 def sort_pattern(pattern_list, allele_name):
     pattern_dict = {}
-    for items in pattern_list:
-
+    for feature in pattern_list:
         coords = [i.start() for i in re.finditer(
-            re.escape(items[0]), allele_name)]
+            re.escape(feature[0]), allele_name)]
+        print(feature[0], ':', coords)
         for coord in coords:
-            pattern_dict[coord] = items
+            pattern_dict[coord] = feature
+            replace_word = len(feature[0])*'@'
+            allele_name = allele_name.replace(feature[0], replace_word)
     pattern_list = collections.OrderedDict(sorted(pattern_dict.items()))
     return list(pattern_list.values())
 
@@ -80,7 +83,7 @@ def build_nltk_tag(allele_names, toml_files):
             for new_feature in new_features[0]:
                 allele_dict['pattern'].append(new_feature)
     for allele_dict in output_list:
-        separators = identify_separator(allele_dict['name'])
+        separators = identify_separator(allele_dict['replaced_feature'])
         if len(separators) != 0:
             for separator in separators:
                 allele_dict['pattern'].append(separator)
@@ -93,24 +96,26 @@ def build_nltk_tag(allele_names, toml_files):
         allele_dict = allele_dict.pop('replaced_feature')
     return output_list
 
-# Nicer output to get the whole pattern in a single line
+
 def prettier_json(input_dict):
     output_str = json.dumps(input_dict, indent=3, ensure_ascii=False)
 
-    match = re.search(r'\[(?=\n)(\n|(?![{}]).)+\]',output_str)
+    match = re.search(r'\[(?=\n)(\n|(?![{}]).)+\]', output_str)
     while match is not None:
-        new_string = re.sub('\n',' ',match.group())
-        new_string = re.sub('\s+',' ',new_string)
-        output_str = output_str[:match.start()] + new_string+ output_str[match.end():]
-        match = re.search(r'\[(?=\n)(\n|(?![{}]).)+\]',output_str)
+        new_string = re.sub('\n', ' ', match.group())
+        new_string = re.sub('\s+', ' ', new_string)
+        output_str = output_str[:match.start()] + \
+            new_string + output_str[match.end():]
+        match = re.search(r'\[(?=\n)(\n|(?![{}]).)+\]', output_str)
     return output_str
+
 
 def main(input_file):
     strain_list = build_strain_list(input_file)
     allele_names = set({})
     for strain in strain_list:
         allele_names.update(strain['alleles'])
-    toml_files = toml_files = [
+    toml_files = [
         '../../data/alleles.toml',
         '../../data/gene_IDs.toml',
         '../../allele_components/tags.toml',
@@ -119,9 +124,7 @@ def main(input_file):
     ]
     alleles_list = build_nltk_tag(allele_names, toml_files)
     output_file_name = 'alleles_nltk.json'
-    # Manu: less hacky
     output_dir = os.path.dirname(input_file)
-    # Manu: it's the path of a file, not a directory
     output_file_path = os.path.join(output_dir, output_file_name)
 
     with open(output_file_path, 'w', encoding="utf-8") as fp:
@@ -131,6 +134,5 @@ def main(input_file):
 
 
 if __name__ == "__main__":
-    # MANU: Better to extract args here and pass a meaningful argument to main
     input_file = sys.argv[1]
     main(input_file)
