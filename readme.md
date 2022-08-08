@@ -66,3 +66,22 @@ It has 5 columns:
 3. Allele name (if we are lucky we find it in the `genotype` column in `data/strains.tsv`)
 4. Description (some info about the allele sequence). For now we won't use it.
 5. Expression (expression level in the experiment. In general reflects a change in the promoter.). For now we won't use it.
+
+## Running the Pipeline
+
+### Read the excel file
+
+Each lab has a `format.py` to pre-process the data before converting into a tsv file.
+
+1. `strains.tsv` file has genotype and strain_id column.
+2. Import the function `excel_to_tsv(excel_file, read_cols, tsv_file)` from `genestorian_module` to convert the excel file to tsv. The arguments passed to the function are path of excel file, columns to be read i.e [column to be used as strain id, genotype] and 'strains.tsv'
+3. Some excel file require pre-processing before converting them to tsv. Excel file should have strain_id and genotype column.
+
+### Build nltk tags
+
+In `genestorian_module/genestorian_module/` directory run `python fourth_version_pipeline ../../Lab_strains/lab_name/strains.tsv` to generate nltk tags and patterns in respective lab directory.
+
+
+
+
+
