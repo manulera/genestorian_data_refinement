@@ -60,25 +60,50 @@ def sort_pattern(pattern_list, allele_name):
     pattern_list = collections.OrderedDict(sorted(pattern_dict.items()))
     return list(pattern_list.values())
 
+def replace_allele_features(feature_dict, pattern_list, feature_name, matches):
+    out_list = list()
+    print(feature_name, matches)
+    for i in range(len(pattern_list)):
+        if type(pattern_list[i]) != str:
+            out_list.append(pattern_list[i])
+            continue
+        if len(matches) == 0:
+            for feature in feature_dict.keys():
+                if feature.lower() in pattern_list[i]:
+                    matches.append(feature.lower())
+            matches.sort(key=len, reverse=True)
+        allele_substring = pattern_list[i]
+        this_list = [allele_substring]
+        # print(allele_substring, feature_name, matches)
+        for match in matches:
+            if match in allele_substring:
+                start = allele_substring.find(match)
+                end = start + len(match)
+                this_list = [allele_substring[:start], [allele_substring[start:end], feature_name], allele_substring[end:] ]
+                # Remove empty strings
+                this_list = list(filter(lambda x: x!= '', this_list))
+                this_list = replace_allele_features(feature_dict, this_list, feature_name,matches)
+                break
+        out_list += this_list
+
+    return out_list
+
 
 def build_nltk_tag(allele_names, toml_files):
     output_list = []
     for allele_name in allele_names:
         output_list.append({
             'name': allele_name,
-            'pattern': [],
-            'replaced_feature': allele_name
+            'pattern': [allele_name],
         })
     for toml_file in toml_files:
         feature_dict, feature_name = build_feature_dict(toml_file)
         for allele_dict in output_list:
-
-            # Manu: You can do this without using the replace string. For example:
-            # ase1-GFP > [['GENE', 'ase1'], '-GFP']
-            # Next time you can iterate over the list elements and take only those
-            # that are not lists, and replace on '-GFP' only.
+            allele_dict['pattern'] = replace_allele_features(feature_dict, allele_dict['pattern'], feature_name,[])
+            print(allele_dict['pattern'])
+            return
             new_features = build_replaced_feature_tag(
-                feature_dict, allele_dict['replaced_feature'], feature_name)
+                feature_dict, allele_dict['pattern'], feature_name)
             allele_dict['replaced_feature'] = new_features[1]
             # Manu: no need to check if list is empty when iterating, if it's empty it won't iterate
             # if len(new_features) != 0:
@@ -86,13 +111,12 @@ def build_nltk_tag(allele_names, toml_files):
                 allele_dict['pattern'].append(new_feature)
     for allele_dict in output_list:
         separators = identify_separator(allele_dict['replaced_feature'])
-        if len(separators) != 0:
-            for separator in separators:
-                allele_dict['pattern'].append(separator)
+        for separator in separators:
+            allele_dict['pattern'].append(separator)
         others = identify_other(allele_dict['replaced_feature'])
-        if len(others) != 0:
-            for other_element in others:
-                allele_dict['pattern'].append(other_element)
+        for other_element in others:
+            allele_dict['pattern'].append(other_element)
+        # TODO: this function should not be needed
         allele_dict['pattern'] = sort_pattern(
             allele_dict['pattern'], allele_dict['name'])
         allele_dict = allele_dict.pop('replaced_feature')
