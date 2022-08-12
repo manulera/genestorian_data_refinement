@@ -42,7 +42,7 @@ def count_common_patterns(input_file, txt_out_file):
         for pattern in output_list_sorted:
             out.write(f'{pattern["key"]}\t{pattern["count"]}\n')
     return None
-
+    
 
 def count_most_common_other_tag(input_file, tsv_out_file):
     occ_dict = build_common_pattern_dict(input_file)
