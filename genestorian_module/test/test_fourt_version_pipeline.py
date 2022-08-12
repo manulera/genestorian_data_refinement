@@ -53,6 +53,12 @@ class TestFourtVersionPipeline(unittest.TestCase):
             feature_start_coords.append(coords[0])
             self.assertEqual(feature_start_coords,
                              sorted(feature_start_coords), 'allele features are not sorted according to the appearance in allele name')
+            name = allele["name"]
+            pattern_names_joined = ''
+            for pattern_name in allele["pattern"]:
+                pattern_names_joined += pattern_name[0]
+            self.assertEqual(name, pattern_names_joined,
+                             'allele name does not match the name formed by joining the pattern names')
 
     def test_main_function(self):
         try:

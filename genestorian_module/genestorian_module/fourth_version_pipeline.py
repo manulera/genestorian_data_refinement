@@ -47,12 +47,14 @@ def identify_separator(allele_name):
 
 def sort_pattern(pattern_list, allele_name):
     pattern_dict = {}
+    pattern_list = (
+        sorted(pattern_list, key=lambda x: len(x[0]), reverse=True))
     for feature in pattern_list:
         coords = [i.start() for i in re.finditer(
             re.escape(feature[0]), allele_name)]
-        print(feature[0], ':', coords)
         for coord in coords:
             pattern_dict[coord] = feature
+            # Anamika: I couldn't think of anything better
             replace_word = len(feature[0])*'@'
             allele_name = allele_name.replace(feature[0], replace_word)
     pattern_list = collections.OrderedDict(sorted(pattern_dict.items()))
