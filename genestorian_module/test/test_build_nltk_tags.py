@@ -3,7 +3,7 @@ import os
 import re
 
 
-class TestFourtVersionPipeline(unittest.TestCase):
+class TestBuildNltkTags(unittest.TestCase):
     def test_all_input_files_are_present(self):
         parent_dir = '../../Lab_strains'
         path_list_strain_file = []
