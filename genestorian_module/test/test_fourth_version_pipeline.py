@@ -18,7 +18,7 @@ class TestFourtVersionPipeline(unittest.TestCase):
 
     def test_build_nltk_tag(self):
         try:
-            from genestorian_module.fourth_version_pipeline import build_nltk_tag
+            from genestorian_module.build_nltk_tags import build_nltk_tag
         except ImportError:
             raise Exception(
                 'build_nltk_tag not imported from fourth_version_pipeline')
@@ -62,7 +62,7 @@ class TestFourtVersionPipeline(unittest.TestCase):
 
     def test_main_function(self):
         try:
-            from genestorian_module.fourth_version_pipeline import main
+            from genestorian_module.build_nltk_tags import main
         except ImportError:
             raise Exception(
                 'main not imported from fourth_version_pipeline')

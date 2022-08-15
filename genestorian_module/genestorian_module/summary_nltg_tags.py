@@ -24,27 +24,27 @@ def build_common_pattern_dict(input_file):
     return pattern_dict
 
 
-def json_common_pattern_dict(input_file, json_out_file):
+def json_common_pattern_dict(input_file):
     common_pattern_dict = build_common_pattern_dict(input_file)
-    with open(json_out_file, 'w') as fp:
+    with open('common_pattern.json', 'w') as fp:
         json.dump(common_pattern_dict, fp, indent=3)
     return None
 
 
-def count_common_patterns(input_file, txt_out_file):
+def count_common_patterns(input_file):
     occ_dict = build_common_pattern_dict(input_file)
     output_list = list()
     for key in occ_dict:
         output_list.append({'key': key, 'count': len(occ_dict[key])})
     output_list_sorted = sorted(
         output_list, key=lambda pattern: pattern['count'], reverse=True)
-    with open(txt_out_file, 'w') as out:
+    with open('common_pattern_count.txt', 'w') as out:
         for pattern in output_list_sorted:
             out.write(f'{pattern["key"]}\t{pattern["count"]}\n')
     return None
-    
 
-def count_most_common_other_tag(input_file, tsv_out_file):
+
+def count_most_common_other_tag(input_file):
     occ_dict = build_common_pattern_dict(input_file)
     result_list = []
     for key in occ_dict:
@@ -56,5 +56,5 @@ def count_most_common_other_tag(input_file, tsv_out_file):
     df_unidentified_feature_occurences = df_unidentified_feature_occurences.sort_values(
         'no_of_occurence', ascending=False)
     df_unidentified_feature_occurences.to_csv(
-        tsv_out_file, sep='\t', index=False)
+        'most_common_other_tag.tsv', sep='\t', index=False)
     return None

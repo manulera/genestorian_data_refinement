@@ -71,15 +71,31 @@ It has 5 columns:
 
 ### Read the excel file
 
-Each lab has a `format.py` to pre-process the data before converting into a tsv file.
+Each lab has a `format.py` to pre-process the data before converting into a tsv file. It should extracts the strain_id and genotype from the input file and save in `strains.tsv` file
 
 1. `strains.tsv` file has genotype and strain_id column.
 2. Import the function `excel_to_tsv(excel_file, read_cols, tsv_file)` from `genestorian_module` to convert the excel file to tsv. The arguments passed to the function are path of excel file, columns to be read i.e [column to be used as strain id, genotype] and 'strains.tsv'
-3. Some excel file require pre-processing before converting them to tsv. Excel file should have strain_id and genotype column.
+3. Some excel file require pre-processing before converting them to tsv. Excel file should have strain_id and genotype as column name. Add strain_id column to excel file if not present already.
+4. Your data might not be in an excel file. In such cases, read the genotype and strain_id column from the input file and write into a tsv file. 
+Eg: `Lab_strains/nbrp_strains/format.py` reads 'NBRPID'and 'genotype' column from raw_strains.csv. It renames the 'NBRPID' to 'strain_id'. Then, it writes into a tsv file.
+NOTE: When you are not using `excel_to_tsv` to read to csv, make sure to deal with the special characters present in your data.
 
 ### Build nltk tags
+We are using nltk library to process tha data. Before using the nltk library, it's important to have data structured in a format which can be input to nltk APIs. 
+`build_nltk_tags` takes strains.tsv as input. It makes a list of allele names from the genotype. Then, it identifies features in the allele name and add a tag to features. Features which aren't catergorised as gene, allele, marker or tag are tagged as 'other'. The output is a dict saved in a json file. The output dict has allele name and allele pattern.
 
-In `genestorian_module/genestorian_module/` directory run `python fourth_version_pipeline ../../Lab_strains/lab_name/strains.tsv` to generate nltk tags and patterns in respective lab directory.
+To build your own nltk tags for strains, in `genestorian_module/genestorian_module/` directory run `python build_nltk_tags ../../Lab_strains/lab_name/strains.tsv`. This generates nltk tags and patterns in respective lab directory.
+Eg:
+NBRP strains in `Lab_strains` directory has `strains.tsv` file which has two columns strain_id and genotype. 
+In `genestorian_module/genestorian_module/` directory run `python build_nltk_tags ../../Lab_strains/nbrp_strains/strains.tsv`. 
+This generates alleles_nltk.json in `Lab_strains/nbrp_strains/`. 
+
+### Summarize nltk tags
+1. To find the alleles that follow same patterns:
+Import `json_common_pattern_dict` from `genestorian_module`. `json_common_pattern_dict` takes argument alleles_ntlk.json. This generates a file 'common_pattern.json' file in the respective lab directory. 
+2. To count the most commonly occurring features which are tagged with 'other' tag:
+Import `count_most_common_other_tag` from `genestorian_module`. `count_most_common_other_tag` takes argument alleles_nltk.json. This generates a file 'most_common_other_tag.tsv' file in the respective lab directory. 
+ 
 
 
 
