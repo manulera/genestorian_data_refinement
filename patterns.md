@@ -6,7 +6,7 @@ Patterns that can be found in allele descriptions, and what they mean. For now j
 * `GENE-MARKER`: This pattern represents a deletion (typically written as gene::marker, for example les1::Hph in the Dey collection).
 * `pGENE-GENE`: this in general would mean promoter of the first gene, that has been inserted in front of the second gene, replacing the original promoter of the second gene.
 * `GENE+:another allele`: This is a special case, not sure how common it is, you can find `ade6`, `ura4`, `lys3`, `his5` . See [integration in auxotrophy locus](biological_concepts.md#integration-in-auxotrophy-locus). For example, `ura4+:pact1-ase1-GFP` means that an allele `pact1-ase1-GFP` promoter of act1 gene + sequence of the ase1 gene + GFP has been integrated in the ura4 locus (the place in the genome where the ura4 gene is).
-* `GENE(<AMINOACID><NUMBER><AMINOACID>)`. This indicates that some of the aminoacids have been subsituted in the sequence of a gene, for example ase1(A130G) means that the aminoacid A (alanine) in position 130 has been replaced by G (glycine). Any number of these can be chained one after the other ase1(I130A,A145P), and people may be inconsistent and not put parenthesis, sometimes ase1A130G may be found.
+* `GENE(<AMINOACID><NUMBER><AMINOACID>)`. This indicates that some of the aminoacids (indicated as single-letter codes, see full list [here](http://130.88.97.239/bioactivity/aacodefrm.html)) have been subsituted in the sequence of a gene. For example ase1(A130G) means that the aminoacid A (alanine) in position 130 has been replaced by G (glycine). Any number of these can be chained one after the other ase1(I130A,A145P), and people may be inconsistent and not put parenthesis, sometimes ase1A130G may be found.
 
 # Entities:
 
