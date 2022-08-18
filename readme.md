@@ -89,7 +89,7 @@ The input for the pipeline is the excel sheet which contains a unique stain id, 
 Each lab has a `format.py` to pre-process the data before converting into a tsv file. It should extracts the strain_id and genotype from the input file and save in `strains.tsv` file
 
 ##### To generate your own `strains.tsv`:
-* Import the function `excel_to_tsv(excel_file, read_cols, tsv_file)` from `genestorian_module` to convert the excel file to tsv. The arguments passed to the function are path of excel file, columns to be read i.e [column to be used as strain id, genotype] and 'strains.tsv'
+* Import the function `excel_to_tsv` from `genestorian_module` to convert the excel file to tsv. The arguments passed to the function are path of excel file, columns to be read i.e [column to be used as strain id, genotype] and 'strains.tsv'
 * Some excel file require pre-processing before converting them to tsv. 
 * Your data might not be in an excel file. In such cases, read the genotype and strain_id column from the input file and write into a tsv file. 
 Eg: 
