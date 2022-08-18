@@ -66,6 +66,20 @@ It has 5 columns:
 3. Allele name (if we are lucky we find it in the `genotype` column in `data/strains.tsv`)
 4. Description (some info about the allele sequence). For now we won't use it.
 5. Expression (expression level in the experiment. In general reflects a change in the promoter.). For now we won't use it.
+ 
+### Other features
+The folder `alleles_components` contains a bunch of toml files. Each toml file corresponds to one feature type.
+`markers.toml`, `promoters.toml`, `tags.tom`, `sequence_features.tom` contains common markers, promoters, tags and sequence  features used in S Pombe labs. The format of the toml file is as:
+```
+[feature_name.<name of the feature>]
+name = '<name of the feature>'
+reference = ''
+synonyms = [synonyms]
+```
+
+* `tags_fpbase.toml` contains fluorescent protein tags from fp_base(https://www.fpbase.org/), which can be accessed from fb_base graphql API(https://www.fpbase.org/graphql/), with graphql in `get_data/get_fpbase_data.py`
+
+  
 
 ## Running the Pipeline
 
@@ -115,17 +129,19 @@ This generates a file `allele_pattern_nltk.json` in `Lab_strains/nbrp_strains/`.
 #### How build_nltk_tags works
 * It starts with a list of genotype from the strains.tsv which is essentially the input.
 * From the list of the genotype, a list of alleles is extracted. 
-* A feature dict is built for each toml file present in allele_components. The keys in the feature dict are name and synonyms of the features in the feature toml file.
+* A feature dict is built for each toml file present in allele_components directory(others.toml not being used at present). The keys in the feature dict are name and synonyms of the features in the feature toml file.
 * Whenever any part of allele is matched to the key  of the feature dict, it is added to the pattern, along with the tag.
-* Parts of allele name which aren't identfied as an allele feature are tagged as 'other'
+* Separators are identified in the allele name and tagged as '-'.
+* Parts of allele name which aren't identfied as an allele feature or separator are tagged as 'other'
+  
 
 ### Summarize nltk tags
 You can have a look at alleles which follow similar patterns, count the number of alleles following same pattern and look at the most frequently occurring features tagged with other's tag.
-1. To find the alleles that follow same patterns:
+##### To find the alleles that follow same patterns:
 Import `json_common_pattern_dict` from `genestorian_module`. `json_common_pattern_dict` takes argument alleles_ntlk.json. This generates a file 'common_pattern.json' file in the respective lab directory. 
-2. To count the number of alleles that follow same pattern:
+##### To count the number of alleles that follow same pattern:
 Import `count_most_common_other_tag` from `genestorian_module`. `count_common_patterns` takes argument alleles_nltk.json. This generates a file 'most_common_other_tag.tsv' file in the respective lab directory.
-1. To count the most commonly occurring features which are tagged with 'other' tag:
+##### To count the most commonly occurring features which are tagged with 'other' tag:
 Import `count_most_common_other_tag` from `genestorian_module`. `count_most_common_other_tag` takes argument alleles_nltk.json. This generates a file 'most_common_other_tag.tsv' file in the respective lab directory. 
 eg:
 ```
