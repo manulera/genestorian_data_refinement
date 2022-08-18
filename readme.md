@@ -120,11 +120,12 @@ We are using nltk library to process tha data. Before using the nltk library, it
 This output is saved by default in the `allele_pattern_nltk.json` in the same directory that of `strains.tsv`.
 
 #### To build your own nltk tags for strains
-* In `genestorian_module/genestorian_module/` directory run `python build_nltk_tags ../../Lab_strains/lab_name/strains.tsv`. 
-Eg:
-NBRP strains in `Lab_strains` directory has `strains.tsv` file which has two columns strain_id and genotype. 
+* In `genestorian_module/genestorian_module/` directory run `python build_nltk_tags ../../Lab_strains/lab_name/strains.tsv`.
 
-In `genestorian_module/genestorian_module/` directory run `python build_nltk_tags ../../Lab_strains/nbrp_strains/strains.tsv`. 
+Eg: NBRP strains in `Lab_strains` directory has `strains.tsv` file which has two columns strain_id and genotype. 
+
+``` genestorian_module/genestorian_module/python build_nltk_tags ../../Lab_strains/nbrp_strains/strains.tsv ```
+
 This generates a file `allele_pattern_nltk.json` in `Lab_strains/nbrp_strains/`. 
 #### How build_nltk_tags works
 * It starts with a list of genotype from the strains.tsv which is essentially the input.
