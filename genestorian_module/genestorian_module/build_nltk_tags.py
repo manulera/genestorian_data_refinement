@@ -96,12 +96,12 @@ def main(input_file):
         '../../data/alleles.toml',
         '../../data/gene_IDs.toml',
         '../../allele_components/tags.toml',
-        '../../allele_componenets/tags_fpbase.toml'
+        '../../allele_components/tags_fpbase.toml',
         '../../allele_components/markers.toml',
         '../../allele_components/promoters.toml'
     ]
     alleles_list = build_nltk_tag(allele_names, toml_files)
-    output_file_name = 'alleles_nltk.json'
+    output_file_name = 'alleles_pattern_nltk.json'
     output_dir = os.path.dirname(input_file)
     output_file_path = os.path.join(output_dir, output_file_name)
 

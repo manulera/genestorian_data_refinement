@@ -27,7 +27,7 @@ def build_common_pattern_dict(input_file):
 def json_common_pattern_dict(input_file):
     common_pattern_dict = build_common_pattern_dict(input_file)
     with open('common_pattern.json', 'w') as fp:
-        json.dump(common_pattern_dict, fp, indent=3)
+        json.dump(common_pattern_dict, fp, indent=3, ensure_ascii=False)
     return None
 
 
