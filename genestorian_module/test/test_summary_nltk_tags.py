@@ -5,7 +5,7 @@ import re
 
 class TestSummaryNltkTags(unittest.TestCase):
     def input_file_is_present(self):
-        self.assertTrue(os.path.isfile('./alleles_nltk.json'),
+        self.assertTrue(os.path.isfile('./alleles_pattern_nltk.json'),
                         'The file alleles_nltk.json not found')
 
     def test_build_common_pattern_dict(self):
@@ -14,9 +14,9 @@ class TestSummaryNltkTags(unittest.TestCase):
         except ImportError:
             raise Exception(
                 'build_common_pattern_dict not imported from summary_nltk_tags')
-        pattern_dict = build_common_pattern_dict('./alleles_nltk.json')
+        pattern_dict = build_common_pattern_dict('./alleles_pattern_nltk.json')
         pattern_dict_keys = ['ALLELE/ALLELE',
-                             'GENEδ::MARKER', 'TAG0/TAG0', 'GENE-1/GENE-1', '+/GENE', 'ALLELE', 'GENE/+']
+                             'GENEδ-MARKER', 'TAG0/TAG0', 'GENE-1/GENE-1', '+/GENE', 'ALLELE', 'GENE/+']
         self.assertEqual(type(pattern_dict), dict,
                          'Output of test_build_common_pattern_dict should be a dict')
         self.assertEqual(len(pattern_dict.keys()), len(pattern_dict_keys),
@@ -31,7 +31,7 @@ class TestSummaryNltkTags(unittest.TestCase):
         except ImportError:
             raise Exception(
                 'json_common_pattern_dict not imported from summary_nltk_tags')
-        json_file = json_common_pattern_dict('./alleles_nltk.json')
+        json_file = json_common_pattern_dict('./alleles_pattern_nltk.json')
         self.assertTrue(os.path.isfile('./common_pattern.json'),
                         'json_common_pattern_dict did not produce any json file')
 
@@ -46,10 +46,10 @@ class TestSummaryNltkTags(unittest.TestCase):
         except ImportError:
             raise Exception(
                 'build_common_pattern_dict not imported from summary_nltk_tags')
-        txt_file = count_common_patterns('./alleles_nltk.json')
+        txt_file = count_common_patterns('./alleles_pattern_nltk.json')
         self.assertTrue(os.path.isfile('./common_pattern_count.txt'),
                         'count_common_patterns did not produce any txt file')
-        pattern_dict = build_common_pattern_dict('./alleles_nltk.json')
+        pattern_dict = build_common_pattern_dict('./alleles_pattern_nltk.json')
         total_num_of_patterns = len(list(pattern_dict.keys()))
         with open('common_pattern_count.txt', 'r') as f:
             total_num_patterns_file = len(f.readlines())
@@ -62,6 +62,6 @@ class TestSummaryNltkTags(unittest.TestCase):
         except ImportError:
             raise Exception(
                 'count_most_common_other_tag not imported from summary_nltk_tags')
-        tsv_file = count_most_common_other_tag('./alleles_nltk.json')
+        tsv_file = count_most_common_other_tag('./alleles_pattern_nltk.json')
         self.assertTrue(os.path.isfile('./most_common_other_tag.tsv'),
                         'count_common_patterns did not produce any tsv file')

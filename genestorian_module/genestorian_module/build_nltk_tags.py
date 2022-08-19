@@ -10,6 +10,7 @@ def build_separators_dict():
     separators_dict = {}
     with open("../../allele_components/separators.txt", "r") as fp:
         for x in fp:
+            x = x.strip()
             separators_dict[x] = 'separator'
     return separators_dict
 
@@ -98,7 +99,8 @@ def main(input_file):
         '../../allele_components/tags.toml',
         '../../allele_components/tags_fpbase.toml',
         '../../allele_components/markers.toml',
-        '../../allele_components/promoters.toml'
+        '../../allele_components/promoters.toml',
+        '../../allele_components/sequence_features.toml'
     ]
     alleles_list = build_nltk_tag(allele_names, toml_files)
     output_file_name = 'alleles_pattern_nltk.json'

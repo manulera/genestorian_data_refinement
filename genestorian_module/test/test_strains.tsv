@@ -1,8 +1,4 @@
 strain_id	genotype
-FY6715	h90 ade6 leu1 trs2
-FY6716	h90 ade6 leu1 trs1
-FY6717	h+ cdc15-150
 FY6718	h90/h90 ade6/+ +/leu1 ste1-1/ste1-1 pat1-114/pat1-114
-FY6719	h- his2 leu1 ura1 ste-n58
 FY6720	h90 ade6-M210
 FY23650	h90 leu1-32 ura4-D18 ade6-M210 pof3Δ::kan

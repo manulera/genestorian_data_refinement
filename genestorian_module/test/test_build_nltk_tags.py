@@ -70,5 +70,5 @@ class TestBuildNltkTags(unittest.TestCase):
 
         input_file = './test_strains.tsv'
         output_file = main(input_file)
-        self.assertTrue(os.path.isfile('./alleles_nltk.json'),
+        self.assertTrue(os.path.isfile('./alleles_pattern_nltk.json'),
                         'The alleles_nltk.json not found')
