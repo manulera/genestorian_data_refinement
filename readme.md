@@ -77,7 +77,8 @@ reference = ''
 synonyms = [synonyms]
 ```
 
-* `tags_fpbase.toml` contains fluorescent protein tags from fp_base(https://www.fpbase.org/), which can be accessed from fb_base graphql API(https://www.fpbase.org/graphql/), with graphql in `get_data/get_fpbase_data.py`
+##### `tags_fpbase.toml` 
+It contains fluorescent protein tags from fp_base(https://www.fpbase.org/), which can be accessed from fb_base graphql API(https://www.fpbase.org/graphql/), with graphql in `get_data/get_fpbase_data.py`. To add it to your allele_components run the file `get_fpbase_data.py` in get_data folder.
 
   
 
@@ -124,7 +125,7 @@ This output is saved by default in the `allele_pattern_nltk.json` in the same di
 
 Eg: NBRP strains in `Lab_strains` directory has `strains.tsv` file which has two columns strain_id and genotype. 
 
-``` genestorian_module/genestorian_module/python build_nltk_tags ../../Lab_strains/nbrp_strains/strains.tsv ```
+``` genestorian_module/genestorian_module/python build_nltk_tags.py ../../Lab_strains/nbrp_strains/strains.tsv ```
 
 This generates a file `allele_pattern_nltk.json` in `Lab_strains/nbrp_strains/`. 
 #### How build_nltk_tags works
