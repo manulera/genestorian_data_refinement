@@ -2,7 +2,7 @@ import json
 import re
 from collections import Counter
 import pandas as pd
-
+import sys, os
 
 def build_common_pattern_dict(input_file):
     with open(input_file) as f:
@@ -26,7 +26,8 @@ def build_common_pattern_dict(input_file):
 
 def json_common_pattern_dict(input_file):
     common_pattern_dict = build_common_pattern_dict(input_file)
-    with open('common_pattern.json', 'w') as fp:
+    output_file = os.path.join(os.path.dirname(input_file), 'common_pattern.json')
+    with open(output_file, 'w') as fp:
         json.dump(common_pattern_dict, fp, indent=3, ensure_ascii=False)
     return None
 
@@ -38,7 +39,8 @@ def count_common_patterns(input_file):
         output_list.append({'key': key, 'count': len(occ_dict[key])})
     output_list_sorted = sorted(
         output_list, key=lambda pattern: pattern['count'], reverse=True)
-    with open('common_pattern_count.txt', 'w') as out:
+    output_file = os.path.join(os.path.dirname(input_file), 'common_pattern_count.txt')
+    with open(output_file, 'w') as out:
         for pattern in output_list_sorted:
             out.write(f'{pattern["key"]}\t{pattern["count"]}\n')
     return None
@@ -55,6 +57,16 @@ def count_most_common_other_tag(input_file):
         'feature', 'no_of_occurence'])
     df_unidentified_feature_occurences = df_unidentified_feature_occurences.sort_values(
         'no_of_occurence', ascending=False)
-    df_unidentified_feature_occurences.to_csv(
-        'most_common_other_tag.tsv', sep='\t', index=False)
+    output_file = os.path.join(os.path.dirname(input_file), 'most_common_other_tag.tsv')
+    df_unidentified_feature_occurences.to_csv(output_file, sep='\t', index=False)
     return None
+
+
+def main(alleles_nltk_file):
+    json_common_pattern_dict(alleles_nltk_file)
+    count_common_patterns(alleles_nltk_file)
+    count_most_common_other_tag(alleles_nltk_file)
+
+
+if __name__ == "__main__":
+    main(sys.argv[1])
