@@ -29,7 +29,6 @@ def json_common_pattern_dict(input_file):
     output_file = os.path.join(os.path.dirname(input_file), 'common_pattern.json')
     with open(output_file, 'w') as fp:
         json.dump(common_pattern_dict, fp, indent=3, ensure_ascii=False)
-    return None
 
 
 def count_common_patterns(input_file):
@@ -43,7 +42,6 @@ def count_common_patterns(input_file):
     with open(output_file, 'w') as out:
         for pattern in output_list_sorted:
             out.write(f'{pattern["key"]}\t{pattern["count"]}\n')
-    return None
 
 
 def count_most_common_other_tag(input_file):
@@ -59,7 +57,7 @@ def count_most_common_other_tag(input_file):
         'no_of_occurence', ascending=False)
     output_file = os.path.join(os.path.dirname(input_file), 'most_common_other_tag.tsv')
     df_unidentified_feature_occurences.to_csv(output_file, sep='\t', index=False)
-    return None
+
 
 
 def main(alleles_nltk_file):
