@@ -45,19 +45,19 @@ def count_common_patterns(input_file):
 
 
 def count_most_common_other_tag(input_file):
-    occ_dict = build_common_pattern_dict(input_file)
-    result_list = []
-    for key in occ_dict:
-        split_elements = re.split(
-            r'ALLELE|GENE|TAG|MARKER|PROMOTER|-', key)
-        result_list = result_list + split_elements*len(occ_dict[key])
-    df_unidentified_feature_occurences = pd.DataFrame(Counter(result_list).items(), columns=[
-        'feature', 'no_of_occurence'])
-    df_unidentified_feature_occurences = df_unidentified_feature_occurences.sort_values(
-        'no_of_occurence', ascending=False)
+    # A simpler version not building the pattern and then unbuilding it
+    with open(input_file) as f:
+        alleles_list = json.load(f)
+    all_other_tag_list = list()
+    for allele in alleles_list:
+        for pattern in allele['pattern']:
+            if pattern[1] == 'other':
+                all_other_tag_list.append(pattern[0])
+    counted_occurrences = Counter(all_other_tag_list).most_common()
     output_file = os.path.join(os.path.dirname(input_file), 'most_common_other_tag.tsv')
-    df_unidentified_feature_occurences.to_csv(output_file, sep='\t', index=False)
-
+    with open(output_file, 'w') as out:
+        for occurrence, count in counted_occurrences:
+            out.write(f'{occurrence}\t{count}\n')
 
 
 def main(alleles_nltk_file):
