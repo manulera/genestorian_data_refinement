@@ -1,8 +1,8 @@
 import json
-import re
 from collections import Counter
-import pandas as pd
-import sys, os
+import sys
+import os
+
 
 def build_common_pattern_dict(input_file):
     with open(input_file) as f:
