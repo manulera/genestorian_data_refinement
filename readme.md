@@ -102,7 +102,8 @@ This script retrieves the data from fb_base graphql API(https://www.fpbase.org/g
 
 ## Running the Pipeline
 
-This pipeline is refinement pipeline for genotype.It extracts alleles from the genotype to a list then identifies different features of alleles and add a tag to each identified feature. The input must be a tsv file, typically named `strains.tsv` with column names strain_id and genotype which contain strain id and genotype of a strain.
+This pipeline is refinement pipeline for genotype. The goal of the pipeline is to be able to extract the alleles from genotype, identify the pattern followed by the allele and structure it to follow a standard format.
+At present, the pipeline extracts alleles from the genotype to a list then identifies different features of alleles and add a tag to each identified feature. The input must be a tsv file, typically named `strains.tsv` with column names 'strain_id' and 'genotype' which contain strain id and genotype of a strain.
 
 ```tsv
 strain_id	 genotype
@@ -191,7 +192,7 @@ To run this script:
 ```
 python /path/to/genstorian_module/summary_nltk_tags.py /path/to/alleles_pattern_nltk.json
 ```
-It find the common pattern followed by alleles and makes a dictionary where the key is the pattern and the value is the list of occurrence of that pattern. This dict is written into the json file `common_pattern.json`. Then, it counts the number of times the same pattern occurs and outputs it in the text file `common_pattern_count.txt` in decreasing order of occurrence. The script also counts the most common features with are not identified by our pipeline and it is written in another text file `most_common_other_tag.txt`, again in decreasing order of occurence. 
+It finds the common pattern followed by alleles and makes a dictionary where the key is the pattern and the value is the list of occurrence of that pattern. This dict is written into the json file `common_pattern.json`. Then, it counts the number of times the same pattern occurs and outputs it in the text file `common_pattern_count.txt` in decreasing order of occurrence. The script also counts the most common features with are not identified by our pipeline and it is written in another text file `most_common_other_tag.txt`, again in decreasing order of occurence. 
 
 
 You can run this for the example strain list `Lab_strains/nbrp_strains/alleles_pattern_nltk.json` by running:
