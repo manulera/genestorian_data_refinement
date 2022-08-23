@@ -6,6 +6,10 @@ def excel_to_tsv(excel_file, read_cols, tsv_file):
     read_file = pd.read_excel(excel_file, usecols=read_cols, na_filter=False)
     read_file = read_file.rename(
         columns={read_cols[0]: 'strain_id', read_cols[1]: 'genotype'})
+
+    read_file['strain_id'] = read_file['strain_id'].astype(str)
+    read_file['genotype'] = read_file['genotype'].astype(str)
+
     inconsistent_char_list = ['‚àÜ0', 'Œî']
 
     for i in range(len(read_file['genotype'])):

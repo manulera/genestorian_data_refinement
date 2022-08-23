@@ -66,3 +66,171 @@ It has 5 columns:
 3. Allele name (if we are lucky we find it in the `genotype` column in `data/strains.tsv`)
 4. Description (some info about the allele sequence). For now we won't use it.
 5. Expression (expression level in the experiment. In general reflects a change in the promoter.). For now we won't use it.
+ 
+### Other features
+The folder `alleles_components` contains a bunch of toml files. Each toml file corresponds to one feature type.
+`markers.toml`, `promoters.toml`, `tags.tom`, `sequence_features.tom` contains common markers, promoters, tags and sequence  features used in S Pombe labs. The format of the toml file is as:
+
+```toml
+[feature_type.<name of the feature>]
+name = '<name of the feature>'
+reference = ''
+synonyms = []
+
+# For example
+[gene."SPAC1002.06c"]
+ref = "SPAC1002.06c"
+name = "bqt2"
+synonyms = [ "mug18", "rec23",]
+
+[tag.avGFP]
+name = "avGFP"
+reference = "10.1016/0378-1119(92)90691-h"
+synonyms = [ "wtGFP", "GFP", "gfp10", "Green Fluorescent Protein",]
+
+```
+
+### Retrieving fluorescent protein tags from FPBase
+
+You can generate the file `allele_components/tags_fpbase.toml`, which contains many of the known fluorescent protein tags in the above format from fp_base(https://www.fpbase.org/). To do this go to the folder `get_data` and run:
+
+```bash
+python get_fpbase_data.py
+```
+
+This script retrieves the data from fb_base graphql API(https://www.fpbase.org/graphql/).
+
+## Running the Pipeline
+
+This pipeline is refinement pipeline for genotype. The goal of the pipeline is to be able to extract the alleles from genotype, identify the pattern followed by the allele and structure it to follow a standard format.
+At present, the pipeline extracts alleles from the genotype to a list then identifies different features of alleles and add a tag to each identified feature. The input must be a tsv file, typically named `strains.tsv` with column names 'strain_id' and 'genotype' which contain strain id and genotype of a strain.
+
+```tsv
+strain_id	 genotype
+FY14021	 h+ leu1-32 ura4-D18 ade6-M210 dlp1::ura4	
+FY14075	 h- ade6-M210 cdc25-22
+```
+
+### Formatting the input data
+
+Because strain lists from different labs have different formats, you have to convert them to the format above. You can find scripts named `format.py` that takes the excel file as input and generates `strains.tsv` for each of the strain lists in the `Lab_strains` folder. `format.py` essentially, reads the strain id column and genotype column to `strains.tsv` file.
+
+To generate a valid `strains.tsv` for your strain list, write your own `format.py`. For example, for the public strain list `Lab_strains/nbrp_strains`, extracts id and genotype from 'NBRPID' and 'genotype' column. It also calls na_filter=False to identy the empty rows and avoid reading them as NAN.
+
+```
+import pandas as pd
+
+read_file = pd.read_csv('strains_raw.tsv', usecols=[
+                        'NBRPID', 'genotype'], na_filter=False, sep='\t')
+read_file = read_file.rename(
+    columns={'NBRPID': 'strain_id'})
+read_file.to_csv('strains.tsv', sep='\t', index=False)
+```
+
+### Build nltk tags
+
+We are using nltk library to process tha data. Before using the nltk library, it's important to have data structured in a format which can be input to nltk APIs.
+
+The script `build_nltk_tags` in `genestorian_module` takes `strains.tsv` as an input and creates a file named `alleles_pattern_nltk.json` in the same directory of `strains.tsv`. To run this script:
+
+```
+python /path/to/genstorian_module/build_nltk_tags.py /path/to/strains.tsv
+```
+
+For each allele in the input file `strains.tsv`, it identifies the allele features such as allele, gene, tag , marker etc and extracts them in a list along with a tag, then outputs a list of dict, where each entry represents an allele. Each dict in the list has two fields:
+
+* `name`: allele_name
+* `pattern`: this is the list of features extracted along with the tags extracted from allele_name
+  
+From this example tsv
+
+```tsv
+Column 1	Column 2
+FY21859	h90 mug28::kanMX6 ade6-M216 ura4- his7+::lacI-GFP lys1+::lacO
+FY21860	h90 mug29::kanMX6 ade6-M216 ura4- his7+::lacI-GFP lys1+::lacO
+```
+
+The output is:
+
+```
+[
+      {
+            "name": "his7+::laci-gfp",
+            "pattern": [["GENE", ["his7"]], ["other", ["+"]], ["-", ["::"]], ["other", ["laci"]], ["-", ["-"]], ["TAG", ["gfp"]]]
+      },
+      {
+            "name": "ura4-",
+            "pattern": [["ALLELE", ["ura4-"]]]
+      },
+      {
+            "name": "lys1+::laco",
+            "pattern": [["ALLELE", ["lys1+"]], ["-", ["::"]], ["other", ["laco"]]]
+      },
+      {
+            "name": "mug28::kanmx6",
+            "pattern": [["GENE", ["mug28"]], ["-", ["::"]], ["MARKER", ["kanmx6"]]]
+      },
+      {
+            "name": "ade6-m216",
+            "pattern": [["ALLELE", ["ade6-m216"]]]
+      },
+      {
+            "name": "mug29::kanmx6",
+            "pattern": [["GENE", ["mug2"]], ["other", ["9"]], ["-", ["::"]], ["MARKER", ["kanmx6"]]]
+      }
+   ]
+```
+
+You can run this for the example strain list `Lab_strains/nbrp_strains/strains.tsv` by running:
+
+```
+ python build_nltk_tags.py ../../Lab_strains/nbrp_strains/strains.tsv
+```
+
+### Find common patterns
+
+The script `summary_nltk_tags.py` in `genestorian_module` takes `alleles_pattern_nltk.json` as input and creates 3 files with file names 'common_pattern.json' , 'common_pattern_count.txt' and 'most_common_other_tag.txt' in the same directory that of `alleles_pattern_nltk.json`
+To run this script:
+```
+python /path/to/genstorian_module/summary_nltk_tags.py /path/to/alleles_pattern_nltk.json
+```
+It finds the common pattern followed by alleles and makes a dictionary where the key is the pattern and the value is the list of occurrence of that pattern. This dict is written into the json file `common_pattern.json`. Then, it counts the number of times the same pattern occurs and outputs it in the text file `common_pattern_count.txt` in decreasing order of occurrence. The script also counts the most common features with are not identified by our pipeline and it is written in another text file `most_common_other_tag.txt`, again in decreasing order of occurence. 
+
+
+You can run this for the example strain list `Lab_strains/nbrp_strains/alleles_pattern_nltk.json` by running:
+
+```
+ python summary_nltk_tags.py ../../Lab_strains/nbrp_strains/alleles_pattern_nltk.json 
+
+ ```
+For the above example in Build nltk tags, the output would look like:
+
+ `common_pattern.json`
+```
+{
+   "GENE-MARKER" : ["mug28::kanmx6"],
+   "ALLELE" : ["ade6-m216", "ura4-"],
+   "GENE+-laci-TAG" : ["his7+::laci-gfp"],
+   "ALLELE-laco": ["lys1+::laco"],
+   "GENE9-MARKER": ["mug29::kanmx6"]
+}
+```
+`common_pattern_count.txt` 
+
+```
+ALLELE 2
+GENE-MARKER 1 
+GENE+-laci-TAG 1 
+ALLELE-laco 1
+GENE9-MARKER 1
+```
+
+`most_common_other_tag.txt`
+
+```
++ 1
+laci 1
+laco 1
+9 1
+
+```

@@ -1,4 +1,3 @@
-# %%
 from genestorian_module import read_strains_tsv
 from genestorian_module.replace_feature import build_feature_dict
 import re
@@ -16,7 +15,6 @@ def build_strain_list(strain_tsv_file):
         mating_type = 'h?'  # use this as empty value
         for allele in re.split("\s+", strain['genotype']):
             # Sometimes people use h? to indicate that mating type is unkwown
-            # TODO : found h0 in the allele list. Ask Manu is it a mating type
             if allele in ['h90', 'h-', 'h+', 'h?']:
                 mating_type = allele
             else:
@@ -30,13 +28,6 @@ def build_strain_list(strain_tsv_file):
         })
     return strain_list
 
-
-strain_list = build_strain_list('strains.tsv')
-with open('strains.json', 'w') as fp:
-    json.dump(strain_list, fp, indent=3, ensure_ascii=False)
-
-
-# %%
 
 def build_replaced_feature_dict(feature_dict, allele, replace_word):
     matches = []
@@ -89,28 +80,6 @@ def build_allele_feature_list(allele_names, toml_files):
     return output_list
 
 
-toml_files = [
-    '../../data/alleles.toml',
-    '../../data/gene_IDs.toml',
-    '../../allele_components/tags.toml',
-    '../../allele_components/markers.toml',
-    '../../allele_components/promoters.toml'
-]
-
-strain_list = build_strain_list('strains.tsv')
-allele_names = set({})
-for strain in strain_list:
-    allele_names.update(strain['alleles'])
-
-alleles_list = build_allele_feature_list(allele_names, toml_files)
-
-with open('alleles.json', 'w') as fp:
-    json.dump(alleles_list, fp, indent=3, ensure_ascii=False)
-
-
-# %%
-
-
 def find_common_pattern(alleles_list):
     occurences_dict = {}
     for allele_dict in alleles_list:
@@ -121,8 +90,3 @@ def find_common_pattern(alleles_list):
         else:
             occurences_dict[pattern] = [allele_name]
     return occurences_dict
-
-
-occurences_dict = find_common_pattern(alleles_list)
-with open('occurences2.json', 'w') as fp:
-    json.dump(occurences_dict, fp, indent=3, ensure_ascii=False)

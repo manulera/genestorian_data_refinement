@@ -13,3 +13,4 @@
 /Lab_strains/**/*.txt
 /Lab_strains/**/*.json
 
+/allele_components/tags_fpbase.toml
