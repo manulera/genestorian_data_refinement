@@ -1,4 +1,3 @@
 strain_id	genotype
-FY6718	h90/h90 ade6/+ +/leu1 ste1-1/ste1-1 pat1-114/pat1-114
-FY6720	h90 ade6-M210
-FY23650	h90 leu1-32 ura4-D18 ade6-M210 pof3Δ::kan
+FY21859	h90 mug28::kanMX6 ade6-M216 ura4- his7+::lacI-GFP lys1+::lacO
+FY21860	h90 mug29::kanMX6 ade6-M216 ura4- his7+::lacI-GFP lys1+::lacO
