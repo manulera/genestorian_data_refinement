@@ -138,10 +138,10 @@ python /path/to/genstorian_module/build_nltk_tags.py /path/to/strains.tsv
 ```
 
 For each allele in the input file `strains.tsv`, it identifies the allele features such as allele, gene, tag , marker etc and extracts them in a list along with a tag, then outputs a list of dict, where each entry represents an allele. Each dict in the list has two fields:
-{
-      "name": "map3-mcherry-hphmx6",
-      "pattern": [ [ "map3", "GENE" ], [ "-", "-" ], [ "mcherry", "TAG" ], [ "-", "-" ], [ "hphmx6", "MARKER" ] ]
-   }
+
+* `name`: allele_name
+* `pattern`: this is the list of features extracted along with the tags extracted from allele_name
+  
 From this example tsv
 
 ```tsv
@@ -153,30 +153,32 @@ FY21860	h90 mug29::kanMX6 ade6-M216 ura4- his7+::lacI-GFP lys1+::lacO
 The output is:
 
 ```
-   [{
-      "name": "mug28::kanmx6",
-      "pattern": [ [ "mug28", "GENE" ], [ "::", "-" ], [ "kanmx6", "MARKER" ] ]
-   },
-   {
-      "name": "ade6-m216",
-      "pattern": [ [ "ade6-m216", "ALLELE" ] ]
-   },
-   {
-      "name" : "ura4-",
-      "pattern:  [ [ "ura4-", "ALLELE" ] ]
-   },
-   {
-      "name": "his7+::laci-gfp",
-      "pattern": [ [ "his7", "GENE" ], [ "+", "other" ], [ "::", "-" ], [ "laci", "other" ], [ "-", "-" ], [ "gfp", "TAG" ] ]
-   },
-   {
-      "name": "lys1+::laco",
-      "pattern": [ [ "lys1+", "ALLELE" ], [ "::", "-" ], [ "laco", "other" ] ]
-   },
-   {
-      "name": "mug29::kanmx6",
-      "pattern": [ [ "mug2", "GENE" ], [ "9", "other" ], [ "::", "-" ], [ "kanmx6", "MARKER" ] ]
-   }]
+[
+      {
+            "name": "his7+::laci-gfp",
+            "pattern": [["GENE", ["his7"]], ["other", ["+"]], ["-", ["::"]], ["other", ["laci"]], ["-", ["-"]], ["TAG", ["gfp"]]]
+      },
+      {
+            "name": "ura4-",
+            "pattern": [["ALLELE", ["ura4-"]]]
+      },
+      {
+            "name": "lys1+::laco",
+            "pattern": [["ALLELE", ["lys1+"]], ["-", ["::"]], ["other", ["laco"]]]
+      },
+      {
+            "name": "mug28::kanmx6",
+            "pattern": [["GENE", ["mug28"]], ["-", ["::"]], ["MARKER", ["kanmx6"]]]
+      },
+      {
+            "name": "ade6-m216",
+            "pattern": [["ALLELE", ["ade6-m216"]]]
+      },
+      {
+            "name": "mug29::kanmx6",
+            "pattern": [["GENE", ["mug2"]], ["other", ["9"]], ["-", ["::"]], ["MARKER", ["kanmx6"]]]
+      }
+   ]
 ```
 
 You can run this for the example strain list `Lab_strains/nbrp_strains/strains.tsv` by running:
