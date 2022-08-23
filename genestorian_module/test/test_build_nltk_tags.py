@@ -44,23 +44,10 @@ class TestBuildNltkTags(unittest.TestCase):
         alleles_list = build_nltk_tag(allele_names, toml_files)
         for allele in alleles_list:
             allele_name = ''
-            feature_start_coords = []
             for feature in allele["pattern"]:
-                allele_name += feature[0]
+                allele_name += feature[1][0]
             self.assertEqual(
                 allele['name'], allele_name, ' pattern list does not add up to allele name')
-
-            coords = [i.start() for i in re.finditer(
-                re.escape(feature[0]), allele['name'])]
-            feature_start_coords.append(coords[0])
-            self.assertEqual(feature_start_coords,
-                             sorted(feature_start_coords), 'allele features are not sorted according to the appearance in allele name')
-            name = allele["name"]
-            pattern_names_joined = ''
-            for pattern_name in allele["pattern"]:
-                pattern_names_joined += pattern_name[0]
-            self.assertEqual(name, pattern_names_joined,
-                             'allele name does not match the name formed by joining the pattern names')
 
     def test_main_function(self):
         try:
@@ -76,27 +63,27 @@ class TestBuildNltkTags(unittest.TestCase):
         test_output = [
             {
                 "name": "his7+::laci-gfp",
-                "pattern": [["his7", "GENE"], ["+", "other"], ["::", "-"], ["laci", "other"], ["-", "-"], ["gfp", "TAG"]]
-            },
-            {
-                "name": "lys1+::laco",
-                "pattern": [["lys1+", "ALLELE"], ["::", "-"], ["laco", "other"]]
-            },
-            {
-                "name": "ade6-m216",
-                "pattern": [["ade6-m216", "ALLELE"]]
+                "pattern": [["GENE", ["his7"]], ["other", ["+"]], ["-", ["::"]], ["other", ["laci"]], ["-", ["-"]], ["TAG", ["gfp"]]]
             },
             {
                 "name": "ura4-",
-                "pattern": [["ura4-", "ALLELE"]]
+                "pattern": [["ALLELE", ["ura4-"]]]
             },
             {
-                "name": "mug29::kanmx6",
-                "pattern": [["mug2", "GENE"], ["9", "other"], ["::", "-"], ["kanmx6", "MARKER"]]
+                "name": "lys1+::laco",
+                "pattern": [["ALLELE", ["lys1+"]], ["-", ["::"]], ["other", ["laco"]]]
             },
             {
                 "name": "mug28::kanmx6",
-                "pattern": [["mug28", "GENE"], ["::", "-"], ["kanmx6", "MARKER"]]
+                "pattern": [["GENE", ["mug28"]], ["-", ["::"]], ["MARKER", ["kanmx6"]]]
+            },
+            {
+                "name": "ade6-m216",
+                "pattern": [["ALLELE", ["ade6-m216"]]]
+            },
+            {
+                "name": "mug29::kanmx6",
+                "pattern": [["GENE", ["mug2"]], ["other", ["9"]], ["-", ["::"]], ["MARKER", ["kanmx6"]]]
             }
         ]
         with open('alleles_pattern_nltk.json') as f:

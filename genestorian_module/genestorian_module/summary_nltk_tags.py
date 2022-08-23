@@ -13,10 +13,10 @@ def build_common_pattern_dict(input_file):
         pattern = allele_dict['pattern']
         pattern_str = ''
         for element in pattern:
-            if element[1] != 'other':
-                pattern_str += element[1]
-            else:
+            if element[0] != 'other':
                 pattern_str += element[0]
+            else:
+                pattern_str += element[1][0]
         if pattern_str in pattern_dict.keys():
             pattern_dict[pattern_str].append(name)
         else:
@@ -53,8 +53,8 @@ def count_most_common_other_tag(input_file):
     all_other_tag_list = list()
     for allele in alleles_list:
         for pattern in allele['pattern']:
-            if pattern[1] == 'other':
-                all_other_tag_list.append(pattern[0])
+            if pattern[0] == 'other':
+                all_other_tag_list.append(pattern[1][0])
     counted_occurrences = Counter(all_other_tag_list).most_common()
     output_file = os.path.join(os.path.dirname(
         input_file), 'most_common_other_tag.txt')

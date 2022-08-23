@@ -19,7 +19,7 @@ def add_other_tag(pattern_list):
     for feature in pattern_list:
         if type(feature) != list:
             idx = pattern_list.index(feature)
-            pattern_list[idx] = [feature, 'other']
+            pattern_list[idx] = ['other', [feature]]
     return pattern_list
 
 
@@ -41,7 +41,7 @@ def replace_allele_features(feature_dict, pattern_list, feature_name, matches):
                 start = allele_substring.find(match)
                 end = start + len(match)
                 this_list = [allele_substring[:start], [
-                    allele_substring[start:end], feature_name], allele_substring[end:]]
+                    feature_name, [allele_substring[start:end]]], allele_substring[end:]]
                 # Remove empty strings
                 this_list = list(filter(lambda x: x != '', this_list))
                 this_list = replace_allele_features(
