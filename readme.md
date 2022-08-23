@@ -102,27 +102,19 @@ This script retrieves the data from fb_base graphql API(https://www.fpbase.org/g
 
 ## Running the Pipeline
 
-> The input for the pipeline is the excel sheet which contains a unique strain id, genotype and other strain related information. The strain_id and the genotype are only two columns used by the pipeline.
-
-This pipeline -does this task-. The input must be a file, typically named `strains.tsv` -with this columns that contain this content-.
+This pipeline is refinement pipeline for genotype.It extracts alleles from the genotype to a list then identifies different features of alleles and add a tag to each identified feature. The input must be a tsv file, typically named `strains.tsv` with column names strain_id and genotype which contain strain id and genotype of a strain.
 
 ```tsv
-Column 1	Column 2
-example_value	example_value
+strain_id	 genotype
+FY14021	 h+ leu1-32 ura4-D18 ade6-M210 dlp1::ura4	
+FY14075	 h- ade6-M210 cdc25-22
 ```
 
 ### Formatting the input data
 
-> Each lab has a `format.py` to pre-process the data before converting into a tsv file. It should extracts the strain_id and genotype from the input file and save in `strains.tsv` file
+Because strain lists from different labs have different formats, you have to convert them to the format above. You can find scripts named `format.py` that takes the excel file as input and generates `strains.tsv` for each of the strain lists in the `Lab_strains` folder. `format.py` essentially, reads the strain id column and genotype column to `strains.tsv` file.
 
-Because strain lists from different labs have different formats, you have to convert them to the format above. You can find scripts named `format.py` that -do xyz- taking -xyz- as an input and generate `strains.tsv` for each of the strain lists in the `Lab_strains` folder.
-
-> * Import the function `excel_to_tsv` from `genestorian_module` to convert the excel file to tsv. The arguments passed to the function are path of excel file, columns to be read i.e [column to be used as strain id, genotype] and 'strains.tsv'
-> * Some excel file require pre-processing before converting them to tsv. 
-> * Your data might not be in an excel file. In such cases, read the genotype and strain_id column from the input file and write into a tsv file. 
-> NOTE: When you are not using `excel_to_tsv` to read the input file, make sure to deal with the special characters present in your data.
-
-To generate a valid `strains.tsv` for your strain list, write your own `format.py`. For example, for the public strain list `Lab_strains/nbrp_strains`, our example -extracts xyz data from xyz columns- and -calls na_filter for this reason-.
+To generate a valid `strains.tsv` for your strain list, write your own `format.py`. For example, for the public strain list `Lab_strains/nbrp_strains`, extracts id and genotype from 'NBRPID' and 'genotype' column. It also calls na_filter=False to identy the empty rows and avoid reading them as NAN.
 
 ```
 import pandas as pd
@@ -134,95 +126,108 @@ read_file = read_file.rename(
 read_file.to_csv('strains.tsv', sep='\t', index=False)
 ```
 
-In addition, you may have to deal with special characters, see `excel_to_tsv` in -this file- for an example for -this particular character-.
-
-
 ### Build nltk tags
 
 We are using nltk library to process tha data. Before using the nltk library, it's important to have data structured in a format which can be input to nltk APIs.
 
-> `build_nltk_tags` in the genestorian_module adds feature tags to the allele extracted from the genotype in strains.tsv.
-`build_nltk_tags` takes strains.tsv as input. The output looks somethings like:
-> This output is saved by default in the `allele_pattern_nltk.json` in the same directory that of `strains.tsv`.
-
-The script -file name- takes -other file name- as an input and creates a file named xyz in the same directory of `strains.tsv`. To run this script:
+The script `build_nltk_tags` in `genestorian_module` takes `strains.tsv` as an input and creates a file named `alleles_pattern_nltk.json` in the same directory of `strains.tsv`. To run this script:
 
 ```
-python /path/to/genestorian_module/build_nltk_tags.py /path/to/strains.tsv
+python /path/to/genstorian_module/build_nltk_tags.py /path/to/strains.tsv
 ```
 
-> * It starts with a list of genotype from the strains.tsv which is essentially the input.
-> * From the list of the genotype, a list of alleles is extracted. 
-> * A feature dict is built for each toml file present in allele_components directory(others.toml not being used at present). The keys in the feature dict are name and synonyms of the features in the feature toml file.
-> * Whenever any part of allele is matched to the key  of the feature dict, it is added to the pattern, along with the tag.
-> * Separators are identified in the allele name and tagged as '-'.
-> * Parts of allele name which aren't identfied as an allele feature or separator are tagged as 'other'
-
-For each -x- in -the input file-, it -extracts this information-, and output a list of -x, where each entry represents a unique xyz-. Each element has two fields:
-
-* `name`: xyz
-* `pattern`: -this a list of xyz, where the tags are extracted from xyz...-
-
-
+For each allele in the input file `strains.tsv`, it identifies the allele features such as allele, gene, tag , marker etc and extracts them in a list along with a tag, then outputs a list of dict, where each entry represents an allele. Each dict in the list has two fields:
+{
+      "name": "map3-mcherry-hphmx6",
+      "pattern": [ [ "map3", "GENE" ], [ "-", "-" ], [ "mcherry", "TAG" ], [ "-", "-" ], [ "hphmx6", "MARKER" ] ]
+   }
 From this example tsv
 
 ```tsv
 Column 1	Column 2
-example_value	example_value
-example_value	example_value
+FY21859	h90 mug28::kanMX6 ade6-M216 ura4- his7+::lacI-GFP lys1+::lacO
+FY21860	h90 mug29::kanMX6 ade6-M216 ura4- his7+::lacI-GFP lys1+::lacO
 ```
 
 The output is:
 
-MANU: Use a better example, where the same allele is present twice in two strains, so it's clear that each allele appears only once.
-```[{
-      "name": "e152k)-mcherry:kanr",
-      "pattern": [ [ "e152k)", "other" ], [ "-", "-" ], [ "mcherry", "TAG" ], [ ":", "-" ], [ "kanr", "MARKER" ] ]
+```
+   [{
+      "name": "mug28::kanmx6",
+      "pattern": [ [ "mug28", "GENE" ], [ "::", "-" ], [ "kanmx6", "MARKER" ] ]
    },
    {
-      "name": "cdc13-m7<<hygr",
-      "pattern": [ [ "cdc13-m7", "ALLELE" ], [ "<<", "-" ], [ "hygr", "MARKER" ] ]
+      "name": "ade6-m216",
+      "pattern": [ [ "ade6-m216", "ALLELE" ] ]
+   },
+   {
+      "name" : "ura4-",
+      "pattern:  [ [ "ura4-", "ALLELE" ] ]
+   },
+   {
+      "name": "his7+::laci-gfp",
+      "pattern": [ [ "his7", "GENE" ], [ "+", "other" ], [ "::", "-" ], [ "laci", "other" ], [ "-", "-" ], [ "gfp", "TAG" ] ]
+   },
+   {
+      "name": "lys1+::laco",
+      "pattern": [ [ "lys1+", "ALLELE" ], [ "::", "-" ], [ "laco", "other" ] ]
+   },
+   {
+      "name": "mug29::kanmx6",
+      "pattern": [ [ "mug2", "GENE" ], [ "9", "other" ], [ "::", "-" ], [ "kanmx6", "MARKER" ] ]
    }]
 ```
-
-> * In `genestorian_module/genestorian_module/` directory run `python build_nltk_tags ../../Lab_strains/lab_name/strains.tsv`.
->
-> Eg: NBRP strains in `Lab_strains` directory has `strains.tsv` file which has two columns strain_id and genotype. 
->
-> ``` genestorian_module/genestorian_module/python build_nltk_tags.py ../../Lab_strains/nbrp_strains/strains.tsv ```
->
-> This generates a file `allele_pattern_nltk.json` in `Lab_strains/nbrp_strains/`. 
 
 You can run this for the example strain list `Lab_strains/nbrp_strains/strains.tsv` by running:
 
 ```
-python <whatever> (the example you put is wrong, run it to check that it works)
+ python build_nltk_tags.py ../../Lab_strains/nbrp_strains/strains.tsv
 ```
 
 ### Find common patterns
-> You can have a look at alleles which follow similar patterns, count the number of alleles following same pattern and look at the most frequently occurring features tagged with other's tag.
 
-MANU: Explain in detail what each script does and what is the input and output, with an example input and an example output. I have moved this code to the script `genestorian_module/genestorian_module/summary_nltk_tags.py`, so you can also add how to execute it on the example.
+The script `summary_nltk_tags.py` in `genestorian_module` takes `alleles_pattern_nltk.json` as input and creates 3 files with file names 'common_pattern.json' , 'common_pattern_count.txt' and 'most_common_other_tag.txt' in the same directory that of `alleles_pattern_nltk.json`
+To run this script:
+```
+python /path/to/genstorian_module/summary_nltk_tags.py /path/to/alleles_pattern_nltk.json
+```
+It find the common pattern followed by alleles and makes a dictionary where the key is the pattern and the value is the list of occurrence of that pattern. This dict is written into the json file `common_pattern.json`. Then, it counts the number of times the same pattern occurs and outputs it in the text file `common_pattern_count.txt` in decreasing order of occurrence. The script also counts the most common features with are not identified by our pipeline and it is written in another text file `most_common_other_tag.txt`, again in decreasing order of occurence. 
 
-##### To find the alleles that follow same patterns:
-Import `json_common_pattern_dict` from `genestorian_module`. `json_common_pattern_dict` takes argument alleles_ntlk.json. This generates a file 'common_pattern.json' file in the respective lab directory.
-##### To count the number of alleles that follow same pattern:
-Import `count_most_common_other_tag` from `genestorian_module`. `count_common_patterns` takes argument alleles_nltk.json. This generates a file 'most_common_other_tag.tsv' file in the respective lab directory.
-##### To count the most commonly occurring features which are tagged with 'other' tag:
-Import `count_most_common_other_tag` from `genestorian_module`. `count_most_common_other_tag` takes argument alleles_nltk.json. This generates a file 'most_common_other_tag.tsv' file in the respective lab directory. 
-eg:
+
+You can run this for the example strain list `Lab_strains/nbrp_strains/alleles_pattern_nltk.json` by running:
+
+```
+ python summary_nltk_tags.py ../../Lab_strains/nbrp_strains/alleles_pattern_nltk.json 
+
+ ```
+For the above example in Build nltk tags, the output would look like:
+
+ `common_pattern.json`
+```
+{
+   "GENE-MARKER" : ["mug28::kanmx6"],
+   "ALLELE" : ["ade6-m216", "ura4-"],
+   "GENE+-laci-TAG" : ["his7+::laci-gfp"],
+   "ALLELE-laco": ["lys1+::laco"],
+   "GENE9-MARKER": ["mug29::kanmx6"]
+}
+```
+`common_pattern_count.txt` 
+
+```
+ALLELE 2
+GENE-MARKER 1 
+GENE+-laci-TAG 1 
+ALLELE-laco 1
+GENE9-MARKER 1
 ```
 
-from genestorian_module.summary_nltk_tags import (json_common_pattern_dict,
-                                                  count_common_patterns,
-                                                  count_most_common_other_tag)
+`most_common_other_tag.txt`
 
-json_common_pattern_dict('alleles_nltk.json')
-count_common_patterns('alleles_nltk.json')
-count_most_common_other_tag('alleles_nltk.json')
 ```
++ 1
+laci 1
+laco 1
+9 1
 
-
-
-
-
+```

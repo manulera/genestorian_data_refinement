@@ -26,7 +26,8 @@ def build_common_pattern_dict(input_file):
 
 def json_common_pattern_dict(input_file):
     common_pattern_dict = build_common_pattern_dict(input_file)
-    output_file = os.path.join(os.path.dirname(input_file), 'common_pattern.json')
+    output_file = os.path.join(os.path.dirname(
+        input_file), 'common_pattern.json')
     with open(output_file, 'w') as fp:
         json.dump(common_pattern_dict, fp, indent=3, ensure_ascii=False)
 
@@ -38,7 +39,8 @@ def count_common_patterns(input_file):
         output_list.append({'key': key, 'count': len(occ_dict[key])})
     output_list_sorted = sorted(
         output_list, key=lambda pattern: pattern['count'], reverse=True)
-    output_file = os.path.join(os.path.dirname(input_file), 'common_pattern_count.txt')
+    output_file = os.path.join(os.path.dirname(
+        input_file), 'common_pattern_count.txt')
     with open(output_file, 'w') as out:
         for pattern in output_list_sorted:
             out.write(f'{pattern["key"]}\t{pattern["count"]}\n')
@@ -54,7 +56,8 @@ def count_most_common_other_tag(input_file):
             if pattern[1] == 'other':
                 all_other_tag_list.append(pattern[0])
     counted_occurrences = Counter(all_other_tag_list).most_common()
-    output_file = os.path.join(os.path.dirname(input_file), 'most_common_other_tag.tsv')
+    output_file = os.path.join(os.path.dirname(
+        input_file), 'most_common_other_tag.txt')
     with open(output_file, 'w') as out:
         for occurrence, count in counted_occurrences:
             out.write(f'{occurrence}\t{count}\n')

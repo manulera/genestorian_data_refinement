@@ -1,6 +1,7 @@
 import unittest
 import os
 import re
+import json
 
 
 class TestBuildNltkTags(unittest.TestCase):
@@ -72,3 +73,35 @@ class TestBuildNltkTags(unittest.TestCase):
         output_file = main(input_file)
         self.assertTrue(os.path.isfile('./alleles_pattern_nltk.json'),
                         'The alleles_nltk.json not found')
+        test_output = [
+            {
+                "name": "his7+::laci-gfp",
+                "pattern": [["his7", "GENE"], ["+", "other"], ["::", "-"], ["laci", "other"], ["-", "-"], ["gfp", "TAG"]]
+            },
+            {
+                "name": "lys1+::laco",
+                "pattern": [["lys1+", "ALLELE"], ["::", "-"], ["laco", "other"]]
+            },
+            {
+                "name": "ade6-m216",
+                "pattern": [["ade6-m216", "ALLELE"]]
+            },
+            {
+                "name": "ura4-",
+                "pattern": [["ura4-", "ALLELE"]]
+            },
+            {
+                "name": "mug29::kanmx6",
+                "pattern": [["mug2", "GENE"], ["9", "other"], ["::", "-"], ["kanmx6", "MARKER"]]
+            },
+            {
+                "name": "mug28::kanmx6",
+                "pattern": [["mug28", "GENE"], ["::", "-"], ["kanmx6", "MARKER"]]
+            }
+        ]
+        with open('alleles_pattern_nltk.json') as f:
+            output = json.load(f)
+        sorted_test_output = sorted(test_output, key=lambda d: d['name'])
+        sorted_output = sorted(output, key=lambda d: d['name'])
+        self.assertEqual(sorted_output, sorted_test_output,
+                         'output of main() is not as expected ')
