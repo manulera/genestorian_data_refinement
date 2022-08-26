@@ -95,21 +95,36 @@ tags = [[
 custom_tag_parser = RegexpParser(grammar)
 
 
+# for tag in tags:
+#     custom_tag_parser = RegexpParser(grammar)
+#     tree = custom_tag_parser.parse(tag)
+#     for subtree in tree.subtrees():
+#         rule_name = subtree.label()
+#         if rule_name in grammar_dict:
+#             rule_name_s = re.split('\*', rule_name)
+#             for other_tree in subtree.subtrees(filter=lambda x: x.label() == 'other'):
+#                 matched_rule = check_pseudo_grammar(
+#                     rule_name_s, pseudo_grammar, other_tree)
+#                 if len(matched_rule) != 0:
+#                     flat_tree = tree._pformat_flat("", "()", False)
+#                     flat_tree = flat_tree.replace(rule_name, matched_rule[0])
+#                 else:
+#                     flat_tree = tree._pformat_flat("", "()", False)
+#                 print(flat_tree)
+
+# %%
 for tag in tags:
-    custom_tag_parser = RegexpParser(grammar)
     tree = custom_tag_parser.parse(tag)
-    for subtree in tree.subtrees():
-        rule_name = subtree.label()
+    for s in tree.subtrees(lambda tree: tree.height() == 3):
+        rule_name = s.label()
         if rule_name in grammar_dict:
             rule_name_s = re.split('\*', rule_name)
-            for other_tree in subtree.subtrees(filter=lambda x: x.label() == 'other'):
+            for other_tree in s.subtrees(filter=lambda x: x.label() == 'other'):
                 matched_rule = check_pseudo_grammar(
                     rule_name_s, pseudo_grammar, other_tree)
                 if len(matched_rule) != 0:
-                    flat_tree = tree._pformat_flat("", "()", False)
-                    flat_tree = flat_tree.replace(rule_name, matched_rule[0])
-                else:
-                    flat_tree = tree._pformat_flat("", "()", False)
-                print(flat_tree)
+                    s.set_label(matched_rule[0])
+
+    print(s)
 
 # %%
