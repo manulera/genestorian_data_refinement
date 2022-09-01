@@ -1,0 +1,26 @@
+[
+   {
+      "name": "ase1i130a,a143p",
+      "pattern": [ [ "GENE", [ "ase1" ] ], [ "other", [ "i130a,a143p" ] ] ]
+   },
+   {
+      "name": "pkj41x",
+      "pattern": [ [ "other", [ "pkj41x" ] ] ]
+   },
+   {
+      "name": "ase1-dummy-kanrother",
+      "pattern": [ [ "GENE", [ "ase1" ] ], [ "-", [ "-" ] ], [ "other", [ "dummy" ] ], [ "-", [ "-" ] ], [ "MARKER", [ "kanr" ] ], [ "other", [ "other" ] ] ]
+   },
+   {
+      "name": "mph1δ::kanr",
+      "pattern": [ [ "GENE", [ "mph1" ] ], [ "other", [ "δ" ] ], [ "-", [ "::" ] ], [ "MARKER", [ "kanr" ] ] ]
+   },
+   {
+      "name": "ase1(i130a,a143pap)",
+      "pattern": [ [ "GENE", [ "ase1" ] ], [ "other", [ "(i130a,a143pap)" ] ] ]
+   },
+   {
+      "name": "a-1pase1-ase1",
+      "pattern": [ [ "other", [ "a" ] ], [ "-", [ "-" ] ], [ "other", [ "1p" ] ], [ "GENE", [ "ase1" ] ], [ "-", [ "-" ] ], [ "GENE", [ "ase1" ] ] ]
+   }
+]
