@@ -1,0 +1,4 @@
+GENE_DELETION|dummy_matching_GENE_DELTION : {<GENE><->?<other>?<->?<MARKER>}
+PROMOTER_GENE : {<other><GENE><-><GENE>}
+ALLELE_AA_SUBSTITUTION : {<GENE><->?<other>}
+C_Terminal_Tagging : {<GENE><->?<TAG><->?<MARKER>}
