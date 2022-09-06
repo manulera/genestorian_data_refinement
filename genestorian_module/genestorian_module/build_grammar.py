@@ -1,8 +1,9 @@
-# %%
+
 import json
 
 
 def grammar_pattern_dict():
+    ''''''
     with open('./grammar/pseudo_grammar.json') as f:
         pseudo_grammar = json.load(f)
     # grammar_pattern_dict{pattern : [grammar rule name]}
@@ -17,6 +18,7 @@ def grammar_pattern_dict():
 
 
 def build_grammar_rules():
+    ''''''
     # grammar_dict{concatnated_chunk_rule_name : chunk_pattern}
     grammar_dict = {}
     grammar_rules = grammar_pattern_dict()
@@ -29,13 +31,12 @@ def build_grammar_rules():
     return grammar_dict
 
 
-def convert_grammar_dict():
+def grammar_dict_txt():
     grammar_dict = build_grammar_rules()
     with open('grammar/grammar.txt', 'w') as out:
         for grammar in grammar_dict:
             out.write(grammar + " : {" + grammar_dict[grammar] + "}\n")
 
 
-def main():
-    convert_grammar_dict()
-    return None
+if __name__ == "__main__":
+    grammar_dict_txt()

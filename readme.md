@@ -234,3 +234,70 @@ laco 1
 9 1
 
 ```
+
+### Grammar for NLTK Regex Chunk Parser
+
+We use NLTK Regex chunk Parser to parse the allele names. The grammar is the set of chunk rules defined to parse the allele names. For the data that we work with is much more complicated compared to the text usually parsed using nltk. Hence we have a pseudo grammar defined which is used to first, build the chunk rules and later in the process, is used to further parse the chunked patterns.
+
+To build your own grammar: you need a json file which contains a dictionary where keys are the rule name and value is another dictionary with keys - pattern and other regex as in the example below. other_regex is the regex which should match to the value of other tag in the pattern in order to correctly identify the pattern.
+
+```
+{
+   "GENE_DELETION": {
+      "pattern": "<GENE><->?<other>?<->?<MARKER>",
+      "other_regex": [
+         "^(delta|δ|del)$"
+      ]
+   },
+   
+   "PROMOTER_GENE": {
+      "pattern": "<other><GENE><-><GENE>",
+      "other_regex": [
+         "(?<![a-z])p$"
+      ]
+   },
+
+   "C_Terminal_Tagging": {
+      "pattern": "<GENE><->?<TAG><->?<MARKER>",
+      "other_regex": []
+   }
+}
+```
+
+Save this dict in `genestorian_module/genestorian_module/grammar/pseudo_grammar.json`. Then, call `python build_grammar.py` in the genestorian_module.
+`~/genestorian_data_refinement/genestorian_module/genestorian_module$ python build_grammar.py`
+
+This creates a `grammar.txt` file in `genestorian_module/genestorian_module/grammar` directory. Text file from above example would look like:
+
+```
+      GENE_DELETION {<GENE><->?<other>?<->?<MARKER>}
+      PROMOTER_GENE : {<other><GENE><-><GENE>}
+      C_Terminal_Tagging : {<GENE><->?<TAG><->?<MARKER>}
+```
+
+### Identify patterns using NLTK RegexChunker
+We use NLTK Regex Chunker along with custom regex to identify patterns in allele names. The RegexChunk Parser first identifies the patterns in the `grammar.txt` then builds a tree. We later use the other_regex in pseudo_grammar to match to the value of the 'other' token in pattern tree to validate the tree. If the value is matched then the pattern identified by the chunker is carried forward otherwise the identified pattern tree is discarded. In some cases, only a part of the 'other' token value is matched, in such such cases the value is split and only the matched part is added to the tree, remaining part is added to outside the identified pattern tree.
+
+To identify patterns in your alleles run `python build_nltk_trees.py  /path/to/alleles_pattern_nltk.json`
+in `genestorian_module/genestorian_module/`. This creates a file `nltk_trees.json` in the same dictory as that of `alleles_pattern_nltk.json`. The file contains a dictionary in which keys are the allele names and value is the tree 
+
+for example alleles: 
+```
+pht1kanmx6
+ade6-m210<<ade6+:mfm1-y31i
+leu1-32:pnpg1-npg1-gfp-tadh1-ura4+
+
+```
+The output for above example looks like:
+
+```
+{
+   "pht1kanmx6" : "(S (GENE_DELETION (GENE pht1) (MARKER kanmx6)))",
+   "ade6-m210<<ade6+:mfm1-y31i": "(S (ALLELE ade6-m210) (- <<) (GENE ade6) (other +) (- :) (ALLELE_AA_SUBSTITUTION (GENE mfm1) (- -) (other y31i)))",
+   "leu1-32:pnpg1-npg1-gfp-tadh1-ura4+": "(S (ALLELE leu1-32) (- :) (PROMOTER_GENE (other p) (GENE npg1) (- -) (GENE npg1)) (- -) (TAG gfp) (- -) (other t) (GENE adh1) (- -) (ALLELE ura4+))",
+}
+```
+
+## End-to-End Pipeline
+
+WIP

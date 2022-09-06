@@ -5,6 +5,15 @@ import os
 
 
 def build_common_pattern_dict(input_file):
+    '''
+    Builds a dictionary of common pattern followed by the the alleles
+
+        Parameter:
+            input_file(json): json file which has allele list 
+
+        Returns:
+            pattern_dict: dictionary{pattern: [alleles following pattern]}
+    '''
     with open(input_file) as f:
         alleles_list = json.load(f)
     pattern_dict = {}
@@ -25,6 +34,15 @@ def build_common_pattern_dict(input_file):
 
 
 def json_common_pattern_dict(input_file):
+    '''
+    Saves the pattern_dict to a json file in the directory same a that of input_file
+
+        Parameter"
+            input_file(json): json file which has allele list 
+
+        Return:
+            None
+    '''
     common_pattern_dict = build_common_pattern_dict(input_file)
     output_file = os.path.join(os.path.dirname(
         input_file), 'common_pattern.json')
@@ -33,6 +51,16 @@ def json_common_pattern_dict(input_file):
 
 
 def count_common_patterns(input_file):
+    '''
+    Counts the number of alleles following the same pattern and writes it in
+    a txt file in the same directory that of input_file.
+
+        Parameters:
+            input_file(json):json file which has allele list 
+
+        Return:
+            None
+    '''
     occ_dict = build_common_pattern_dict(input_file)
     output_list = list()
     for key in occ_dict:
@@ -47,7 +75,14 @@ def count_common_patterns(input_file):
 
 
 def count_most_common_other_tag(input_file):
-    # A simpler version not building the pattern and then unbuilding it
+    '''Counts the frequency of unidentified elemens in the genotype and writes 
+        in a txt file in the same directory that of input_file.
+
+        Parameter:
+            input_file(json):json file which has allele list 
+
+        Return:
+             None'''
     with open(input_file) as f:
         alleles_list = json.load(f)
     all_other_tag_list = list()
