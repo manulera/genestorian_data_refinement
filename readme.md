@@ -102,8 +102,8 @@ This script retrieves the data from fb_base graphql API(https://www.fpbase.org/g
 
 ## Running the Pipeline
 
-This pipeline is refinement pipeline for genotype. The goal of the pipeline is to be able to extract the alleles from genotype, identify the pattern followed by the allele and structure it to follow a standard format.
-At present, the pipeline extracts alleles from the genotype to a list then identifies different features of alleles and add a tag to each identified feature. The input must be a tsv file, typically named `strains.tsv` with column names 'strain_id' and 'genotype' which contain strain id and genotype of a strain.
+The goal of this pipeline is to be able to extract the alleles from genotype, identify the patterns followed by the alleles and structure the data in a way that could be migrated to a database.
+At present, the pipeline extracts alleles from the genotype to a list. Then it identifies different features of alleles and tokenizes the features. The input must be a tsv file, typically named `strains.tsv` with column names 'strain_id' and 'genotype' which contain strain id and genotype of a strain. Later, these tokenized allele features are parsed using nltk and custom regex to identify the patterns such as Gene deletion, allele substitution etc.
 
 ```tsv
 strain_id	 genotype
