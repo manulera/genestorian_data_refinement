@@ -12,9 +12,9 @@ class TestBuildNltkTrees(unittest.TestCase):
             raise Exception(
                 'main not imported from build_nltk_trees')
 
-        output_file = main('./alleles_pattern_nltk.json')
-        self.assertTrue(os.path.isfile('./nltk_trees.json'),
-                        'The nltk_trees.json not found')
+        output_file = main('./nltk_trees_dataset/alleles_pattern_nltk.json')
+        self.assertTrue(os.path.isfile('./nltk_trees_dataset/nltk_trees.json'),
+                        'nltk_trees.json not found')
 
         expected_output = {
             "ase1i130a,a143p": "(S (ALLELE_AA_SUBSTITUTION (GENE ase1) (other i130a,a143p)))",
@@ -24,7 +24,7 @@ class TestBuildNltkTrees(unittest.TestCase):
             "ase1(i130a,a143pap)": "(S (ALLELE_AA_SUBSTITUTION (GENE ase1) (other (i130a,a143p)) (other ap)))",
             "a-1pase1-ase1": "(S (other a) (- -) (other 1) (PROMOTER_GENE (other p) (GENE ase1) (- -) (GENE ase1)))"
         }
-        with open('./nltk_trees.json') as f:
+        with open('./nltk_trees_dataset/nltk_trees.json') as f:
             test_output = json.load(f)
 
         expected_output_sorted = sorted(expected_output.items())

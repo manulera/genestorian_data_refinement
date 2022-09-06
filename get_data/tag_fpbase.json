@@ -1,0 +1,4352 @@
+[
+   {
+      "name": "10B",
+      "aliases": null,
+      "reference": "10.1126/science.273.5280.1392"
+   },
+   {
+      "name": "11",
+      "aliases": [],
+      "reference": "10.1126/science.273.5280.1392"
+   },
+   {
+      "name": "22G",
+      "aliases": [],
+      "reference": "10.1126/science.1102506"
+   },
+   {
+      "name": "(3-F)Tyr-EGFP",
+      "aliases": [],
+      "reference": "10.1002/cbic.200300818"
+   },
+   {
+      "name": "5B",
+      "aliases": [
+         "9B"
+      ],
+      "reference": "10.1126/science.273.5280.1392"
+   },
+   {
+      "name": "6C",
+      "aliases": null,
+      "reference": "10.1126/science.273.5280.1392"
+   },
+   {
+      "name": "A1a",
+      "aliases": [],
+      "reference": "10.1007/s10126-007-9049-6"
+   },
+   {
+      "name": "A44-KR",
+      "aliases": [
+         "A44-KillerRed"
+      ],
+      "reference": "10.1021/ja3073337"
+   },
+   {
+      "name": "aacuCP",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0002680"
+   },
+   {
+      "name": "aacuGFP1",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0002680"
+   },
+   {
+      "name": "aacuGFP2",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0002680"
+   },
+   {
+      "name": "AausFP1",
+      "aliases": [],
+      "reference": "10.1101/677344"
+   },
+   {
+      "name": "AausFP2",
+      "aliases": [],
+      "reference": "10.1101/677344"
+   },
+   {
+      "name": "AausFP3",
+      "aliases": [],
+      "reference": "10.1101/677344"
+   },
+   {
+      "name": "AausFP4",
+      "aliases": [],
+      "reference": "10.1101/677344"
+   },
+   {
+      "name": "AausGFP",
+      "aliases": [],
+      "reference": "10.1101/677344"
+   },
+   {
+      "name": "acanFP",
+      "aliases": [],
+      "reference": "10.1093/molbev/msp194"
+   },
+   {
+      "name": "aceGFP",
+      "aliases": [],
+      "reference": "10.1074/jbc.m109.092320"
+   },
+   {
+      "name": "aceGFP-G222E-Y220L",
+      "aliases": [],
+      "reference": "10.1074/jbc.m109.092320"
+   },
+   {
+      "name": "aceGFP-h",
+      "aliases": [],
+      "reference": "10.1042/bj20021966"
+   },
+   {
+      "name": "AcGFP1",
+      "aliases": [],
+      "reference": ""
+   },
+   {
+      "name": "Achilles",
+      "aliases": [],
+      "reference": "10.1038/s41586-019-1882-z"
+   },
+   {
+      "name": "AdRed",
+      "aliases": [],
+      "reference": "10.1002/pro.3540"
+   },
+   {
+      "name": "AdRed-C148S",
+      "aliases": [],
+      "reference": "10.1002/pro.3540"
+   },
+   {
+      "name": "aeurGFP",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0002680"
+   },
+   {
+      "name": "afraGFP",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0002680"
+   },
+   {
+      "name": "ahyaCP",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0002680"
+   },
+   {
+      "name": "alajGFP1",
+      "aliases": [],
+      "reference": "10.1021/bp034308g"
+   },
+   {
+      "name": "alajGFP2",
+      "aliases": [],
+      "reference": "10.1021/bp034308g"
+   },
+   {
+      "name": "alajGFP3",
+      "aliases": [],
+      "reference": "10.1021/bp034308g"
+   },
+   {
+      "name": "&alpha;GFP",
+      "aliases": [
+         "cycle 3",
+         "alphaGFP",
+         "GFPuv"
+      ],
+      "reference": "10.1038/nbt0396-315"
+   },
+   {
+      "name": "amCyan1",
+      "aliases": [
+         "amCyan"
+      ],
+      "reference": ""
+   },
+   {
+      "name": "amFP486",
+      "aliases": [
+         "amajGFP"
+      ],
+      "reference": "10.1038/13657"
+   },
+   {
+      "name": "amFP495",
+      "aliases": [],
+      "reference": "10.1073/pnas.0502250102"
+   },
+   {
+      "name": "amFP506",
+      "aliases": [
+         "amFP486-E150Q"
+      ],
+      "reference": "10.1073/pnas.0502250102"
+   },
+   {
+      "name": "amFP515",
+      "aliases": [
+         "amFP486-H199T"
+      ],
+      "reference": "10.1073/pnas.0502250102"
+   },
+   {
+      "name": "amilCP",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0002680"
+   },
+   {
+      "name": "amilCP580",
+      "aliases": [],
+      "reference": "10.1007/s00338-012-0994-9"
+   },
+   {
+      "name": "amilCP586",
+      "aliases": [],
+      "reference": "10.1007/s00338-012-0994-9"
+   },
+   {
+      "name": "amilCP604",
+      "aliases": [],
+      "reference": "10.1007/s00338-012-0994-9"
+   },
+   {
+      "name": "amilFP484",
+      "aliases": [],
+      "reference": "10.3354/meps07588"
+   },
+   {
+      "name": "amilFP490",
+      "aliases": [
+         "amilCFP"
+      ],
+      "reference": "10.1002/jemt.20410"
+   },
+   {
+      "name": "amilFP497",
+      "aliases": [],
+      "reference": "10.3354/meps07588"
+   },
+   {
+      "name": "amilFP504",
+      "aliases": [],
+      "reference": "10.1002/jemt.20410"
+   },
+   {
+      "name": "amilFP512",
+      "aliases": [],
+      "reference": "10.3354/meps07588"
+   },
+   {
+      "name": "amilFP513",
+      "aliases": [
+         "amilGFP"
+      ],
+      "reference": "10.1002/jemt.20410"
+   },
+   {
+      "name": "amilFP593",
+      "aliases": [
+         "amilRFP"
+      ],
+      "reference": "10.1002/jemt.20410"
+   },
+   {
+      "name": "amilFP597",
+      "aliases": [],
+      "reference": "10.3354/meps07588"
+   },
+   {
+      "name": "anm1GFP1",
+      "aliases": [],
+      "reference": "10.1093/molbev/msh079"
+   },
+   {
+      "name": "anm1GFP2",
+      "aliases": [],
+      "reference": "10.1093/molbev/msh079"
+   },
+   {
+      "name": "anm2CP",
+      "aliases": [],
+      "reference": "10.1093/molbev/msh079"
+   },
+   {
+      "name": "anobCFP1",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0002680"
+   },
+   {
+      "name": "anobCFP2",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0002680"
+   },
+   {
+      "name": "anobGFP",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0002680"
+   },
+   {
+      "name": "apulCP584",
+      "aliases": [],
+      "reference": "10.3354/meps07588"
+   },
+   {
+      "name": "apulFP483",
+      "aliases": [],
+      "reference": "10.3354/meps07588"
+   },
+   {
+      "name": "AQ14",
+      "aliases": [],
+      "reference": "10.1042/bj20051314"
+   },
+   {
+      "name": "AQ143",
+      "aliases": [],
+      "reference": "10.1042/bj20051314"
+   },
+   {
+      "name": "Aquamarine",
+      "aliases": [],
+      "reference": "10.1039/c2mb25303h"
+   },
+   {
+      "name": "asCP562",
+      "aliases": [
+         "asulCP562"
+      ],
+      "reference": "10.1073/pnas.97.26.14091"
+   },
+   {
+      "name": "asFP499",
+      "aliases": [
+         "asulGFP"
+      ],
+      "reference": "10.1073/pnas.97.26.14091"
+   },
+   {
+      "name": "AsRed2",
+      "aliases": [],
+      "reference": "10.1042/bj20051314"
+   },
+   {
+      "name": "asulCP",
+      "aliases": [
+         "asCP",
+         "FP595",
+         "asCP595"
+      ],
+      "reference": "10.1073/pnas.062552299"
+   },
+   {
+      "name": "atenFP",
+      "aliases": [],
+      "reference": "10.1016/s1096-4959(02)00025-8"
+   },
+   {
+      "name": "avGFP",
+      "aliases": [
+         "wtGFP",
+         "GFP",
+         "gfp10",
+         "Green Fluorescent Protein"
+      ],
+      "reference": "10.1016/0378-1119(92)90691-h"
+   },
+   {
+      "name": "avGFP454",
+      "aliases": [],
+      "reference": "10.1016/j.bbrc.2005.04.166"
+   },
+   {
+      "name": "avGFP480",
+      "aliases": [],
+      "reference": "10.1515/bc.2004.038"
+   },
+   {
+      "name": "avGFP509",
+      "aliases": [],
+      "reference": "10.1515/bc.2004.038"
+   },
+   {
+      "name": "avGFP510",
+      "aliases": [],
+      "reference": "10.1515/bc.2004.038"
+   },
+   {
+      "name": "avGFP514",
+      "aliases": [],
+      "reference": "10.1002/cbic.200300818"
+   },
+   {
+      "name": "avGFP523",
+      "aliases": [],
+      "reference": "10.1093/emboj/20.21.5853"
+   },
+   {
+      "name": "AvicFP1",
+      "aliases": [],
+      "reference": "10.1101/677344"
+   },
+   {
+      "name": "AvicFP2",
+      "aliases": [],
+      "reference": "10.1101/677344"
+   },
+   {
+      "name": "AvicFP3",
+      "aliases": [],
+      "reference": "10.1101/677344"
+   },
+   {
+      "name": "AvicFP4",
+      "aliases": [],
+      "reference": "10.1101/677344"
+   },
+   {
+      "name": "AzaleaB5",
+      "aliases": [],
+      "reference": "10.1101/2020.03.30.015156"
+   },
+   {
+      "name": "AzamiGreen",
+      "aliases": [
+         "AG"
+      ],
+      "reference": "10.1074/jbc.m304063200"
+   },
+   {
+      "name": "Azurite",
+      "aliases": [
+         "BFP.B3"
+      ],
+      "reference": "10.1038/nbt1264"
+   },
+   {
+      "name": "BDFP1.6",
+      "aliases": [],
+      "reference": "10.1016/j.bbamcr.2018.08.015"
+   },
+   {
+      "name": "BDFP2.0",
+      "aliases": [],
+      "reference": "10.1002/cbic.201800695"
+   },
+   {
+      "name": "bfloGFPa1",
+      "aliases": [],
+      "reference": "10.1038/srep05469"
+   },
+   {
+      "name": "bfloGFPc1",
+      "aliases": [],
+      "reference": "10.1038/srep05469"
+   },
+   {
+      "name": "BFP",
+      "aliases": [
+         "P4-3"
+      ],
+      "reference": "10.1016/s0960-9822(02)00450-5"
+   },
+   {
+      "name": "BFP5",
+      "aliases": [],
+      "reference": "10.1016/0378-1119(95)00768-7"
+   },
+   {
+      "name": "BFP.A5",
+      "aliases": [],
+      "reference": "10.1038/nbt1264"
+   },
+   {
+      "name": "BFPsol",
+      "aliases": [],
+      "reference": "10.1021/ja0552693"
+   },
+   {
+      "name": "Blue102",
+      "aliases": [],
+      "reference": "10.1021/ja908418r"
+   },
+   {
+      "name": "BR1",
+      "aliases": [],
+      "reference": "10.1021/acs.jafc.9b05473"
+   },
+   {
+      "name": "BrUSLEE",
+      "aliases": [],
+      "reference": "10.1038/s41598-018-31687-w"
+   },
+   {
+      "name": "bsDronpa",
+      "aliases": [],
+      "reference": "10.1038/nbt.1493"
+   },
+   {
+      "name": "CAR-GECO1",
+      "aliases": null,
+      "reference": ""
+   },
+   {
+      "name": "ccalGFP1",
+      "aliases": [],
+      "reference": "10.1007/s10126-007-9072-7"
+   },
+   {
+      "name": "ccalGFP3",
+      "aliases": [],
+      "reference": "10.1007/s10126-007-9072-7"
+   },
+   {
+      "name": "ccalOFP1",
+      "aliases": [],
+      "reference": "10.1007/s10126-007-9072-7"
+   },
+   {
+      "name": "ccalRFP1",
+      "aliases": [],
+      "reference": "10.1007/s10126-007-9072-7"
+   },
+   {
+      "name": "ccalYFP1",
+      "aliases": [],
+      "reference": "10.1007/s10126-007-9072-7"
+   },
+   {
+      "name": "cEGFP",
+      "aliases": [],
+      "reference": "10.1016/j.str.2008.10.008"
+   },
+   {
+      "name": "cerFP505",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0003766"
+   },
+   {
+      "name": "Cerulean",
+      "aliases": [],
+      "reference": "10.1038/nbt945"
+   },
+   {
+      "name": "CFP",
+      "aliases": [
+         "Y66W"
+      ],
+      "reference": "10.1073/pnas.91.26.12501"
+   },
+   {
+      "name": "CFP4",
+      "aliases": [],
+      "reference": "10.1038/nbt1066"
+   },
+   {
+      "name": "cFP484",
+      "aliases": [
+         "clavGFP"
+      ],
+      "reference": "10.1038/13657"
+   },
+   {
+      "name": "cfSGFP2",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0037551"
+   },
+   {
+      "name": "cgfmKate2",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0037551"
+   },
+   {
+      "name": "CGFP",
+      "aliases": [],
+      "reference": "10.1093/nar/28.16.e78"
+   },
+   {
+      "name": "cgfTagRFP",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0037551"
+   },
+   {
+      "name": "cgigCP",
+      "aliases": [],
+      "reference": "10.1073/pnas.062552299"
+   },
+   {
+      "name": "cgigGFP",
+      "aliases": [],
+      "reference": "10.1073/pnas.062552299"
+   },
+   {
+      "name": "cgreGFP",
+      "aliases": [],
+      "reference": "10.1039/c0pp00023j"
+   },
+   {
+      "name": "Channelrhodopsin2",
+      "aliases": [
+         "ChR2",
+         "COP4"
+      ],
+      "reference": "10.1073/pnas.1936192100"
+   },
+   {
+      "name": "CheGFP1",
+      "aliases": [],
+      "reference": "10.1098/rsob.130206"
+   },
+   {
+      "name": "CheGFP2",
+      "aliases": [],
+      "reference": "10.1098/rsob.130206"
+   },
+   {
+      "name": "CheGFP3",
+      "aliases": [],
+      "reference": "10.1098/rsob.130206"
+   },
+   {
+      "name": "CheGFP4",
+      "aliases": [],
+      "reference": "10.1098/rsob.130206"
+   },
+   {
+      "name": "Chronos",
+      "aliases": [
+         "shChR",
+         "S. helveticum channelrhodopsin"
+      ],
+      "reference": "10.1038/nmeth.2836"
+   },
+   {
+      "name": "Citrine",
+      "aliases": [],
+      "reference": "10.1074/jbc.m102815200"
+   },
+   {
+      "name": "Citrine2",
+      "aliases": [],
+      "reference": "10.1039/c8ib00063h"
+   },
+   {
+      "name": "cjFP510",
+      "aliases": [],
+      "reference": "10.1038/srep23493"
+   },
+   {
+      "name": "Clomeleon",
+      "aliases": [],
+      "reference": "10.1523/jneurosci.4616-11.2013"
+   },
+   {
+      "name": "Clover",
+      "aliases": [],
+      "reference": "10.1038/nmeth.2171"
+   },
+   {
+      "name": "Clover1.5",
+      "aliases": null,
+      "reference": "10.1038/srep20889"
+   },
+   {
+      "name": "cpasCP",
+      "aliases": [],
+      "reference": "10.1073/pnas.062552299"
+   },
+   {
+      "name": "cpCitrine",
+      "aliases": [],
+      "reference": "10.1074/jbc.m102815200"
+   },
+   {
+      "name": "cpEYFP(V68L/Q69K)",
+      "aliases": [
+         "cpEYFP"
+      ],
+      "reference": "10.1073/pnas.051636098"
+   },
+   {
+      "name": "cp-mKate",
+      "aliases": [
+         "Circular Permutated mKate"
+      ],
+      "reference": "10.1371/journal.pone.0020505"
+   },
+   {
+      "name": "cpT-Sapphire 174-173",
+      "aliases": [],
+      "reference": "10.1186/1472-6750-3-5"
+   },
+   {
+      "name": "CpYGFP",
+      "aliases": [],
+      "reference": "10.1016/j.gene.2005.11.031"
+   },
+   {
+      "name": "Cy11.5",
+      "aliases": [],
+      "reference": "10.1021/bi060093i"
+   },
+   {
+      "name": "CyOFP1",
+      "aliases": [],
+      "reference": "10.1038/nbt.3550"
+   },
+   {
+      "name": "CyPet",
+      "aliases": [],
+      "reference": "10.1038/nbt1066"
+   },
+   {
+      "name": "CyRFP1",
+      "aliases": [],
+      "reference": "10.1038/nmeth.4046"
+   },
+   {
+      "name": "D10",
+      "aliases": [],
+      "reference": "10.1038/nbt945"
+   },
+   {
+      "name": "d1EosFP",
+      "aliases": [
+         "dimer 1 EosFP"
+      ],
+      "reference": "10.1073/pnas.0403668101"
+   },
+   {
+      "name": "d2EosFP",
+      "aliases": [
+         "dimer 2 EosFP"
+      ],
+      "reference": "10.1073/pnas.0403668101"
+   },
+   {
+      "name": "dClavGR1.6",
+      "aliases": [],
+      "reference": "10.1016/j.jmb.2010.06.056"
+   },
+   {
+      "name": "dClover2",
+      "aliases": [
+         "Clover1.5 (G160S)"
+      ],
+      "reference": "10.1038/srep20889"
+   },
+   {
+      "name": "dClover2 A206K",
+      "aliases": null,
+      "reference": "10.1038/srep20889"
+   },
+   {
+      "name": "deGFP1",
+      "aliases": [],
+      "reference": "10.1021/bi026609p"
+   },
+   {
+      "name": "deGFP2",
+      "aliases": [],
+      "reference": "10.1021/bi026609p"
+   },
+   {
+      "name": "deGFP3",
+      "aliases": [],
+      "reference": "10.1021/bi026609p"
+   },
+   {
+      "name": "deGFP4",
+      "aliases": [],
+      "reference": "10.1021/bi026609p"
+   },
+   {
+      "name": "dendFP",
+      "aliases": [
+         "dendRFP",
+         "dendGFP"
+      ],
+      "reference": "10.1073/pnas.062552299"
+   },
+   {
+      "name": "Dendra",
+      "aliases": [],
+      "reference": "10.1038/nbt1191"
+   },
+   {
+      "name": "Dendra2",
+      "aliases": [],
+      "reference": "10.1038/nbt1191"
+   },
+   {
+      "name": "Dendra2-M159A",
+      "aliases": [],
+      "reference": "10.1016/j.chembiol.2011.08.007"
+   },
+   {
+      "name": "Dendra2-T69A",
+      "aliases": [],
+      "reference": "10.1021/jacs.5b09923"
+   },
+   {
+      "name": "dfGFP",
+      "aliases": [],
+      "reference": "10.1016/j.chembiol.2017.12.005"
+   },
+   {
+      "name": "dhorGFP",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0002680"
+   },
+   {
+      "name": "dhorRFP",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0002680"
+   },
+   {
+      "name": "dimer1",
+      "aliases": [],
+      "reference": "10.1073/pnas.082243699"
+   },
+   {
+      "name": "dimer2",
+      "aliases": [],
+      "reference": "10.1073/pnas.082243699"
+   },
+   {
+      "name": "dis2RFP",
+      "aliases": [],
+      "reference": "10.1073/pnas.062552299"
+   },
+   {
+      "name": "dis3GFP",
+      "aliases": [],
+      "reference": "10.1073/pnas.062552299"
+   },
+   {
+      "name": "dKeima",
+      "aliases": [],
+      "reference": "10.1038/nbt1207"
+   },
+   {
+      "name": "dKeima570",
+      "aliases": [],
+      "reference": "10.1038/nbt1207"
+   },
+   {
+      "name": "dLanYFP",
+      "aliases": [],
+      "reference": "10.1038/nmeth.2413"
+   },
+   {
+      "name": "dPapaya0.1",
+      "aliases": [],
+      "reference": "10.1016/j.chembiol.2013.08.008"
+   },
+   {
+      "name": "DrCBD",
+      "aliases": [
+         "chromophore binding domain"
+      ],
+      "reference": "10.1126/science.1168683"
+   },
+   {
+      "name": "Dreiklang",
+      "aliases": [],
+      "reference": "10.1038/nbt.1952"
+   },
+   {
+      "name": "d-RFP618",
+      "aliases": [],
+      "reference": "10.1016/j.chembiol.2008.02.008"
+   },
+   {
+      "name": "Dronpa",
+      "aliases": [
+         "22Gm3"
+      ],
+      "reference": "10.1126/science.1102506"
+   },
+   {
+      "name": "Dronpa-2",
+      "aliases": [
+         "Dronpa-M159T"
+      ],
+      "reference": "10.1529/biophysj.107.105882"
+   },
+   {
+      "name": "Dronpa-3",
+      "aliases": [],
+      "reference": "10.1529/biophysj.107.105882"
+   },
+   {
+      "name": "Dronpa-C62S",
+      "aliases": [],
+      "reference": "10.1016/j.bbrc.2007.01.086"
+   },
+   {
+      "name": "dsFP483",
+      "aliases": [
+         "dstrCyFP"
+      ],
+      "reference": "10.1038/13657"
+   },
+   {
+      "name": "DspR1",
+      "aliases": [],
+      "reference": "10.1016/j.cca.2004.07.002"
+   },
+   {
+      "name": "DsRed",
+      "aliases": [
+         "drFP583",
+         "discRFP",
+         "RFP",
+         "DsRed1"
+      ],
+      "reference": "10.1038/13657"
+   },
+   {
+      "name": "DsRed2",
+      "aliases": [],
+      "reference": "10.1007/s00299-006-0210-x"
+   },
+   {
+      "name": "DsRed-Express",
+      "aliases": [
+         "DsRed.T1",
+         "T1"
+      ],
+      "reference": "10.1038/nbt0102-83"
+   },
+   {
+      "name": "DsRed-Express2",
+      "aliases": [],
+      "reference": "10.1038/nmeth.1264"
+   },
+   {
+      "name": "DsRed.M1",
+      "aliases": [],
+      "reference": "10.1093/protein/gzm046"
+   },
+   {
+      "name": "DsRed-Max",
+      "aliases": [],
+      "reference": "10.1038/nmeth.1264"
+   },
+   {
+      "name": "DsRed.T3",
+      "aliases": [],
+      "reference": "10.1038/nbt0102-83"
+   },
+   {
+      "name": "DsRed.T4",
+      "aliases": [],
+      "reference": "10.1038/nbt0102-83"
+   },
+   {
+      "name": "DsRed-Timer",
+      "aliases": [
+         "Timer",
+         "DsRed-E5",
+         "E5"
+      ],
+      "reference": "10.1126/science.290.5496.1585"
+   },
+   {
+      "name": "DstC1",
+      "aliases": [],
+      "reference": "10.1016/j.cca.2004.07.002"
+   },
+   {
+      "name": "dTFP0.1",
+      "aliases": [
+         "TFP"
+      ],
+      "reference": "10.1042/bj20060874"
+   },
+   {
+      "name": "dTFP0.2",
+      "aliases": [],
+      "reference": "10.1042/bj20060874"
+   },
+   {
+      "name": "dTomato",
+      "aliases": [],
+      "reference": "10.1038/nbt1037"
+   },
+   {
+      "name": "dVFP",
+      "aliases": [],
+      "reference": "10.1111/j.1742-4658.2010.07618.x"
+   },
+   {
+      "name": "E2-Crimson",
+      "aliases": [],
+      "reference": "10.1021/bi900870u"
+   },
+   {
+      "name": "E2-Orange",
+      "aliases": [],
+      "reference": "10.1186/1472-6750-9-32"
+   },
+   {
+      "name": "E2-Red/Green",
+      "aliases": [],
+      "reference": "10.1186/1472-6750-9-32"
+   },
+   {
+      "name": "EaGFP",
+      "aliases": [],
+      "reference": "10.1002/mrd.23157"
+   },
+   {
+      "name": "EBFP",
+      "aliases": [],
+      "reference": "10.1074/jbc.273.14.8212"
+   },
+   {
+      "name": "EBFP1.2",
+      "aliases": [],
+      "reference": "10.1021/bi700199g"
+   },
+   {
+      "name": "EBFP1.5",
+      "aliases": [],
+      "reference": "10.1021/bi700199g"
+   },
+   {
+      "name": "EBFP2",
+      "aliases": [],
+      "reference": "10.1021/bi700199g"
+   },
+   {
+      "name": "ECFP",
+      "aliases": [
+         "W1B"
+      ],
+      "reference": "10.1016/s0960-9822(02)00450-5"
+   },
+   {
+      "name": "ECFP H148D",
+      "aliases": [
+         "H148D"
+      ],
+      "reference": "10.1038/nbt945"
+   },
+   {
+      "name": "ECGFP",
+      "aliases": [
+         "Enhanced Cyan-Green Fluorescent Protein"
+      ],
+      "reference": "10.1093/nar/28.16.e78"
+   },
+   {
+      "name": "echFP",
+      "aliases": [],
+      "reference": "10.1093/molbev/msp194"
+   },
+   {
+      "name": "echiFP",
+      "aliases": [],
+      "reference": "10.1093/molbev/msp194"
+   },
+   {
+      "name": "eechGFP1",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0002680"
+   },
+   {
+      "name": "eechGFP2",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0002680"
+   },
+   {
+      "name": "eechGFP3",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0002680"
+   },
+   {
+      "name": "eechRFP",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0002680"
+   },
+   {
+      "name": "efasCFP",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0002680"
+   },
+   {
+      "name": "efasGFP",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0002680"
+   },
+   {
+      "name": "eforCP",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0002680"
+   },
+   {
+      "name": "EGFP",
+      "aliases": [
+         "enhanced GFP",
+         "GFPmut1"
+      ],
+      "reference": "10.1016/0378-1119(95)00685-0"
+   },
+   {
+      "name": "eGFP203C",
+      "aliases": [],
+      "reference": "10.1110/ps.073358908"
+   },
+   {
+      "name": "eGFP205C",
+      "aliases": [],
+      "reference": "10.1110/ps.073358908"
+   },
+   {
+      "name": "Electra1",
+      "aliases": [],
+      "reference": "10.1038/s41598-022-13214-0"
+   },
+   {
+      "name": "Electra2",
+      "aliases": [],
+      "reference": "10.1038/s41598-022-13214-0"
+   },
+   {
+      "name": "Emerald",
+      "aliases": [],
+      "reference": "10.1016/s0091-679x(08)61946-9"
+   },
+   {
+      "name": "emiRFP670",
+      "aliases": [
+         "enhanced miRFP670"
+      ],
+      "reference": "10.1038/s41467-019-13897-6"
+   },
+   {
+      "name": "emiRFP703",
+      "aliases": [
+         "enhanced miRFP703"
+      ],
+      "reference": "10.1038/s41467-019-13897-6"
+   },
+   {
+      "name": "Enhanced Cyan-Emitting GFP",
+      "aliases": [],
+      "reference": "10.1016/s0896-6273(02)01099-1"
+   },
+   {
+      "name": "EosFP",
+      "aliases": [
+         "lhemRFP"
+      ],
+      "reference": "10.1073/pnas.0403668101"
+   },
+   {
+      "name": "eqFP578",
+      "aliases": [],
+      "reference": "10.1038/nmeth1062"
+   },
+   {
+      "name": "eqFP611",
+      "aliases": [
+         "equaRFP"
+      ],
+      "reference": "10.1073/pnas.182157199"
+   },
+   {
+      "name": "eqFP611 V124T",
+      "aliases": [],
+      "reference": "10.1117/1.1854680"
+   },
+   {
+      "name": "eqFP650",
+      "aliases": [
+         "TurboFP650"
+      ],
+      "reference": "10.1038/nmeth.1501"
+   },
+   {
+      "name": "eqFP670",
+      "aliases": [
+         "NirFP"
+      ],
+      "reference": "10.1038/nmeth.1501"
+   },
+   {
+      "name": "esGFP",
+      "aliases": [
+         "Extra-superfolder GFP"
+      ],
+      "reference": "10.1002/1873-3468.12534"
+   },
+   {
+      "name": "EYFP",
+      "aliases": [
+         "10C"
+      ],
+      "reference": "10.1126/science.273.5280.1392"
+   },
+   {
+      "name": "EYFP-F46L",
+      "aliases": null,
+      "reference": "10.1038/nbt0102-87"
+   },
+   {
+      "name": "EYFP-Q69K",
+      "aliases": [
+         "EYFP-V68L/Q69K"
+      ],
+      "reference": "10.1073/pnas.96.5.2135"
+   },
+   {
+      "name": "eYGFP",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0181186"
+   },
+   {
+      "name": "eYGFPuv",
+      "aliases": [
+         "CP_eYGFPuv"
+      ],
+      "reference": "10.1371/journal.pone.0181186"
+   },
+   {
+      "name": "eYGPdp",
+      "aliases": [
+         "CP_eYGFPdp \"dual-peak\""
+      ],
+      "reference": "10.1371/journal.pone.0181186"
+   },
+   {
+      "name": "fabdGFP",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0002680"
+   },
+   {
+      "name": "fcFP",
+      "aliases": [],
+      "reference": "10.1093/molbev/msp194"
+   },
+   {
+      "name": "fcomFP",
+      "aliases": [],
+      "reference": "10.1093/molbev/msp194"
+   },
+   {
+      "name": "ffDronpa",
+      "aliases": [
+         "Dronpa-V60A",
+         "fast-forming Dronpa"
+      ],
+      "reference": "10.1021/nn4060144"
+   },
+   {
+      "name": "Flamindo2",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0100252"
+   },
+   {
+      "name": "Folding Reporter GFP",
+      "aliases": [],
+      "reference": "10.1038/10904"
+   },
+   {
+      "name": "FP586",
+      "aliases": [],
+      "reference": "10.1016/j.molimm.2012.10.003"
+   },
+   {
+      "name": "Fpaagar",
+      "aliases": [],
+      "reference": "10.1016/j.cca.2004.07.002"
+   },
+   {
+      "name": "Fpag_frag",
+      "aliases": [],
+      "reference": "10.1016/j.cca.2004.07.002"
+   },
+   {
+      "name": "Fpcondchrom",
+      "aliases": [],
+      "reference": "10.1016/j.cca.2004.07.002"
+   },
+   {
+      "name": "FPmann",
+      "aliases": [],
+      "reference": "10.1016/j.cca.2004.07.002"
+   },
+   {
+      "name": "FPmcavgr7.7",
+      "aliases": [],
+      "reference": "10.1016/j.cca.2004.07.002"
+   },
+   {
+      "name": "FPrfl2.3",
+      "aliases": [],
+      "reference": "10.1016/j.cca.2004.07.002"
+   },
+   {
+      "name": "FR-1",
+      "aliases": [],
+      "reference": "10.1039/c8ib00103k"
+   },
+   {
+      "name": "FusionRed",
+      "aliases": [],
+      "reference": "10.1038/ncomms2208"
+   },
+   {
+      "name": "FusionRed-M",
+      "aliases": [
+         "FR-M"
+      ],
+      "reference": "10.1039/c8ib00103k"
+   },
+   {
+      "name": "FusionRed-MQV",
+      "aliases": [
+         "FR-MQV"
+      ],
+      "reference": "10.1021/acs.biochem.0c00484"
+   },
+   {
+      "name": "G1",
+      "aliases": [],
+      "reference": "10.1186/1741-7007-6-13"
+   },
+   {
+      "name": "G2",
+      "aliases": [],
+      "reference": "10.1186/1741-7007-6-13"
+   },
+   {
+      "name": "G3",
+      "aliases": [],
+      "reference": "10.1186/1741-7007-6-13"
+   },
+   {
+      "name": "Gamillus",
+      "aliases": [
+         "GFP with acid tolerance and monomeric properties to illuminate soured environments"
+      ],
+      "reference": "10.1016/j.chembiol.2017.12.005"
+   },
+   {
+      "name": "Gamillus0.1",
+      "aliases": [
+         "GFP with acid tolerance and monomeric properties to illuminate soured environments"
+      ],
+      "reference": "10.1016/j.chembiol.2017.12.005"
+   },
+   {
+      "name": "Gamillus0.2",
+      "aliases": [
+         "GFP with acid tolerance and monomeric properties to illuminate soured environments"
+      ],
+      "reference": "10.1016/j.chembiol.2017.12.005"
+   },
+   {
+      "name": "Gamillus0.3",
+      "aliases": [
+         "GFP with acid tolerance and monomeric properties to illuminate soured environments"
+      ],
+      "reference": "10.1016/j.chembiol.2017.12.005"
+   },
+   {
+      "name": "Gamillus0.4",
+      "aliases": [
+         "GFP with acid tolerance and monomeric properties to illuminate soured environments"
+      ],
+      "reference": "10.1016/j.chembiol.2017.12.005"
+   },
+   {
+      "name": "Gamillus0.5",
+      "aliases": [
+         "GFP with acid tolerance and monomeric properties to illuminate soured environments"
+      ],
+      "reference": "10.1016/j.chembiol.2017.12.005"
+   },
+   {
+      "name": "GCaMP2",
+      "aliases": [],
+      "reference": "10.1073/pnas.0509378103"
+   },
+   {
+      "name": "GCaMP6f",
+      "aliases": [],
+      "reference": "10.1038/nature12354"
+   },
+   {
+      "name": "gdjiCP",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0002680"
+   },
+   {
+      "name": "GdT",
+      "aliases": [
+         "dTG"
+      ],
+      "reference": "10.1002/cbic.201600492"
+   },
+   {
+      "name": "gfasCP",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0002680"
+   },
+   {
+      "name": "gfasGFP",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0002680"
+   },
+   {
+      "name": "GFP-151pyTyrCu",
+      "aliases": [],
+      "reference": "10.1002/anie.201204962"
+   },
+   {
+      "name": "GFP(E222G)",
+      "aliases": [],
+      "reference": "10.1016/0014-5793(95)00557-p"
+   },
+   {
+      "name": "GFPhal",
+      "aliases": [],
+      "reference": "10.1021/bi0479205"
+   },
+   {
+      "name": "GFPmut2",
+      "aliases": [],
+      "reference": "10.1016/0378-1119(95)00685-0"
+   },
+   {
+      "name": "GFPmut3",
+      "aliases": [],
+      "reference": "10.1016/0378-1119(95)00685-0"
+   },
+   {
+      "name": "GFP (S65T)",
+      "aliases": [],
+      "reference": "10.1038/373663b0"
+   },
+   {
+      "name": "GFP-Tyr151pyz",
+      "aliases": [],
+      "reference": "10.1002/anie.201204962"
+   },
+   {
+      "name": "GFPxm16",
+      "aliases": [],
+      "reference": "10.1007/s10126-006-6006-8"
+   },
+   {
+      "name": "GFPxm161",
+      "aliases": [],
+      "reference": "10.1007/s10126-006-6006-8"
+   },
+   {
+      "name": "GFPxm162",
+      "aliases": [],
+      "reference": "10.1007/s10126-006-6006-8"
+   },
+   {
+      "name": "GFPxm163",
+      "aliases": [],
+      "reference": "10.1007/s10126-006-6006-8"
+   },
+   {
+      "name": "GFPxm18",
+      "aliases": [],
+      "reference": "10.1007/s10126-006-6006-8"
+   },
+   {
+      "name": "GFPxm181uv",
+      "aliases": [],
+      "reference": "10.1007/s10126-006-6006-8"
+   },
+   {
+      "name": "GFPxm18uv",
+      "aliases": [],
+      "reference": "10.1007/s10126-006-6006-8"
+   },
+   {
+      "name": "GFPxm19",
+      "aliases": [],
+      "reference": "10.1007/s10126-006-6006-8"
+   },
+   {
+      "name": "GFPxm191uv",
+      "aliases": [],
+      "reference": "10.1007/s10126-006-6006-8"
+   },
+   {
+      "name": "GFPxm19uv",
+      "aliases": [],
+      "reference": "10.1007/s10126-006-6006-8"
+   },
+   {
+      "name": "GGvT",
+      "aliases": [],
+      "reference": "10.1002/cbic.201600492"
+   },
+   {
+      "name": "GRvT",
+      "aliases": [],
+      "reference": "10.1002/cbic.201600492"
+   },
+   {
+      "name": "gtenCP",
+      "aliases": [],
+      "reference": "10.1073/pnas.062552299"
+   },
+   {
+      "name": "GZnP3",
+      "aliases": [],
+      "reference": "10.1038/s41467-019-12761-x"
+   },
+   {
+      "name": "h2-3",
+      "aliases": [],
+      "reference": "10.1101/2020.03.30.015156"
+   },
+   {
+      "name": "H9",
+      "aliases": [],
+      "reference": "10.1073/pnas.91.26.12501"
+   },
+   {
+      "name": "HcRed",
+      "aliases": [],
+      "reference": "10.1016/s0014-5793(01)02930-1"
+   },
+   {
+      "name": "HcRed1-Blue",
+      "aliases": [],
+      "reference": "10.1016/j.chembiol.2008.08.006"
+   },
+   {
+      "name": "HcRed7",
+      "aliases": [],
+      "reference": "10.1073/pnas.1807449115"
+   },
+   {
+      "name": "HcRed-Tandem",
+      "aliases": [
+         "t-HcRed"
+      ],
+      "reference": "10.1042/bj20021191"
+   },
+   {
+      "name": "hcriCP",
+      "aliases": [],
+      "reference": "10.1073/pnas.062552299"
+   },
+   {
+      "name": "hcriGFP",
+      "aliases": [],
+      "reference": "10.1073/pnas.062552299"
+   },
+   {
+      "name": "hfriFP",
+      "aliases": [],
+      "reference": "10.3389/fmicb.2013.00168"
+   },
+   {
+      "name": "hmGFP",
+      "aliases": [],
+      "reference": "10.1016/s0006-291x(03)00019-6"
+   },
+   {
+      "name": "HriCFP",
+      "aliases": [],
+      "reference": "10.1016/j.bbrc.2010.04.136"
+   },
+   {
+      "name": "HriGFP",
+      "aliases": [],
+      "reference": "10.1016/j.bbrc.2014.04.042"
+   },
+   {
+      "name": "iFP1.4",
+      "aliases": [],
+      "reference": "10.1126/science.1168683"
+   },
+   {
+      "name": "iFP2.0",
+      "aliases": [],
+      "reference": "10.1038/ncomms4626"
+   },
+   {
+      "name": "iLov",
+      "aliases": [
+         "981"
+      ],
+      "reference": "10.1073/pnas.0807551105"
+   },
+   {
+      "name": "iq-EBFP2",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0095808"
+   },
+   {
+      "name": "iq-mApple",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0095808"
+   },
+   {
+      "name": "iq-mCerulean3",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0095808"
+   },
+   {
+      "name": "iq-mEmerald",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0095808"
+   },
+   {
+      "name": "iq-mKate2",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0095808"
+   },
+   {
+      "name": "iq-mVenus",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0095808"
+   },
+   {
+      "name": "iRFP670",
+      "aliases": [],
+      "reference": "10.1038/nmeth.2521"
+   },
+   {
+      "name": "iRFP682",
+      "aliases": [],
+      "reference": "10.1038/nmeth.2521"
+   },
+   {
+      "name": "iRFP702",
+      "aliases": [],
+      "reference": "10.1038/nmeth.2521"
+   },
+   {
+      "name": "iRFP713",
+      "aliases": [
+         "iRFP"
+      ],
+      "reference": "10.1038/nbt.1918"
+   },
+   {
+      "name": "iRFP713/V256C",
+      "aliases": [],
+      "reference": "10.1038/srep18750"
+   },
+   {
+      "name": "iRFP720",
+      "aliases": [],
+      "reference": "10.1038/nmeth.2521"
+   },
+   {
+      "name": "IrisFP",
+      "aliases": [],
+      "reference": "10.1073/pnas.0805949105"
+   },
+   {
+      "name": "IrisFP-M159A",
+      "aliases": [],
+      "reference": "10.1088/2050-6120/3/1/014004"
+   },
+   {
+      "name": "jRCaMP1a",
+      "aliases": null,
+      "reference": ""
+   },
+   {
+      "name": "Jred",
+      "aliases": [],
+      "reference": "10.1093/molbev/msh079"
+   },
+   {
+      "name": "jREX-GECO1",
+      "aliases": null,
+      "reference": ""
+   },
+   {
+      "name": "jRGECO1a",
+      "aliases": [],
+      "reference": "10.7554/elife.12727"
+   },
+   {
+      "name": "Kaede",
+      "aliases": [
+         "tgeoRFP"
+      ],
+      "reference": "10.1073/pnas.202320599"
+   },
+   {
+      "name": "Katushka",
+      "aliases": [
+         "TurboFP635"
+      ],
+      "reference": "10.1038/nmeth1083"
+   },
+   {
+      "name": "Katushka2S",
+      "aliases": [],
+      "reference": "10.1038/srep10332"
+   },
+   {
+      "name": "Katushka-9-5",
+      "aliases": [],
+      "reference": "10.1038/nmeth.1501"
+   },
+   {
+      "name": "KCY",
+      "aliases": [],
+      "reference": "10.1021/bi801658p"
+   },
+   {
+      "name": "KCY-G4219",
+      "aliases": [],
+      "reference": "10.1021/bi801658p"
+   },
+   {
+      "name": "KCY-G4219-38L",
+      "aliases": [],
+      "reference": "10.1021/bi801658p"
+   },
+   {
+      "name": "KCY-R1",
+      "aliases": [],
+      "reference": "10.1021/bi801658p"
+   },
+   {
+      "name": "KCY-R1-158A",
+      "aliases": [],
+      "reference": "10.1021/bi801658p"
+   },
+   {
+      "name": "KCY-R1-38H",
+      "aliases": [],
+      "reference": "10.1021/bi801658p"
+   },
+   {
+      "name": "KCY-R1-38L",
+      "aliases": [],
+      "reference": "10.1021/bi801658p"
+   },
+   {
+      "name": "KFP1",
+      "aliases": [
+         "KFP-Red",
+         "asCP.A148G/K9T/K10E"
+      ],
+      "reference": "10.1038/nbt778"
+   },
+   {
+      "name": "K-GECO1",
+      "aliases": null,
+      "reference": ""
+   },
+   {
+      "name": "KikG",
+      "aliases": [],
+      "reference": "10.1038/sj.embor.7400361"
+   },
+   {
+      "name": "KikGR1",
+      "aliases": [
+         "Kikume Green-Red"
+      ],
+      "reference": "10.1038/sj.embor.7400361"
+   },
+   {
+      "name": "KillerOrange",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0145287"
+   },
+   {
+      "name": "KillerRed",
+      "aliases": [],
+      "reference": "10.1038/nbt1175"
+   },
+   {
+      "name": "KO",
+      "aliases": [
+         "Kusabira-Orange",
+         "KO1"
+      ],
+      "reference": "10.1042/bj20040321"
+   },
+   {
+      "name": "KOFP-7",
+      "aliases": [],
+      "reference": "10.1021/acs.jafc.0c00121"
+   },
+   {
+      "name": "Kohinoor",
+      "aliases": [],
+      "reference": "10.1038/nmeth.3362"
+   },
+   {
+      "name": "Kohinoor2.0",
+      "aliases": [],
+      "reference": "10.1093/jmicro/dfab001"
+   },
+   {
+      "name": "laesGFP",
+      "aliases": [],
+      "reference": "10.1093/molbev/msh079"
+   },
+   {
+      "name": "laGFP",
+      "aliases": [],
+      "reference": "10.1107/s0907444913015424"
+   },
+   {
+      "name": "LanFP1",
+      "aliases": [],
+      "reference": "10.1186/1745-6150-3-28"
+   },
+   {
+      "name": "LanFP2",
+      "aliases": [],
+      "reference": "10.1186/1745-6150-3-28"
+   },
+   {
+      "name": "lanRFP-&Delta;S83l",
+      "aliases": [],
+      "reference": "10.1107/s0907444913015424"
+   },
+   {
+      "name": "LanYFP",
+      "aliases": [],
+      "reference": "10.1038/nmeth.2413"
+   },
+   {
+      "name": "laRFP",
+      "aliases": [],
+      "reference": "10.1107/s0907444913015424"
+   },
+   {
+      "name": "LEA",
+      "aliases": [],
+      "reference": "10.1021/bi401000e"
+   },
+   {
+      "name": "LSSmCherry1",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0171257"
+   },
+   {
+      "name": "LSS-mKate1",
+      "aliases": [],
+      "reference": "10.1073/pnas.0914365107"
+   },
+   {
+      "name": "LSS-mKate2",
+      "aliases": [],
+      "reference": "10.1073/pnas.0914365107"
+   },
+   {
+      "name": "LSSmOrange",
+      "aliases": [],
+      "reference": "10.1021/ja3018972"
+   },
+   {
+      "name": "LSSmScarlet",
+      "aliases": [],
+      "reference": "10.3390/ijms222312887"
+   },
+   {
+      "name": "Lumazine binding protein",
+      "aliases": [
+         "LUMP"
+      ],
+      "reference": "10.1073/pnas.1424021112"
+   },
+   {
+      "name": "M355NA",
+      "aliases": [],
+      "reference": "10.1042/bj20021796"
+   },
+   {
+      "name": "mAmetrine",
+      "aliases": [],
+      "reference": "10.1038/nmeth.1207"
+   },
+   {
+      "name": "mApple",
+      "aliases": [],
+      "reference": "10.1038/nmeth.1209"
+   },
+   {
+      "name": "Maroon0.1",
+      "aliases": [],
+      "reference": "10.1038/nmeth.4045"
+   },
+   {
+      "name": "mAvicFP1",
+      "aliases": [],
+      "reference": "10.1101/677344"
+   },
+   {
+      "name": "mAzamiGreen",
+      "aliases": [
+         "mAG"
+      ],
+      "reference": "10.1074/jbc.m304063200"
+   },
+   {
+      "name": "mBanana",
+      "aliases": [],
+      "reference": "10.1038/nbt1037"
+   },
+   {
+      "name": "mBeRFP",
+      "aliases": [
+         "monomeric Blue light-excited RFP"
+      ],
+      "reference": "10.1371/journal.pone.0064849"
+   },
+   {
+      "name": "mBlueberry1",
+      "aliases": [],
+      "reference": "10.1021/bi700199g"
+   },
+   {
+      "name": "mBlueberry2",
+      "aliases": [],
+      "reference": "10.1021/bi700199g"
+   },
+   {
+      "name": "mc1",
+      "aliases": [],
+      "reference": "10.1093/molbev/msg130"
+   },
+   {
+      "name": "mc2",
+      "aliases": [],
+      "reference": "10.1093/molbev/msg130"
+   },
+   {
+      "name": "mc3",
+      "aliases": [],
+      "reference": "10.1093/molbev/msg130"
+   },
+   {
+      "name": "mc4",
+      "aliases": [],
+      "reference": "10.1093/molbev/msg130"
+   },
+   {
+      "name": "mc5",
+      "aliases": [],
+      "reference": "10.1093/molbev/msg130"
+   },
+   {
+      "name": "mc6",
+      "aliases": [],
+      "reference": "10.1093/molbev/msg130"
+   },
+   {
+      "name": "McaG1",
+      "aliases": [],
+      "reference": "10.1016/j.cca.2004.07.002"
+   },
+   {
+      "name": "McaG1ea",
+      "aliases": [],
+      "reference": "10.1016/j.cca.2004.07.002"
+   },
+   {
+      "name": "McaG2",
+      "aliases": [
+         "mcavGFP2"
+      ],
+      "reference": "10.1016/j.cca.2004.07.002"
+   },
+   {
+      "name": "mCardinal",
+      "aliases": [],
+      "reference": "10.1038/nmeth.2888"
+   },
+   {
+      "name": "mCarmine",
+      "aliases": [],
+      "reference": "10.1016/j.chembiol.2018.08.008"
+   },
+   {
+      "name": "mcavFP",
+      "aliases": [],
+      "reference": "10.4319/lo.2003.48.1_part_2.0402"
+   },
+   {
+      "name": "mcavGFP",
+      "aliases": [],
+      "reference": "10.1073/pnas.062552299"
+   },
+   {
+      "name": "mcavRFP",
+      "aliases": [],
+      "reference": "10.1073/pnas.062552299"
+   },
+   {
+      "name": "mcCFP",
+      "aliases": [],
+      "reference": "10.1016/j.febslet.2004.06.043"
+   },
+   {
+      "name": "mCerulean",
+      "aliases": [],
+      "reference": "10.1529/biophysj.104.055442"
+   },
+   {
+      "name": "mCerulean2",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0017896"
+   },
+   {
+      "name": "mCerulean2.D3",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0017896"
+   },
+   {
+      "name": "mCerulean2.N",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0017896"
+   },
+   {
+      "name": "mCerulean2.N(T65S)",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0017896"
+   },
+   {
+      "name": "mCerulean3",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0017896"
+   },
+   {
+      "name": "mCerulean.B",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0017896"
+   },
+   {
+      "name": "mCerulean.B2",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0017896"
+   },
+   {
+      "name": "mCerulean.B24",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0017896"
+   },
+   {
+      "name": "mcFP497",
+      "aliases": [],
+      "reference": "10.1007/s10126-007-9025-1"
+   },
+   {
+      "name": "mcFP503",
+      "aliases": [],
+      "reference": "10.1007/s10126-007-9025-1"
+   },
+   {
+      "name": "mcFP506",
+      "aliases": [],
+      "reference": "10.1007/s10126-007-9025-1"
+   },
+   {
+      "name": "mCherry",
+      "aliases": [],
+      "reference": "10.1038/nbt1037"
+   },
+   {
+      "name": "mCherry1.5",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0171257"
+   },
+   {
+      "name": "mCherry2",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0171257"
+   },
+   {
+      "name": "mCherry-XL",
+      "aliases": [],
+      "reference": "10.26434/chemrxiv-2022-v3t03"
+   },
+   {
+      "name": "mCitrine",
+      "aliases": [],
+      "reference": "10.1126/science.1068539"
+   },
+   {
+      "name": "mClavGR1",
+      "aliases": [],
+      "reference": "10.1016/j.jmb.2010.06.056"
+   },
+   {
+      "name": "mClavGR1.1",
+      "aliases": [],
+      "reference": "10.1016/j.jmb.2010.06.056"
+   },
+   {
+      "name": "mClavGR1.8",
+      "aliases": [],
+      "reference": "10.1016/j.jmb.2010.06.056"
+   },
+   {
+      "name": "mClavGR2",
+      "aliases": [],
+      "reference": "10.1016/j.jmb.2010.06.056"
+   },
+   {
+      "name": "mClover1.5",
+      "aliases": null,
+      "reference": "10.1038/srep20889"
+   },
+   {
+      "name": "mClover3",
+      "aliases": [],
+      "reference": "10.1038/srep20889"
+   },
+   {
+      "name": "mcRFP",
+      "aliases": [],
+      "reference": "10.1016/j.febslet.2004.06.043"
+   },
+   {
+      "name": "mCRISPRed",
+      "aliases": [],
+      "reference": "10.1016/j.chembiol.2020.02.004"
+   },
+   {
+      "name": "mCyRFP1",
+      "aliases": [],
+      "reference": "10.1038/nmeth.4046"
+   },
+   {
+      "name": "mECFP",
+      "aliases": [],
+      "reference": "10.1042/bj20060874"
+   },
+   {
+      "name": "meffCFP",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0002680"
+   },
+   {
+      "name": "meffCP",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0002680"
+   },
+   {
+      "name": "meffGFP",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0002680"
+   },
+   {
+      "name": "meffRFP",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0002680"
+   },
+   {
+      "name": "mEGFP",
+      "aliases": [],
+      "reference": "10.1126/science.1068539"
+   },
+   {
+      "name": "meleCFP",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0002680"
+   },
+   {
+      "name": "meleRFP",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0002680"
+   },
+   {
+      "name": "mEmerald",
+      "aliases": [],
+      "reference": "10.1016/s0091-679x(08)61946-9"
+   },
+   {
+      "name": "mEos2",
+      "aliases": [],
+      "reference": "10.1038/nmeth.1296"
+   },
+   {
+      "name": "mEos2-A69T",
+      "aliases": [],
+      "reference": "10.1021/jacs.5b09923"
+   },
+   {
+      "name": "mEos2-NA",
+      "aliases": null,
+      "reference": "10.1038/nmeth.2021"
+   },
+   {
+      "name": "mEos3.1",
+      "aliases": [],
+      "reference": "10.1038/nmeth.2021"
+   },
+   {
+      "name": "mEos3.2",
+      "aliases": [],
+      "reference": "10.1038/nmeth.2021"
+   },
+   {
+      "name": "mEos4a",
+      "aliases": [
+         "mEos3dG16"
+      ],
+      "reference": "10.1038/nmeth.3225"
+   },
+   {
+      "name": "mEos4b",
+      "aliases": [
+         "mEos3d.2G16"
+      ],
+      "reference": "10.1038/nmeth.3225"
+   },
+   {
+      "name": "mEosEM",
+      "aliases": [],
+      "reference": "10.1038/s41592-019-0613-6"
+   },
+   {
+      "name": "mEosFP",
+      "aliases": [
+         "mEos"
+      ],
+      "reference": "10.1073/pnas.0403668101"
+   },
+   {
+      "name": "mEosFP-F173S",
+      "aliases": [],
+      "reference": "10.1016/j.chembiol.2011.08.007"
+   },
+   {
+      "name": "mEosFP-M159A",
+      "aliases": [],
+      "reference": "10.1016/j.chembiol.2011.08.007"
+   },
+   {
+      "name": "meruFP",
+      "aliases": [],
+      "reference": "10.1093/molbev/msp194"
+   },
+   {
+      "name": "mEYFP",
+      "aliases": [],
+      "reference": "10.1126/science.1068539"
+   },
+   {
+      "name": "MfaG1",
+      "aliases": [],
+      "reference": "10.1016/j.cca.2004.07.002"
+   },
+   {
+      "name": "mGarnet",
+      "aliases": [],
+      "reference": "10.1038/srep18006"
+   },
+   {
+      "name": "mGarnet2",
+      "aliases": [],
+      "reference": "10.1039/c6cc09081h"
+   },
+   {
+      "name": "mGeos-C",
+      "aliases": [],
+      "reference": "10.1073/pnas.1113770109"
+   },
+   {
+      "name": "mGeos-E",
+      "aliases": [],
+      "reference": "10.1073/pnas.1113770109"
+   },
+   {
+      "name": "mGeos-F",
+      "aliases": [],
+      "reference": "10.1073/pnas.1113770109"
+   },
+   {
+      "name": "mGeos-L",
+      "aliases": [],
+      "reference": "10.1073/pnas.1113770109"
+   },
+   {
+      "name": "mGeos-M",
+      "aliases": [],
+      "reference": "10.1073/pnas.1113770109"
+   },
+   {
+      "name": "mGeos-S",
+      "aliases": [],
+      "reference": "10.1073/pnas.1113770109"
+   },
+   {
+      "name": "mGinger1",
+      "aliases": [],
+      "reference": "10.1073/pnas.1807449115"
+   },
+   {
+      "name": "mGinger2",
+      "aliases": [],
+      "reference": "10.1073/pnas.1807449115"
+   },
+   {
+      "name": "mGold",
+      "aliases": [],
+      "reference": "10.1126/sciadv.abb7438"
+   },
+   {
+      "name": "mGrape1",
+      "aliases": [],
+      "reference": "10.1016/j.chembiol.2009.10.009"
+   },
+   {
+      "name": "mGrape2",
+      "aliases": [],
+      "reference": "10.1016/j.chembiol.2009.10.009"
+   },
+   {
+      "name": "mGrape3",
+      "aliases": [],
+      "reference": "10.1016/j.chembiol.2009.10.009"
+   },
+   {
+      "name": "mGreenLantern",
+      "aliases": [
+         "mGL"
+      ],
+      "reference": "10.1073/pnas.2000942117"
+   },
+   {
+      "name": "mHoneydew",
+      "aliases": [],
+      "reference": "10.1038/nbt1037"
+   },
+   {
+      "name": "MiCy",
+      "aliases": [
+         "Midoriishi Cyan"
+      ],
+      "reference": "10.1042/bj20040321"
+   },
+   {
+      "name": "mIFP",
+      "aliases": [],
+      "reference": "10.1038/nmeth.3447"
+   },
+   {
+      "name": "miniSOG",
+      "aliases": [
+         "mini Singlet Oxygen Generator"
+      ],
+      "reference": "10.1371/journal.pbio.1001041"
+   },
+   {
+      "name": "miniSOG2",
+      "aliases": [],
+      "reference": "10.1016/j.chembiol.2016.12.010"
+   },
+   {
+      "name": "miniSOG Q103V",
+      "aliases": [],
+      "reference": "10.1039/c6cc03119f"
+   },
+   {
+      "name": "miRFP",
+      "aliases": [],
+      "reference": "10.1038/s41589-018-0004-9"
+   },
+   {
+      "name": "miRFP2",
+      "aliases": [],
+      "reference": "10.1101/2021.08.02.454744"
+   },
+   {
+      "name": "miRFP670",
+      "aliases": [],
+      "reference": "10.1038/ncomms12405"
+   },
+   {
+      "name": "miRFP670-2",
+      "aliases": [
+         "monomeric iRFP670-2"
+      ],
+      "reference": "10.1038/s41467-019-13897-6"
+   },
+   {
+      "name": "miRFP670nano",
+      "aliases": [],
+      "reference": "10.1038/s41467-018-08050-8"
+   },
+   {
+      "name": "miRFP670v1",
+      "aliases": [],
+      "reference": "10.1038/ncomms12405"
+   },
+   {
+      "name": "miRFP680",
+      "aliases": [
+         "monomeric iRFP680"
+      ],
+      "reference": "10.1038/s41467-019-13897-6"
+   },
+   {
+      "name": "miRFP682",
+      "aliases": [
+         "monomeric iRFP682"
+      ],
+      "reference": "10.1038/s41467-019-13897-6"
+   },
+   {
+      "name": "miRFP702",
+      "aliases": [
+         "monomeric iRFP702"
+      ],
+      "reference": "10.1038/s41467-019-13897-6"
+   },
+   {
+      "name": "miRFP703",
+      "aliases": [],
+      "reference": "10.1038/ncomms12405"
+   },
+   {
+      "name": "miRFP709",
+      "aliases": [],
+      "reference": "10.1038/ncomms12405"
+   },
+   {
+      "name": "miRFP713",
+      "aliases": [
+         "monomeric iRFP713"
+      ],
+      "reference": "10.1038/s41467-019-13897-6"
+   },
+   {
+      "name": "miRFP720",
+      "aliases": [],
+      "reference": "10.1038/s41589-018-0044-1"
+   },
+   {
+      "name": "mIrisFP",
+      "aliases": [],
+      "reference": "10.1038/nmeth.1477"
+   },
+   {
+      "name": "mKalama1",
+      "aliases": [],
+      "reference": "10.1021/bi700199g"
+   },
+   {
+      "name": "mKate",
+      "aliases": [],
+      "reference": "10.1038/nmeth1083"
+   },
+   {
+      "name": "mKate2",
+      "aliases": [],
+      "reference": "10.1042/bj20081949"
+   },
+   {
+      "name": "mKate2.5",
+      "aliases": [],
+      "reference": "10.1038/ncomms2208"
+   },
+   {
+      "name": "mKate M41G S158C",
+      "aliases": [],
+      "reference": "10.1016/j.chembiol.2009.10.009"
+   },
+   {
+      "name": "mKate S158A",
+      "aliases": [
+         "mLumin"
+      ],
+      "reference": "10.1074/jbc.m800599200"
+   },
+   {
+      "name": "mKate S158C",
+      "aliases": [],
+      "reference": "10.1016/j.chembiol.2009.10.009"
+   },
+   {
+      "name": "mKeima",
+      "aliases": [],
+      "reference": "10.1038/nbt1207"
+   },
+   {
+      "name": "mKelly1",
+      "aliases": [],
+      "reference": "10.1073/pnas.1807449115"
+   },
+   {
+      "name": "mKelly2",
+      "aliases": [],
+      "reference": "10.1073/pnas.1807449115"
+   },
+   {
+      "name": "mKG",
+      "aliases": [],
+      "reference": "10.4049/jimmunol.181.1.629"
+   },
+   {
+      "name": "mK-GO",
+      "aliases": [
+         "mKusabira Green Orange"
+      ],
+      "reference": "10.1091/mbc.e09-08-0722"
+   },
+   {
+      "name": "mKikGR",
+      "aliases": [
+         "monomeric Kikume Green-Red",
+         "mKikGR1"
+      ],
+      "reference": "10.1371/journal.pone.0003944"
+   },
+   {
+      "name": "mKillerOrange",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0145740"
+   },
+   {
+      "name": "mKO",
+      "aliases": [
+         "mKusabira-Orange",
+         "mKO1"
+      ],
+      "reference": "10.1042/bj20040321"
+   },
+   {
+      "name": "mKO2",
+      "aliases": [
+         "mKusabira-Orange2"
+      ],
+      "reference": "10.1016/j.cell.2007.12.033"
+   },
+   {
+      "name": "mKO&kappa;",
+      "aliases": [
+         "mKusabira-Orange-kappa"
+      ],
+      "reference": "10.1038/nmeth.1235"
+   },
+   {
+      "name": "mLumin",
+      "aliases": [],
+      "reference": "10.1016/j.bios.2009.06.008"
+   },
+   {
+      "name": "mMaple",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0051314"
+   },
+   {
+      "name": "mMaple2",
+      "aliases": [],
+      "reference": "10.1073/pnas.1406593111"
+   },
+   {
+      "name": "mMaple3",
+      "aliases": [],
+      "reference": "10.1073/pnas.1406593111"
+   },
+   {
+      "name": "mMaroon1",
+      "aliases": [],
+      "reference": "10.1038/nmeth.4045"
+   },
+   {
+      "name": "mmGFP",
+      "aliases": [],
+      "reference": "10.1016/j.febslet.2004.06.043"
+   },
+   {
+      "name": "mMiCy",
+      "aliases": [
+         "mMidori-ishi Cyan"
+      ],
+      "reference": "10.1042/bj20040321"
+   },
+   {
+      "name": "mmilCFP",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0002680"
+   },
+   {
+      "name": "mNectarine",
+      "aliases": [],
+      "reference": "10.1074/jbc.m109.019042"
+   },
+   {
+      "name": "mNeonGreen",
+      "aliases": [
+         "mNG"
+      ],
+      "reference": "10.1038/nmeth.2413"
+   },
+   {
+      "name": "mNeptune",
+      "aliases": [
+         "mNeptune1"
+      ],
+      "reference": "10.1016/j.chembiol.2009.10.009"
+   },
+   {
+      "name": "mNeptune2",
+      "aliases": [],
+      "reference": "10.1038/nmeth.2888"
+   },
+   {
+      "name": "mNeptune2.5",
+      "aliases": [],
+      "reference": "10.1038/nmeth.2888"
+   },
+   {
+      "name": "mNeptune681",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0148749"
+   },
+   {
+      "name": "mNeptune684",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0148749"
+   },
+   {
+      "name": "mOFP.T.12",
+      "aliases": null,
+      "reference": "10.1038/nbt1037"
+   },
+   {
+      "name": "mOFP.T.8",
+      "aliases": null,
+      "reference": "10.1038/nbt1037"
+   },
+   {
+      "name": "montFP",
+      "aliases": [],
+      "reference": "10.1093/molbev/msp194"
+   },
+   {
+      "name": "Montipora sp. #20",
+      "aliases": [
+         "meffCP-like"
+      ],
+      "reference": "10.1038/nbt1207"
+   },
+   {
+      "name": "Montipora sp. #20-9115",
+      "aliases": [],
+      "reference": "10.1038/nbt1207"
+   },
+   {
+      "name": "mOrange",
+      "aliases": [],
+      "reference": "10.1038/nbt1037"
+   },
+   {
+      "name": "mOrange2",
+      "aliases": [],
+      "reference": "10.1038/nmeth.1209"
+   },
+   {
+      "name": "moxBFP",
+      "aliases": [],
+      "reference": "10.1038/ncomms8670"
+   },
+   {
+      "name": "moxCerulean3",
+      "aliases": [],
+      "reference": "10.1038/ncomms8670"
+   },
+   {
+      "name": "moxDendra2",
+      "aliases": [],
+      "reference": "10.1039/c6cc09997a"
+   },
+   {
+      "name": "moxEos3.2",
+      "aliases": [],
+      "reference": "10.1039/c6cc09997a"
+   },
+   {
+      "name": "moxGFP",
+      "aliases": [],
+      "reference": "10.1038/ncomms8670"
+   },
+   {
+      "name": "moxMaple3",
+      "aliases": [],
+      "reference": "10.1038/s41598-018-32955-5"
+   },
+   {
+      "name": "moxNeonGreen",
+      "aliases": [],
+      "reference": "10.1038/ncomms8670"
+   },
+   {
+      "name": "moxVenus",
+      "aliases": [],
+      "reference": "10.1038/ncomms8670"
+   },
+   {
+      "name": "mPA-GFP",
+      "aliases": [],
+      "reference": "10.1126/science.1074952"
+   },
+   {
+      "name": "mPapaya",
+      "aliases": [
+         "mPapaya1"
+      ],
+      "reference": "10.1016/j.chembiol.2013.08.008"
+   },
+   {
+      "name": "mPapaya0.3",
+      "aliases": [],
+      "reference": "10.1016/j.chembiol.2013.08.008"
+   },
+   {
+      "name": "mPapaya0.6",
+      "aliases": [],
+      "reference": "10.1016/j.chembiol.2013.08.008"
+   },
+   {
+      "name": "mPapaya0.7",
+      "aliases": [],
+      "reference": "10.1016/j.chembiol.2013.08.008"
+   },
+   {
+      "name": "mPlum",
+      "aliases": [],
+      "reference": "10.1073/pnas.0407752101"
+   },
+   {
+      "name": "mPlum-E16P",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0052463"
+   },
+   {
+      "name": "mRaspberry",
+      "aliases": [],
+      "reference": "10.1073/pnas.0407752101"
+   },
+   {
+      "name": "mRed7",
+      "aliases": [],
+      "reference": "10.1038/nmeth.4074"
+   },
+   {
+      "name": "mRed7Q1",
+      "aliases": [],
+      "reference": "10.1038/nmeth.4074"
+   },
+   {
+      "name": "mRed7Q1S1",
+      "aliases": [],
+      "reference": "10.1038/nmeth.4074"
+   },
+   {
+      "name": "mRed7Q1S1BM",
+      "aliases": [],
+      "reference": "10.1038/nmeth.4074"
+   },
+   {
+      "name": "mRFP1",
+      "aliases": [
+         "mRFP"
+      ],
+      "reference": "10.1073/pnas.082243699"
+   },
+   {
+      "name": "mRFP1.1",
+      "aliases": [],
+      "reference": "10.1038/nbt1037"
+   },
+   {
+      "name": "mRFP1.2",
+      "aliases": [],
+      "reference": ""
+   },
+   {
+      "name": "mRFP1.3",
+      "aliases": [],
+      "reference": "10.1038/nbt1037"
+   },
+   {
+      "name": "mRFP1.4",
+      "aliases": [],
+      "reference": "10.1038/nbt1037"
+   },
+   {
+      "name": "mRFP1.5",
+      "aliases": null,
+      "reference": "10.1038/nbt1037"
+   },
+   {
+      "name": "mRFP1-Q66C",
+      "aliases": [],
+      "reference": "10.1038/nmeth901"
+   },
+   {
+      "name": "mRFP1-Q66S",
+      "aliases": [],
+      "reference": "10.1038/nmeth901"
+   },
+   {
+      "name": "mRFP1-Q66T",
+      "aliases": [],
+      "reference": "10.1038/nmeth901"
+   },
+   {
+      "name": "mRhubarb713",
+      "aliases": [],
+      "reference": "10.1038/s41598-019-52123-7"
+   },
+   {
+      "name": "mRhubarb719",
+      "aliases": [],
+      "reference": "10.1038/s41598-019-52123-7"
+   },
+   {
+      "name": "mRhubarb720",
+      "aliases": [],
+      "reference": "10.1038/s41598-019-52123-7"
+   },
+   {
+      "name": "mRojoA",
+      "aliases": [],
+      "reference": "10.1073/pnas.1013910107"
+   },
+   {
+      "name": "mRojoB",
+      "aliases": [],
+      "reference": "10.1073/pnas.1013910107"
+   },
+   {
+      "name": "mRouge",
+      "aliases": [],
+      "reference": "10.1073/pnas.1013910107"
+   },
+   {
+      "name": "mRtms5",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0041028"
+   },
+   {
+      "name": "mRuby",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0004391"
+   },
+   {
+      "name": "mRuby2",
+      "aliases": [],
+      "reference": "10.1038/nmeth.2171"
+   },
+   {
+      "name": "mRuby3",
+      "aliases": [],
+      "reference": "10.1038/srep20889"
+   },
+   {
+      "name": "mRubyFT",
+      "aliases": [
+         "Blue-to-red fluorescent timer"
+      ],
+      "reference": "10.3390/ijms23063208"
+   },
+   {
+      "name": "mScarlet",
+      "aliases": [],
+      "reference": "10.1038/nmeth.4074"
+   },
+   {
+      "name": "mScarlet-H",
+      "aliases": [],
+      "reference": "10.1038/nmeth.4074"
+   },
+   {
+      "name": "mScarlet-I",
+      "aliases": [],
+      "reference": "10.1038/nmeth.4074"
+   },
+   {
+      "name": "mStable",
+      "aliases": [],
+      "reference": "10.1021/acschembio.6b00579"
+   },
+   {
+      "name": "mStrawberry",
+      "aliases": [],
+      "reference": "10.1038/nbt1037"
+   },
+   {
+      "name": "mTagBFP2",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0028674"
+   },
+   {
+      "name": "mTangerine",
+      "aliases": [],
+      "reference": "10.1038/nbt1037"
+   },
+   {
+      "name": "mTFP*",
+      "aliases": [],
+      "reference": "10.1021/acscatal.9b02896"
+   },
+   {
+      "name": "mTFP0.3",
+      "aliases": [],
+      "reference": "10.1042/bj20060874"
+   },
+   {
+      "name": "mTFP0.4",
+      "aliases": [],
+      "reference": "10.1042/bj20060874"
+   },
+   {
+      "name": "mTFP0.5",
+      "aliases": [],
+      "reference": "10.1042/bj20060874"
+   },
+   {
+      "name": "mTFP0.6",
+      "aliases": [],
+      "reference": "10.1042/bj20060874"
+   },
+   {
+      "name": "mTFP0.7",
+      "aliases": [],
+      "reference": "10.1042/bj20060874"
+   },
+   {
+      "name": "mTFP0.8",
+      "aliases": [],
+      "reference": "10.1042/bj20060874"
+   },
+   {
+      "name": "mTFP0.9",
+      "aliases": [],
+      "reference": "10.1042/bj20060874"
+   },
+   {
+      "name": "mTFP1",
+      "aliases": [],
+      "reference": "10.1042/bj20060874"
+   },
+   {
+      "name": "mTFP1-Y67H",
+      "aliases": [],
+      "reference": "10.1186/1741-7007-6-13"
+   },
+   {
+      "name": "mTFP1-Y67W",
+      "aliases": [],
+      "reference": "10.1186/1741-7007-6-13"
+   },
+   {
+      "name": "mT-Sapphire",
+      "aliases": [],
+      "reference": "10.1038/nmeth.1207"
+   },
+   {
+      "name": "mTurquoise",
+      "aliases": [],
+      "reference": "10.1038/nmeth.1415"
+   },
+   {
+      "name": "mTurquoise-146G",
+      "aliases": null,
+      "reference": "10.1038/ncomms1738"
+   },
+   {
+      "name": "mTurquoise-146S",
+      "aliases": null,
+      "reference": "10.1038/ncomms1738"
+   },
+   {
+      "name": "mTurquoise2",
+      "aliases": [],
+      "reference": "10.1038/ncomms1738"
+   },
+   {
+      "name": "mTurquoise2-1710",
+      "aliases": [],
+      "reference": "10.1134/s1068162017010034"
+   },
+   {
+      "name": "mTurquoise2-G",
+      "aliases": [],
+      "reference": ""
+   },
+   {
+      "name": "mTurquoise-DR",
+      "aliases": null,
+      "reference": "10.1038/nmeth.1415"
+   },
+   {
+      "name": "mTurquoise-GL",
+      "aliases": null,
+      "reference": "10.1038/nmeth.1415"
+   },
+   {
+      "name": "mTurquoise-GV",
+      "aliases": null,
+      "reference": "10.1038/nmeth.1415"
+   },
+   {
+      "name": "mTurquoise-RA",
+      "aliases": null,
+      "reference": "10.1038/nmeth.1415"
+   },
+   {
+      "name": "muGFP",
+      "aliases": [
+         "monomeric ultra-stable GFP"
+      ],
+      "reference": "10.1038/s41598-017-18045-y"
+   },
+   {
+      "name": "mUkG",
+      "aliases": [
+         "mUmikinoko-Green",
+         "mUkG1"
+      ],
+      "reference": "10.1038/nmeth.1235"
+   },
+   {
+      "name": "mVenus",
+      "aliases": [
+         "mVenus JBC"
+      ],
+      "reference": "10.1021/bi0516273"
+   },
+   {
+      "name": "mVenus-Q69M",
+      "aliases": [
+         "mVenus ME"
+      ],
+      "reference": "10.1186/1754-1611-4-10"
+   },
+   {
+      "name": "mVermilion",
+      "aliases": [],
+      "reference": "10.1101/2021.01.21.427692"
+   },
+   {
+      "name": "mVFP",
+      "aliases": [],
+      "reference": "10.1111/j.1742-4658.2010.07618.x"
+   },
+   {
+      "name": "mVFP1",
+      "aliases": [],
+      "reference": "10.1111/j.1742-4658.2010.07618.x"
+   },
+   {
+      "name": "mWasabi",
+      "aliases": [],
+      "reference": "10.1186/1741-7007-6-13"
+   },
+   {
+      "name": "Neptune",
+      "aliases": [],
+      "reference": "10.1016/j.chembiol.2009.10.009"
+   },
+   {
+      "name": "NijiFP",
+      "aliases": [],
+      "reference": "10.1016/j.chembiol.2011.08.007"
+   },
+   {
+      "name": "NowGFP",
+      "aliases": [],
+      "reference": "10.1016/j.bpj.2015.06.018"
+   },
+   {
+      "name": "NpR3784g",
+      "aliases": [
+         "NpR3784 GAF Domain"
+      ],
+      "reference": "10.1039/c4pp00336e"
+   },
+   {
+      "name": "obeCFP",
+      "aliases": [],
+      "reference": "10.1039/c1pp05068k"
+   },
+   {
+      "name": "obeGFP",
+      "aliases": [],
+      "reference": "10.1039/c1pp05068k"
+   },
+   {
+      "name": "obeYFP",
+      "aliases": [],
+      "reference": "10.1039/c1pp05068k"
+   },
+   {
+      "name": "OFP",
+      "aliases": [],
+      "reference": "10.1007/s10126-007-9005-5"
+   },
+   {
+      "name": "OFPxm",
+      "aliases": [],
+      "reference": "10.1007/s10126-006-6006-8"
+   },
+   {
+      "name": "O-GECO1",
+      "aliases": null,
+      "reference": ""
+   },
+   {
+      "name": "oxBFP",
+      "aliases": [],
+      "reference": "10.1038/ncomms8670"
+   },
+   {
+      "name": "oxCerulean",
+      "aliases": [],
+      "reference": "10.1038/ncomms8670"
+   },
+   {
+      "name": "oxGFP",
+      "aliases": [],
+      "reference": "10.1038/ncomms8670"
+   },
+   {
+      "name": "oxVenus",
+      "aliases": [],
+      "reference": "10.1038/ncomms8670"
+   },
+   {
+      "name": "P11",
+      "aliases": [],
+      "reference": "10.1073/pnas.91.26.12501"
+   },
+   {
+      "name": "P4",
+      "aliases": [
+         "Y66H"
+      ],
+      "reference": "10.1073/pnas.91.26.12501"
+   },
+   {
+      "name": "P4-1",
+      "aliases": [],
+      "reference": "10.1016/s0960-9822(02)00450-5"
+   },
+   {
+      "name": "P4-3E",
+      "aliases": [],
+      "reference": "10.1016/s0091-679x(08)61946-9"
+   },
+   {
+      "name": "P9",
+      "aliases": [],
+      "reference": "10.1073/pnas.91.26.12501"
+   },
+   {
+      "name": "Padron",
+      "aliases": [],
+      "reference": "10.1038/nbt.1493"
+   },
+   {
+      "name": "Padron0.9",
+      "aliases": [],
+      "reference": "10.1074/jbc.m109.086314"
+   },
+   {
+      "name": "Padron2",
+      "aliases": [],
+      "reference": "10.1021/acsnano.0c08207"
+   },
+   {
+      "name": "Padron(star)",
+      "aliases": [
+         "Padron*"
+      ],
+      "reference": "10.1038/nbt.1493"
+   },
+   {
+      "name": "PA-GFP",
+      "aliases": [],
+      "reference": "10.1126/science.1074952"
+   },
+   {
+      "name": "PAmCherry1",
+      "aliases": [
+         "PA-mCherry",
+         "PAmCherry"
+      ],
+      "reference": "10.1038/nmeth.1298"
+   },
+   {
+      "name": "PAmCherry2",
+      "aliases": [],
+      "reference": "10.1038/nmeth.1298"
+   },
+   {
+      "name": "PAmCherry3",
+      "aliases": [],
+      "reference": "10.1038/nmeth.1298"
+   },
+   {
+      "name": "PAmKate",
+      "aliases": [],
+      "reference": "10.1016/j.bpj.2011.07.049"
+   },
+   {
+      "name": "PATagRFP",
+      "aliases": [],
+      "reference": "10.1021/ja100906g"
+   },
+   {
+      "name": "PATagRFP1297",
+      "aliases": [],
+      "reference": "10.1021/ja100906g"
+   },
+   {
+      "name": "PATagRFP1314",
+      "aliases": [],
+      "reference": "10.1021/ja100906g"
+   },
+   {
+      "name": "pcDronpa",
+      "aliases": [],
+      "reference": "10.1021/nn4060144"
+   },
+   {
+      "name": "pcDronpa2",
+      "aliases": [],
+      "reference": "10.1021/nn4060144"
+   },
+   {
+      "name": "pcStar",
+      "aliases": [],
+      "reference": "10.1021/acs.nanolett.9b02855"
+   },
+   {
+      "name": "PdaC1",
+      "aliases": [],
+      "reference": "10.1016/j.cca.2004.07.002"
+   },
+   {
+      "name": "pdae1GFP",
+      "aliases": [],
+      "reference": "10.1093/molbev/msh079"
+   },
+   {
+      "name": "PDM1-4",
+      "aliases": [],
+      "reference": "10.1039/b9pp00124g"
+   },
+   {
+      "name": "phiLOV2.1",
+      "aliases": [],
+      "reference": "10.1101/2021.08.02.454744"
+   },
+   {
+      "name": "phiLOV3",
+      "aliases": [],
+      "reference": "10.1002/pro.4261"
+   },
+   {
+      "name": "phiYFP",
+      "aliases": [],
+      "reference": "10.1093/molbev/msh079"
+   },
+   {
+      "name": "phiYFPv",
+      "aliases": [],
+      "reference": "10.1107/s0907444913004034"
+   },
+   {
+      "name": "pHluorin2",
+      "aliases": [],
+      "reference": "10.4236/abb.2011.23021"
+   },
+   {
+      "name": "pHluorin, ecliptic",
+      "aliases": [
+         "ecliptic pHluorin",
+         "pHluorin"
+      ],
+      "reference": "10.1038/28190"
+   },
+   {
+      "name": "pHluorin, ratiometric",
+      "aliases": [
+         "ratiometric pHluorin; pHluorin"
+      ],
+      "reference": "10.1038/28190"
+   },
+   {
+      "name": "pH-tdGFP",
+      "aliases": [],
+      "reference": "10.1038/srep28166"
+   },
+   {
+      "name": "pHuji",
+      "aliases": [],
+      "reference": "10.1083/jcb.201404107"
+   },
+   {
+      "name": "PlamGFP",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0002680"
+   },
+   {
+      "name": "plobRFP",
+      "aliases": [],
+      "reference": "10.1007/s10126-019-09931-9"
+   },
+   {
+      "name": "pmeaGFP1",
+      "aliases": [],
+      "reference": "10.1093/molbev/msh079"
+   },
+   {
+      "name": "pmeaGFP2",
+      "aliases": [],
+      "reference": "10.1093/molbev/msh079"
+   },
+   {
+      "name": "pmimGFP1",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0011517"
+   },
+   {
+      "name": "pmimGFP2",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0011517"
+   },
+   {
+      "name": "Pp2 FbFP",
+      "aliases": [
+         "FMN-binding fluorescent protein"
+      ],
+      "reference": "10.1039/c3pp50414j"
+   },
+   {
+      "name": "Pp2FbFP L30M",
+      "aliases": [],
+      "reference": "10.1039/c4pp00338a"
+   },
+   {
+      "name": "ppluGFP1",
+      "aliases": [],
+      "reference": "10.1093/molbev/msh079"
+   },
+   {
+      "name": "ppluGFP2",
+      "aliases": [
+         "copGFP"
+      ],
+      "reference": "10.1093/molbev/msh079"
+   },
+   {
+      "name": "pporGFP",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0002680"
+   },
+   {
+      "name": "pporRFP",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0002680"
+   },
+   {
+      "name": "psamCFP",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0002680"
+   },
+   {
+      "name": "PS-CFP",
+      "aliases": [],
+      "reference": "10.1038/nbt1025"
+   },
+   {
+      "name": "PS-CFP2",
+      "aliases": [],
+      "reference": ""
+   },
+   {
+      "name": "PSmOrange",
+      "aliases": [],
+      "reference": "10.1038/nmeth.1664"
+   },
+   {
+      "name": "PSmOrange2",
+      "aliases": [],
+      "reference": "10.1021/ja3034137"
+   },
+   {
+      "name": "psupFP",
+      "aliases": [],
+      "reference": "10.1093/molbev/msp194"
+   },
+   {
+      "name": "ptilGFP",
+      "aliases": [],
+      "reference": "10.1073/pnas.062552299"
+   },
+   {
+      "name": "Q80R",
+      "aliases": null,
+      "reference": ""
+   },
+   {
+      "name": "R3-2+PCB",
+      "aliases": [],
+      "reference": "10.1038/nmeth.3935"
+   },
+   {
+      "name": "RCaMP",
+      "aliases": [],
+      "reference": "10.3389/fnmol.2013.00002"
+   },
+   {
+      "name": "RDSmCherry0.1",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0171257"
+   },
+   {
+      "name": "RDSmCherry0.2",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0171257"
+   },
+   {
+      "name": "RDSmCherry0.5",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0171257"
+   },
+   {
+      "name": "RDSmCherry1",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0171257"
+   },
+   {
+      "name": "REX-GECO1",
+      "aliases": null,
+      "reference": ""
+   },
+   {
+      "name": "R-FlincA",
+      "aliases": [],
+      "reference": "10.1038/s41598-018-20251-1"
+   },
+   {
+      "name": "rfloGFP",
+      "aliases": [],
+      "reference": "10.1073/pnas.062552299"
+   },
+   {
+      "name": "rfloGFP2",
+      "aliases": [],
+      "reference": "10.1007/s10126-007-9072-7"
+   },
+   {
+      "name": "rfloRFP",
+      "aliases": [],
+      "reference": "10.1073/pnas.062552299"
+   },
+   {
+      "name": "RFP611",
+      "aliases": [],
+      "reference": "10.1016/j.chembiol.2008.02.008"
+   },
+   {
+      "name": "RFP618",
+      "aliases": [],
+      "reference": "10.1016/j.chembiol.2008.02.008"
+   },
+   {
+      "name": "RFP630",
+      "aliases": [],
+      "reference": "10.1016/j.chembiol.2008.02.008"
+   },
+   {
+      "name": "RFP637",
+      "aliases": [],
+      "reference": "10.1016/j.chembiol.2008.02.008"
+   },
+   {
+      "name": "RFP639",
+      "aliases": [],
+      "reference": "10.1016/j.chembiol.2008.02.008"
+   },
+   {
+      "name": "R-GECO1",
+      "aliases": null,
+      "reference": ""
+   },
+   {
+      "name": "R-GECO1.2",
+      "aliases": null,
+      "reference": ""
+   },
+   {
+      "name": "roGFP1",
+      "aliases": [],
+      "reference": "10.1074/jbc.m312846200"
+   },
+   {
+      "name": "roGFP1-R1",
+      "aliases": [],
+      "reference": "10.1074/jbc.m312846200"
+   },
+   {
+      "name": "roGFP1-R8",
+      "aliases": [],
+      "reference": "10.1074/jbc.m312846200"
+   },
+   {
+      "name": "roGFP2",
+      "aliases": [],
+      "reference": "10.1074/jbc.m312846200"
+   },
+   {
+      "name": "RpBphP1",
+      "aliases": [],
+      "reference": "10.1016/j.str.2012.06.002"
+   },
+   {
+      "name": "RpBphP2",
+      "aliases": [],
+      "reference": ""
+   },
+   {
+      "name": "RpBphP6",
+      "aliases": [],
+      "reference": "10.1007/s11120-008-9323-0"
+   },
+   {
+      "name": "rrenGFP",
+      "aliases": [],
+      "reference": "10.1007/s10126-007-9072-7"
+   },
+   {
+      "name": "rrGFP",
+      "aliases": [
+         "rrenGFP",
+         "rGFP",
+         "hrGFP"
+      ],
+      "reference": "10.1016/j.jmb.2007.09.078"
+   },
+   {
+      "name": "RRvT",
+      "aliases": [],
+      "reference": "10.1002/cbic.201600492"
+   },
+   {
+      "name": "rsCherry",
+      "aliases": [],
+      "reference": "10.1529/biophysj.108.130146"
+   },
+   {
+      "name": "rsCherryRev",
+      "aliases": [],
+      "reference": "10.1529/biophysj.108.130146"
+   },
+   {
+      "name": "rsCherryRev1.4",
+      "aliases": [],
+      "reference": "10.1002/cphc.201301016"
+   },
+   {
+      "name": "rsEGFP",
+      "aliases": [],
+      "reference": "10.1038/nature10497"
+   },
+   {
+      "name": "rsEGFP2",
+      "aliases": [],
+      "reference": "10.7554/elife.00248"
+   },
+   {
+      "name": "rsFastLime",
+      "aliases": [],
+      "reference": "10.1042/bj20061401"
+   },
+   {
+      "name": "rsFolder",
+      "aliases": [],
+      "reference": "10.1038/srep18459"
+   },
+   {
+      "name": "rsFolder2",
+      "aliases": [],
+      "reference": "10.1038/srep18459"
+   },
+   {
+      "name": "rsFusionRed1",
+      "aliases": [],
+      "reference": "10.1038/s41592-018-0052-9"
+   },
+   {
+      "name": "rsFusionRed2",
+      "aliases": [],
+      "reference": "10.1038/s41592-018-0052-9"
+   },
+   {
+      "name": "rsFusionRed3",
+      "aliases": [],
+      "reference": "10.1038/s41592-018-0052-9"
+   },
+   {
+      "name": "RSGFP1",
+      "aliases": null,
+      "reference": "10.1038/nbt0295-151"
+   },
+   {
+      "name": "RSGFP2",
+      "aliases": null,
+      "reference": "10.1038/nbt0295-151"
+   },
+   {
+      "name": "RSGFP3",
+      "aliases": null,
+      "reference": "10.1038/nbt0295-151"
+   },
+   {
+      "name": "RSGFP4",
+      "aliases": null,
+      "reference": "10.1038/nbt0295-151"
+   },
+   {
+      "name": "RSGFP6",
+      "aliases": null,
+      "reference": "10.1038/nbt0295-151"
+   },
+   {
+      "name": "RSGFP7",
+      "aliases": null,
+      "reference": "10.1038/nbt0295-151"
+   },
+   {
+      "name": "rsGreen1",
+      "aliases": [],
+      "reference": "10.1021/acsnano.5b04129"
+   },
+   {
+      "name": "rsKame",
+      "aliases": [],
+      "reference": "10.1073/pnas.1320044111"
+   },
+   {
+      "name": "rsTagRFP",
+      "aliases": [],
+      "reference": "10.1016/j.jmb.2012.01.044"
+   },
+   {
+      "name": "Rtms5",
+      "aliases": [],
+      "reference": "10.1016/s0969-2126(03)00028-5"
+   },
+   {
+      "name": "SAASoti",
+      "aliases": [],
+      "reference": "10.1142/s1793545815500285"
+   },
+   {
+      "name": "Sandercyanin",
+      "aliases": [],
+      "reference": "10.1073/pnas.1525622113"
+   },
+   {
+      "name": "Sapphire",
+      "aliases": [
+         "H9-40"
+      ],
+      "reference": "10.1016/s0091-679x(08)61946-9"
+   },
+   {
+      "name": "sarcGFP",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0002680"
+   },
+   {
+      "name": "SBFP1",
+      "aliases": [],
+      "reference": "10.1021/bi0622874"
+   },
+   {
+      "name": "SBFP2",
+      "aliases": [],
+      "reference": "10.1021/bi0622874"
+   },
+   {
+      "name": "SCFP1",
+      "aliases": [],
+      "reference": "10.1021/bi0516273"
+   },
+   {
+      "name": "SCFP2",
+      "aliases": [],
+      "reference": "10.1021/bi0516273"
+   },
+   {
+      "name": "SCFP3A",
+      "aliases": [],
+      "reference": "10.1021/bi0516273"
+   },
+   {
+      "name": "SCFP3B",
+      "aliases": [],
+      "reference": "10.1021/bi0516273"
+   },
+   {
+      "name": "scleFP1",
+      "aliases": [],
+      "reference": "10.1093/molbev/msp194"
+   },
+   {
+      "name": "scleFP2",
+      "aliases": [],
+      "reference": "10.1093/molbev/msp194"
+   },
+   {
+      "name": "scubGFP1",
+      "aliases": [],
+      "reference": "10.1073/pnas.062552299"
+   },
+   {
+      "name": "scubGFP2",
+      "aliases": [],
+      "reference": "10.1073/pnas.062552299"
+   },
+   {
+      "name": "scubRFP",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0002680"
+   },
+   {
+      "name": "secBFP2",
+      "aliases": [],
+      "reference": "10.1016/j.bbrc.2012.12.028"
+   },
+   {
+      "name": "SEYFP",
+      "aliases": [
+         "super-EYFP"
+      ],
+      "reference": "10.1038/nbt0102-87"
+   },
+   {
+      "name": "sfCherry",
+      "aliases": [],
+      "reference": "10.1107/s0907444913024608"
+   },
+   {
+      "name": "sfCherry2",
+      "aliases": [],
+      "reference": "10.1038/s41467-017-00494-8"
+   },
+   {
+      "name": "sfCherry3C",
+      "aliases": [],
+      "reference": "10.1038/s42003-019-0589-x"
+   },
+   {
+      "name": "sg11",
+      "aliases": [],
+      "reference": "10.1038/nsb0597-361"
+   },
+   {
+      "name": "sg12",
+      "aliases": [],
+      "reference": "10.1038/nsb0597-361"
+   },
+   {
+      "name": "sg25",
+      "aliases": [],
+      "reference": "10.1038/nsb0597-361"
+   },
+   {
+      "name": "sg42",
+      "aliases": [],
+      "reference": "10.1038/nsb0597-361"
+   },
+   {
+      "name": "sg50",
+      "aliases": [],
+      "reference": "10.1038/nsb0597-361"
+   },
+   {
+      "name": "SGFP1",
+      "aliases": [],
+      "reference": "10.1021/bi0622874"
+   },
+   {
+      "name": "SGFP2",
+      "aliases": [],
+      "reference": "10.1021/bi0622874"
+   },
+   {
+      "name": "SGFP2(206A)",
+      "aliases": [],
+      "reference": "10.1021/bi0622874"
+   },
+   {
+      "name": "SGFP2(E222Q)",
+      "aliases": [],
+      "reference": "10.1021/bi0622874"
+   },
+   {
+      "name": "SGFP2(T65G)",
+      "aliases": [],
+      "reference": "10.1021/bi0622874"
+   },
+   {
+      "name": "SH3",
+      "aliases": [],
+      "reference": "10.1021/acs.jafc.9b05473"
+   },
+   {
+      "name": "ShadowG",
+      "aliases": [],
+      "reference": "10.1038/srep15334"
+   },
+   {
+      "name": "SHardonnay",
+      "aliases": [],
+      "reference": "10.1021/ja400098b"
+   },
+   {
+      "name": "shBFP",
+      "aliases": [],
+      "reference": "10.1093/protein/gzw041"
+   },
+   {
+      "name": "shBFP-N158S/L173I",
+      "aliases": [],
+      "reference": "10.1093/protein/gzw041"
+   },
+   {
+      "name": "ShG24",
+      "aliases": [],
+      "reference": "10.1007/s10126-006-6006-8"
+   },
+   {
+      "name": "ShyRFP",
+      "aliases": [],
+      "reference": "10.1039/c4ra10107c"
+   },
+   {
+      "name": "Sirius",
+      "aliases": [
+         "UMFP-4"
+      ],
+      "reference": "10.1038/nmeth.1317"
+   },
+   {
+      "name": "SiriusGFP",
+      "aliases": [],
+      "reference": "10.1016/j.jneumeth.2018.12.008"
+   },
+   {
+      "name": "Skylan-NS",
+      "aliases": [
+         "sky lantern for nonlinear structured illumination"
+      ],
+      "reference": "10.1073/pnas.1611038113"
+   },
+   {
+      "name": "Skylan-S",
+      "aliases": [
+         "Sky lantern for SOFI"
+      ],
+      "reference": "10.1021/nn5064387"
+   },
+   {
+      "name": "smURFP",
+      "aliases": [
+         "small Ultra Red Fluorescent Protein"
+      ],
+      "reference": "10.1038/nmeth.3935"
+   },
+   {
+      "name": "SNIFP",
+      "aliases": [
+         "STED Near Infrared Fluorescent Protein",
+         "w4.35"
+      ],
+      "reference": "10.1038/s41467-018-07246-2"
+   },
+   {
+      "name": "SOPP",
+      "aliases": [
+         "singlet oxygen photosensitizing protein",
+         "Q103L miniSOG"
+      ],
+      "reference": "10.1021/ja511940j"
+   },
+   {
+      "name": "SOPP2",
+      "aliases": [],
+      "reference": "10.1021/acs.jpcb.7b07831"
+   },
+   {
+      "name": "SOPP3",
+      "aliases": [],
+      "reference": "10.1021/acs.jpcb.7b07831"
+   },
+   {
+      "name": "spGFP 11",
+      "aliases": [
+         "GFP11 M3"
+      ],
+      "reference": "10.1038/nbt1044"
+   },
+   {
+      "name": "spGFP1-10",
+      "aliases": [
+         "splitGFP 1-10",
+         "spGFP1-10",
+         "spGFP1-10 OPT"
+      ],
+      "reference": "10.1038/nbt1044"
+   },
+   {
+      "name": "spisCP",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0002680"
+   },
+   {
+      "name": "SPOON",
+      "aliases": [
+         "SPOntaneous switching ON fluorescent protein"
+      ],
+      "reference": "10.1021/acschembio.8b00200"
+   },
+   {
+      "name": "sREACh",
+      "aliases": [
+         "super-REACh",
+         "improved non-radiative YFP"
+      ],
+      "reference": "10.1007/s11068-008-9024-9"
+   },
+   {
+      "name": "StayGold",
+      "aliases": [],
+      "reference": "10.1038/s41587-022-01278-2"
+   },
+   {
+      "name": "stylCP",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0002680"
+   },
+   {
+      "name": "stylGFP",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0002680"
+   },
+   {
+      "name": "Superfolder BFP",
+      "aliases": [
+         "sfBFP"
+      ],
+      "reference": "10.1038/nbt1172"
+   },
+   {
+      "name": "Superfolder CFP",
+      "aliases": [
+         "sfCFP"
+      ],
+      "reference": "10.1038/nbt1172"
+   },
+   {
+      "name": "Superfolder GFP",
+      "aliases": [
+         "sfGFP"
+      ],
+      "reference": "10.1038/nbt1172"
+   },
+   {
+      "name": "Superfolder mTurquoise2",
+      "aliases": [
+         "sfTq2"
+      ],
+      "reference": "10.1111/mmi.14206"
+   },
+   {
+      "name": "Superfolder mTurquoise2 ox",
+      "aliases": [
+         "sfTq2ox"
+      ],
+      "reference": "10.1111/mmi.14206"
+   },
+   {
+      "name": "Superfolder YFP",
+      "aliases": [
+         "sfYFP"
+      ],
+      "reference": "10.1038/nbt1172"
+   },
+   {
+      "name": "SuperNova2",
+      "aliases": [
+         "SN2"
+      ],
+      "reference": "10.3390/ijms21228800"
+   },
+   {
+      "name": "SuperNova Green",
+      "aliases": [
+         "V44A-mKillerOrange"
+      ],
+      "reference": "10.1186/s12915-018-0514-7"
+   },
+   {
+      "name": "SuperNova Red",
+      "aliases": [
+         "monomeric KillerRed",
+         "SuperNova"
+      ],
+      "reference": "10.1038/srep02629"
+   },
+   {
+      "name": "super-TagRFP",
+      "aliases": [
+         "stagRFP"
+      ],
+      "reference": "10.1038/s41467-020-15687-x"
+   },
+   {
+      "name": "SYFP2",
+      "aliases": [
+         "mVenus NB"
+      ],
+      "reference": "10.1021/bi0516273"
+   },
+   {
+      "name": "sympFP",
+      "aliases": [],
+      "reference": "10.1093/molbev/msp194"
+   },
+   {
+      "name": "TagBFP",
+      "aliases": [
+         "mTagBFP"
+      ],
+      "reference": "10.1016/j.chembiol.2008.08.006"
+   },
+   {
+      "name": "TagCFP",
+      "aliases": [],
+      "reference": "10.1007/s10126-001-0081-7"
+   },
+   {
+      "name": "TagGFP",
+      "aliases": [],
+      "reference": "10.1016/j.chembiol.2008.08.006"
+   },
+   {
+      "name": "TagGFP2",
+      "aliases": [],
+      "reference": "10.1016/j.chembiol.2008.08.006"
+   },
+   {
+      "name": "TagRFP",
+      "aliases": [],
+      "reference": "10.1038/nmeth1062"
+   },
+   {
+      "name": "TagRFP657",
+      "aliases": [],
+      "reference": "10.1016/j.bpj.2010.04.025"
+   },
+   {
+      "name": "TagRFP658",
+      "aliases": [],
+      "reference": "10.1101/2021.08.02.454744"
+   },
+   {
+      "name": "TagRFP675",
+      "aliases": [],
+      "reference": "10.1038/srep01847"
+   },
+   {
+      "name": "TagRFP-T",
+      "aliases": [],
+      "reference": "10.1038/nmeth.1209"
+   },
+   {
+      "name": "TagYFP",
+      "aliases": [],
+      "reference": ""
+   },
+   {
+      "name": "tdimer2(12)",
+      "aliases": [
+         "TDimer2"
+      ],
+      "reference": "10.1073/pnas.082243699"
+   },
+   {
+      "name": "tdKatushka2",
+      "aliases": [],
+      "reference": "10.1042/bj20081949"
+   },
+   {
+      "name": "td-RFP611",
+      "aliases": [],
+      "reference": "10.1016/j.chembiol.2008.02.008"
+   },
+   {
+      "name": "td-RFP639",
+      "aliases": [],
+      "reference": "10.1016/j.chembiol.2008.02.008"
+   },
+   {
+      "name": "TDsmURFP",
+      "aliases": [
+         "Tandem Dimer smURFP",
+         "Tandem Dimer small Ultra Red Fluorescent Protein"
+      ],
+      "reference": "10.1038/nmeth.3935"
+   },
+   {
+      "name": "tdTomato",
+      "aliases": [],
+      "reference": "10.1038/nbt1037"
+   },
+   {
+      "name": "TeAPCα",
+      "aliases": [
+         "Alpha-allophycocyanin"
+      ],
+      "reference": "10.1038/nmeth.3935"
+   },
+   {
+      "name": "tKeima",
+      "aliases": [],
+      "reference": "10.1038/nbt1207"
+   },
+   {
+      "name": "Topaz",
+      "aliases": [],
+      "reference": "10.1016/s0091-679x(08)61946-9"
+   },
+   {
+      "name": "tPapaya0.01",
+      "aliases": [],
+      "reference": "10.1016/j.chembiol.2013.08.008"
+   },
+   {
+      "name": "TripartiteGFP",
+      "aliases": [],
+      "reference": "10.1038/srep02854"
+   },
+   {
+      "name": "Trp-less GFP",
+      "aliases": [],
+      "reference": "10.1093/nar/gks786"
+   },
+   {
+      "name": "T-Sapphire",
+      "aliases": [],
+      "reference": "10.1186/1472-6750-3-5"
+   },
+   {
+      "name": "TurboGFP",
+      "aliases": [],
+      "reference": "10.1038/sj.embor.7400787"
+   },
+   {
+      "name": "TurboGFP-V197L",
+      "aliases": [],
+      "reference": "10.1038/sj.embor.7400787"
+   },
+   {
+      "name": "TurboRFP",
+      "aliases": [],
+      "reference": "10.1038/nmeth1062"
+   },
+   {
+      "name": "Turquoise-GL",
+      "aliases": [],
+      "reference": "10.1038/nmeth.1415"
+   },
+   {
+      "name": "Ultramarine",
+      "aliases": [],
+      "reference": "10.1371/journal.pone.0041028"
+   },
+   {
+      "name": "UnaG",
+      "aliases": [],
+      "reference": "10.1016/j.cell.2013.05.038"
+   },
+   {
+      "name": "usGFP",
+      "aliases": [
+         "ultra-stable GFP"
+      ],
+      "reference": "10.1002/bit.25451"
+   },
+   {
+      "name": "V127T SAASoti",
+      "aliases": [],
+      "reference": "10.1038/s41598-018-33250-z"
+   },
+   {
+      "name": "Venus",
+      "aliases": [
+         "SEYFP-F46L"
+      ],
+      "reference": "10.1038/nbt0102-87"
+   },
+   {
+      "name": "VFP",
+      "aliases": [],
+      "reference": "10.1111/j.1742-4658.2010.07618.x"
+   },
+   {
+      "name": "vsfGFP-0",
+      "aliases": [
+         "dimeric vsfGFP",
+         "vGFP-0"
+      ],
+      "reference": "10.1002/anie.201506686"
+   },
+   {
+      "name": "vsfGFP-9",
+      "aliases": [
+         "vGFP",
+         "vsfGFP"
+      ],
+      "reference": "10.1002/anie.201506686"
+   },
+   {
+      "name": "vsGFP",
+      "aliases": [
+         "very‐stable GFP"
+      ],
+      "reference": "10.1002/bit.25451"
+   },
+   {
+      "name": "W1C",
+      "aliases": [],
+      "reference": "10.1146/annurev.biochem.67.1.509"
+   },
+   {
+      "name": "W2",
+      "aliases": [],
+      "reference": "10.1016/s0960-9822(02)00450-5"
+   },
+   {
+      "name": "W7",
+      "aliases": [],
+      "reference": "10.1016/s0960-9822(02)00450-5"
+   },
+   {
+      "name": "WasCFP",
+      "aliases": [
+         "W in anionic state CFP"
+      ],
+      "reference": "10.1038/srep00608"
+   },
+   {
+      "name": "Wi-Phy",
+      "aliases": [
+         "Wisconsin infrared phytofluor"
+      ],
+      "reference": "10.1074/jbc.m111.295121"
+   },
+   {
+      "name": "Xpa",
+      "aliases": [
+         "h41pkve6"
+      ],
+      "reference": "10.1016/j.molcel.2015.02.007"
+   },
+   {
+      "name": "yEGFP",
+      "aliases": [
+         "yEGFP2",
+         "yEGFP3",
+         "yeast-enhanced GFP"
+      ],
+      "reference": "10.1099/00221287-143-2-303"
+   },
+   {
+      "name": "YFP3",
+      "aliases": [],
+      "reference": "10.1038/nbt1066"
+   },
+   {
+      "name": "YGFPdp",
+      "aliases": [
+         "CP_YGFP \"dual-peak\""
+      ],
+      "reference": "10.1371/journal.pone.0181186"
+   },
+   {
+      "name": "YGFPuv",
+      "aliases": [
+         "CP_YGFPuv"
+      ],
+      "reference": "10.1371/journal.pone.0181186"
+   },
+   {
+      "name": "YPet",
+      "aliases": [],
+      "reference": "10.1038/nbt1066"
+   },
+   {
+      "name": "zFP538",
+      "aliases": [
+         "zYFP538",
+         "zoanYFP"
+      ],
+      "reference": "10.1038/13657"
+   },
+   {
+      "name": "zGFP",
+      "aliases": [],
+      "reference": "10.1007/s12033-008-9131-y"
+   },
+   {
+      "name": "zoan2RFP",
+      "aliases": [
+         "zoanRFP"
+      ],
+      "reference": "10.1073/pnas.062552299"
+   },
+   {
+      "name": "zRFP",
+      "aliases": [],
+      "reference": "10.1007/s12033-008-9131-y"
+   },
+   {
+      "name": "ZsGreen",
+      "aliases": [
+         "zFP506",
+         "zoanGFP"
+      ],
+      "reference": "10.1038/13657"
+   },
+   {
+      "name": "ZsYellow1",
+      "aliases": [],
+      "reference": ""
+   }
+]
