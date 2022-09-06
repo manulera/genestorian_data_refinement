@@ -5,17 +5,10 @@ import json
 
 
 class TestBuildNltkTags(unittest.TestCase):
-    def test_all_input_files_are_present(self):
-        parent_dir = '../../Lab_strains'
-        path_list_strain_file = []
-        # path_list_allele_json_file = []
-        for dir in os.listdir(parent_dir):
-            path = os.path.join(parent_dir, dir)
-            files_strain = os.path.join(path + '/strains.tsv')
-            path_list_strain_file.append(files_strain)
-        for strain_file_path in path_list_strain_file:
-            self.assertTrue(os.path.isfile(strain_file_path),
-                            'The file strains.tsv not found')
+    def test_input_file_is_present(self):
+
+        self.assertTrue(os.path.isfile('./test_strains.tsv'),
+                        'The file strains.tsv not found')
 
     def test_build_nltk_tag(self):
         try:
