@@ -1,15 +1,15 @@
 [
    {
+      "name": "dummyase1-sad11other",
+      "pattern": [ [ "other", [ "dummy" ] ], [ "GENE", [ "ase1" ] ], [ "-", [ "-" ] ], [ "GENE", [ "sad1" ] ], [ "other", [ "1other" ] ] ]
+   },
+   {
       "name": "ase1i130a,a143p",
       "pattern": [ [ "GENE", [ "ase1" ] ], [ "other", [ "i130a,a143p" ] ] ]
    },
    {
-      "name": "pkj41x",
-      "pattern": [ [ "other", [ "pkj41x" ] ] ]
-   },
-   {
-      "name": "ase1-dummy-kanrother",
-      "pattern": [ [ "GENE", [ "ase1" ] ], [ "-", [ "-" ] ], [ "other", [ "dummy" ] ], [ "-", [ "-" ] ], [ "MARKER", [ "kanr" ] ], [ "other", [ "other" ] ] ]
+      "name": "a-1pase1-ase1",
+      "pattern": [ [ "other", [ "a" ] ], [ "-", [ "-" ] ], [ "other", [ "1p" ] ], [ "GENE", [ "ase1" ] ], [ "-", [ "-" ] ], [ "GENE", [ "ase1" ] ] ]
    },
    {
       "name": "mph1δ::kanr",
@@ -20,7 +20,7 @@
       "pattern": [ [ "GENE", [ "ase1" ] ], [ "other", [ "(i130a,a143pap)" ] ] ]
    },
    {
-      "name": "a-1pase1-ase1",
-      "pattern": [ [ "other", [ "a" ] ], [ "-", [ "-" ] ], [ "other", [ "1p" ] ], [ "GENE", [ "ase1" ] ], [ "-", [ "-" ] ], [ "GENE", [ "ase1" ] ] ]
+      "name": "pkj41x",
+      "pattern": [ [ "other", [ "pkj41x" ] ] ]
    }
 ]

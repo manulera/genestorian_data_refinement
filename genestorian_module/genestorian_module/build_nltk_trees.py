@@ -198,12 +198,14 @@ def build_tree(custom_tag_parser, pseudo_grammar, grammar_rule_dict, allele):
 
 
 def main(input_file):
-    grammar_dict_txt()
+    # makes sure to create a grammar.txt file
+    grammar_dict_txt(os.path.join(ROOT_DIR, "grammar", "pseudo_grammar.json"))
     with open(os.path.join(ROOT_DIR, "grammar", "grammar.txt"), 'r') as fp:
         grammar = fp.read().strip()
     with open(os.path.join(ROOT_DIR, "grammar", "pseudo_grammar.json")) as f:
         pseudo_grammar = json.load(f)
-    grammar_rule_dict = build_grammar_rules()
+    grammar_rule_dict = build_grammar_rules(
+        os.path.join(ROOT_DIR, "grammar", "pseudo_grammar.json"))
     allele_tags_dict = build_tag_from_pattern(input_file)
 
     grammar = f""" {grammar}"""
