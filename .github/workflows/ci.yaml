@@ -29,7 +29,7 @@ jobs:
             cd genestorian_module/test 
             python -m unittest
           
- # Update docker image when committing to prod branch if tests pass
+ # Update docker image when committing to master branch if tests pass
   push_to_registry:
     name: Push Docker image to Docker Hub
     runs-on: ubuntu-latest
