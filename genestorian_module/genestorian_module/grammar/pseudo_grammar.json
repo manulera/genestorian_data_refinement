@@ -5,8 +5,8 @@
          "^(delta|δ|del)$"
       ]
    },
-   "dummy_matching_GENE_DELTION": {
-      "pattern": "<GENE><->?<other>?<->?<MARKER>",
+   "dummy_matching_PROMOTER_GENE": {
+      "pattern": "<other><GENE><-><GENE>",
       "other_regex": [
          "^(dummy)$"
       ]
