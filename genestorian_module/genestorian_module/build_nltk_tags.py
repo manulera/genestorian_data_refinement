@@ -4,12 +4,13 @@ import re
 import json
 import sys
 import os
+ROOT_DIR = os.path.realpath(os.path.join(os.path.dirname(__file__)))
 
 
 def build_separators_dict():
     '''
     Builds a dictionary where separators are the key from the text file 
-    
+
         Parameter: 
             None
         Return:
@@ -29,7 +30,7 @@ def add_other_tag(pattern_list):
 
         Parameter:
             pattern_list(list): list of tokenized allele components along with untokenised components
-        
+
         Return"
             pattern_list(list): list of tokenized allele components
      '''
@@ -42,17 +43,17 @@ def add_other_tag(pattern_list):
 
 def tokenize_allele_features(feature_dict, pattern_list, feature_name, matches):
     '''Tokenizes the components of alleles according to the match found in feature dict
-    
+
         Parameters:
             feature_dict(dict): dictionary of features to be matched
             pattern_list(list): list of features of an allele (tokenised and untokenised)
             feature_name(str): name of the feature or tokens
             matches(list): list of matches of an allele found in feature_dict
-            
+
         Returns:
             out_list(list): list of patterns(tokenized and untokenized)
     '''
-    out_list = list() 
+    out_list = list()
     for i in range(len(pattern_list)):
         if type(pattern_list[i]) != str:
             out_list.append(pattern_list[i])
@@ -82,11 +83,11 @@ def tokenize_allele_features(feature_dict, pattern_list, feature_name, matches):
 def build_nltk_tag(allele_names, toml_files):
     '''
     Builds a dict of allele names and a list of tokens of the allele features 
-    
+
         Parameter:
             allele_names(list): list of alleles
             toml_files(list): list of toml files in allele  directory
-            
+
         Return:
             output_list: list of dictionary of allele names and pattern '''
     output_list = []
@@ -130,7 +131,7 @@ def prettier_json(input_dict):
         output_str = output_str[:match.start()] + \
             new_string + output_str[match.end():]
         match = re.search(r'\[(?=\n)(\n|(?![{}]).)+\]', output_str)
-    return output_str
+    return output_str 
 
 
 def main(input_file):
@@ -138,6 +139,8 @@ def main(input_file):
     allele_names = set({})
     for strain in strain_list:
         allele_names.update(strain['alleles'])
+    # runs get_fpbase_data.py
+    os.system('python ../../get_data/get_fpbase_data.py')
     toml_files = [
         '../../data/alleles.toml',
         '../../data/gene_IDs.toml',

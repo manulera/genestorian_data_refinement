@@ -1,8 +1,9 @@
-# %%
+
 import toml
 import requests
 import json
-
+import os
+ROOT_DIR = os.path.realpath(os.path.join(os.path.dirname(__file__), '..'))
 
 query = """{
   allProteins(name_Icontains:""){
@@ -55,7 +56,5 @@ for tag in tags_list:
     if len(toml_dict['tag'][tag['name']]['reference']) == 0:
         toml_dict['tag'][tag['name']].pop('reference')
 
-with open('../allele_components/tags_fpbase.toml', "w") as toml_file:
+with open(os.path.join(ROOT_DIR, 'allele_components', 'tags_fpbase.toml'), "w") as toml_file:
     toml.dump(toml_dict, toml_file)
-
-# %%

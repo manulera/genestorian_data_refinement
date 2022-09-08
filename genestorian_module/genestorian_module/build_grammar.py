@@ -1,10 +1,11 @@
-
 import json
+import os
+ROOT_DIR = os.path.realpath(os.path.join(os.path.dirname(__file__)))
 
 
 def grammar_pattern_dict():
     ''''''
-    with open('./grammar/pseudo_grammar.json') as f:
+    with open(os.path.join(ROOT_DIR, "grammar", "pseudo_grammar.json")) as f:
         pseudo_grammar = json.load(f)
     # grammar_pattern_dict{pattern : [grammar rule name]}
     grammar_pattern_dict = {}
@@ -33,7 +34,7 @@ def build_grammar_rules():
 
 def grammar_dict_txt():
     grammar_dict = build_grammar_rules()
-    with open('grammar/grammar.txt', 'w') as out:
+    with open(os.path.join(ROOT_DIR, "grammar", "grammar.txt"), 'w') as out:
         for grammar in grammar_dict:
             out.write(grammar + " : {" + grammar_dict[grammar] + "}\n")
 

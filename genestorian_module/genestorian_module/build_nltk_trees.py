@@ -8,6 +8,7 @@ from genestorian_module.build_grammar import (build_grammar_rules,
 import json
 import os
 import sys
+ROOT_DIR = os.path.realpath(os.path.join(os.path.dirname(__file__)))
 
 
 def build_tag_from_pattern(in_file):
@@ -198,9 +199,9 @@ def build_tree(custom_tag_parser, pseudo_grammar, grammar_rule_dict, allele):
 
 def main(input_file):
     grammar_dict_txt()
-    with open('./grammar/grammar.txt', 'r') as fp:
+    with open(os.path.join(ROOT_DIR, "grammar", "grammar.txt"), 'r') as fp:
         grammar = fp.read().strip()
-    with open('./grammar/pseudo_grammar.json') as f:
+    with open(os.path.join(ROOT_DIR, "grammar", "pseudo_grammar.json")) as f:
         pseudo_grammar = json.load(f)
     grammar_rule_dict = build_grammar_rules()
     allele_tags_dict = build_tag_from_pattern(input_file)
