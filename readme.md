@@ -28,6 +28,16 @@ You can add the virtual environment that you created to the jupyter kernel by ru
 ```
 poetry run python -m ipykernel install --user
 ```
+### Working with Docker
+
+To build from the dockerfile available in the repo:
+```
+$ docker build -t genestorian .
+$ docker run --name  genestorian_c -d genestorian:latest sleep inifinity 
+$ docker exec -it genestorian_c /bin/sh
+
+```
+To stop the docker: `$ docker stop genestorian_c`
 
 ## Getting the data
 
@@ -69,7 +79,7 @@ It has 5 columns:
  
 ### Other features
 The folder `alleles_components` contains a bunch of toml files. Each toml file corresponds to one feature type.
-`markers.toml`, `promoters.toml`, `tags.tom`, `sequence_features.tom` contains common markers, promoters, tags and sequence  features used in S Pombe labs. The format of the toml file is as:
+`markers.toml`, `promoters.toml`, `tags.toml`, `sequence_features.toml` contains common markers, promoters, tags and sequence  features used in S Pombe labs. The format of the toml file is:
 
 ```toml
 [feature_type.<name of the feature>]
@@ -102,8 +112,8 @@ This script retrieves the data from fb_base graphql API(https://www.fpbase.org/g
 
 ## Running the Pipeline
 
-The goal of this pipeline is to be able to extract the alleles from genotype, identify the patterns followed by the alleles and structure the data in a way that could be migrated to a database.
-At present, the pipeline extracts alleles from the genotype to a list. Then it identifies different features of alleles and tokenizes the features. The input must be a tsv file, typically named `strains.tsv` with column names 'strain_id' and 'genotype' which contain strain id and genotype of a strain. Later, these tokenized allele features are parsed using nltk and custom regex to identify the patterns such as Gene deletion, allele substitution etc.
+The goal of this pipeline is to extract the alleles from genotype, identify the patterns followed by the alleles and structure the data in a way that it could be migrated to a database.
+At present, the pipeline extracts alleles from the genotype to a list. It identifies different features of alleles to  tokenize and tag the features.The tagged tokens are then parsed by NLTK RegexParser using the rules defined by us. The output of the parser is a tree with identified patterns as subtrees. The input of the pipeline must be a tsv file, typically named `strains.tsv` with column names 'strain_id' and 'genotype' which contain strain id and genotype of a strain. 
 
 ```tsv
 strain_id	 genotype
@@ -129,7 +139,7 @@ read_file.to_csv('strains.tsv', sep='\t', index=False)
 
 ### Build nltk tags
 
-We are using nltk library to process tha data. Before using the nltk library, it's important to have data structured in a format which can be input to nltk APIs.
+We are using nltk library to process tha data. Before using the nltk library, it's important to have data structured in a format which can be input to nltk parser.
 
 The script `build_nltk_tags` in `genestorian_module` takes `strains.tsv` as an input and creates a file named `alleles_pattern_nltk.json` in the same directory of `strains.tsv`. To run this script:
 
@@ -237,9 +247,9 @@ laco 1
 
 ### Grammar for NLTK Regex Chunk Parser
 
-We use NLTK Regex chunk Parser to parse the allele names. The grammar is the set of chunk rules defined to parse the allele names. For the data that we work with is much more complicated compared to the text usually parsed using nltk. Hence we have a pseudo grammar defined which is used to first, build the chunk rules and later in the process, is used to further parse the chunked patterns.
+We use NLTK Regex chunk Parser to parse the allele names. The grammar is the set of chunk rules defined to parse the allele names. Because the data that we work with is much more complicated compared to the text usually parsed using nltk. Hence we have defined a pseudo grammar which is first, used to build the chunk rules and later in the process, it is used to further parse the chunked patterns.
 
-To build your own grammar: you need a json file which contains a dictionary where keys are the rule name and value is another dictionary with keys - pattern and other regex as in the example below. other_regex is the regex which should match to the value of other tag in the pattern in order to correctly identify the pattern.
+To build your own grammar: you need a json file which contains a dictionary where the keys are the rule name and value of the key is an other dictionary. In the other dictionary keys are pattern and other regex demonstrated in the example below. other_regex is the regex which should match to the value of other tag in the pattern to correctly identify the pattern.
 
 ```
 {
@@ -276,7 +286,7 @@ This creates a `grammar.txt` file in `genestorian_module/genestorian_module/gram
 ```
 
 ### Identify patterns using NLTK RegexChunker
-We use NLTK Regex Chunker along with custom regex to identify patterns in allele names. The RegexChunk Parser first identifies the patterns in the `grammar.txt` then builds a tree. We later use the other_regex in pseudo_grammar to match to the value of the 'other' token in pattern tree to validate the tree. If the value is matched then the pattern identified by the chunker is carried forward otherwise the identified pattern tree is discarded. In some cases, only a part of the 'other' token value is matched, in such such cases the value is split and only the matched part is added to the tree, remaining part is added to outside the identified pattern tree.
+We use NLTK Regex Chunker along with the regex defined in pseudo_grammar to identify patterns in allele names. The RegexChunk Parser first identifies the patterns in the `grammar.txt` then builds a tree. Then the other_regex in pseudo_grammar is matched to the value of the 'other' token in the subtree(the identified pattern tree in the tree) to validate the tree. If the value of other tag is matched then only the pattern identified by the chunker is labelled otherwise the identified pattern tree is discarded. In some cases, only a part of the 'other' token value is matched, in such cases the value is split and only the matched part is added to the tree, remaining part is added to outside the identified pattern tree.
 
 To identify patterns in your alleles run `python build_nltk_trees.py  /path/to/alleles_pattern_nltk.json`
 in `genestorian_module/genestorian_module/`. This creates a file `nltk_trees.json` in the same dictory as that of `alleles_pattern_nltk.json`. The file contains a dictionary in which keys are the allele names and value is the tree 
