@@ -1,4 +1,4 @@
-# %%
+
 from ntpath import join
 import re
 from nltk.tree import Tree, ParentedTree
@@ -164,19 +164,38 @@ def delete_unmatched_tree(ptree):
     return ptree
 
 
-def build_tree(custom_tag_parser, pseudo_grammar, grammar_rule_dict, allele):
+def build_tag_from_tree(tree):
     '''
-        Returns a tree which matches to the rule in peudo grammar
+    Builds tag which can be input to the NLTK  RegexParser
+
+        Parameter:
+            tree(NLTK Tree): tree built by build_tree
+        Return:
+            Tag(Tree) : NLTK Regex Parser input  
+    '''
+    tag = []
+    for i in range(len(tree)):
+        value = []
+        for j in range(len(tree[i])):
+            value.append(tree[i][j])
+        tag.append(Tree(tree[i].label(), value))
+    return tag
+
+
+def build_tree(grammar, allele, grammar_rule_dict, pseudo_grammar):
+    '''Returns a tree which matches to the rule in peudo grammar
 
         Parameters:
-            custom_tag_parser(nltk parser):
-            pseudo_grammar(dict): psuedo grammar dict
+            grammar(str): a rule to match 
             grammar_rule_dict: grammar_dict{concatnated_chunk_rule_name : pattern followed by the chunk}
-            allele(tokenised text) : tokenised allele name
+            allele(Tree) : tagged allele features
+            pseudo_grammar(dict): psuedo grammar dict
 
         Return:
-            tree(nltk tree): tree with the matching patterns
-     '''
+            tree(nltk tree): tree with the matching pattern
+    '''
+    grammar = f""" {grammar}"""
+    custom_tag_parser = RegexpParser(grammar)
     tree = custom_tag_parser.parse(allele)
     tree = ParentedTree.convert(tree)
     for s in tree.subtrees(lambda tree: tree.height() == 3):
@@ -197,23 +216,81 @@ def build_tree(custom_tag_parser, pseudo_grammar, grammar_rule_dict, allele):
     return tree
 
 
+def recursive_build_tree(allele, grammars, counter,  grammar_rule_dict, pseudo_grammar):
+    '''
+    Recursively calls the build_tree until all the grammar rules are applied on the tree
+        Parameters:
+            allele(Tree) : tagged allele features
+            grammars(str): a rules to match 
+            counter(int): total number of grammars left to match
+            grammar_rule_dict: grammar_dict{concatnated_chunk_rule_name : pattern followed by the chunk}
+            pseudo_grammar(dict): psuedo grammar dict
+
+        Return:
+            tree(nltk tree): tree with all the patterns matched
+        '''
+
+    if counter > 1:
+        grammar = grammars[counter-1].strip()
+        tree = build_tree(grammar, allele, grammar_rule_dict, pseudo_grammar)
+        tag = build_tag_from_tree(tree)
+        return recursive_build_tree(tag, grammars, counter-1,  grammar_rule_dict, pseudo_grammar)
+    else:
+        return build_tree(grammars[0], allele, grammar_rule_dict, pseudo_grammar)
+
+# def build_tree(custom_tag_parser, pseudo_grammar, grammar_rule_dict, allele):
+#     '''
+#         Returns a tree which matches to the rule in peudo grammar
+
+#         Parameters:
+#             custom_tag_parser(nltk parser):
+#             pseudo_grammar(dict): psuedo grammar dict
+#             grammar_rule_dict: grammar_dict{concatnated_chunk_rule_name : pattern followed by the chunk}
+#             allele(tokenised text) : tokenised allele name
+
+#         Return:
+#             tree(nltk tree): tree with the matching patterns
+#      '''
+#     tree = custom_tag_parser.parse(allele)
+#     tree = ParentedTree.convert(tree)
+#     for s in tree.subtrees(lambda tree: tree.height() == 3):
+#         rule_name = s.label()
+#         if rule_name in grammar_rule_dict:
+#             rule_name_s = rule_name.split('|')
+#             for other_tree in s.subtrees(filter=lambda x: x.label() == 'other'):
+#                 matched_rule, splitted_other_tree_value = check_pseudo_grammar(
+#                     rule_name_s, pseudo_grammar, other_tree)
+#                 if splitted_other_tree_value is not None:
+#                     tree = insert_to_tree(
+#                         tree, splitted_other_tree_value, other_tree)
+#                 if matched_rule is not None:
+#                     s.set_label(matched_rule)
+#                 else:
+#                     s.set_label('')
+#                     tree = delete_unmatched_tree(tree)
+#     return tree
+
+
 def main(input_file):
     # makes sure to create a grammar.txt file
     grammar_dict_txt(os.path.join(ROOT_DIR, "grammar", "pseudo_grammar.json"))
     with open(os.path.join(ROOT_DIR, "grammar", "grammar.txt"), 'r') as fp:
-        grammar = fp.read().strip()
+        grammars = fp.readlines()
     with open(os.path.join(ROOT_DIR, "grammar", "pseudo_grammar.json")) as f:
         pseudo_grammar = json.load(f)
     grammar_rule_dict = build_grammar_rules(
         os.path.join(ROOT_DIR, "grammar", "pseudo_grammar.json"))
     allele_tags_dict = build_tag_from_pattern(input_file)
 
-    grammar = f""" {grammar}"""
-    custom_tag_parser = RegexpParser(grammar)
+    # grammars = f""" {grammar}"""
+    # custom_tag_parser = RegexpParser(grammar)
     trees_dict = {}
     for allele in allele_tags_dict:
-        tree = build_tree(custom_tag_parser, pseudo_grammar,
-                          grammar_rule_dict, allele_tags_dict[allele])
+        # tree = build_tree(custom_tag_parser, pseudo_grammar,
+        #                   grammar_rule_dict, allele_tags_dict[allele])
+        counter = len(grammars)
+        tree = recursive_build_tree(
+            allele_tags_dict[allele], grammars, counter,  grammar_rule_dict, pseudo_grammar)
 
         flat_tree = tree._pformat_flat("", "()", False)
 
