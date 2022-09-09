@@ -2,8 +2,6 @@ FROM python:3.9
 
 WORKDIR /pipeline
 
-ENTRYPOINT ["tail", "-f", "/dev/null"]
-
 RUN pip install poetry 
 RUN pip install nltk
 RUN pip install toml
