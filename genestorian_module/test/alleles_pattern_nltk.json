@@ -26,5 +26,17 @@
    {
       "name": "ade6-m216",
       "pattern": [ [ "ALLELE", [ "ade6-m216" ] ] ]
+   },
+   {
+    "name": "pase1-ase1",
+    "pattern": [ [ "other", [ "p" ] ], [ "GENE", [ "ase1" ] ], [ "-", [ "-" ] ], [ "GENE", [ "ase1" ] ] ]
+   },
+   {
+    "name": "apase1-ase1",
+    "pattern": [ [ "other", [ "ap" ] ], [ "GENE", [ "ase1" ] ], [ "-", [ "-" ] ], [ "GENE", [ "ase1" ] ] ]
+   },
+   {
+    "name": "1pase1-ase1",
+    "pattern": [ [ "other", [ "1p" ] ], [ "GENE", [ "ase1" ] ], [ "-", [ "-" ] ], [ "GENE", [ "ase1" ] ] ]
    }
 ]
