@@ -97,6 +97,7 @@ def build_nltk_tag(allele_names, toml_files):
             'pattern': [allele_name],
         })
     for toml_file in toml_files:
+        print('finding features using', toml_file.split('/')[-1])
         feature_dict, feature_name = build_feature_dict(toml_file)
         for allele_dict in output_list:
             allele_dict['pattern'] = tokenize_allele_features(

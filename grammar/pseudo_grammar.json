@@ -11,12 +11,12 @@
   },
   {
     "feature_name": "dummy_matching_PROMOTER_GENE",
-    "pattern": "<other><GENE><-><GENE>",
+    "pattern": "<other><GENE>",
     "other_regex": ["^(dummy)$"]
   },
   {
     "feature_name": "PROMOTER_GENE",
-    "pattern": "<other><GENE><-><GENE>",
+    "pattern": "<other><GENE>",
     "other_regex": ["(?<![a-z])p$"]
   },
   {

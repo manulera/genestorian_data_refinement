@@ -1,7 +1,7 @@
 
 
 from copy import deepcopy
-from nltk.tree import ParentedTree, Tree
+from nltk.tree import ParentedTree
 import json
 import sys
 import re
@@ -41,8 +41,30 @@ def build_allele_name2tree_dict(in_file):
     return allele_name2tree_dict
 
 
-def apply_regex_rule(matched_subtree: ParentedTree, other_regex_patterns):
+def replace_parentedtree_node(tree: ParentedTree, target_node: ParentedTree, insert_nodes):
+    '''
+    Return a COPY of a ParentedTree with a given node replaced by several
+    nodes, passed in insert_nodes
+    '''
+    insertion_index = target_node.parent_index()
+    output_tree = tree.copy(deep=True)
+    output_tree.remove(target_node)
+    for ele in insert_nodes[::-1]:
+        output_tree.insert(insertion_index, ele)
+    return output_tree
 
+
+def check_regex_match(matched_subtree: ParentedTree, other_regex_patterns):
+    '''
+    Tests the regex in rule['other_regex'], three possible outcomes:
+        - 'no match': regex not satisfied, so keep going
+        - 'match': regex is matched, and matches the entire <other> tag
+        - 'split parent': regex is found, but does not match the entire <other>
+          tag, so the tag has to be splitted, second return value is a list with
+          a list of trees after the split, that should be used to replace the
+          matched_subtree
+    '''
+    # Get the trees from <other> tags.
     other_trees = [sstree for sstree in matched_subtree
                    if sstree.label() == 'other']
 
@@ -50,30 +72,26 @@ def apply_regex_rule(matched_subtree: ParentedTree, other_regex_patterns):
         other_tree: ParentedTree
         match: re.Match[str] = re.search(regex, other_tree[0])
         if not match:
-            break
+            return 'no match', []
         if match.group() != other_tree[0]:
-            start, end = match.span()
-            other_str = other_tree[0]
-            this_list = [other_str[:start],
-                         other_str[start:end], other_str[end:]]
-            this_list = list(filter(lambda x: x != '', this_list))
-            insertion_index = other_tree.parent_index()
-            matched_subtree.remove(other_tree)
-            for ele in this_list:
-                matched_subtree.insert(
-                    insertion_index, ParentedTree('other', [ele]))
-            print(matched_subtree[:])
-            # return apply_pseudo_grammar(ParentedTree('ROOT', tree_list), [rule])
-    # else:
-    #     # Return the match only if no break
-    #     return 1
+            # Partition is a string method like split, but preserves the delimiter. the `if substr` is to remove
+            # the empty string: e.g., 'helloworld'.partition('hello') -> ['','hello','world']
+            trees4replacement = [ParentedTree(
+                'other', [substr]) for substr in other_tree[0].partition(match.group()) if substr]
+            # return a list of trees to replace matched_subtree in the parent,
+            # and restart the rule application from the current rule again
+            output_tree = replace_parentedtree_node(
+                matched_subtree, other_tree, trees4replacement)
+            return 'split parent', [t.copy(deep=True) for t in output_tree]
+
+    # No errors in matching
+    return 'match', []
 
 
 def apply_pseudo_grammar(allele_tree: ParentedTree, pseudo_grammar):
-
     output_tree = allele_tree.copy(deep=True)
 
-    for rule in pseudo_grammar:
+    for rule_i, rule in enumerate(pseudo_grammar):
         parser: RegexpParser = rule['parser']
         updated_tree: ParentedTree = ParentedTree.convert(
             parser.parse(output_tree))
@@ -85,36 +103,20 @@ def apply_pseudo_grammar(allele_tree: ParentedTree, pseudo_grammar):
                 output_tree = updated_tree
                 continue
 
-            # we have to make sure that regex patterns are matched, and split if needed
+            # we have to make sure that regex patterns are matched,
+            # and splitted if needed
             for matched_subtree in updated_tree.subtrees(filter=lambda x: x.label() == rule['feature_name']):
-                apply_regex_rule(matched_subtree, other_regex_patterns)
+                outcome, matched_subtree_replacement = check_regex_match(
+                    matched_subtree, other_regex_patterns)
+                if outcome == 'match':
+                    output_tree = updated_tree
+                elif outcome == 'split parent':
+                    output_tree = replace_parentedtree_node(
+                        updated_tree, matched_subtree, matched_subtree_replacement)
+                    # We apply the same rule again (there might be further splits to do, or the same thing twice)
+                    return apply_pseudo_grammar(output_tree, pseudo_grammar[rule_i:])
 
-            # # We store the index of the tags that correspond to <other> elements
-            # other_tag_indexes = [tag_i for tag_i, tag in enumerate(updated_tree[0])
-            #                      if tag.label() == 'other']
-            # # We check for the <other> rules
-            # for regex, tag_i in zip(other_regex_patterns, other_tag_indexes):
-            #     tag = updated_tree[0][tag_i]
-            #     match: re.Match[str] = re.search(regex, tag[0])
-            #     if not match:
-            #         break
-            #     if match.group() != tag[0]:
-            #         start, end = match.span()
-            #         other_str = tag[0]
-            #         this_list = [other_str[:start],
-            #                      other_str[start:end], other_str[end:]]
-            #         this_list = list(filter(lambda x: x != '', this_list))
-            #         new_trees = [ParentedTree('other', [ele]) for ele in this_list]
-            #         tree_list = updated_tree[0][:tag_i] + \
-            #             new_trees + updated_tree[0][tag_i+1:]
-            #         print(allele_tree)
-            #         print(ParentedTree('ROOT', tree_list))
-            #         return apply_pseudo_grammar(ParentedTree('ROOT', tree_list), [rule])
-            # else:
-            #     # Return the match only if no break
-            #     return updated_tree
-
-    return allele_tree
+    return output_tree
 
 
 def main(input_file, pseudo_grammar_file, output_file):
