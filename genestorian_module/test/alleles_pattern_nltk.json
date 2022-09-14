@@ -4,6 +4,10 @@
       "pattern": [ [ "GENE", [ "mug2" ] ], [ "other", [ "9" ] ], [ "-", [ "::" ] ], [ "MARKER", [ "kanmx6" ] ] ]
    },
    {
+    "name": "mug2d::kanmx6",
+    "pattern": [ [ "GENE", [ "mug2" ] ], [ "other", [ "d" ] ], [ "-", [ "::" ] ], [ "MARKER", [ "kanmx6" ] ] ]
+   },
+   {
       "name": "his7+::laci-gfp",
       "pattern": [ [ "GENE", [ "his7" ] ], [ "other", [ "+" ] ], [ "-", [ "::" ] ], [ "other", [ "laci" ] ], [ "-", [ "-" ] ], [ "TAG", [ "gfp" ] ] ]
    },
