@@ -274,8 +274,9 @@ To build your own grammar: you need a json file which contains a dictionary wher
 }
 ```
 
-Save this dict in `genestorian_module/genestorian_module/grammar/pseudo_grammar.json`. Then, call `python build_grammar.py` in the genestorian_module.
-`~/genestorian_data_refinement/genestorian_module/genestorian_module$ python build_grammar.py`
+Save this dict, e.g. in `grammar/pseudo_grammar.json`.
+
+Then, call `python genestorian_module/genestorian_module/build_grammar.py grammar/pseudo_grammar.json grammar/grammar.txt` on that file, and specify an output text file (in this case `grammar/grammar.txt`).
 
 This creates a `grammar.txt` file in `genestorian_module/genestorian_module/grammar` directory. Text file from above example would look like:
 

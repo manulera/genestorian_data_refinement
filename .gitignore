@@ -14,3 +14,4 @@
 /Lab_strains/**/*.json
 
 /allele_components/tags_fpbase.toml
+/grammar/*.txt

@@ -1,46 +1,49 @@
 import json
-import os
-ROOT_DIR = os.path.realpath(os.path.join(os.path.dirname(__file__)))
+import sys
+from nltk.chunk import RegexpParser
 
 
-def grammar_pattern_dict(input_file):
-    ''''''
+def build_pattern2allele_features_dict(pseudo_grammar):
+    pattern2allele_features_dict = dict()
+    for allele_feature in pseudo_grammar:
+        rule = pseudo_grammar[allele_feature]
+        if rule['pattern'] in pattern2allele_features_dict:
+            pattern2allele_features_dict[rule['pattern']].append(
+                allele_feature)
+        else:
+            pattern2allele_features_dict[rule['pattern']] = [allele_feature]
+    return pattern2allele_features_dict
+
+
+def create_chunker_list(pattern2allele_features_dict) -> list[RegexpParser]:
+    '''
+    Build a list in which each element is a chunker generated from one of the rules
+    '''
+    out = list()
+    for pattern, allele_features in pattern2allele_features_dict.items():
+        out.append(RegexpParser(
+            '|'.join(allele_features) + ' : {' + pattern + '}\n',
+            root_label='ROOT'),)
+    return out
+
+# The `main` function is not necessary, but it can be nice to print that grammar.txt
+# to double check
+
+
+def main(input_file, output_file):
+
     with open(input_file) as f:
         pseudo_grammar = json.load(f)
-    # grammar_pattern_dict{pattern : [grammar rule name]}
-    grammar_pattern_dict = {}
-    for grammar in pseudo_grammar:
-        grammar_dict = pseudo_grammar[grammar]
-        if grammar_dict['pattern'] in grammar_pattern_dict:
-            grammar_pattern_dict[grammar_dict['pattern']].append(grammar)
-        else:
-            grammar_pattern_dict[grammar_dict['pattern']] = [grammar]
-    return grammar_pattern_dict
 
+    pattern2allele_features_dict = build_pattern2allele_features_dict(
+        pseudo_grammar)
 
-def build_grammar_rules(input_file):
-    ''''''
-    # grammar_dict{concatnated_chunk_rule_name : chunk_pattern}
-    grammar_dict = {}
-    grammar_rules = grammar_pattern_dict(input_file)
-    for pattern_regex in grammar_rules:
-        chunk_name = grammar_rules[pattern_regex][0]
-        if len(grammar_rules[pattern_regex]) > 1:
-            for i in range(len(grammar_rules[pattern_regex])-1):
-                chunk_name += '|' + grammar_rules[pattern_regex][i+1]
-        grammar_dict[chunk_name] = pattern_regex
-    return grammar_dict
-
-
-def grammar_dict_txt(input_file):
-    grammar_dict = build_grammar_rules(input_file)
-    output_file_name = 'grammar.txt'
-    output_dir = os.path.dirname(input_file)
-    output_file_path = os.path.join(output_dir, output_file_name)
-    with open(output_file_path, 'w') as out:
-        for grammar in grammar_dict:
-            out.write(grammar + " : {" + grammar_dict[grammar] + "}\n")
+    with open(output_file, 'w') as out:
+        for pattern, allele_features in pattern2allele_features_dict.items():
+            out.write('|'.join(allele_features) + ' : {' + pattern + '}\n')
 
 
 if __name__ == "__main__":
-    grammar_dict_txt(os.path.join(ROOT_DIR, "grammar", "pseudo_grammar.json"))
+    input_file = sys.argv[1]
+    output_file = sys.argv[2]
+    main(input_file, output_file)
