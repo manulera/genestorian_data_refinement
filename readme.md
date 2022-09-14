@@ -76,7 +76,7 @@ It has 5 columns:
 3. Allele name (if we are lucky we find it in the `genotype` column in `data/strains.tsv`)
 4. Description (some info about the allele sequence). For now we won't use it.
 5. Expression (expression level in the experiment. In general reflects a change in the promoter.). For now we won't use it.
- 
+
 ### Other features
 The folder `alleles_components` contains a bunch of toml files. Each toml file corresponds to one feature type.
 `markers.toml`, `promoters.toml`, `tags.toml`, `sequence_features.toml` contains common markers, promoters, tags and sequence  features used in S Pombe labs. The format of the toml file is:
@@ -105,7 +105,7 @@ synonyms = [ "wtGFP", "GFP", "gfp10", "Green Fluorescent Protein",]
 You can generate the file `allele_components/tags_fpbase.toml`, which contains many of the known fluorescent protein tags in the above format from fp_base(https://www.fpbase.org/). To do this go to the folder `get_data` and run:
 
 ```bash
-python get_fpbase_data.py
+python get_fpbase_data.py ../allele_components/tags_fpbase.toml
 ```
 
 This script retrieves the data from fb_base graphql API(https://www.fpbase.org/graphql/).

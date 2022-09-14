@@ -116,7 +116,7 @@ def prettier_json(input_dict):
     '''
     Formats json file to make it more readable
 
-        Parameter: 
+        Parameter:
             input_dict(dict): dictionary of alleles
 
         Returns:
@@ -131,7 +131,7 @@ def prettier_json(input_dict):
         output_str = output_str[:match.start()] + \
             new_string + output_str[match.end():]
         match = re.search(r'\[(?=\n)(\n|(?![{}]).)+\]', output_str)
-    return output_str 
+    return output_str
 
 
 def main(input_file):
@@ -139,8 +139,6 @@ def main(input_file):
     allele_names = set({})
     for strain in strain_list:
         allele_names.update(strain['alleles'])
-    # runs get_fpbase_data.py
-    os.system('python ../../get_data/get_fpbase_data.py')
     toml_files = [
         '../../data/alleles.toml',
         '../../data/gene_IDs.toml',
