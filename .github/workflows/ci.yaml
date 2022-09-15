@@ -21,7 +21,7 @@ jobs:
       # Before running the test you have to download the tags!
       - name: Run tests
         run: |
-            python get_fpbase_data.py ../allele_components/tags_fpbase.toml
+            python get_data/get_fpbase_data.py allele_components/tags_fpbase.toml
             cd genestorian_module/test
             python -m unittest
 
