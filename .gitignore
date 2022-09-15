@@ -14,3 +14,10 @@
 /Lab_strains/**/*.json
 
 /allele_components/tags_fpbase.toml
+/grammar/*.txt
+
+/genestorian_module/test/alleles_pattern*
+/genestorian_module/test/common_pattern.json
+/genestorian_module/test/common_pattern_count.txt
+/genestorian_module/test/most_common_other_tag.txt
+/genestorian_module/test/nltk_trees_dataset/nltk_trees.json

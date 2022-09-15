@@ -1,0 +1,35 @@
+[
+    {
+      "feature_name": "GENE_DELETION",
+      "pattern": "<GENE><->?<other><->?<MARKER>",
+      "other_regex": ["^(delta|δ|del|d)$"]
+    },
+    {
+      "feature_name": "GENE_DELETION",
+      "pattern": "<GENE><->?<MARKER>",
+      "other_regex": []
+    },
+    {
+      "feature_name": "dummy_matching_PROMOTER_GENE",
+      "pattern": "<other><GENE>",
+      "other_regex": ["^(dummy)$"]
+    },
+    {
+      "feature_name": "PROMOTER_GENE",
+      "pattern": "<other><GENE>",
+      "other_regex": ["(?<![a-z])p$"]
+    },
+    {
+      "feature_name": "ALLELE_AA_SUBSTITUTION",
+      "pattern": "<GENE><->?<other>",
+      "other_regex": [
+        "\\(?([gpavlimcfywhkrqnedst]\\d+[gpavlimcfywhkrqnedst]\\,?)+\\,?\\)?"
+      ]
+    },
+    {
+      "feature_name": "C_Terminal_Tagging",
+      "pattern": "<GENE><->?<TAG><->?<MARKER>",
+      "other_regex": []
+    }
+  ]
+  

@@ -1,12 +1,21 @@
-from genestorian_module.replace_feature import build_feature_dict
-from genestorian_module.third_version_pipeline import build_strain_list
+from genestorian_module.replace_feature import (build_feature_dict,
+                                                build_strain_list)
 import re
 import json
 import sys
 import os
+ROOT_DIR = os.path.realpath(os.path.join(os.path.dirname(__file__)))
 
 
 def build_separators_dict():
+    '''
+    Builds a dictionary where separators are the key from the text file 
+
+        Parameter: 
+            None
+        Return:
+            separators_dict(dict): dict of separators 
+    '''
     separators_dict = {}
     with open("../../allele_components/separators.txt", "r") as fp:
         for x in fp:
@@ -16,6 +25,15 @@ def build_separators_dict():
 
 
 def add_other_tag(pattern_list):
+    '''
+    Tokenizes the unidentified remaining elements of the alleles as other
+
+        Parameter:
+            pattern_list(list): list of tokenized allele components along with untokenised components
+
+        Return"
+            pattern_list(list): list of tokenized allele components
+     '''
     for feature in pattern_list:
         if type(feature) != list:
             idx = pattern_list.index(feature)
@@ -23,17 +41,27 @@ def add_other_tag(pattern_list):
     return pattern_list
 
 
-def replace_allele_features(feature_dict, pattern_list, feature_name, matches):
+def tokenize_allele_features(feature_dict, pattern_list, feature_name, matches):
+    '''Tokenizes the components of alleles according to the match found in feature dict
+
+        Parameters:
+            feature_dict(dict): dictionary of features to be matched
+            pattern_list(list): list of features of an allele (tokenised and untokenised)
+            feature_name(str): name of the feature or tokens
+            matches(list): list of matches of an allele found in feature_dict
+
+        Returns:
+            out_list(list): list of patterns(tokenized and untokenized)
+    '''
     out_list = list()
     for i in range(len(pattern_list)):
         if type(pattern_list[i]) != str:
             out_list.append(pattern_list[i])
             continue
-        if len(matches) == 0:
-            for feature in feature_dict.keys():
-                if feature.lower() in pattern_list[i]:
-                    matches.append(feature.lower())
-            matches.sort(key=len, reverse=True)
+        for feature in feature_dict.keys():
+            if feature.lower() in pattern_list[i]:
+                matches.append(feature.lower())
+        matches.sort(key=len, reverse=True)
         allele_substring = pattern_list[i]
         this_list = [allele_substring]
         for match in matches:
@@ -44,7 +72,7 @@ def replace_allele_features(feature_dict, pattern_list, feature_name, matches):
                     feature_name, [allele_substring[start:end]]], allele_substring[end:]]
                 # Remove empty strings
                 this_list = list(filter(lambda x: x != '', this_list))
-                this_list = replace_allele_features(
+                this_list = tokenize_allele_features(
                     feature_dict, this_list, feature_name, matches)
                 break
         out_list += this_list
@@ -53,6 +81,15 @@ def replace_allele_features(feature_dict, pattern_list, feature_name, matches):
 
 
 def build_nltk_tag(allele_names, toml_files):
+    '''
+    Builds a dict of allele names and a list of tokens of the allele features 
+
+        Parameter:
+            allele_names(list): list of alleles
+            toml_files(list): list of toml files in allele  directory
+
+        Return:
+            output_list: list of dictionary of allele names and pattern '''
     output_list = []
     for allele_name in allele_names:
         output_list.append({
@@ -60,15 +97,16 @@ def build_nltk_tag(allele_names, toml_files):
             'pattern': [allele_name],
         })
     for toml_file in toml_files:
+        print('finding features using', toml_file.split('/')[-1])
         feature_dict, feature_name = build_feature_dict(toml_file)
         for allele_dict in output_list:
-            allele_dict['pattern'] = replace_allele_features(
+            allele_dict['pattern'] = tokenize_allele_features(
                 feature_dict, allele_dict['pattern'], feature_name, [])
 
     separators_dict = build_separators_dict()
     for allele_dict in output_list:
         # replace separators
-        allele_dict['pattern'] = replace_allele_features(
+        allele_dict['pattern'] = tokenize_allele_features(
             separators_dict, allele_dict['pattern'], '-', [])
         # add other tags to untagged elements:
         allele_dict['pattern'] = add_other_tag(allele_dict['pattern'])
@@ -76,6 +114,15 @@ def build_nltk_tag(allele_names, toml_files):
 
 
 def prettier_json(input_dict):
+    '''
+    Formats json file to make it more readable
+
+        Parameter:
+            input_dict(dict): dictionary of alleles
+
+        Returns:
+            outpur_str(str): formatted input_dict
+        '''
     output_str = json.dumps(input_dict, indent=3, ensure_ascii=False)
 
     match = re.search(r'\[(?=\n)(\n|(?![{}]).)+\]', output_str)
