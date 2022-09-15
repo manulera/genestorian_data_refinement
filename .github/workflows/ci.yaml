@@ -20,15 +20,13 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install poetry
-          pip install toml
-          pip install nltk
           poetry config virtualenvs.create false
           poetry install --without dev
       - name: Run tests
         run: |
             cd genestorian_module/test 
             python -m unittest
-          
+
  # Update docker image when committing to master branch if tests pass
   push_to_registry:
     name: Push Docker image to Docker Hub
