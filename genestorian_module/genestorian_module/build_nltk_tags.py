@@ -97,6 +97,7 @@ def build_nltk_tag(allele_names, toml_files):
             'pattern': [allele_name],
         })
     for toml_file in toml_files:
+        print('finding features using', toml_file.split('/')[-1])
         feature_dict, feature_name = build_feature_dict(toml_file)
         for allele_dict in output_list:
             allele_dict['pattern'] = tokenize_allele_features(
@@ -116,7 +117,7 @@ def prettier_json(input_dict):
     '''
     Formats json file to make it more readable
 
-        Parameter: 
+        Parameter:
             input_dict(dict): dictionary of alleles
 
         Returns:
@@ -131,7 +132,7 @@ def prettier_json(input_dict):
         output_str = output_str[:match.start()] + \
             new_string + output_str[match.end():]
         match = re.search(r'\[(?=\n)(\n|(?![{}]).)+\]', output_str)
-    return output_str 
+    return output_str
 
 
 def main(input_file):
@@ -139,8 +140,6 @@ def main(input_file):
     allele_names = set({})
     for strain in strain_list:
         allele_names.update(strain['alleles'])
-    # runs get_fpbase_data.py
-    os.system('python ../../get_data/get_fpbase_data.py')
     toml_files = [
         '../../data/alleles.toml',
         '../../data/gene_IDs.toml',

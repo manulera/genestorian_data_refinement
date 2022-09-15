@@ -1,309 +1,149 @@
 
-from ntpath import join
-import re
-from nltk.tree import Tree, ParentedTree
-from nltk.chunk import RegexpParser
-from genestorian_module.build_grammar import (build_grammar_rules,
-                                              grammar_dict_txt)
+
+from copy import deepcopy
+from nltk.tree import ParentedTree
 import json
-import os
 import sys
-ROOT_DIR = os.path.realpath(os.path.join(os.path.dirname(__file__)))
+import re
+
+from nltk.chunk import RegexpParser
 
 
-def build_tag_from_pattern(in_file):
+def post_process_pseudo_grammar(pseudo_grammar: dict):
+    out_grammar = deepcopy(pseudo_grammar)
+    for rule in out_grammar:
+        rule['parser'] = RegexpParser(
+            f'{rule["feature_name"]}: ' + '{' + rule['pattern'] + '}',
+            root_label='ROOT')
+    return out_grammar
+
+
+def build_allele_name2tree_dict(in_file):
     ''' Returns nltk input format to input into the parser
 
             Parameter:
                 in_file :  alleles_pattern_nltk.json
 
-            Return: 
+            Return:
                 dict of allele tags in ntlk input
     '''
     with open(in_file) as fp:
         allele_list = json.load(fp)
-    allele_tags_dict = {}
+    allele_name2tree_dict = {}
     for allele in allele_list:
-        tag = []
+        tree_list = []
         allele_name = allele['name']
         patterns = allele['pattern']
         for pattern in patterns:
-            tag.append(Tree(pattern[0], pattern[1]))
-        allele_tags_dict[allele_name] = tag
-    return allele_tags_dict
+            tree_list.append(ParentedTree(pattern[0], pattern[1]))
+        # We create a root element called ALLELE
+        allele_name2tree_dict[allele_name] = ParentedTree('ROOT', tree_list)
+    return allele_name2tree_dict
 
 
-def split_other(other_tree_value, match):
+def replace_parentedtree_node(tree: ParentedTree, target_node: ParentedTree, insert_nodes, inplace=True):
     '''
-        Splits the value of other tag with respect to the match to he regex pattern 
-
-        Parameters:
-            other_tree_value(str) : value of other tree
-            match(str) : str to reference the start and end co-ord to split
-
-        Return:
-            splitted_other_tree_value(list) : [elements of other_tree_value on splitting]
+    Return a COPY of a ParentedTree with a given node replaced by several, or replace if inplace is True
+    nodes, passed in insert_nodes
     '''
-    start = other_tree_value.find(match[0])
-    end = start + len(match)
-    splitt_other_tree_value = [other_tree_value[:start],
-                               other_tree_value[start:end], other_tree_value[end:]]
-
-    return splitt_other_tree_value
-
-
-def match_regex_pattern(other_tree, other_regex):
-    '''
-        Matches to regex pattern from pseudo_grammar
-
-            Parameters:
-                other_tree(nltk_tree): tree with label other
-                other_regex(list): list of regex from pseudo_grammar
-
-            Returns:
-                match(str): other_regex match to other_tree value
-                splitted_other_tree_value(list) : list of other_tree value splitted corresponding to the match
-    '''
-    splitted_other_tree_value = None
-    for regex in other_regex:
-        other_tree_value = other_tree[0]
-        match = re.search(regex, other_tree_value)
-        if match is not None:
-            match = match.group(0)
-            if match != other_tree_value:
-                splitted_other_tree_value = split_other(
-                    other_tree_value, match)
-
-    return match, splitted_other_tree_value
-
-
-def check_pseudo_grammar(rule_name_s, pseudo_grammar, other_tree):
-    '''
-        Returns the rule matched from the psudeo_grammar and splits the value 
-        of the other tag in case the other_regex doesn't match to complete value
-
-            Parameters: 
-                rule_name_s (list): list of rule names 
-                pseudo_grammar(dict) : dict of pseudo_grammar
-                other_tree(nltk tree) : tree with other label in tree build by chunker
-
-            Returns:
-                matched_rule(str) : matched rule
-                splitted_other_tree_value(list) : list of other value splitted 
-    '''
-    matched_rule = None
-    for rule_name in rule_name_s:
-        other_regex = pseudo_grammar[rule_name]['other_regex']
-        if len(other_regex) != 0:
-            match, splitted_other_tree_value = match_regex_pattern(
-                other_tree, other_regex)
-            if match is not None:
-                matched_rule = rule_name
-        else:
-            matched_rule = rule_name
-            splitted_other_tree_value = None
-    return matched_rule, splitted_other_tree_value
-
-
-def insert_to_tree(ptree, splitted_other_tree_value, other_tree):
-    '''
-        Inserts the splitted value of the other tag into the tree
-
-            Parameters:
-                tree(nltk tree): complete tree
-                splitted_other_tree_value(list): splitted other tree value
-                other_tree(nltk tree): tree with label other
-
-            Returns:
-                ptree(parented tree): tree with insertion of splitted_other_tree_value at target index
-                  '''
-    for s in ptree.subtrees(filter=lambda x: x.label() == 'other'):
-        if other_tree[0] == s[0]:
-            index = s.treeposition()
-    # index of the split value is to determine the insert position in the tree
-    ptree[index] = ParentedTree('other', [splitted_other_tree_value[1]])
-    if splitted_other_tree_value[0] != '':
-        ptree.insert(index[0], ParentedTree(
-            'other', [splitted_other_tree_value[0]]))
-    if splitted_other_tree_value[2] != '':
-        ptree.insert(
-            (index[0]+1), ParentedTree('other', [splitted_other_tree_value[2]]))
-    return ptree
-
-
-def delete_unmatched_tree(ptree):
-    '''
-        Deletes the subtree with rules that do not match the pattern in psuedo_grammar
-        and inserts the nodes of the subtree back to the tree.
-
-            Parameter:
-                tree(nltk tree): tree
-
-            Return:
-                ptree(parented tree): tree with deleted subtree
-        '''
-
-    for s in ptree.subtrees(filter=lambda x: x.label() == ''):
-        index_s = s.treeposition()
-        # dict {(value , label) of nodes of the subtree to be deleted : index of the nodes}
-        dict_subtree_s = {}
-        for subtree_s in s.subtrees():
-            index_subtree_s = subtree_s.treeposition()
-            if len(index_subtree_s) > 1:
-                tag_label = str(subtree_s.label())
-                tag_value = str(subtree_s[0])
-                key = (tag_value, tag_label)
-                dict_subtree_s[key] = index_subtree_s
-
-    ptree.pop(index_s[0])
-
-    for key in dict_subtree_s:
-        index = dict_subtree_s[key]
-        ptree.insert(index[0]+index[1],
-                     ParentedTree(key[1], [key[0]]))
-    return ptree
-
-
-def build_tag_from_tree(tree):
-    '''
-    Builds tag which can be input to the NLTK  RegexParser
-
-        Parameter:
-            tree(NLTK Tree): tree built by build_tree
-        Return:
-            Tag(Tree) : NLTK Regex Parser input  
-    '''
-    tag = []
-    for i in range(len(tree)):
-        value = []
-        for j in range(len(tree[i])):
-            value.append(tree[i][j])
-        tag.append(Tree(tree[i].label(), value))
-    return tag
-
-
-def build_tree(grammar, allele, grammar_rule_dict, pseudo_grammar):
-    '''Returns a tree which matches to the rule in peudo grammar
-
-        Parameters:
-            grammar(str): a rule to match 
-            grammar_rule_dict: grammar_dict{concatnated_chunk_rule_name : pattern followed by the chunk}
-            allele(Tree) : tagged allele features
-            pseudo_grammar(dict): psuedo grammar dict
-
-        Return:
-            tree(nltk tree): tree with the matching pattern
-    '''
-    grammar = f""" {grammar}"""
-    custom_tag_parser = RegexpParser(grammar)
-    tree = custom_tag_parser.parse(allele)
-    tree = ParentedTree.convert(tree)
-    for s in tree.subtrees(lambda tree: tree.height() == 3):
-        rule_name = s.label()
-        if rule_name in grammar_rule_dict:
-            rule_name_s = rule_name.split('|')
-            for other_tree in s.subtrees(filter=lambda x: x.label() == 'other'):
-                matched_rule, splitted_other_tree_value = check_pseudo_grammar(
-                    rule_name_s, pseudo_grammar, other_tree)
-                if splitted_other_tree_value is not None:
-                    tree = insert_to_tree(
-                        tree, splitted_other_tree_value, other_tree)
-                if matched_rule is not None:
-                    s.set_label(matched_rule)
-                else:
-                    s.set_label('')
-                    tree = delete_unmatched_tree(tree)
+    insertion_index = target_node.parent_index()
+    if not inplace:
+        tree = tree.copy(deep=True)
+    tree.remove(target_node)
+    for ele in insert_nodes[::-1]:
+        tree.insert(insertion_index, ele)
     return tree
 
 
-def recursive_build_tree(allele, grammars, counter,  grammar_rule_dict, pseudo_grammar):
+def check_regex_match(matched_subtree: ParentedTree, other_regex_patterns):
     '''
-    Recursively calls the build_tree until all the grammar rules are applied on the tree
-        Parameters:
-            allele(Tree) : tagged allele features
-            grammars(str): a rules to match 
-            counter(int): total number of grammars left to match
-            grammar_rule_dict: grammar_dict{concatnated_chunk_rule_name : pattern followed by the chunk}
-            pseudo_grammar(dict): psuedo grammar dict
+    Tests the regex in rule['other_regex'], three possible outcomes:
+        - 'no match': regex not satisfied, so keep going
+        - 'match': regex is matched, and matches the entire <other> tag
+        - 'split parent': regex is found, but does not match the entire <other>
+          tag, so the tag has to be splitted, second return value is a list with
+          a list of trees after the split, that should be used to replace the
+          matched_subtree
+    '''
+    # Get the trees from <other> tags.
+    other_trees = [sstree for sstree in matched_subtree
+                   if sstree.label() == 'other']
 
-        Return:
-            tree(nltk tree): tree with all the patterns matched
-        '''
+    for regex, other_tree in zip(other_regex_patterns, other_trees):
+        other_tree: ParentedTree
+        match: re.Match[str] = re.search(regex, other_tree[0])
+        if not match:
+            return 'no match', []
+        if match.group() != other_tree[0]:
+            # Partition is a string method like split, but preserves the delimiter. the `if substr` is to remove
+            # the empty string: e.g., 'helloworld'.partition('hello') -> ['','hello','world']
+            trees4replacement = [ParentedTree(
+                'other', [substr]) for substr in other_tree[0].partition(match.group()) if substr]
+            # return a list of trees to replace matched_subtree in the parent,
+            # and restart the rule application from the current rule again
+            output_tree = replace_parentedtree_node(
+                matched_subtree, other_tree, trees4replacement)
+            return 'split parent', [t.copy(deep=True) for t in output_tree]
 
-    if counter > 1:
-        grammar = grammars[counter-1].strip()
-        tree = build_tree(grammar, allele, grammar_rule_dict, pseudo_grammar)
-        tag = build_tag_from_tree(tree)
-        return recursive_build_tree(tag, grammars, counter-1,  grammar_rule_dict, pseudo_grammar)
-    else:
-        return build_tree(grammars[0], allele, grammar_rule_dict, pseudo_grammar)
-
-# def build_tree(custom_tag_parser, pseudo_grammar, grammar_rule_dict, allele):
-#     '''
-#         Returns a tree which matches to the rule in peudo grammar
-
-#         Parameters:
-#             custom_tag_parser(nltk parser):
-#             pseudo_grammar(dict): psuedo grammar dict
-#             grammar_rule_dict: grammar_dict{concatnated_chunk_rule_name : pattern followed by the chunk}
-#             allele(tokenised text) : tokenised allele name
-
-#         Return:
-#             tree(nltk tree): tree with the matching patterns
-#      '''
-#     tree = custom_tag_parser.parse(allele)
-#     tree = ParentedTree.convert(tree)
-#     for s in tree.subtrees(lambda tree: tree.height() == 3):
-#         rule_name = s.label()
-#         if rule_name in grammar_rule_dict:
-#             rule_name_s = rule_name.split('|')
-#             for other_tree in s.subtrees(filter=lambda x: x.label() == 'other'):
-#                 matched_rule, splitted_other_tree_value = check_pseudo_grammar(
-#                     rule_name_s, pseudo_grammar, other_tree)
-#                 if splitted_other_tree_value is not None:
-#                     tree = insert_to_tree(
-#                         tree, splitted_other_tree_value, other_tree)
-#                 if matched_rule is not None:
-#                     s.set_label(matched_rule)
-#                 else:
-#                     s.set_label('')
-#                     tree = delete_unmatched_tree(tree)
-#     return tree
+    # No errors in matching
+    return 'match', []
 
 
-def main(input_file):
-    # makes sure to create a grammar.txt file
-    grammar_dict_txt(os.path.join(ROOT_DIR, "grammar", "pseudo_grammar.json"))
-    with open(os.path.join(ROOT_DIR, "grammar", "grammar.txt"), 'r') as fp:
-        grammars = fp.readlines()
-    with open(os.path.join(ROOT_DIR, "grammar", "pseudo_grammar.json")) as f:
+def apply_pseudo_grammar(allele_tree: ParentedTree, pseudo_grammar):
+    output_tree = allele_tree.copy(deep=True)
+
+    for rule_i, rule in enumerate(pseudo_grammar):
+        parser: RegexpParser = rule['parser']
+        updated_tree: ParentedTree = ParentedTree.convert(
+            parser.parse(output_tree))
+        # Match is found if the result is different
+        if updated_tree != output_tree:
+            other_regex_patterns = rule['other_regex']
+            if len(other_regex_patterns) == 0:
+                # No rules for <other>, we have a match
+                output_tree = updated_tree
+                continue
+
+            # we have to make sure that regex patterns are matched,
+            # and splitted if needed
+            for matched_subtree in updated_tree.subtrees(filter=lambda x: x.label() == rule['feature_name']):
+                outcome, matched_subtree_replacement = check_regex_match(
+                    matched_subtree, other_regex_patterns)
+                if outcome == 'no match':
+                    replace_parentedtree_node(updated_tree, matched_subtree, [
+                                              t.copy(deep=True) for t in matched_subtree], True)
+                elif outcome == 'split parent':
+                    output_tree = replace_parentedtree_node(
+                        updated_tree, matched_subtree, matched_subtree_replacement)
+                    # We apply the same rule again (there might be further splits to do, or the same thing twice)
+                    return apply_pseudo_grammar(output_tree, pseudo_grammar[rule_i:])
+            else:
+                output_tree = updated_tree
+
+    return output_tree
+
+
+def main(input_file, pseudo_grammar_file, output_file):
+
+    with open(pseudo_grammar_file) as f:
         pseudo_grammar = json.load(f)
-    grammar_rule_dict = build_grammar_rules(
-        os.path.join(ROOT_DIR, "grammar", "pseudo_grammar.json"))
-    allele_tags_dict = build_tag_from_pattern(input_file)
+    pseudo_grammar = post_process_pseudo_grammar(pseudo_grammar)
+    allele_name2tree_dict = build_allele_name2tree_dict(input_file)
 
-    # grammars = f""" {grammar}"""
-    # custom_tag_parser = RegexpParser(grammar)
     trees_dict = {}
-    for allele in allele_tags_dict:
-        # tree = build_tree(custom_tag_parser, pseudo_grammar,
-        #                   grammar_rule_dict, allele_tags_dict[allele])
-        counter = len(grammars)
-        tree = recursive_build_tree(
-            allele_tags_dict[allele], grammars, counter,  grammar_rule_dict, pseudo_grammar)
+    for allele in allele_name2tree_dict:
 
+        tree = apply_pseudo_grammar(
+            allele_name2tree_dict[allele], pseudo_grammar)
         flat_tree = tree._pformat_flat("", "()", False)
-
         trees_dict[allele] = flat_tree
-    output_file_name = 'nltk_trees.json'
-    output_dir = os.path.dirname(input_file)
-    output_file_path = os.path.join(output_dir, output_file_name)
 
-    with open(output_file_path, 'w', encoding="utf-8") as fp:
+    with open(output_file, 'w', encoding="utf-8") as fp:
         json.dump(trees_dict, fp, indent=3, ensure_ascii=False)
-    return None
 
 
 if __name__ == "__main__":
     input_file = sys.argv[1]
-    main(input_file)
+    grammar_file = sys.argv[2]
+    output_dir = sys.argv[3]
+    main(input_file, grammar_file, output_dir)
