@@ -41,17 +41,18 @@ def build_allele_name2tree_dict(in_file):
     return allele_name2tree_dict
 
 
-def replace_parentedtree_node(tree: ParentedTree, target_node: ParentedTree, insert_nodes):
+def replace_parentedtree_node(tree: ParentedTree, target_node: ParentedTree, insert_nodes, inplace=True):
     '''
-    Return a COPY of a ParentedTree with a given node replaced by several
+    Return a COPY of a ParentedTree with a given node replaced by several, or replace if inplace is True
     nodes, passed in insert_nodes
     '''
     insertion_index = target_node.parent_index()
-    output_tree = tree.copy(deep=True)
-    output_tree.remove(target_node)
+    if not inplace:
+        tree = tree.copy(deep=True)
+    tree.remove(target_node)
     for ele in insert_nodes[::-1]:
-        output_tree.insert(insertion_index, ele)
-    return output_tree
+        tree.insert(insertion_index, ele)
+    return tree
 
 
 def check_regex_match(matched_subtree: ParentedTree, other_regex_patterns):
@@ -96,7 +97,7 @@ def apply_pseudo_grammar(allele_tree: ParentedTree, pseudo_grammar):
         updated_tree: ParentedTree = ParentedTree.convert(
             parser.parse(output_tree))
         # Match is found if the result is different
-        if updated_tree != allele_tree:
+        if updated_tree != output_tree:
             other_regex_patterns = rule['other_regex']
             if len(other_regex_patterns) == 0:
                 # No rules for <other>, we have a match
@@ -108,13 +109,16 @@ def apply_pseudo_grammar(allele_tree: ParentedTree, pseudo_grammar):
             for matched_subtree in updated_tree.subtrees(filter=lambda x: x.label() == rule['feature_name']):
                 outcome, matched_subtree_replacement = check_regex_match(
                     matched_subtree, other_regex_patterns)
-                if outcome == 'match':
-                    output_tree = updated_tree
+                if outcome == 'no match':
+                    replace_parentedtree_node(updated_tree, matched_subtree, [
+                                              t.copy(deep=True) for t in matched_subtree], True)
                 elif outcome == 'split parent':
                     output_tree = replace_parentedtree_node(
                         updated_tree, matched_subtree, matched_subtree_replacement)
                     # We apply the same rule again (there might be further splits to do, or the same thing twice)
                     return apply_pseudo_grammar(output_tree, pseudo_grammar[rule_i:])
+            else:
+                output_tree = updated_tree
 
     return output_tree
 
