@@ -18,9 +18,11 @@ jobs:
           pip install poetry
           poetry config virtualenvs.create false
           poetry install --no-dev
+      # Before running the test you have to download the tags!
       - name: Run tests
         run: |
-            cd genestorian_module/test 
+            python get_fpbase_data.py ../allele_components/tags_fpbase.toml
+            cd genestorian_module/test
             python -m unittest
 
  # Update docker image when committing to master branch if tests pass
