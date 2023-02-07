@@ -9,7 +9,6 @@ genestorian_module.egg-info/PKG-INFO
 genestorian_module.egg-info/SOURCES.txt
 genestorian_module.egg-info/dependency_links.txt
 genestorian_module.egg-info/top_level.txt
-test/test_build_nltk_tags.py
 test/test_build_grammar.py
 test/test_build_nltk_tags.py
 test/test_nltk_trees.py
