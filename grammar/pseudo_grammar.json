@@ -16,7 +16,7 @@
   },
   {
     "feature_name": "PROMOTER_GENE",
-    "pattern": "<other><GENE>",
+    "pattern": "<other><->?<GENE>",
     "other_regex": ["(?<![a-z])p$"]
   },
   {
