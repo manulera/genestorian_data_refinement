@@ -1,11 +1,10 @@
 from fastapi import FastAPI
 from starlette.responses import RedirectResponse
 from pydantic import BaseModel
-from genestorian_module.build_nltk_tags import (tokenize_allele_features, add_other_tag)
-from genestorian_module.replace_feature import (build_feature_dict)
+from genestorian_module.build_nltk_tags import build_nltk_tag
 
 
-def name2pattern(allele_names):
+def name2pattern(allele_name):
 
     toml_files = [
         'data/alleles.toml',
@@ -17,36 +16,8 @@ def name2pattern(allele_names):
         'allele_components/sequence_features.toml'
     ]
 
-    output_list = []
-    output_list.append({
-            'name': allele_names,
-            'pattern': [allele_names]
-        })
-
-    ## finds features using toml files
-    for toml_file in toml_files:
-        print('finding features using', toml_file.split('/')[-1])
-        feature_dict, feature_name = build_feature_dict(toml_file)
-        for allele_dict in output_list:
-            allele_dict['pattern'] = tokenize_allele_features(
-                feature_dict, allele_dict['pattern'], feature_name, [])
-
-    ## this code block creates the seperators_dict
-    separators_dict = {}
-    with open("allele_components/separators.txt", "r") as fp:
-        for x in fp:
-            x = x.strip()
-            separators_dict[x] = 'separator'
-
-    ## finds tokens
-    for allele_dict in output_list:
-        # replace separators
-        allele_dict['pattern'] = tokenize_allele_features(
-            separators_dict, allele_dict['pattern'], '-', [])
-        # add other tags to untagged elements:
-        allele_dict['pattern'] = add_other_tag(allele_dict['pattern'])
-
-    return output_list[0]['pattern']
+    alleles_list = build_nltk_tag([allele_name.lower()], toml_files, "allele_components/separators.txt")
+    return alleles_list[0]['pattern']
 
 # We have to define classes that the API will receive as json
 

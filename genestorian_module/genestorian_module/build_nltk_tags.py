@@ -7,17 +7,17 @@ import os
 ROOT_DIR = os.path.realpath(os.path.join(os.path.dirname(__file__)))
 
 
-def build_separators_dict():
+def build_separators_dict(seperators_path="../../allele_components/separators.txt"):
     '''
     Builds a dictionary where separators are the key from the text file 
 
         Parameter: 
-            None
+            seperators_path(str): path of separators.txt, default path: "../../allele_components/separators.txt"
         Return:
             separators_dict(dict): dict of separators 
     '''
     separators_dict = {}
-    with open("../../allele_components/separators.txt", "r") as fp:
+    with open(seperators_path, "r") as fp:
         for x in fp:
             x = x.strip()
             separators_dict[x] = 'separator'
@@ -80,7 +80,7 @@ def tokenize_allele_features(feature_dict, pattern_list, feature_name, matches):
     return out_list
 
 
-def build_nltk_tag(allele_names, toml_files):
+def build_nltk_tag(allele_names, toml_files, seperators_path="../../allele_components/separators.txt"):
     '''
     Builds a dict of allele names and a list of tokens of the allele features 
 
@@ -103,7 +103,7 @@ def build_nltk_tag(allele_names, toml_files):
             allele_dict['pattern'] = tokenize_allele_features(
                 feature_dict, allele_dict['pattern'], feature_name, [])
 
-    separators_dict = build_separators_dict()
+    separators_dict = build_separators_dict(seperators_path)
     for allele_dict in output_list:
         # replace separators
         allele_dict['pattern'] = tokenize_allele_features(
