@@ -11,7 +11,7 @@ def name2pattern(allele_names):
         'data/alleles.toml',
         'data/gene_IDs.toml',
         'allele_components/tags.toml',
-        # 'allele_components/tags_fpbase.toml',
+        'allele_components/tags_fpbase.toml',
         'allele_components/markers.toml',
         'allele_components/promoters.toml',
         'allele_components/sequence_features.toml'
