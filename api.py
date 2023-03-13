@@ -1,7 +1,23 @@
 from fastapi import FastAPI
 from starlette.responses import RedirectResponse
 from pydantic import BaseModel
+from genestorian_module.build_nltk_tags import build_nltk_tag
 
+
+def name2pattern(allele_name):
+
+    toml_files = [
+        'data/alleles.toml',
+        'data/gene_IDs.toml',
+        'allele_components/tags.toml',
+        'allele_components/tags_fpbase.toml',
+        'allele_components/markers.toml',
+        'allele_components/promoters.toml',
+        'allele_components/sequence_features.toml'
+    ]
+
+    alleles_list = build_nltk_tag([allele_name.lower()], toml_files, "allele_components/separators.txt")
+    return alleles_list[0]['pattern']
 
 # We have to define classes that the API will receive as json
 
@@ -41,12 +57,12 @@ async def check_allele(request: ProcessAlleleRequest):
     allele_name = request.name
 
     # Here is where your function would take the allele name and return the pattern
-    # allele_pattern = your_function(allele_name)
+    allele_pattern = name2pattern(allele_name)
 
     # For now there is this dummy allele_pattern, you can comment this when
     # you have added your function:
-    allele_pattern = [["GENE", ["cut11"]], ["-", ["-"]],
-                      ["TAG", ["mch"]], ["-", [":"]], ["ALLELE", ["ura4+"]]]
+    # allele_pattern = [["GENE", ["cut11"]], ["-", ["-"]],
+    #                   ["TAG", ["mch"]], ["-", [":"]], ["ALLELE", ["ura4+"]]]
 
     # Here you instantiate the response object
     response = ProcessAlleleResponse(
