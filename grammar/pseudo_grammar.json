@@ -16,8 +16,13 @@
   },
   {
     "feature_name": "PROMOTER_GENE",
-    "pattern": "<other><->?<GENE>",
+    "pattern": "<other><->?<GENE><->?",
     "other_regex": ["(?<![a-z])p$"]
+  },
+  {
+    "feature_name": "REGULATOR",
+    "pattern": "<PROMOTER_GENE>",
+    "other_regex": [""]
   },
   {
     "feature_name": "ALLELE_AA_SUBSTITUTION",
@@ -28,7 +33,27 @@
   },
   {
     "feature_name": "C_Terminal_Tagging",
-    "pattern": "<GENE><->?<TAG><->?<MARKER>",
+    "pattern": "(<GENE>|<ALLELE>)<->?<TAG>",
+    "other_regex": []
+  },
+  {
+    "feature_name": "PRODUCT",
+    "pattern": "<C_Terminal_Tagging>",
+    "other_regex": []
+  },
+  {
+    "feature_name": "PROMOTER_PRODUCT",
+    "pattern": "<C_Terminal_Tagging>",
+    "other_regex": []
+  },
+  {
+    "feature_name": "WILD_TYPE_ALLELE",
+    "pattern": "<GENE><other>",
+    "other_regex": ["\\+"]
+  },
+  {
+    "feature_name": "INSERTION_LOCUS",
+    "pattern": "(<GENE>|<ALLELE>)<->(?=<REGULATOR>?<PRODUCT>)",
     "other_regex": []
   }
 ]
