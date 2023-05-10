@@ -2,6 +2,24 @@
 
 A project to extract genotype information from lab spreadsheets.
 
+## Quickstart ⏲️
+
+```bash
+# Install dependencies
+poetry install
+
+# Activate virtual environment
+poetry shell
+
+# Download some necessary data to find fluorescence protein
+python get_fpbase_data.py ../allele_components/tags_fpbase.toml
+
+# Start a dev server
+uvicorn api:app --reload
+```
+
+Go to http://127.0.0.1:8000, and you should be able to try the example.
+
 ## Installing
 
 For the python dependencies management, we will use [poetry](https://python-poetry.org/). To install the dependencies use:

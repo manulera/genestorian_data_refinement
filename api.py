@@ -39,7 +39,7 @@ async def root():
 
 
 @ app.get("/process_allele", response_model=ProcessAlleleResponse)
-async def check_allele(allele_name: str = Query(example="pact1-cut11-mch:KanMX6", description="The name of the allele to be checked")):
+async def check_allele(allele_name: str = Query(example="ura4+::pact1-cut11-mch:KanMX6", description="The name of the allele to be checked")):
 
     # Here is where your function would take the allele name and return the pattern
     allele_pattern = name2pattern(allele_name)
@@ -54,7 +54,6 @@ async def check_allele(allele_name: str = Query(example="pact1-cut11-mch:KanMX6"
     pseudo_grammar = post_process_pseudo_grammar(pseudo_grammar)
     input_tree = ParentedTree('ROOT', tree_list)
     output_tree = apply_pseudo_grammar(input_tree, pseudo_grammar)
-    print(allele_pattern)
     # response = ProcessAlleleResponse(
     #     name=allele_name,
     #     pattern=allele_pattern
