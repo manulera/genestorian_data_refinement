@@ -1,5 +1,5 @@
-from genestorian_module.replace_feature import (build_feature_dict,
-                                                build_strain_list)
+from genestorian_module.genestorian_module.replace_feature import (build_feature_dict,
+                                                                   build_strain_list)
 import re
 import json
 import sys

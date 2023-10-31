@@ -1,10 +1,10 @@
 from fastapi import FastAPI, Query
+from nltk.tree import ParentedTree, TreePrettyPrinter
 from starlette.responses import HTMLResponse, FileResponse
 from pydantic import BaseModel
-from genestorian_module.build_nltk_tags import build_nltk_tag
-from genestorian_module.build_nltk_trees import apply_pseudo_grammar, post_process_pseudo_grammar
+from genestorian_module.genestorian_module.build_nltk_tags import build_nltk_tag
+from genestorian_module.genestorian_module.build_nltk_trees import apply_pseudo_grammar, post_process_pseudo_grammar
 import json
-from nltk.tree import ParentedTree, TreePrettyPrinter
 
 
 def name2pattern(allele_name):
@@ -19,7 +19,8 @@ def name2pattern(allele_name):
         'allele_components/sequence_features.toml'
     ]
 
-    alleles_list = build_nltk_tag([allele_name.lower()], toml_files, "allele_components/separators.txt")
+    alleles_list = build_nltk_tag(
+        [allele_name.lower()], toml_files, "allele_components/separators.txt")
     return alleles_list[0]['pattern']
 
 

@@ -1,5 +1,5 @@
 import toml
-from genestorian_module import read_strains_tsv
+from genestorian_module.genestorian_module import read_strains_tsv
 import re
 
 
