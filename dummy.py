@@ -1,0 +1,1 @@
+from genestorian_module.build_nltk_tags import build_nltk_tag

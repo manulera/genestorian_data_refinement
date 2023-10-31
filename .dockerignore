@@ -3,3 +3,6 @@ examples/
 .github/
 .venv/
 .git/
+Lab_strains/
+notebooks/
+toml_example/
