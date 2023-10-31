@@ -52,7 +52,6 @@ To build from the dockerfile available in the repo:
 ```
 docker build -t genestorian_data_refinement .
 docker run -d --name genestorian_data_refinement_container -p 8000:80 genestorian_data_refinement
-
 ```
 
 ## Getting the data
