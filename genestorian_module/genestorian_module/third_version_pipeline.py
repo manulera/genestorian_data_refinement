@@ -1,7 +1,6 @@
-from genestorian_module import read_strains_tsv
+from genestorian_module.read_and_write import read_strains_tsv
 from genestorian_module.replace_feature import build_feature_dict
 import re
-import json
 from operator import itemgetter
 
 

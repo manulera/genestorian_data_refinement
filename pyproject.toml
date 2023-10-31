@@ -5,7 +5,6 @@ name = "genestorian_data_refinement"
 version = "0.1.0"
 
 [tool.poetry.dependencies]
-genestorian_module = {path = "genestorian_module", develop = true}
 openpyxl = "^3.0.10"
 pandas = "^1.4.2"
 python = "^3.9"

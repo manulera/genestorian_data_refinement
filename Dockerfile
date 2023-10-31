@@ -2,15 +2,12 @@ FROM python:3.9
 
 WORKDIR /pipeline
 
-RUN pip install poetry 
-RUN pip install nltk
-RUN pip install toml
-
-COPY ./ /pipeline/
-
+RUN pip install poetry
 RUN poetry config virtualenvs.create false
-RUN poetry install --without dev
-RUN poetry shell
 
-COPY . /pipeline
+COPY ./ /pipeline
 
+RUN poetry install --no-dev
+RUN sh install_local_dependency.sh
+
+CMD ["sh", "docker_start.sh"]

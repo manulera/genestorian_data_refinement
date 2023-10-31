@@ -1,5 +1,5 @@
 #%%
-from genestorian_module import excel_to_tsv
+from genestorian_module.read_and_write import excel_to_tsv
 import pandas as pd
 
 read_file = pd.read_excel('DY-export-2.xlsx', na_filter=False)

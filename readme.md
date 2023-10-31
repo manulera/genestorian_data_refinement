@@ -50,12 +50,9 @@ poetry run python -m ipykernel install --user
 
 To build from the dockerfile available in the repo:
 ```
-$ docker build -t genestorian .
-$ docker run --name  genestorian_c -d genestorian:latest sleep inifinity 
-$ docker exec -it genestorian_c /bin/sh
-
+docker build -t genestorian_data_refinement .
+docker run -d --name genestorian_data_refinement_container -p 8000:80 genestorian_data_refinement
 ```
-To stop the docker: `$ docker stop genestorian_c`
 
 ## Getting the data
 
